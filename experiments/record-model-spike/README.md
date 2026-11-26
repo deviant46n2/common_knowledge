@@ -25,14 +25,14 @@ python -m pytest -q
 python render_record.py
 ```
 
-Seven tests pass. The fixture now includes two independent assessments of the same statement and a version 2 record that retains both assessments while linking back to version 1 with PROV-O wasRevisionOf. An earlier test run exposed a missing JSON-LD mapping for `oa:hasTarget`; the compact-IRI version in this experiment avoids that aliasing mistake. This demonstrates why semantic round-trip tests matter in addition to JSON syntax validation.
+Eight tests pass. The fixture now includes two independent assessments of the same statement and a version 2 record that retains both assessments while linking back to version 1 with PROV-O wasRevisionOf. An earlier test run exposed a missing JSON-LD mapping for `oa:hasTarget`; the compact-IRI version in this experiment avoids that aliasing mistake. This demonstrates why semantic round-trip tests matter in addition to JSON syntax validation.
 
 ## Limitations
 
 - `https://example.org/ck/` identifiers are placeholders, not production identifiers.
 - The `ex:` vocabulary and relation labels are provisional.
 - Passing tests establish graph structure and selector matching only, not truth, source authenticity, or assessment quality.
-- This does not test SHACL, Wikibase, nanopublication publication/signing, UI, version history, correction workflows, or user usability.
+- This does not test SHACL, Wikibase, nanopublication publication/signing, interactive authoring, a complete correction workflow, or non-specialist usability.
 - Selectors are checked against exact fixture text. Real sources need version capture, normalization, and recovery behaviour when content changes.
 - No real or external content is included or published.
 
