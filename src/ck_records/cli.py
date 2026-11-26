@@ -93,8 +93,12 @@ def validate(record, root):
             errors.append(f"{where}.prefix and suffix must be strings")
         source = source_map.get(sid)
         if source and exact and isinstance(source.get("path"), str):
+            candidate = (root / source["path"]).resolve()
+            base = root.resolve()
+            if candidate != base and base not in candidate.parents:
+                continue
             try:
-                content = (root / source["path"]).resolve().read_text(encoding="utf-8")
+                content = candidate.read_text(encoding="utf-8")
                 count = content.count(exact)
                 if count != 1:
                     errors.append(f"{where}.exact must occur exactly once in source (found {count})")
@@ -128,7 +132,7 @@ def validate(record, root):
         refs = item.get("evidence_ids")
         if not isinstance(refs, list) or not refs:
             errors.append(f"{where}.evidence_ids must be a non-empty array")
-        elif any(ref not in evidence_ids for ref in refs):
+        elif any(not isinstance(ref, str) or ref not in evidence_ids for ref in refs):
             errors.append(f"{where}.evidence_ids contains an unknown evidence id")
     return errors
 
