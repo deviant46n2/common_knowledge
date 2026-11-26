@@ -37,11 +37,13 @@ This page is the workstream's durable entry point. Add dated notes below as rese
 ### Current reports
 
 - [Initial field overview](field-overview.md)
+- [Governance patterns, representation, and asset protection](governance-patterns.md)
 
 ### Progress notes
 
 - **2026-11-26:** Workstream scope and initial questions recorded. No comprehensive investigation had yet been completed.
 - **2026-11-26:** Added an initial comparison of nonmember nonprofit governance, nonprofit/subsidiary structures, fiscal hosting, worker cooperatives, and US private-benefit/compensation rules. Registered sources F-01 through F-10.
+- **2026-11-26:** Added a comparative analysis of community-represented board structures, nonprofit/subsidiary arrangements, fiscal hosting, worker cooperatives, founder transition, and asset protection.
 
 ### Next steps
 
