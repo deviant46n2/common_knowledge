@@ -108,3 +108,52 @@ def test_import_rejects_destination_that_would_delete_source_package(tmp_path):
     assert result.returncode == 1
     assert "cannot contain or be inside the source package" in result.stderr
     assert FIXTURE.is_file()
+
+
+
+def test_init_creates_valid_record_workspace(tmp_path):
+    import subprocess
+    import sys
+
+    directory = tmp_path / "new-record"
+    result = subprocess.run(
+        [
+            sys.executable, "-m", "ck_records", "init", str(directory),
+            "--id", "urn:ck:test:starter",
+            "--title", "Starter record",
+            "--statement", "The documented test statement.",
+            "--scope", "This statement describes only the supplied test fixture.",
+        ],
+        capture_output=True, text=True,
+        env={"PYTHONPATH": str(FIXTURE.parents[3] / "src")},
+    )
+    assert result.returncode == 0, result.stderr
+    assert (directory / "sources").is_dir()
+    record = load(directory / "record.json")
+    assert validate(record, directory) == []
+    assert record["sources"] == []
+    assert record["evidence"] == []
+    assert record["assessments"] == []
+
+
+def test_init_refuses_to_overwrite_existing_directory(tmp_path):
+    import subprocess
+    import sys
+
+    directory = tmp_path / "existing"
+    directory.mkdir()
+    sentinel = directory / "keep.txt"
+    sentinel.write_text("preserve", encoding="utf-8")
+    result = subprocess.run(
+        [
+            sys.executable, "-m", "ck_records", "init", str(directory),
+            "--id", "urn:ck:test:starter",
+            "--title", "Starter record",
+            "--statement", "The documented test statement.",
+            "--scope", "This statement describes only the supplied test fixture.",
+        ],
+        capture_output=True, text=True,
+        env={"PYTHONPATH": str(FIXTURE.parents[3] / "src")},
+    )
+    assert result.returncode == 1
+    assert sentinel.read_text(encoding="utf-8") == "preserve"
