@@ -822,3 +822,19 @@ This is a positive sign for public inspectability and discoverability: the netwo
 Source:
 - Nanodash public instance: https://nanodash.knowledgepixels.com/
 - Nanodash repository and local deployment configuration: https://github.com/knowledgepixels/nanodash
+
+
+### Nanodash nanopublication detail-page inspection
+
+A read-only inspection of one public ontology-definition nanopublication showed how the current reader renders an individual publication:
+- the assertion appears as structured triples with human-readable predicate labels and clickable terms;
+- provenance appears in a separate section, including derived-from links;
+- publication metadata shows creation date, license, creator, template links, and a latest-version indicator;
+- signature metadata is inspectable, including target, algorithm, public key, signature, and signer;
+- readers can expand raw-format downloads for the full nanopublication or assertion in multiple RDF serializations;
+- the action menu includes commenting, approval/disapproval, and creating derived or overriding nanopublications.
+
+This is a strong baseline for inspectability and raw-data access. It also shows the gap Common Knowledge may need to fill: the page presents the semantic graph faithfully, but it does not automatically turn arbitrary assertions and evidence into a domain-specific explanation of what a source passage supports, what it qualifies, and how independent assessments differ. Our small reader prototype is deliberately more opinionated about those relationships. The inspected item was an ontology-definition publication, not a scientific evidence assessment, so this is a UI observation rather than a comprehensive usability evaluation.
+
+Example inspected:
+- https://nanodash.knowledgepixels.com/RA3VxrEoZyRPd8ZwOvIpPGlRf2kVmNW1-nlVU55s7t8AI
