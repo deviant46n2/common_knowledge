@@ -216,7 +216,62 @@ This is not a general knowledge repository or a public evidence network. It is a
 
 **Assessment:** Worth studying for deterministic checks, explicit verdict limits, testability, and published rejection reasons. It is not a replacement for Common Knowledge's contribution, provenance, or discovery layers.
 
-## 5. Open Research Knowledge Graph (ORKG)
+## 5. Project Delphi / Science Oracle
+
+**Links**
+- [Science Oracle application](https://scienceoracle.com/)
+- [Public graph](https://scienceoracle.com/graph)
+- [PKG Viewer](https://pkg.scienceoracle.com/)
+- [Ontology repository](https://github.com/fractastical/project-delphi-ontology)
+- [Ontology reference](https://github.com/fractastical/project-delphi-ontology/blob/main/ONTOLOGY.md)
+- [Publishing best practice](https://github.com/fractastical/project-delphi-ontology/blob/main/PUBLISHING.md)
+
+### What exists
+
+Project Delphi (formerly ProbKnow) has a live public application, Science Oracle, for source-traceable scientific Q&A and graph exploration. It describes a public research graph of claims, evidence, hypotheses, and assessments, with interfaces to ask questions, browse papers, explore hypotheses, and inspect nanopublications in a separate PKG Viewer.
+
+The public application says that:
+- answers are bounded by retrieved public graph sources, not web search or private research;
+- supported statements, counterevidence, and gaps should be separated;
+- citations should open source excerpts and, where available, original DOI publications;
+- graph evidence confidence is aggregated from cited source scores with dependency adjustment and a coverage indicator;
+- this confidence is not the probability that the generated answer is correct or a calibrated truth guarantee;
+- absence of counterevidence in the retrieved set does not mean none exists.
+
+The ontology repository is MIT-licensed and currently documents version 2.0. Its main modeling choices are particularly relevant:
+- `Claim` is a subclass of `Hypothesis`: a hypothesis is a proposition represented without asserting it; a claim is a proposition a source states. The README explicitly describes a claim as a belief, not an asserted fact.
+- `EvidenceItem` is separate from claims and assessments.
+- `Assessment` is a separate n-ary evaluation with verdict, probability, confidence, reasons, evidence, and assessor attribution where available.
+- `BayesianAssessment` carries Bayes factors and calibration information.
+- `LLMClaimAssessment` records language-model evaluations.
+- The assessor is a PROV-O SoftwareAgent; the model it runs is a separate `LanguageModel` entity, so two agents using the same model but different prompts/scaffolding can be distinguished.
+- Other terms include scores, evidence weights, decibans, assessment types, calibration methods, p-values, statistical tests, and research domains.
+
+The repository also contains a detailed 12-step publishing practice: source every assertion; publish each dataset as its own nanopublication; sign and test before production; require a human review sample and a second reviewer for high-stakes/public-facing claims; use two assessors from different providers in the documented audit path; record source hashes and generator versions; supersede/retract rather than overwrite; and maintain publication manifests.
+
+### Public collection and openness
+
+The README distinguishes three different things: the changing application dataset, the ontology/code repository, and the subset of records actually published to the nanopublication network. Not every application record is exported, signed, or published; public views do not constitute a complete export of private research.
+
+The public domain-index endpoint returned 893 domain labels in a dated snapshot referenced by the README (11 October 2026). The README warns that this is not 893 equally populated or independently validated disciplines. The PKG Viewer displayed 6,241 imported/matched records during our 26 November inspection. These are dated UI observations, not an independent data audit or a complete corpus count.
+
+### Hands-on UI result
+
+Two read-only public Q&A tests were attempted, including one of the application's own starter questions. Both failed with the message that Delphi could not complete the answer and that no answer had been generated from unverified sources. No citations or excerpts were returned.
+
+This is a single-session availability/UX observation, not evidence that the underlying claims or graph are wrong. The fail-closed behavior is good; the generic error did not distinguish an unavailable answer service from a genuine evidence gap. The homepage also notes that questions and responses are saved in the browser, including on shared devices.
+
+See [the Science Oracle UI review](experiments/2026-11-science-oracle-ui-review.md).
+
+### Fit and limitations
+
+This is one of the closest existing scientific products to Common Knowledge's desired experience. It already has a public source-linked Q&A interface, graph exploration, explicit counterevidence/gaps, claim/evidence/assessment distinctions, model provenance, and a disciplined publication process.
+
+It is nevertheless science-focused. The public domain index and application are organized around research domains; the current product is not a general civic, legal, historical, or public-policy knowledge service. The public corpus is also not a complete export of the full application dataset.
+
+**Assessment:** Do not build another science-only source-linked Q&A and evidence graph without a compelling reason. Project Delphi is a strong technical and UX reference and a potential collaborator. Common Knowledge's possible distinction would need to be validated around general public knowledge, civic/legal/policy claims, a fully inspectable public corpus, and public-interest stewardship—not simply around claim/evidence graphs or AI assessments.
+
+## 6. Open Research Knowledge Graph (ORKG)
 
 **Links**
 - [ORKG](https://orkg.org/)
@@ -244,7 +299,7 @@ ORKG is a mature reference for structured scholarly contribution authoring, temp
 
 ## 6. Comparison: what is already covered?
 
-| Capability | Knowledge Pixels / Nanoarguments | MIRA / Discourse Graphs | SciOS RRGI / MVR | The Consilience | ORKG |
+| Capability | Knowledge Pixels / Nanoarguments | MIRA / Discourse Graphs | SciOS RRGI / MVR | The Consilience | Project Delphi | ORKG |
 |---|---|---|---|---|---|
 | Human and AI contributions | Agent identity and AI skill exist; broader claim workflow proposed | Human research collaboration; AI-assisted tools in ecosystem | AI extraction plus human review/endorsement in RRGI | AI extraction; deterministic code judges | AI-assisted structured contribution workflows |
 | Atomic claims | Core nanopublication model supports it | First-class Claim | First-class Claim | Typed claims | Structured research contributions |
