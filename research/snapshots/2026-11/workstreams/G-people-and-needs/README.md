@@ -47,8 +47,9 @@ This page is the workstream's durable entry point. Add dated notes below as rese
 
 ### Next steps
 
-1. Define key terms and boundaries for the first bounded investigation.
-2. Identify foundational standards, projects, organizations, and communities.
-3. Select representative cases and investigate primary sources.
-4. Seek independent evidence and user experience.
-5. Produce a first-pass synthesis that states coverage and limitations.
+1. Identify participants across career stages, disciplines, institution types, regions, and support roles—not only senior academics.
+2. Conduct a small set of exploratory conversations using the consent-aware guide; do not imply the sample is representative.
+3. Ask about actual workflows, workarounds, barriers, incentives, and risks before describing possible Common Knowledge solutions.
+4. Include librarians, research software engineers, data stewards, technicians, community researchers, citizen scientists, and affected communities.
+5. Record anonymized findings with permission, separating participant statements from interpretation and open questions.
+6. Compare reported needs with existing services and revise the opportunity register; seek ethics review if conversations become systematic research intended for publication or generalizable conclusions.
