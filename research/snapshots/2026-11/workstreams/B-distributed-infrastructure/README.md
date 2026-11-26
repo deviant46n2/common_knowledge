@@ -2,8 +2,8 @@
 
 - **Snapshot:** [November 2026](../../README.md)
 - **Program:** [Common Knowledge Research Program](../../../../PROGRAM.md)
-- **Status:** Not started
-- **Last worked:** Not yet started
+- **Status:** In progress
+- **Last worked:** 2026-11-26
 
 ## Central question
 
@@ -34,9 +34,14 @@ Map volunteer and distributed computing, grid/edge systems, federation, peer-to-
 
 This page is the workstream's durable entry point. Add dated notes below as research proceeds. Put substantive findings in focused reports and profiles, with sources attached to the claims they support. Keep documented facts, independent findings, assessments, and open questions distinct.
 
+### Current reports
+
+- [Initial field overview](field-overview.md)
+
 ### Progress notes
 
-- **2026-11-26:** Workstream scope and initial questions recorded. No comprehensive investigation has yet been completed.
+- **2026-11-26:** Workstream scope and initial questions recorded. No comprehensive investigation had yet been completed.
+- **2026-11-26:** Added initial comparison of BOINC, HTCondor, Kubernetes multi-cluster coordination, libp2p, and IPFS. Registered sources B-01 through B-08.
 
 ### Next steps
 
