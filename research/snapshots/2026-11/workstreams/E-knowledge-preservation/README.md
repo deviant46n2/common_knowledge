@@ -41,6 +41,7 @@ This page is the workstream's durable entry point. Add dated notes below as rese
 - [Community rights and preservation responsibilities](community-rights-and-preservation.md)
 - [Federated discovery and metadata aggregation](federated-discovery.md)
 - [Documentary heritage and community archives](documentary-heritage.md)
+- [Preliminary comparative synthesis](comparative-synthesis.md)
 
 ### Progress notes
 
@@ -50,6 +51,7 @@ This page is the workstream's durable entry point. Add dated notes below as rese
 - **2026-11-26:** Added a community-rights and preservation analysis covering CARE, Local Contexts, OAIS 2025, and CoreTrustSeal 2026–2028; registered sources E-17 through E-22.
 - **2026-11-26:** Compared Europeana, DPLA, and Wikidata as federation and sourced-knowledge models; registered sources E-23 through E-25.
 - **2026-11-26:** Added documentary-heritage and community-archive analysis, including UNESCO guidance and Mukurtu; added a Mukurtu project profile and registered sources E-26 through E-29.
+- **2026-11-26:** Added a preliminary comparative synthesis. The workstream remains in progress because direct community engagement, multilingual/accessibility coverage, independent preservation evidence, and interoperability tests remain outstanding.
 
 ### Next steps
 
