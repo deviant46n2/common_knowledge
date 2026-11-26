@@ -9,9 +9,19 @@
   "@graph": [
     {
       "@id": "https://example.org/ck/record/r1",
-      "@type": "ex:KnowledgeRecord",
+      "@type": [
+        "ex:KnowledgeRecord",
+        "prov:Entity"
+      ],
       "dcterms:title": "Dissolved oxygen observation at station R-1",
-      "ex:hasStatement": { "@id": "https://example.org/ck/statement/r1" }
+      "ex:hasStatement": {
+        "@id": "https://example.org/ck/statement/r1"
+      },
+      "ex:hasAssessment": [
+        {
+          "@id": "https://example.org/ck/assessment/initial"
+        }
+      ]
     },
     {
       "@id": "https://example.org/ck/statement/r1",
@@ -19,8 +29,12 @@
       "ex:statementText": "Monitoring station R-1 recorded dissolved oxygen of 4.2 mg/L at 09:00 UTC on 1 May 2026.",
       "ex:scope": "This concerns what the station log recorded, not whether the sensor accurately measured ambient dissolved oxygen.",
       "ex:hasEvidenceRelation": [
-        { "@id": "https://example.org/ck/relation/csv" },
-        { "@id": "https://example.org/ck/relation/calibration" }
+        {
+          "@id": "https://example.org/ck/relation/csv"
+        },
+        {
+          "@id": "https://example.org/ck/relation/calibration"
+        }
       ]
     },
     {
@@ -38,7 +52,9 @@
       "@type": "oa:Annotation",
       "oa:hasTarget": {
         "@type": "oa:SpecificResource",
-        "oa:hasSource": { "@id": "https://example.org/ck/source/csv" },
+        "oa:hasSource": {
+          "@id": "https://example.org/ck/source/csv"
+        },
         "oa:hasSelector": {
           "@type": "oa:TextQuoteSelector",
           "oa:exact": "R-1,2026-05-01T09:00:00Z,dissolved_oxygen,4.2,mg/L",
@@ -52,7 +68,9 @@
       "@type": "oa:Annotation",
       "oa:hasTarget": {
         "@type": "oa:SpecificResource",
-        "oa:hasSource": { "@id": "https://example.org/ck/source/calibration" },
+        "oa:hasSource": {
+          "@id": "https://example.org/ck/source/calibration"
+        },
         "oa:hasSelector": {
           "@type": "oa:TextQuoteSelector",
           "oa:exact": "2026-04-20 | Calibration due | Not completed",
@@ -65,37 +83,113 @@
       "@id": "https://example.org/ck/relation/csv",
       "@type": "ex:EvidenceRelation",
       "ex:relationType": "supports_that_station_recorded_value",
-      "ex:targetStatement": { "@id": "https://example.org/ck/statement/r1" },
-      "ex:evidenceItem": { "@id": "https://example.org/ck/evidence/csv-row-2" }
+      "ex:targetStatement": {
+        "@id": "https://example.org/ck/statement/r1"
+      },
+      "ex:evidenceItem": {
+        "@id": "https://example.org/ck/evidence/csv-row-2"
+      }
     },
     {
       "@id": "https://example.org/ck/relation/calibration",
       "@type": "ex:EvidenceRelation",
       "ex:relationType": "qualifies_confidence_in_measurement_accuracy",
-      "ex:targetStatement": { "@id": "https://example.org/ck/statement/r1" },
-      "ex:evidenceItem": { "@id": "https://example.org/ck/evidence/calibration-entry-2" }
+      "ex:targetStatement": {
+        "@id": "https://example.org/ck/statement/r1"
+      },
+      "ex:evidenceItem": {
+        "@id": "https://example.org/ck/evidence/calibration-entry-2"
+      }
     },
     {
       "@id": "https://example.org/ck/assessment/initial",
       "@type": "ex:Assessment",
-      "ex:assessmentOf": { "@id": "https://example.org/ck/statement/r1" },
+      "ex:assessmentOf": {
+        "@id": "https://example.org/ck/statement/r1"
+      },
       "ex:conclusion": "The CSV supports that the station recorded 4.2 mg/L. The overdue calibration entry qualifies confidence in measurement accuracy. The evidence does not establish the true ambient concentration.",
       "ex:method": "Compared the cited CSV row with the calibration-log entry; no independent instrument validation or statistical analysis was performed.",
-      "prov:wasGeneratedBy": { "@id": "https://example.org/ck/activity/review-1" }
+      "prov:wasGeneratedBy": {
+        "@id": "https://example.org/ck/activity/review-1"
+      }
     },
     {
       "@id": "https://example.org/ck/activity/review-1",
       "@type": "prov:Activity",
       "prov:used": [
-        { "@id": "https://example.org/ck/evidence/csv-row-2" },
-        { "@id": "https://example.org/ck/evidence/calibration-entry-2" }
+        {
+          "@id": "https://example.org/ck/evidence/csv-row-2"
+        },
+        {
+          "@id": "https://example.org/ck/evidence/calibration-entry-2"
+        }
       ],
-      "prov:wasAssociatedWith": { "@id": "https://example.org/ck/agent/reviewer-1" }
+      "prov:wasAssociatedWith": {
+        "@id": "https://example.org/ck/agent/reviewer-1"
+      }
     },
     {
       "@id": "https://example.org/ck/agent/reviewer-1",
       "@type": "prov:Agent",
       "dcterms:description": "Fictional reviewer identity for this synthetic example."
+    },
+    {
+      "@id": "https://example.org/ck/record/r1/v2",
+      "@type": [
+        "ex:KnowledgeRecord",
+        "prov:Entity"
+      ],
+      "dcterms:title": "Dissolved oxygen observation at station R-1 — version 2",
+      "ex:hasStatement": {
+        "@id": "https://example.org/ck/statement/r1"
+      },
+      "ex:hasAssessment": [
+        {
+          "@id": "https://example.org/ck/assessment/initial"
+        },
+        {
+          "@id": "https://example.org/ck/assessment/independent-review"
+        }
+      ],
+      "prov:wasRevisionOf": {
+        "@id": "https://example.org/ck/record/r1"
+      },
+      "prov:generatedAtTime": {
+        "@value": "2026-11-26T00:00:00Z",
+        "@type": "xsd:dateTime"
+      }
+    },
+    {
+      "@id": "https://example.org/ck/assessment/independent-review",
+      "@type": "ex:Assessment",
+      "ex:assessmentOf": {
+        "@id": "https://example.org/ck/statement/r1"
+      },
+      "ex:conclusion": "The CSV row is direct evidence of the value entered in the station log. The overdue calibration entry means accuracy is unverified, but it does not by itself show that the reported value is wrong. No conclusion about ambient concentration is warranted from these two excerpts alone.",
+      "ex:method": "Independently reviewed the same two source excerpts, distinguishing evidence of the logged value from evidence about instrument calibration.",
+      "prov:wasGeneratedBy": {
+        "@id": "https://example.org/ck/activity/review-2"
+      }
+    },
+    {
+      "@id": "https://example.org/ck/activity/review-2",
+      "@type": "prov:Activity",
+      "prov:used": [
+        {
+          "@id": "https://example.org/ck/evidence/csv-row-2"
+        },
+        {
+          "@id": "https://example.org/ck/evidence/calibration-entry-2"
+        }
+      ],
+      "prov:wasAssociatedWith": {
+        "@id": "https://example.org/ck/agent/reviewer-2"
+      }
+    },
+    {
+      "@id": "https://example.org/ck/agent/reviewer-2",
+      "@type": "prov:Agent",
+      "dcterms:description": "Second fictional reviewer identity for this synthetic example."
     }
   ]
 }
