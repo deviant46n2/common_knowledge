@@ -6,10 +6,11 @@ Its purpose is to help Common Knowledge understand the existing ecosystem before
 
 ## Contents
 
+- [Research program](PROGRAM.md) — the durable plan, seven workstreams, investigation sequence, deliverables, and progress tracking.
 - [Research methodology](methodology.md) — how research is gathered, assessed, cited, and maintained.
 - [Field snapshot: November 2026](snapshots/2026-11/README.md) — the first dated baseline.
 - [Ongoing developments](ongoing/developments.md) — notable changes identified after a snapshot's research cutoff.
-- [Research templates](templates/) — consistent formats for project and organization profiles.
+- [Research templates](templates/) — consistent formats for project, organization, and workstream reports.
 
 ## Scope
 
@@ -40,6 +41,6 @@ A snapshot is not a claim that every relevant project has been found. Its covera
 
 ## How to contribute
 
-Start with the methodology, then use the relevant template. Add sources close to the claims they support. If you are unsure whether a statement is verified, label it as a question or assessment rather than presenting it as fact.
+Start with the [research program](PROGRAM.md) to find the relevant workstream, then read the methodology and use the appropriate template. Add sources close to the claims they support. If you are unsure whether a statement is verified, label it as a question or assessment rather than presenting it as fact.
 
 The library is a research resource, not an endorsement directory. Inclusion does not imply approval, partnership, or agreement with an organization's positions.
