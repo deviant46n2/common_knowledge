@@ -1195,3 +1195,23 @@ Sources:
 - [Nanodash installation instructions](https://github.com/knowledgepixels/nanodash/blob/master/INSTALL-with-Docker.md)
 
 **Limitations:** This was a repository/documentation review only. No hosted account was created, no local Nanodash instance was launched, and no user experience was tested. The local Docker route is not currently available in our execution environment because Docker is not installed.
+
+
+### Wikibase Cloud live API probe — performed
+
+A read-only test was completed against the public [Beyond Notability Wikibase Cloud instance](https://beyond-notability.wikibase.cloud/). The public entity search API, `wbgetentities`, revision-history API, and SPARQL endpoint were exercised. No records were created or edited.
+
+The test confirmed that a real instance returns:
+- entity JSON with claims and revision metadata;
+- revision IDs, parent IDs, timestamps, editor attribution, and edit summaries;
+- statement nodes in SPARQL with main values, qualifiers, and reference nodes linked through `prov:wasDerivedFrom`.
+
+**Important data-integrity finding:** A year-precision time qualifier was returned by the simple SPARQL predicate as `1931-01-01T00:00:00Z`. The full value node also carried `wikibase:timePrecision 9` (year precision) and the calendar model. If an importer ignores the full value node and treats the simple literal as an exact day, it invents precision that the source did not provide. Common Knowledge must preserve full value metadata for time and quantity values.
+
+The reference nodes in this example held source identifiers, URLs, or bibliographic metadata, not exact evidence passages. The evidence-location layer remains a separate requirement.
+
+Direct `Special:EntityData` Turtle retrieval was blocked by the instance's Anubis anti-bot challenge, so no live simple-versus-full Turtle file comparison was completed. The SPARQL test nevertheless exercised full statement/qualifier/reference nodes.
+
+See [the live Wikibase Cloud API probe report](experiments/2026-11-wikibase-cloud-api-probe.md) for exact request patterns, results, and limitations.
+
+**Updated Wikibase assessment:** We now have hands-on confirmation that the hosted entity API, SPARQL query service, and revision history work in practice. The remaining essential test is write-side: create the same synthetic record in a dedicated test instance and evaluate ordinary contributor editing, correction, and independent review. No Common Knowledge Wikibase instance has been created.
