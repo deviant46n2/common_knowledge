@@ -803,3 +803,22 @@ Each draft has four distinct named graphs (head, assertion, provenance, publicat
 **Limits:** The drafts use example.org placeholder identifiers and are unsigned. They have not been validated by the official nanopub-py or nanopub-java implementation, signed, or published to the test registry. No key/profile was created. These tests establish only a basic structural mapping, not full compliance, content validity, or publication-network behaviour.
 
 Code and tests are in [PR #3](https://github.com/deviant46n2/common_knowledge/pull/3), under experiments/record-model-spike/nanopub/.
+
+
+### Nanodash public-interface inspection
+
+A read-only browser inspection of https://nanodash.knowledgepixels.com/ found that an unauthenticated visitor can browse:
+- recent nanopublications and their detail pages;
+- public user and software-agent profiles;
+- Spaces and their resources;
+- saved queries and search;
+- public publishing templates, including popular and all-template lists;
+- community resources and events.
+
+The homepage explicitly tells visitors to log in with ORCID to see their own nanopublications and publish new ones. The publishing/template area is visible, but the actual contribution workflow is gated behind authentication. We did not sign in or create a profile, so the actual authoring form and preview experience remain untested.
+
+This is a positive sign for public inspectability and discoverability: the network's content, contributor identities, spaces, and templates are browsable without an account. It also reveals a barrier for contributors who do not already have ORCID, at least on the public hosted instance. The local Nanodash configuration has a non-ORCID-login mode, but its local profile/key workflow still needs to be tested before we know how usable that path is.
+
+Source:
+- Nanodash public instance: https://nanodash.knowledgepixels.com/
+- Nanodash repository and local deployment configuration: https://github.com/knowledgepixels/nanodash
