@@ -21,6 +21,12 @@ These sources support a cautious, task-specific view rather than a general claim
 
 ## 2. Findings grounded in the current sample
 
+### 2.0 Human–AI collaboration is task-dependent, not automatically synergistic
+
+A preregistered 2024 meta-analysis of 106 experiments and 370 effect sizes found that human–AI combinations were, on average, better than humans alone but worse than the best of humans or AI alone. Decision tasks showed average performance losses; content-creation tasks were more promising. Combinations were more successful when the human alone outperformed the AI, and less successful when the AI alone was stronger.
+
+**Assessment:** Common Knowledge should evaluate division of labor and task allocation, not assume that adding a human reviewer or AI assistant creates synergy. Measure the best standalone baseline, combined performance, time, and cost.
+
 ### 2.1 More autonomy does not automatically produce better research
 
 The PNAS reproducibility experiment found similar reproduction rates for human-only and AI-assisted teams (94% and 91%) in its specific setting, while AI-led teams achieved 37%. Human-only teams identified more major coding errors.
