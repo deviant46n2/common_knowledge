@@ -117,7 +117,17 @@ A deliberately small AI-assisted computational experiment with a defined researc
 
 The demonstration should deliberately include a failure (for example, an unsupported claim or output mismatch) and show whether the audit record helps a reviewer find it.
 
-## 4. Standards and specifications to verify
+## 4. Claim-to-evidence verification as a narrower product hypothesis
+
+A third candidate deserves separate testing: a tool that links numerical claims in a report or manuscript to the specific result artifact, metric, experiment, and run that supports them.
+
+This is narrower than general AI workflow auditability and may be easier to evaluate. A 2026 MIT-licensed checker already demonstrates numerical claim-to-evidence matching on the Into the Unknown benchmark, so a new implementation must not simply recreate it. The possible gap is an interoperable interface that consumes standard research packages and Workflow Run RO-Crates, with a human-reviewed claim/evidence ledger.
+
+A minimum test should read a Markdown or LaTeX report and a small set of structured result tables; distinguish matching a number somewhere from matching the correct metric, row, experiment, and run; support explicit units, precision, and rounding; return conservative statuses and cite exact artifact locations; abstain when evidence is ambiguous or inaccessible; and export a portable record that a second person can inspect.
+
+The first supported claim type should be numerical statements tied to tabular outputs. Do not claim to verify causal interpretation, qualitative conclusions, theory, or general scientific validity. This candidate should be tested against the published agent-integrity-analysis checker and human-in-the-loop verification tools.
+
+## 5. Standards and specifications to verify
 
 - **RO-Crate:** research object packaging and profiles.
 - **W3C PROV:** provenance model for entities, activities, and agents.
