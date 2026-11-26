@@ -83,3 +83,14 @@ def test_independent_assessments_have_distinct_review_agents():
         next(g.objects(URIRef("https://example.org/ck/activity/review-2"), PROV.wasAssociatedWith)),
     }
     assert len(agents) == 2
+
+
+def test_static_reader_exposes_both_assessments_and_history():
+    from render_record import render
+
+    page = render()
+    assert "Independent assessment 1" in page
+    assert "Independent assessment 2" in page
+    assert "Revises version 1" in page
+    assert "Supports that station recorded value" in page
+    assert "Qualifies confidence in measurement accuracy" in page
