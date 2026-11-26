@@ -1215,3 +1215,23 @@ Direct `Special:EntityData` Turtle retrieval was blocked by the instance's Anubi
 See [the live Wikibase Cloud API probe report](experiments/2026-11-wikibase-cloud-api-probe.md) for exact request patterns, results, and limitations.
 
 **Updated Wikibase assessment:** We now have hands-on confirmation that the hosted entity API, SPARQL query service, and revision history work in practice. The remaining essential test is write-side: create the same synthetic record in a dedicated test instance and evaluate ordinary contributor editing, correction, and independent review. No Common Knowledge Wikibase instance has been created.
+
+
+### AI-agent workflow example: nanopub-skill
+
+The Nanopublication ecosystem now has a substantial open Agent Skill, `knowledgepixels/nanopub-skill`, designed to work across agent hosts (including OpenAI Codex, Claude Code, Gemini CLI, Cursor, and GitHub Copilot). It guides an agent through creating, inspecting, querying, signing, publishing, superseding, and retracting nanopublications, and includes local mirrors of assertion templates, query templates, and resource views.
+
+Its safety boundary is notable: the skill instructs the agent to create, validate, and sign a candidate, then stop and wait for explicit user instruction before publishing; it asks whether the target is the test network or live network. It also supports a dedicated bot identity with its own RSA key pair and an introduction nanopublication linked to a human owner via ORCID.
+
+Operational requirements include Java 23, the nanopub-java CLI, an ORCID profile, RSA key files, curl, and Python/RDFLib for template checks. Key material is long-lived: losing the key prevents normal supersession/retraction for publications signed with it. The online Nanodash model instead holds a signing key server-side.
+
+**Relevance to Common Knowledge:** This is a concrete example of the human/AI collaboration pattern we want to examine: an AI can prepare and validate structured contributions, but publication is a distinct, consent-gated action. Agent identity and human accountability can be represented separately. It is a reference implementation/pattern, not a reason to adopt nanopublications as our storage architecture or to install the skill unreviewed.
+
+**License note:** The GitHub repository did not expose a declared license in the repository metadata reviewed. Do not copy its code, templates, or assets into Common Knowledge unless the licensing status is clarified.
+
+Sources:
+- [nanopub-skill README](https://github.com/knowledgepixels/nanopub-skill)
+- [nanopub-skill source](https://github.com/knowledgepixels/nanopub-skill/blob/main/SKILL.md)
+- [Agent Skills specification](https://agentskills.io/specification)
+
+No agent identity was created, no key generated, and no publication was signed or sent by Common Knowledge.
