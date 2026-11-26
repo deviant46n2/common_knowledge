@@ -12,8 +12,8 @@ From the repository root:
 PYTHONPATH=src python -m ck_records --help
 PYTHONPATH=src python -m ck_records validate examples/records/r1/record.json
 PYTHONPATH=src python -m ck_records inspect examples/records/r1/record.json
-PYTHONPATH=src python -m ck_records export examples/records/r1/record.json /tmp/r1-export.json
-PYTHONPATH=src python -m ck_records import /tmp/r1-export.json /tmp/r1-import.json
+PYTHONPATH=src python -m ck_records export examples/records/r1/record.json /tmp/r1-package
+PYTHONPATH=src python -m ck_records import /tmp/r1-package/record.json /tmp/r1-imported-package
 ```
 
 The example is synthetic. Local source files are included so validation can check exact quotations and their prefix/suffix context. Source paths are restricted to the record directory.
