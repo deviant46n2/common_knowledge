@@ -82,12 +82,15 @@ We want to learn from existing work and cooperate wherever possible, rather than
 
 ## How we'll begin
 
-We are starting with the foundations:
+We will earn participation by demonstrating practical value:
 
-1. **Understand the landscape.** Learn from open science, citizen science, research infrastructure, digital preservation, distributed systems, and existing collaborative communities.
-2. **Listen and build relationships.** Speak with researchers, technologists, librarians, open-source communities, and others who could help shape this work.
-3. **Test ideas through real work.** Develop a small, useful demonstration around a concrete research or infrastructure problem, and publish what we learn.
-4. **Grow responsibly.** Let evidence and community experience guide the technical architecture, governance, and organizational structure.
+1. **Find a real problem.** Research existing tools and workflows, and learn where people still struggle.
+2. **Build something useful.** Develop a narrow product that solves a concrete problem on its own, reusing existing infrastructure wherever possible.
+3. **Test it independently.** Make it easy for people outside the project to try, inspect, and evaluate the result.
+4. **Invite people to improve it.** Attract contributors around working software and clearly defined opportunities.
+5. **Grow responsibly.** Let evidence and community experience guide the wider technical architecture, governance, and organizational structure.
+
+The current product-discovery work is documented in [MVP Discovery](research/MVP_DISCOVERY.md), and the [roadmap](ROADMAP.md) now reflects this MVP-first sequence.
 
 We do not need to build everything from scratch. Interoperability, collaboration, and good stewardship matter more than owning every component.
 
@@ -95,6 +98,8 @@ We do not need to build everything from scratch. Interoperability, collaboration
 
 We are building a dated, source-based research library to understand the existing ecosystem before making major technical or organizational decisions.
 
+- [MVP discovery brief](research/MVP_DISCOVERY.md)
+- [Roadmap](ROADMAP.md)
 - [Research program](research/PROGRAM.md)
 - [November 2026 field snapshot](research/snapshots/2026-11/README.md)
 - [Research methodology](research/methodology.md)
