@@ -1,6 +1,6 @@
 # Product Development
 
-**Status:** Working prototype direction established; product requirements remain provisional.  
+**Status:** Working prototype direction established; initial static-inspection slice implemented.  
 **Started:** 26 November 2026
 
 This directory is the working home for Common Knowledge's first product. It is intentionally separate from the wider institutional roadmap: the first product should demonstrate useful capability without pretending to be the whole commons.
@@ -18,15 +18,17 @@ This is the direction for the first prototype, not an irrevocable product commit
 - [Product direction and initial user promise](PRODUCT_DIRECTION.md)
 - [Experience principles and visual identity](EXPERIENCE_AND_VISUAL_IDENTITY.md)
 - [Prototype plan and acceptance gates](PROTOTYPE_PLAN.md)
+- [Prototype status and run instructions](PROTOTYPE_STATUS.md)
 
 ## Current status
 
 - [x] Select a working direction for the first prototype.
 - [x] Define a narrow initial user and task hypothesis.
 - [x] Establish experience and visual-design principles.
-- [ ] Create a synthetic research project fixture with known conditions.
-- [ ] Test relevant existing tools against that fixture.
-- [ ] Implement the first complete, local inspection-to-report workflow.
+- [x] Create a synthetic research project fixture with known conditions.
+- [x] Implement an initial static-inspection slice and HTML/JSON report.
+- [ ] Execute the automated test suite in a clean environment.
+- [ ] Test relevant existing tools against the same fixture.
 - [ ] Test with people who did not build it.
 - [ ] Decide whether to continue, narrow, integrate upstream, or stop.
 
