@@ -101,3 +101,14 @@ This is a significant difference from Common Knowledge's aspiration for an openl
 - Compare the ontology's claim/evidence/assessment model with the Consilience templates and MIRA mapping.
 - Ask the maintainer about public data export, source passage anchoring, non-science domains, and interoperability.
 - Do not reuse the ontology as Common Knowledge's schema without first evaluating whether its science-specific assumptions fit our scope.
+
+
+## Second live question test
+
+A separate run selected the first available starter question from the public dropdown:
+
+> What does the public evidence show about NASICON-based sensors with carbonate electrodes exhibit Nernstian EMF response to CO2 across 200–100,000 ppm at 350–500°C, and what remains uncertain?
+
+This also failed. The app displayed the same "Could not complete this question" / "No answer has been generated from unverified sources" message three times. No citations, excerpts, support, counterevidence, uncertainty, or gaps were returned.
+
+**Updated interpretation:** Two distinct public queries failed, including one supplied by the application's own starter-question list. This suggests the public answer path was unavailable or malfunctioning during the test window. It does not establish that public mode is inherently unsupported, and it does not tell us whether the underlying graph contains relevant evidence. The system correctly avoided fabricating an answer, but the generic error did not distinguish service failure from an evidence gap.
