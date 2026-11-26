@@ -1,0 +1,7 @@
+sample_id,group,height_mm
+C01,control,10
+C02,control,11
+C03,control,9
+T01,treatment,13
+T02,treatment,14
+T03,treatment,12
