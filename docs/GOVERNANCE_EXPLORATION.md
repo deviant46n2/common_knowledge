@@ -265,3 +265,22 @@ Important design questions remain open. How should the system handle claims that
 
 **Status:** The need to allow evidence-backed competing ideas to coexist is a founder-stated direction. The representation, assessment, moderation, and prominence rules are unresolved design questions. This is not a claim that every disagreement is equally valid or permanently undecidable.
 
+### Historical preservation with practical limits
+
+The founder supports preserving the history of how knowledge and assessments change, while recognizing that preserving literally everything forever may be impractical or inappropriate.
+
+The emerging direction is to **preserve as much meaningful, legitimate history as reasonably possible without treating permanent retention as an absolute rule**.
+
+In practice, this could mean:
+
+- Preserve important revisions, assessment changes, corrections, retractions, and the reasons behind them.
+- Retain links to earlier versions and the evidence available at the time, where rights and technical conditions permit.
+- Avoid silently rewriting the record when an earlier conclusion has changed.
+- Establish transparent retention and removal policies rather than promising that every submitted byte will remain forever.
+- Recognize legitimate limits, including privacy, consent, safety, security, copyright and other legal obligations, storage and maintenance costs, and low-value or abusive material.
+- When material must be removed, consider whether a minimal, non-sensitive record that a removal or correction occurred—and why—can safely and lawfully remain. Do not preserve metadata if doing so would itself violate a person's rights or create risk.
+
+This is a commitment to historical continuity and accountable change, not an unconditional commitment to immutable or unlimited storage. The technical and policy mechanisms remain open.
+
+**Status:** The preference to preserve meaningful knowledge history as far as reasonably possible is a founder-stated direction. Exact retention periods, deletion procedures, archival tiers, and legal/privacy safeguards require further design and expertise.
+
