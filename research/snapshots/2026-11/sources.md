@@ -1574,7 +1574,7 @@ No sources entered yet. Add new sections and stable IDs as workstreams begin.
 - **Limitations:** US overview; cooperative law and tax treatment vary by state and country.
 
 
-### F-13 — Wikimedia Foundation and Endowment FY 2025–2026 Financial Audit Highlights
+### F-11 — Wikimedia Foundation and Endowment FY 2025–2026 Financial Audit Highlights
 - **Publisher:** Wikimedia Foundation / Wikimedia Endowment
 - **Source type:** Primary financial reporting summary and audited financial statement references
 - **URL:** https://diff.wikimedia.org/2026/11/05/highlights-from-the-wikimedia-foundation-and-wikimedia-endowment-audit-reports-for-fiscal-year-2025-2026/
@@ -1583,7 +1583,7 @@ No sources entered yet. Add new sections and stable IDs as workstreams begin.
 - **Claims supported:** FY 2025–2026 revenue, expenses, donation and investment income, grantmaking, endowment net assets, and cost-sharing relationships.
 - **Limitations:** Organization-authored summary of audited reports; detailed analysis should consult the actual audit reports and Form 990s.
 
-### F-14 — Open Source Collective Fiscal Hosting Fees
+### F-12 — Open Source Collective Fiscal Hosting Fees
 - **Publisher:** Open Source Collective / Open Collective
 - **Source type:** Primary fiscal-host application and fee information
 - **URL:** https://opencollective.com/opensource/apply/intro
@@ -1592,7 +1592,7 @@ No sources entered yet. Add new sections and stable IDs as workstreams begin.
 - **Claims supported:** Published 10% fee on funds raised and fiscal-host service scope at the time accessed.
 - **Limitations:** Application terms may change and may differ by arrangement; actual contract governs.
 
-### F-15 — National Council of Nonprofits: Executive Compensation
+### F-13 — National Council of Nonprofits: Executive Compensation
 - **Publisher:** National Council of Nonprofits
 - **Source type:** Nonprofit governance guidance
 - **URL:** https://councilofnonprofits.org/running-nonprofit/governance-leadership/executive-compensation
