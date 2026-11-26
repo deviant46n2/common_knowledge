@@ -23,7 +23,7 @@ python -m pip install rdflib pytest
 python -m pytest -q
 ```
 
-Five tests pass. An earlier test run exposed a missing JSON-LD mapping for `oa:hasTarget`; the compact-IRI version in this experiment avoids that aliasing mistake. This demonstrates why semantic round-trip tests matter in addition to JSON syntax validation.
+Seven tests pass. The fixture now includes two independent assessments of the same statement and a version 2 record that retains both assessments while linking back to version 1 with PROV-O wasRevisionOf. An earlier test run exposed a missing JSON-LD mapping for `oa:hasTarget`; the compact-IRI version in this experiment avoids that aliasing mistake. This demonstrates why semantic round-trip tests matter in addition to JSON syntax validation.
 
 ## Limitations
 
@@ -34,4 +34,4 @@ Five tests pass. An earlier test run exposed a missing JSON-LD mapping for `oa:h
 - Selectors are checked against exact fixture text. Real sources need version capture, normalization, and recovery behaviour when content changes.
 - No real or external content is included or published.
 
-Next: add a second independent assessment and a new record version, then test whether readers can inspect history without one assessment erasing another.
+The next step is to compare this representation with a nanopublication on its isolated test network and determine whether an ordinary contributor can create and inspect the same structures through a usable interface.
