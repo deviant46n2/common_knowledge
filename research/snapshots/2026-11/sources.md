@@ -1596,3 +1596,40 @@ No sources entered yet. Add new sections and stable IDs as workstreams begin.
 - **Accessed / verified:** 2026-11-26
 - **Claims supported:** Researcher attitudes toward open access, open data, open peer review, FAIR awareness, recognition for data sharing, and regional/disciplinary differences.
 - **Limitations:** Publisher-sponsored survey; sampling and question design should be assessed from the full report; not a universal measure of research practice.
+
+
+### A-65 — OSF Changes
+- **Publisher:** Center for Open Science
+- **Source type:** Primary transition and product-direction page
+- **URL:** https://www.cos.io/osf-changes
+- **Publication / update date:** Current page accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Transition timeline, public/private project treatment, rationale, current OSF role, and shift toward an integrated model with complementary services.
+- **Limitations:** Operator statement; future plans and persistence commitments should be monitored as the transition proceeds.
+
+### A-66 — OSF Projects Transition
+- **Publisher:** Center for Open Science, OSF Support
+- **Source type:** Primary operational transition guide
+- **URL:** https://help.osf.io/article/727-osf-projects-transition
+- **Publication / update date:** Current help guide accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** No new projects/components from 2026-11-16; read-only transition on 2027-02-19; continued public project access; private project access for existing authorized users; possible future removal of private projects with advance notice.
+- **Limitations:** Operator guidance; future private storage plans may change and should be rechecked.
+
+### A-67 — OSF Projects Transition FAQs
+- **Publisher:** Center for Open Science, OSF Support
+- **Source type:** Primary FAQ and sustainability explanation
+- **URL:** https://help.osf.io/article/725-faqs
+- **Publication / update date:** Current FAQ accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** COS's estimate that maintaining current OSF Projects scope would require approximately US$4–5 million annually; explanation of funding and operational cost pressures; current treatment of public/private projects and continuing Registrations/Preprints.
+- **Limitations:** Operator-reported financial rationale; not an independent audit or full financial statement.
+
+### A-68 — OSF Projects API Impact
+- **Publisher:** Center for Open Science, OSF Support
+- **Source type:** Primary API migration guide
+- **URL:** https://help.osf.io/article/744-osf-projects-api-impact
+- **Publication / update date:** Current API guide accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Retirement dates for project creation and write/update endpoints; unaffected Registries and Preprints endpoints; integration and migration implications.
+- **Limitations:** API documentation may change during the transition; integrations should be tested against live endpoints and current documentation.
