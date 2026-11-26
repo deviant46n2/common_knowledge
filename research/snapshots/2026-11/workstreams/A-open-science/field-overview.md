@@ -90,6 +90,37 @@ bioRxiv and medRxiv distribute manuscripts before peer review. Both describe scr
 
 **Assessment:** Open dissemination does not mean every item should be presented as equally established. Research records need visible status, provenance, version history, and links to subsequent review, correction, or publication. Sensitive domains may require additional safeguards and careful communication.
 
+
+### 11. Workflow registries make computational methods discoverable research objects
+
+WorkflowHub describes itself as a registry for sharing and publishing workflows across disciplines, using standards including CWL, RO-Crate, Bioschemas, and the GA4GH TRS API.
+
+**Assessment:** This is a useful example of modular infrastructure: a registry can improve discovery and reuse without having to become the execution engine for every workflow. But a registry record alone does not guarantee that a workflow is runnable, maintained, secure, or scientifically valid.
+
+### 12. Protocol infrastructure is distinct from project management and data repositories
+
+protocols.io supports structured, versioned, collaborative research methods. Its current migration messaging is also relevant to the OSF transition: it is promoting migration of methods and active project materials, with OSF Projects scheduled to become read-only on 19 February 2027.
+
+**Assessment:** The transition illustrates why portability and exit paths matter. A migration offer from one vendor should not be mistaken for a neutral sector-wide recommendation; researchers need clear exports, alternative destinations, and preservation plans.
+
+### 13. Participant-controlled data platforms raise a different model of openness
+
+Open Humans enables people to explore personal data and selectively share it with research activities. Its community guidelines explicitly discuss identifiability, data minimization, and participant exit.
+
+**Assessment:** Research participation should not reduce people to data providers. Personal-data research requires granular consent, meaningful participant agency, careful security, and clear downstream-use explanations. “Open by default” is not an appropriate rule for identifiable or sensitive personal data.
+
+### 14. Community-led science can begin with affected communities' own questions
+
+Public Lab's history and external community-science descriptions emphasize low-cost environmental tools, peer learning, and community-led investigation. Its public website currently identifies itself as a static read-only archive, so present operational status remains an open question.
+
+**Assessment:** The model broadens the meaning of research collaboration beyond academic institutions and volunteer task platforms. It also demonstrates that community capacity, local knowledge, education, and practical tools are part of research infrastructure.
+
+### 15. Community-generated observations can become reusable scientific datasets
+
+iNaturalist combines public biodiversity observations with community identification and an explicit Research Grade classification. Eligible observations with qualifying licenses are exported to GBIF.
+
+**Assessment:** This is a strong domain-specific example of public contribution, community review, quality labels, and downstream reuse. Research Grade is not a universal guarantee of correctness; sampling bias, observer expertise, licensing, and sensitive location data remain important.
+
 ## Questions for the next research pass
 
 1. Which parts of the research lifecycle are underserved across disciplines, and which are already well served by specialist infrastructure?
@@ -108,15 +139,16 @@ bioRxiv and medRxiv distribute manuscripts before peer review. Both describe scr
 
 ## Coverage and limitations
 
-This is a first-pass orientation based on selected primary platform documentation, a scholarly infrastructure landscape review, peer-reviewed citizen-science research, and a recent open-science scoping review. It now includes initial profiles of OSF, Zooniverse, SciStarter, Zenodo, Dryad, OpenAlex, PubPub, eLife, bioRxiv, and medRxiv. It is not a comprehensive census, systematic review, or independent audit of the platforms mentioned.
+This is a first-pass orientation based on selected primary platform documentation, a scholarly infrastructure landscape review, peer-reviewed citizen-science research, and a recent open-science scoping review. It now includes initial profiles of OSF, Zooniverse, SciStarter, Zenodo, Dryad, OpenAlex, PubPub, eLife, bioRxiv, medRxiv, WorkflowHub, protocols.io, Open Humans, Public Lab, and iNaturalist. It is not a comprehensive census, systematic review, or independent audit of the platforms mentioned.
 
 The current sample is English-language and weighted toward visible online infrastructure. It does not yet adequately cover disciplinary repositories, regional and multilingual networks, research in the Global South, community-controlled knowledge systems, or the full range of institutional and independent research practices.
 
 ## Sources
 
-See the [November 2026 source register](../../sources.md), especially entries A-01 through A-30.
+See the [November 2026 source register](../../sources.md), especially entries A-01 through A-47.
 
 ## Change log
 
 - **2026-11-26:** Added initial field map and preliminary observations from selected sources. Further project mapping, source verification, and stakeholder research remain necessary.
 - **2026-11-26:** Expanded the map to cover repositories, scholarly discovery, community publishing, reviewed preprints, and discipline-specific preprint servers. Added profiles for Zenodo, Dryad, OpenAlex, PubPub, eLife, bioRxiv, and medRxiv, and extended the source register through A-30.
+- **2026-11-26:** Added workflow registry, protocol management, participant-controlled personal-data research, community-led environmental science, and biodiversity observation cases. Added profiles for WorkflowHub, protocols.io, Open Humans, Public Lab, and iNaturalist; extended the source register through A-47.
