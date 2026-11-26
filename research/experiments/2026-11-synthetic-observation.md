@@ -68,3 +68,20 @@ Two in-memory variants were generated from the fixture:
 - **Measurement value edited from 4.2 to 4.3:** the primary key remained the same but the file SHA-256 changed to `89ef195feb45520c7e9d8a85be722cb4737ce8f63d8f301d72b3997f94a78808`.
 
 This confirms the intended distinction: the primary key tracks the logical row across reordering, while the content digest detects changes to the exact file representation. A changed dataset should receive a new version identity; the digest alone should not be used to silently treat a changed file as the same source version.
+
+
+## CSVW implementation candidate
+
+A current Python implementation is available in the `cldf/csvw` project. As of this research pass, PyPI reports version **4.2.0**, released 6 November 2026, under Apache-2.0, requiring Python 3.10 or later. It provides `csvwvalidate`, `csvw2json`, and `csvwdescribe` command-line tools.
+
+This is a practical candidate for validating the fixture, but its own README is explicit that it does not implement the full CSVW specification. It reports 269/270 JSON tests, 280/282 validation tests, and 10/18 non-normative tests passing. Its documented limitations should be treated as real; a pass from this implementation is useful validation, not proof of full W3C conformance.
+
+The older `csvwlib` project is explicitly unmaintained and should not be the default choice.
+
+Sources:
+- [cldf/csvw README](https://github.com/cldf/csvw)
+- [cldf/csvw changelog](https://github.com/cldf/csvw/blob/master/CHANGES)
+- [csvw 4.2.0 on PyPI](https://pypi.org/project/csvw/4.2.0/)
+- [CSVW tools overview](https://csvw.org/tools.html)
+
+**Execution status:** The `csvwvalidate` CLI was not run in this environment because the package is not installed and package installation is not available in the current runtime. The next local validation should pin `csvw==4.2.0` in a disposable environment and run `csvwvalidate` against the metadata fixture.
