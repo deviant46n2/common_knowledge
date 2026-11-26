@@ -1,181 +1,73 @@
 # Roadmap
 
-This roadmap describes how Common Knowledge will move from its founding idea to a useful, independently testable product and, only then, toward a wider commons. It is a sequence of evidence and working outcomes, not a fixed schedule or a promise to build every capability listed here.
+This roadmap is a practical sequence, not a promise to build every part of the long-term vision. The immediate goal is a demonstrable piece of software that makes the Common Knowledge idea tangible.
 
-The near-term priority has changed: **Common Knowledge should demonstrate practical value before asking people to commit substantial time to the project.** We will continue researching, but research should now be focused on selecting and building a useful MVP rather than completing an exhaustive survey of the field.
+## Current direction
 
-The product direction and active build work are now recorded in [Product Development](product/README.md). The current working prototype direction is a local-first research project preflight and handoff tool; its scope and design remain testable hypotheses. The supporting evidence base remains in [MVP Discovery](research/MVP_DISCOVERY.md), the [seven-workstream research program](research/PROGRAM.md), and the [November 2026 field snapshot](research/snapshots/2026-11/README.md).
+Build an **inspectable, evidence-linked knowledge system**, beginning with one small, complete, useful slice.
 
-## How to read this roadmap
+The first slice should let someone create or inspect a structured knowledge record and understand:
+- exactly what is being stated, including scope and context;
+- which sources or observations support, challenge, or qualify it;
+- who or what contributed the record and how;
+- what is known, uncertain, disputed, or not yet checked;
+- how the record and its evidence have changed over time;
+- how the information can be exported and independently inspected.
 
-- **Useful product before recruitment:** invite people to try and improve something real, not merely join an ambitious idea.
-- **Evidence before commitment:** product candidates are hypotheses until existing tools and real user workflows have been examined.
-- **Build only what is missing:** reuse mature projects, standards, and infrastructure wherever they serve the need.
-- **Standalone value:** the first product should be useful without a Common Knowledge network or community already existing.
-- **Trust and portability:** make outputs inspectable and exportable; do not create unnecessary lock-in.
-- **People before scale:** learn from users and maintainers before expanding infrastructure.
-- **Revisit openly:** update the roadmap when evidence, collaborators, or practical constraints warrant it.
+This is a product hypothesis, not a settled data model or architecture. Research must determine what existing systems already provide and where a new contribution would be justified.
 
-## Phase 1 — Validate the working product direction and establish the first demonstrator
+## Near-term sequence
 
-**Current priority**
+### 1. Focused research — current priority
 
-Test the working research-project preflight and handoff direction against real tools and a ground-truth synthetic project. Establish whether there is a meaningful user problem and a defensible gap before committing to a full MVP.
+Investigate the smallest set of standards, tools, and real workflows needed to make a defensible first product decision.
 
-Work includes:
+- Compare existing knowledge bases and structured statement systems.
+- Examine how they represent sources, evidence, provenance, disagreement, versions, and corrections.
+- Identify relevant open standards and practical implementation libraries.
+- Look for real user problems that are not already adequately served.
+- Talk to people who curate, verify, publish, or rely on knowledge records as soon as there is a concrete workflow to discuss.
 
-- Compare real workflows and capabilities of existing research tools, not just their feature lists.
-- Prioritize the parts of Workstreams A, C, and E that inform interoperability, reproducibility, and preservation for candidate products.
-- Investigate B or D only where distributed infrastructure or AI materially affects the chosen problem.
-- Speak with independent researchers, research software engineers, students, librarians, data stewards, and maintainers.
-- Seek concrete examples, workarounds, failures, and criticisms; do not treat enthusiasm for the mission as evidence of product demand.
-- Build a synthetic research fixture with deliberate, documented conditions.
-- Compare relevant existing tools against the same fixture in a safe environment.
-- Define a target user, job, scope, non-goals, success measures, risks, and existing components to reuse.
-- Implement a narrow, static-inspection demonstrator only after the baseline tests identify a useful gap.
+**Output:** a short comparison, an initial record-model proposal, and a clearly stated gap—or a recommendation to build on an existing system.
 
-**Outputs**
+### 2. Build one vertical slice
 
-- A documented comparison of relevant existing tools and the same synthetic fixture.
-- A working, evidence-linked prototype report for a tightly scoped example.
-- Initial external workflow feedback when a credible demonstration is ready.
-- A product brief and a documented decision to continue, narrow, integrate upstream, or stop.
+Implement the smallest end-to-end workflow that tests the chosen gap. A possible shape is one bounded collection of knowledge records with a human-readable view, structured evidence links, visible history, and portable machine-readable export.
 
-**Move forward when:** one bounded problem is sufficiently validated, the proposed solution offers a meaningful gap over existing tools, and a small team can build and test it.
+Do not build a universal knowledge graph, global search engine, social network, AI agent platform, distributed database, or governance system as a prerequisite.
 
-## Phase 2 — Build a useful vertical slice
+**Output:** a working demonstrator with example records, tests, documentation, and explicit limitations.
 
-Build the smallest complete version of the selected product that delivers a useful result from beginning to end.
+### 3. Test with people outside the project
 
-Work includes:
+Ask people to use the demonstrator without coaching. Observe whether they can understand a record, trace its evidence, recognize uncertainty, identify changes, and export or reuse the information.
 
-- Prefer local-first operation and established, interoperable formats where appropriate.
-- Reuse existing open-source libraries, services, and standards rather than recreating them.
-- Keep the first workflow narrow and understandable.
-- Include installation instructions, sample material, automated tests, a working demonstration, and clear limitations.
-- Protect sensitive data and respect rights, consent, and community control.
-- Avoid building accounts, hosting, distributed compute, social features, or a universal platform unless the validated use case requires them.
+Compare it with their current tools and workflows. Record confusion, missing features, and negative feedback. Mission enthusiasm is not evidence of product usefulness.
 
-**Outputs**
+**Output:** an independent evaluation and a decision to continue, narrow, integrate upstream, or stop.
 
-- A working MVP that an external person can install or use.
-- A reproducible demonstration using representative examples.
-- Tests, documentation, and an honest account of limitations and failure modes.
-- A public issue tracker with specific, actionable improvement opportunities.
+### 4. Invite contributors around something real
 
-**Move forward when:** the core workflow works reliably enough for external evaluation and the product delivers a useful result without requiring the future Common Knowledge ecosystem.
+Once the software demonstrates practical value, invite domain experts, researchers, developers, librarians, archivists, and other interested people to inspect and improve it.
 
-## Phase 3 — Validate with independent users
+Keep contribution rights and expectations clear. Develop community processes with the people who arrive rather than designing a detailed governance constitution in advance.
 
-A successful demonstration is not proof of a useful product. People outside the founding effort must be able to evaluate it.
+### 5. Grow the commons in response to demonstrated needs
 
-Work includes:
+Only as real use requires it, develop broader capabilities for federation, preservation, multilingual access, AI collaboration, community stewardship, and institutional continuity.
 
-- Observe first-time users installing and completing the core task.
-- Measure time to first useful result, failure rates, setup burden, and output accuracy.
-- Ask whether the result is genuinely useful, trustworthy, and worth using again.
-- Compare against the user's existing workflow and tools.
-- Test export, portability, and independent inspection.
-- Record negative results and revise or abandon the product hypothesis if evidence warrants it.
+The long-term system should not depend on one company, model, database, institution, or founder. That is a design goal to test incrementally, not an excuse to overbuild the first version.
 
-**Outputs**
+## Working rules
 
-- An independent usability and technical evaluation.
-- A prioritized list of improvements and unresolved risks.
-- A revised product scope based on evidence.
-- A clear public demonstration and case study, with participant permission where needed.
+- Build on existing standards and infrastructure wherever practical.
+- Distinguish evidence from interpretation and source claims.
+- Never equate a confidence label or community vote with truth.
+- Preserve disagreement and correction history.
+- Treat privacy, consent, safety, rights, and community control as design constraints.
+- Prefer reversible experiments and small working demonstrations.
+- Keep documentation proportional to what people need to build, use, review, or contribute.
 
-**Move forward when:** people outside Common Knowledge can use the product, understand its limits, and identify concrete value over their previous workflow.
+## Not current priorities
 
-## Phase 4 — Attract contributors around demonstrated value
-
-Once there is something useful to inspect and try, invite people to help improve it.
-
-Work includes:
-
-- Publish contributor guidance and specific starter tasks.
-- Invite independent technical and domain review.
-- Welcome bug reports, integrations, documentation, accessibility work, testing, and security review.
-- Make contribution expectations, attribution, licensing, and decision processes clear.
-- Seek maintainers and community-facing collaborators so the founder does not become a permanent bottleneck or public representative.
-- Continue user discovery as the product evolves.
-
-**Outputs**
-
-- A small, active group of users and contributors.
-- A contribution process with clear rights and responsibilities.
-- Independent review and a visible record of product changes.
-- A realistic maintenance and support plan.
-
-**Move forward when:** the product has demonstrated repeat use and a contributor group can improve and maintain it without relying entirely on the founder.
-
-## Phase 5 — Establish durable stewardship and expand the commons
-
-Develop the broader organizational and technical structures in proportion to demonstrated needs.
-
-Work includes:
-
-- Define transparent decision-making and a path for resolving disagreements.
-- Clarify contributor attribution, rights, licensing, and responsibilities.
-- Establish research-integrity, review, correction, and appeals processes appropriate to the work.
-- Develop data stewardship practices that respect privacy, consent, security, and community rights.
-- Make funding, conflicts of interest, compensation, and institutional relationships transparent.
-- Design governance to resist capture by any founder, donor, company, government, or political faction.
-- Plan for continuity, independent oversight, and succession beyond the founding team.
-- Connect additional projects, repositories, tools, datasets, and communities where interoperability solves real problems.
-- Explore federated or distributed infrastructure only where it improves resilience, access, or participant control.
-
-These practices should be developed with qualified contributors and, where necessary, professional legal and domain-specific advice. No particular legal form or technical architecture is predetermined.
-
-**Outputs**
-
-- Draft governance and participation policies shaped with contributors.
-- Clear licensing, data-handling, funding, and conflict-of-interest practices.
-- A continuity and accountability plan.
-- A tested path for additional projects and interoperable services.
-
-**Move forward when:** the commons can support multiple useful projects with credible accountability, sustainable maintenance, and distributed stewardship.
-
-## Candidate first product directions
-
-Three connected hypotheses informed the initial research. We have now chosen the first as the **working direction for prototype development**: a local-first research preflight and handoff tool that helps people prepare computational projects for inspection, reuse, and preservation. This is a reversible prototype direction, not yet a validated product-market decision. Research-specific AI auditability and claim-to-evidence workflows remain possible future capabilities or integration points, not current scope. Existing projects already cover substantial parts of this space, including Renku, Galaxy, Code Ocean, Whole Tale, RO-Crate tooling, Paper2Agent, ReCRATE, and a benchmark-specific numerical claim checker. Common Knowledge should investigate integration and contribution opportunities before considering a competing implementation.
-
-The [Product Development workspace](product/README.md) contains the current product direction, experience principles, and prototype plan. The [MVP Discovery brief](research/MVP_DISCOVERY.md), [MVP research index](research/mvp/README.md), and [preliminary opportunity assessment](research/mvp/opportunity-assessment.md) retain the supporting comparison and evidence.
-
-## What is deliberately not a first priority
-
-Common Knowledge is not currently committing to:
-
-- Building a universal research platform from scratch.
-- Creating a new distributed-computing network before a real workload requires one.
-- Replacing universities, journals, libraries, repositories, or existing open-science projects.
-- Deploying autonomous AI researchers without clear limits, evaluation, and accountability.
-- Building a social network or membership system before there is a useful product.
-- Incorporating a particular legal entity before the mission, jurisdiction, and governance needs are understood.
-- Scaling membership, infrastructure, fundraising, or public attention as ends in themselves.
-
-## Measures of progress
-
-Progress should be judged by useful outcomes rather than attention or repository activity. Relevant measures include:
-
-- A real user problem documented with concrete examples.
-- A defensible gap compared with existing tools.
-- Time for a new user to reach a first useful result.
-- Successful completion of the core workflow.
-- Accuracy and actionability of product outputs.
-- Independent use, inspection, export, and verification.
-- Repeat use and user-reported value.
-- Maintenance burden, security, privacy, and accessibility.
-- Contributions accurately attributed and fairly governed.
-- Funding and decision-making remaining transparent and resistant to capture.
-- The work remaining useful without depending on one founder or institution.
-
-## Long-term direction
-
-The long-term ambition remains a durable, globally accessible commons through which people can contribute to, examine, preserve, and build upon humanity's shared knowledge.
-
-The first product is not the whole commons. It is the first practical proof that Common Knowledge can make something genuinely useful, trustworthy, and open to improvement.
-
----
-
-This roadmap is a living document. Changes should be explained openly, especially when they alter the project's priorities, commitments, or relationship with its founding principles.
+A public marketing website, formal institutional governance, a universal ontology, a global data-ingestion pipeline, distributed compute, and a large-scale AI research system are not prerequisites for the first demonstrator.

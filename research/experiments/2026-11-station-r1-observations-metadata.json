@@ -1,0 +1,53 @@
+{
+  "@context": [
+    "http://www.w3.org/ns/csvw",
+    {
+      "@language": "en"
+    },
+    {
+      "pav": "http://purl.org/pav/"
+    }
+  ],
+  "@id": "https://example.org/datasets/station-r1-observations/2026-11-26/metadata.json",
+  "url": "https://example.org/datasets/station-r1-observations/2026-11-26/observations.csv",
+  "dcterms:title": "Synthetic dissolved oxygen observations — Station R-1",
+  "dcterms:issued": {
+    "@value": "2026-11-26",
+    "@type": "xsd:date"
+  },
+  "pav:version": "1.0",
+  "dcterms:isVersionOf": {
+    "@id": "https://example.org/datasets/station-r1-observations/"
+  },
+  "tableSchema": {
+    "columns": [
+      {
+        "name": "measurement_id",
+        "datatype": "string",
+        "required": true
+      },
+      {
+        "name": "station_id",
+        "datatype": "string",
+        "required": true
+      },
+      {
+        "name": "observed_at",
+        "datatype": "dateTime",
+        "required": true
+      },
+      {
+        "name": "dissolved_oxygen_mg_l",
+        "datatype": "decimal",
+        "required": true
+      },
+      {
+        "name": "sensor_id",
+        "datatype": "string",
+        "required": true
+      }
+    ],
+    "primaryKey": "measurement_id",
+    "aboutUrl": "#measurement-{measurement_id}"
+  }
+}

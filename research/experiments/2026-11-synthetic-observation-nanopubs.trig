@@ -1,0 +1,71 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ck: <https://example.org/ck/vocab/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://example.org/np/assessment-1#assertion> {
+    <https://example.org/ck/id/assessment/oxygen-r1-calibration-qualification> a ck:Assessment ;
+        ck:assesses <https://example.org/ck/id/observation/oxygen-r1-2026-05-01T09:00Z> ;
+        ck:assessmentKind ck:Qualification ;
+        ck:considersEvidence <https://example.org/ck/id/source/station-r1-calibration-log.txt> ;
+        ck:interpretation ck:MeasurementAccuracyUncertain ;
+        ck:reason "The calibration log records that the sensor was overdue for calibration on the observation date. This qualifies confidence in the physical measurement, but does not alter what the CSV row records." .
+}
+
+<https://example.org/np/observation-1#Head> {
+    <https://example.org/np/observation-1> a np:Nanopublication ;
+        np:hasAssertion <https://example.org/np/observation-1#assertion> ;
+        np:hasProvenance <https://example.org/np/observation-1#provenance> ;
+        np:hasPublicationInfo <https://example.org/np/observation-1#pubinfo> .
+}
+
+<https://example.org/np/assessment-1#provenance> {
+    <https://example.org/np/assessment-1#assertion> prov:hadPrimarySource <https://example.org/ck/id/source/station-r1-calibration-log.txt> ;
+        prov:wasDerivedFrom <https://example.org/np/observation-1> ;
+        prov:wasGeneratedBy <https://example.org/ck/id/activity/review-calibration-log> .
+
+    <https://example.org/ck/id/activity/review-calibration-log> a prov:Activity ;
+        prov:used <https://example.org/ck/id/source/station-r1-calibration-log.txt> ;
+        prov:wasAssociatedWith <https://example.org/ck/id/agent/reviewer> .
+}
+
+<https://example.org/np/assessment-1#Head> {
+    <https://example.org/np/assessment-1> a np:Nanopublication ;
+        np:hasAssertion <https://example.org/np/assessment-1#assertion> ;
+        np:hasProvenance <https://example.org/np/assessment-1#provenance> ;
+        np:hasPublicationInfo <https://example.org/np/assessment-1#pubinfo> .
+}
+
+<https://example.org/np/observation-1#assertion> {
+    <https://example.org/ck/id/observation/oxygen-r1-2026-05-01T09:00Z> a ck:RecordedObservation ;
+        ck:numericValue 4.2 ;
+        ck:observedAt "2026-05-01T09:00:00Z"^^xsd:dateTime ;
+        ck:observedProperty ck:DissolvedOxygen ;
+        ck:sourceColumn "dissolved_oxygen_mg_l" ;
+        ck:sourceRowKey "R1-20260501T0900Z" ;
+        ck:sourceSha256 "sha256:e9e7a483252cfd45c57ee0fe9ecd9f1f261e33d24ef1c69d53c0bcb892a0021d" ;
+        ck:sourceVersion <https://example.org/datasets/station-r1-observations/2026-11-26/observations.csv> ;
+        ck:station <https://example.org/ck/id/station/R-1> ;
+        ck:unit "mg/L" .
+}
+
+<https://example.org/np/observation-1#provenance> {
+    <https://example.org/np/observation-1#assertion> prov:hadPrimarySource <https://example.org/datasets/station-r1-observations/2026-11-26/observations.csv> ;
+        prov:wasGeneratedBy <https://example.org/ck/id/activity/extract-row-R1-20260501T0900Z> .
+
+    <https://example.org/ck/id/activity/extract-row-R1-20260501T0900Z> a prov:Activity ;
+        prov:used <https://example.org/datasets/station-r1-observations/2026-11-26/observations.csv> ;
+        prov:wasAssociatedWith <https://example.org/ck/id/agent/data-extractor> .
+}
+
+<https://example.org/np/observation-1#pubinfo> {
+    <https://example.org/np/observation-1> dcterms:created "2026-11-26T12:00:00Z"^^xsd:dateTime ;
+        pav:createdBy <https://example.org/ck/id/agent/data-extractor> .
+}
+
+<https://example.org/np/assessment-1#pubinfo> {
+    <https://example.org/np/assessment-1> dcterms:created "2026-11-26T12:05:00Z"^^xsd:dateTime ;
+        pav:createdBy <https://example.org/ck/id/agent/reviewer> .
+}

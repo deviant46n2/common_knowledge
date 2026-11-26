@@ -1,104 +1,68 @@
-# Product Direction — Research Project Preflight
+# Product Direction — Evidence-Linked Knowledge Records
 
-- **Status:** Working direction for prototype development
+- **Status:** Working hypothesis for focused research and prototyping
 - **Date:** 26 November 2026
-- **Decision type:** Reversible product hypothesis; not a final MVP selection
+- **Decision type:** Reversible; not a validated MVP selection
 
-## 1. Product in one sentence
+## Product in one sentence
 
-A local-first tool that helps a researcher inspect the handoff-readiness of a computational project, understand concrete weaknesses in its research record, and prepare a more inspectable handoff using existing standards and tools.
+A small, inspectable system for creating, connecting, reviewing, and preserving knowledge records whose statements can be traced to evidence, sources, provenance, uncertainty, and revision history.
 
-## 2. Initial user hypothesis
+## Why this is the current hypothesis
 
-**Primary user to investigate:** a computational researcher or research software engineer who maintains a small-to-medium Python-based research project and needs to share it with a collaborator, reviewer, future maintainer, or repository.
+The long-term Common Knowledge vision depends on more than collecting documents or indexing websites. It requires a way to preserve the relationship between what is being said, why it is said, where the supporting material came from, who assessed it, and how the record changes when new evidence appears.
 
-This is a starting hypothesis, not a claim that this group has validated demand.
+The first demonstrator should test that foundation in a narrow setting.
 
-Likely adjacent users include graduate researchers, research data stewards, librarians, and maintainers of research software. Do not design the first release for all of them simultaneously.
+## Initial user and task hypotheses
 
-## 3. The job to be done
+Potential early users include people who maintain structured reference knowledge, research evidence syntheses, public-interest data, technical documentation, or carefully sourced explanations.
 
-"When I need someone else to understand or reuse my computational research project, help me find the practical gaps and prepare a trustworthy handoff without making me learn and operate a collection of disconnected tools."
+The first target user and domain are not yet selected. Research and conversations should identify a bounded workflow where evidence traceability and change history solve a real problem.
 
-The product should answer:
-- What is actually present in this project?
-- What important information or relationships are missing or unclear?
-- Which findings are supported by direct evidence, and where is that evidence?
-- Which established tools or standards can address a finding?
-- What should I do next, and what remains unknown?
+## Candidate workflow
 
-## 4. Product promise
+A person creates or imports a knowledge record, states its scope, attaches one or more sources or observations, identifies how each item relates to the statement (for example supports, challenges, or provides context), and records the reasoning and limitations of an assessment.
 
-**Make the state of a research project understandable and actionable before it is handed to someone else.**
+Another person can inspect the record, follow the evidence, submit a correction or alternative interpretation, and see the record's history. The record can be exported without requiring access to a Common Knowledge service.
 
-The tool should be useful to the project owner, not merely produce a compliance score for an evaluator.
+This is an illustrative workflow, not a final schema.
 
-## 5. First prototype boundary
+## Product boundaries to investigate
 
-### In scope for the first prototype
+- **Statement and scope:** distinguish a concise statement from its subject, definitions, time period, jurisdiction, population, conditions, and other qualifiers.
+- **Evidence and sources:** distinguish a source document from the specific passage, dataset, observation, or result used as evidence.
+- **Relationships:** represent support, contradiction, qualification, derivation, and contextual relevance without forcing all evidence into a binary true/false verdict.
+- **Provenance:** record who or what created, transformed, reviewed, or changed a record, with enough detail to audit consequential steps.
+- **Assessment:** keep methods, reasoning, uncertainty, reviewer perspective, and unresolved disagreement inspectable.
+- **History:** preserve versions and corrections; do not silently overwrite a previously published assessment.
+- **Interoperability:** reuse existing identifiers, vocabularies, and export formats where they fit.
+- **Rights and safety:** track relevant access restrictions and avoid publishing sensitive information simply because it is technically possible.
 
-- Inspect one local project directory.
-- Start with computational Python projects.
-- Read files and declared configuration only.
-- Identify a bounded set of project characteristics: repository structure, README/instructions, dependency declarations, environment files, tests, workflow definitions, data/artifact references, citation metadata, license declarations, and existing provenance or research-object records.
-- Report each finding with a stable identifier, severity or priority, explanation, evidence location, confidence/limitations, and a practical next step.
-- Distinguish "not found" from "not applicable", "not checked", and "could not determine".
-- Produce a readable report that can be saved and shared.
-- Include a small synthetic example so the behavior can be independently reproduced.
-- Reuse existing validators and metadata tools where comparison demonstrates they add value.
+## Non-goals for the first slice
 
-### Explicitly out of scope initially
+- Representing all forms of human knowledge.
+- Automatically determining truth.
+- Replacing scientific journals, libraries, archives, reference works, Wikidata, or specialist databases.
+- A universal ontology or exhaustive semantic model.
+- A global crawler or ingestion pipeline.
+- A centralized social network or reputation system.
+- AI agents making authoritative assessments without accountable review.
+- Federation, distributed consensus, or large-scale hosting before a concrete need is demonstrated.
 
-- Executing project code, notebooks, shell commands, or workflow definitions.
-- Uploading project contents or telemetry to a service.
-- Requiring a Common Knowledge account or network connection.
-- Hosting, collaboration, comments, social features, or a central project registry.
-- Claiming to verify scientific truth, correctness of conclusions, or general reproducibility.
-- Supporting every language, discipline, repository host, or workflow engine.
-- Replacing RO-Crate, CodeMeta, CITATION.cff, workflow engines, repositories, or existing validators.
-- Automatically changing or rewriting a user's project.
+## Success criteria to test
 
-## 6. Product differentiation hypothesis
+The demonstrator is worth continuing if an independent user can:
+1. understand what a record asserts and the conditions under which it applies;
+2. inspect the sources and the specific evidence connected to it;
+3. distinguish source material from the project's interpretation of that material;
+4. understand what is uncertain, disputed, or not checked;
+5. see who contributed and how the record changed;
+6. export the record and its links in a usable, documented form;
+7. explain why this workflow is more useful than their current approach.
 
-The product is not intended to be another generic checklist, metadata generator, validator, or research package builder.
+These criteria are hypotheses for evaluation, not claims that the system can already do these things.
 
-Its possible differentiation is the **guided handoff workflow**:
-1. inspect the actual project;
-2. identify which checks are relevant;
-3. connect findings to concrete evidence in the project;
-4. explain implications in plain language;
-5. recommend the next useful action;
-6. assemble a concise, portable handoff report.
+## Decision rule
 
-This differentiation is unproven. The hands-on comparison must test whether existing tools already deliver it adequately. If the product is only a thin wrapper, do not ship it as a standalone product.
-
-## 7. Trust model
-
-- Local-first by default.
-- No project code execution in the initial prototype.
-- No network calls during inspection unless a future, explicit feature requires them.
-- No silent file modifications.
-- No collection of project contents or telemetry.
-- Findings must be traceable to observed evidence.
-- No single "research quality" score.
-- Never present absence of detected problems as proof of scientific validity.
-- Show tool versions, checks performed, checks not performed, and known limitations.
-- Treat sensitive, personal, controlled, or community-governed data with care; do not copy data into reports or exports by default.
-
-## 8. First success criteria
-
-The prototype is worth continuing only if it can demonstrate all of the following:
-
-1. A newcomer can point it at a sample project and obtain a useful report without executing that project's code.
-2. Findings are accurate against a fixture with known conditions.
-3. Findings identify specific evidence locations and explain why they matter.
-4. The report separates observed facts, inferences, recommendations, and unknowns.
-5. It adds meaningful convenience or insight beyond running the relevant existing tools separately.
-6. The output is understandable to a researcher who is not a research-infrastructure specialist.
-7. It is straightforward to inspect, test, and reproduce.
-
-Quantitative targets should be set after the fixture and baseline tool comparisons exist, not invented in advance.
-
-## 9. Decision rule
-
-Continue with this direction only if hands-on testing establishes a concrete gap and the prototype demonstrates a better user workflow. Otherwise, narrow the task, contribute upstream, build an adapter, or reject the idea. Common Knowledge's mission is more important than preserving this particular product hypothesis.
+Do not build a new platform merely because the vision is ambitious. If an existing system already supports the needed workflow, investigate extending it, contributing upstream, or publishing compatible data. Continue with a new implementation only when research and user evidence establish a meaningful gap.

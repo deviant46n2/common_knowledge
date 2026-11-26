@@ -1,0 +1,3 @@
+measurement_id,station_id,observed_at,dissolved_oxygen_mg_l,sensor_id
+R1-20260501T0900Z,R-1,2026-05-01T09:00:00Z,4.2,S-77
+R1-20260501T1000Z,R-1,2026-05-01T10:00:00Z,4.0,S-77

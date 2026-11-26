@@ -1,110 +1,73 @@
-# Prototype Plan — Research Project Preflight
+# Prototype Plan — Knowledge-System Vertical Slice
 
-- **Status:** Initial execution plan
+- **Status:** Proposed sequence; research must inform the actual implementation
 - **Date:** 26 November 2026
-- **Current stage:** Fixture and baseline validation, before product implementation
 
 ## Guiding rule
 
-Build one complete and inspectable workflow, not a broad feature set. The first deliverable is a trustworthy local inspection report for a deliberately small class of computational research projects.
+Build one complete workflow that a person can use and inspect. Do not build a miniature universal knowledge platform.
 
-## Stage 0 — Establish the ground-truth fixture
+## Stage 1 — Understand existing building blocks
 
-Create a small, openly licensed synthetic Python research project. It must be safe to inspect and must not require network access or execution of untrusted code.
+Compare a small set of relevant systems and standards against the capabilities required by the candidate workflow:
 
-The fixture should contain:
-- a short research question and method;
-- a tiny synthetic dataset with documented origin and units;
-- source code and declared dependencies;
-- a README with run instructions;
-- a test suite;
-- two recorded example runs with distinct identifiers;
-- output tables and a short report with explicit numerical claims;
-- citation and license metadata where appropriate;
-- a deliberately incomplete variant and a set of known defects.
+- structured statements and qualifiers;
+- evidence-to-statement relationships;
+- source identity and precise evidence locations;
+- attribution and provenance;
+- uncertainty, disagreement, and correction;
+- version history and stable identifiers;
+- machine-readable export and independent reuse.
 
-Known conditions should include a missing dependency declaration or environment detail, a missing referenced artifact, stale or ambiguous run information, incomplete citation or license information, and at least one well-documented condition that should *not* be flagged. Avoid defects that require executing arbitrary code to detect.
+Begin with Wikibase/Wikidata, nanopublications, W3C PROV-O, RDF, and relevant research-knowledge services. Add candidates only when they illuminate a specific requirement. Read primary specifications and test real software rather than relying on feature summaries.
 
-**Deliverable:** fixture specification, fixture repository contents, and a ground-truth ledger mapping each condition to expected observations.
+**Deliverable:** a compact comparison and a list of capabilities to reuse, gaps to investigate, and unnecessary complexity to avoid.
 
-## Stage 1 — Baseline existing tools
+## Stage 2 — Select one bounded workflow
 
-Use official documentation and safe, disposable environments to test only the relevant tools against the fixture. Initial candidates include:
-- roc-validator;
-- ro-crate-py and applicable RO-Crate tooling;
-- ReproCert;
-- reproducible-science;
-- runcrate or workflow-specific tools only where the fixture format is supported.
+Use the comparison and early conversations to choose a domain and user task small enough to represent end-to-end. Prefer a workflow with public, rights-cleared source material and a way to independently check the record.
 
-Do not force tools onto inputs they do not claim to support. Record unsupported cases rather than treating them as failures.
+Do not select a politically charged example just for attention. The first example should make the system's evidence and revision behavior easy to evaluate.
 
-For each test record exact versions, commands, environment, inputs, outputs, limitations, installation friction, and whether results can be independently inspected. Never execute arbitrary research repositories on the host.
+**Deliverable:** one example domain, one user task, and a small set of records with known source material.
 
-**Deliverable:** baseline comparison showing which needs are already met and which remain unmet.
+## Stage 3 — Define the minimum record
 
-## Stage 2 — Define the smallest valuable workflow
+Specify only fields required by the chosen workflow. At minimum, test whether the record needs:
+- a stable identifier and version;
+- a statement and explicit scope;
+- links to sources and precise evidence locations;
+- typed relationships between evidence and statement;
+- attribution/provenance for creation and review;
+- assessment reasoning and uncertainty;
+- correction and supersession history;
+- rights/access metadata where relevant.
 
-Use fixture results to decide the first supported checks. Each check must:
-- answer a real handoff question;
-- have a deterministic, testable basis;
-- point to evidence;
-- explain its limits;
-- avoid duplicating a mature tool without a clear reason.
+This is a research checklist, not a predetermined schema. Reuse standards and existing data models where possible.
 
-**Deliverable:** requirements specification and explicit non-goals.
+**Deliverable:** a small sample dataset and an export format that another tool can parse.
 
-## Stage 3 — Implement one vertical slice
+## Stage 4 — Implement the vertical slice
 
-Provisional interface:
-- local command-line entry point;
-- local project directory as input;
-- static inspection only;
-- deterministic finding records;
-- readable HTML report plus machine-readable JSON report;
-- bundled example and golden expected output.
+Possible interface: a local or lightweight web application that can create, inspect, and export the chosen records. Choose the simplest implementation after the workflow and existing tools are understood.
 
-A command-line plus HTML-report approach is a provisional implementation choice because it can be distributed and demonstrated without hosting a service. Revisit only if hands-on work shows it is unsuitable for the target user.
+The first slice should not require user accounts, public hosting, telemetry, remote AI services, or distributed infrastructure unless the chosen task demonstrably requires them.
 
-No code execution, file modification, telemetry, account, or network requirement in this stage.
+**Deliverable:** one working path from source material to a readable, inspectable, exportable record.
 
-**Deliverable:** one working end-to-end path from project directory to evidence-linked report.
+## Stage 5 — Independent evaluation
 
-## Stage 4 — Independent evaluation
+Ask people who did not build the prototype to:
+- create or inspect a record using only the instructions;
+- trace a statement to the relevant source passage or data;
+- explain the difference between evidence and assessment;
+- identify what remains uncertain or disputed;
+- inspect a correction or prior version;
+- export and reuse the record;
+- compare the workflow with tools they already use.
 
-Ask people who did not build the tool to:
-- install it using only the instructions;
-- run the bundled example;
-- explain selected findings in their own words;
-- identify whether a finding is actionable and accurate;
-- compare the report with their existing workflow;
-- report confusing, missing, or misleading results.
+Record setup friction, task completion, errors, comprehension, missing needs, and whether the workflow is worth using again.
 
-Record task completion, setup friction, false positives, false negatives against the fixture, comprehension, and whether users would use the workflow again.
+## Stop or change direction
 
-Do not describe the product as validated based only on internal tests or friendly reactions.
-
-## Acceptance gate for a public alpha
-
-A public alpha is appropriate only when:
-- the supported input scope is explicit;
-- all advertised checks have automated tests;
-- fixture ground truth is versioned;
-- findings cite evidence locations;
-- the report says what was not checked;
-- no project code is executed;
-- no project files are changed;
-- installation and example instructions work on a clean environment;
-- known limitations and security boundaries are documented;
-- the project license and third-party notices have been reviewed and explicitly decided.
-
-## Stop / change-direction conditions
-
-Stop or change direction if:
-- existing tools already solve the target workflow with comparable usability;
-- the product's value reduces to presenting a checklist or relaying tool output;
-- the initial target user cannot be reached or does not experience the problem;
-- accurate findings require unsafe execution or invasive access not justified by user value;
-- the tool cannot distinguish missing evidence from evidence of absence;
-- maintenance burden is disproportionate to the demonstrated benefit.
-
-A negative result is useful research. Do not preserve the product hypothesis at the expense of Common Knowledge's mission.
+Stop building a new application if an existing system already supports the target workflow adequately. Consider contributing upstream, building an adapter, publishing compatible records, or choosing a different problem. A negative result is useful.

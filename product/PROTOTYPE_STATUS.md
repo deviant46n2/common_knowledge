@@ -1,47 +1,40 @@
-# Prototype Status
+# Prototype Status — Earlier Research Preflight Experiment
 
-- **Version:** 0.1.0 prototype
+- **Status:** Historical experiment; not the current Common Knowledge product direction
 - **Date:** 26 November 2026
-- **Status:** Initial static-inspection slice implemented; experimental and not user-validated
+- **Version:** 0.1.0 prototype
 
-## Implemented
+## What exists
 
-- Local project file inventory, excluding common environment and version-control directories.
-- Conventional README presence check.
-- Relative Markdown link checks for missing local files.
-- Experimental narrow check for a bold numerical difference claim linked to a CSV result table with `metric,value,unit` columns.
-- HTML and JSON report generation.
-- Explicit inspection limits and no-execution statement.
-- Synthetic fixture and unit tests.
+The repository contains an initial static-inspection prototype under `src/ck_preflight/` and a synthetic computational research project under `examples/synthetic-research-project/`.
 
-## Not implemented
+The prototype was intended to explore whether a local tool could identify a few handoff issues and present evidence-linked findings.
 
-- General-purpose research project readiness assessment.
-- Broad claim extraction or semantic interpretation.
-- Runtime environment or dependency validation.
-- RO-Crate generation or validation.
-- Integration with external validators.
-- Notebook, workflow, or source-code execution.
-- User testing or evidence of demand.
+Implemented in that experiment:
+- local project file inventory;
+- README presence check;
+- relative Markdown link checks;
+- a narrow experimental numerical-claim-to-CSV check;
+- HTML and JSON report generation;
+- a synthetic fixture and unit tests.
 
-## Important limitations
+## What it does not establish
 
-The numerical claim check recognizes only a narrow, explicit Markdown pattern and one CSV metric convention. It is an experiment to test evidence-linking behavior, not a general claim verifier. A result mismatch is a prompt for human review, not proof that the report or result is wrong.
+This experiment is not a knowledge record system, general claim verifier, scientific validity checker, or validated MVP. The numerical matching logic is narrow and should not be treated as a reliable general-purpose verifier.
 
-The tool does not execute inspected code, contact network services, modify source project files, or establish scientific validity.
+The recorded test suite had not been run from a clean checkout when this status was last assessed. No independent user validation or evidence of demand was recorded.
 
-## Run locally from the repository root
+## How to run the experiment
+
+From the repository root:
 
 ```bash
 PYTHONPATH=src python -m ck_preflight examples/synthetic-research-project --output /tmp/ck-preflight-demo
-```
-
-Run tests:
-
-```bash
 PYTHONPATH=src python -m unittest discover -s tests -v
 ```
 
-The automated test suite has been authored but has not yet been executed from a clean checkout. The fixture analysis calculation was independently checked to produce 10.0 mm, 13.0 mm, and a 3.0 mm difference; the narrow claim-matching expression was separately checked against the fixture's report sentence. Full package/runtime testing remains outstanding.
+These commands are preserved for anyone wishing to inspect the experiment; their current success has not been reverified as part of the direction change.
 
-The prototype is not ready to be described as a validated MVP or public alpha.
+## Disposition
+
+Do not extend this prototype merely because it exists. Reuse any code, interface ideas, or test fixtures only if they prove useful to the new knowledge-system work. Preserve it as an experiment and revisit it only when there is a concrete reason.
