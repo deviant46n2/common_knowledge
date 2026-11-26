@@ -20,9 +20,9 @@ The following categories are a working map for discovery, not a definitive taxon
 |---|---|---|
 | Research planning and project records | Study plans, preregistration, project metadata, persistent records | OSF Registries and other registries |
 | Collaboration and working environments | Shared documents, project coordination, lab notebooks, protocols, version control | Discipline-specific and general collaboration tools |
-| Data, code, and materials | Deposit, curation, access, citation, and reuse of research outputs | Domain and general repositories |
-| Scholarly communication | Preprints, journals, publishing, peer review, editorial workflows | Community-run preprint services, journals, publishing infrastructure |
-| Discovery and aggregation | Search, indexes, catalogs, metadata, and linking between outputs | Scholarly indexes, repository aggregators, project finders |
+| Data, code, and materials | Deposit, curation, access, citation, and reuse of research outputs | Zenodo, Dryad, institutional and disciplinary repositories |
+| Scholarly communication | Preprints, journals, publishing, peer review, editorial workflows | bioRxiv, medRxiv, eLife, PubPub, community-run journals and publishing infrastructure |
+| Discovery and aggregation | Search, indexes, catalogs, metadata, and linking between outputs | OpenAlex, scholarly indexes, repository aggregators, project finders |
 | Public and participatory research | Volunteer observations, classifications, transcription, community-led research | Zooniverse, SciStarter, iNaturalist, eBird, and local/community platforms |
 | Research assessment and integrity | Preregistration, registered reports, review, correction, retraction, research integrity | Registries, journal policies, institutional processes, independent initiatives |
 | Public engagement and education | Making research understandable and enabling public participation | Citizen-science networks, science communication, open educational resources |
@@ -59,6 +59,37 @@ A 2025 scoping review of open-science impacts reports positive and mixed effects
 
 **Assessment:** Access to an output is only one part of openness. Participation also depends on skills, time, equipment, language, disability access, institutional status, funding, and whether contributors receive recognition and meaningful influence.
 
+
+### 6. Repositories provide distinct preservation, citation, and curation services
+
+Zenodo and Dryad illustrate different general-purpose repository approaches. Zenodo supports a broad range of research outputs, DOI assignment, versioning, restricted records, and GitHub integration. Its DOI model distinguishes a specific version from the concept spanning versions. Dryad focuses on data publication and describes curator checks, DOI assignment, checksums, replicated storage, and succession planning.
+
+**Assessment:** A repository is not just a file host. Metadata, versioning, curation, rights checks, preservation, and succession all shape whether research outputs remain usable. These functions are related but not interchangeable: a technical file check does not validate scientific claims, and a DOI does not guarantee that a dataset is ethically or legally shareable.
+
+### 7. Discovery infrastructure connects records without necessarily hosting the research
+
+OpenAlex describes itself as an open catalog and knowledge graph that aggregates metadata from sources such as Crossref, DataCite, PubMed, and repositories. Its work model can connect multiple locations or manifestations of a scholarly work, such as a preprint, journal article, and repository copy.
+
+**Assessment:** Discovery and hosting are separate layers. A knowledge commons may gain more by connecting to existing catalogs and improving traceability than by trying to build a complete scholarly index from scratch. Aggregation also introduces its own problems: source coverage, duplicate matching, metadata quality, correction, and update delays.
+
+### 8. Publishing communities can own more of the communication workflow
+
+PubPub presents a community-oriented publishing platform with collaborative authoring, submissions and review, discussions, DOI support, typed content relationships, and exports to multiple formats. It supports a wide range of community publications rather than only conventional journals.
+
+**Assessment:** Publishing can be treated as community infrastructure, not solely as a service controlled by large commercial publishers. However, the existence of flexible publishing software does not resolve questions about editorial independence, governance, funding, recognition, or long-term preservation.
+
+### 9. Peer review models can expose evaluation rather than hide it behind a binary label
+
+eLife's current Reviewed Preprint model publishes manuscripts selected for expert review alongside public reviews and an editorial assessment. Authors may revise and later choose to finalize a Version of Record. This makes some of the evaluation process visible to readers rather than treating acceptance as the only public signal.
+
+**Assessment:** This is a useful example of peer review as a transparent, documented process. It does not eliminate editorial selection or settle how institutions should evaluate research, and its effects should be studied rather than assumed.
+
+### 10. Preprint dissemination needs explicit status and risk communication
+
+bioRxiv and medRxiv distribute manuscripts before peer review. Both describe screening before posting, but explicitly distinguish screening from endorsement or scientific validation. medRxiv adds health-specific warnings and screening around ethical oversight, identifiable participant information, and potential public-health risks.
+
+**Assessment:** Open dissemination does not mean every item should be presented as equally established. Research records need visible status, provenance, version history, and links to subsequent review, correction, or publication. Sensitive domains may require additional safeguards and careful communication.
+
 ## Questions for the next research pass
 
 1. Which parts of the research lifecycle are underserved across disciplines, and which are already well served by specialist infrastructure?
@@ -69,17 +100,23 @@ A 2025 scoping review of open-science impacts reports positive and mixed effects
 6. Which open-science practices have evidence of improving reproducibility or research quality, and under what conditions?
 7. What are the costs and funding models behind infrastructure that appears free to researchers?
 8. How are community-led and Indigenous research priorities represented and protected?
+9. How are repository records, preprints, peer-reviewed articles, datasets, and software linked across services?
+10. How do different services handle versions, corrections, withdrawals, retractions, and records that should no longer be publicly accessible?
+11. What are the actual preservation guarantees, succession arrangements, and costs of major repositories?
+12. How are peer-review reports, editorial assessments, and contributor identities governed and credited?
+13. What standards and APIs make research records portable between repositories, indexes, publishers, and institutional systems?
 
 ## Coverage and limitations
 
-This is a first-pass orientation based on selected primary platform documentation, a scholarly infrastructure landscape review, peer-reviewed citizen-science research, and a recent open-science scoping review. It is not a comprehensive census, systematic review, or independent audit of the platforms mentioned.
+This is a first-pass orientation based on selected primary platform documentation, a scholarly infrastructure landscape review, peer-reviewed citizen-science research, and a recent open-science scoping review. It now includes initial profiles of OSF, Zooniverse, SciStarter, Zenodo, Dryad, OpenAlex, PubPub, eLife, bioRxiv, and medRxiv. It is not a comprehensive census, systematic review, or independent audit of the platforms mentioned.
 
 The current sample is English-language and weighted toward visible online infrastructure. It does not yet adequately cover disciplinary repositories, regional and multilingual networks, research in the Global South, community-controlled knowledge systems, or the full range of institutional and independent research practices.
 
 ## Sources
 
-See the [November 2026 source register](../../sources.md), especially entries A-01 through A-10.
+See the [November 2026 source register](../../sources.md), especially entries A-01 through A-30.
 
 ## Change log
 
 - **2026-11-26:** Added initial field map and preliminary observations from selected sources. Further project mapping, source verification, and stakeholder research remain necessary.
+- **2026-11-26:** Expanded the map to cover repositories, scholarly discovery, community publishing, reviewed preprints, and discipline-specific preprint servers. Added profiles for Zenodo, Dryad, OpenAlex, PubPub, eLife, bioRxiv, and medRxiv, and extended the source register through A-30.
