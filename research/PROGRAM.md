@@ -62,3 +62,14 @@ The November 2026 snapshot and its seven workstreams remain useful background ma
 ## Decision rule
 
 If an existing project already solves the need, consider using it, extending it, or contributing upstream. Build new infrastructure only where a real user need and a meaningful gap are demonstrated.
+
+## Discovery cycle status — 26 November 2026
+
+The broad initial landscape and technical survey is complete enough to move into MVP discussion. Its synthesis is recorded in [Discovery Completion](DISCOVERY_COMPLETION.md).
+
+The remaining gaps are primarily empirical, not desk-research gaps:
+- maintainer conversations have not yet taken place;
+- user interviews and independent usability sessions have not yet taken place;
+- no initial user group, domain, MVP, or architecture has been selected.
+
+Do not expand the general landscape survey by default. During MVP discussion, commission further research only to resolve a specific decision or risk. Prioritize conversations with potential users and maintainers once the candidate workflow is concrete.
