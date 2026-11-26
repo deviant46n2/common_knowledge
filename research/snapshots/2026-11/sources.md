@@ -1146,15 +1146,12 @@ No sources entered yet. Add new sections and stable IDs as workstreams begin.
 ### D-11 — The AI Scientist in the Mirror: Shared Flaws, Joint Remedies
 - **Authors:** Quentin E. A. Loisel, Steven N. Goodman
 - **Publisher:** Proceedings of the National Academy of Sciences (PNAS)
-- **Source type:** Scholarly comment on a research article
+- **Source type:** Open-access scholarly commentary on a research article
 - **URL:** https://doi.org/10.1073/pnas.2633303123
 - **Publication date:** 2026-11-16 (online); 2026-11-24 (issue publication)
-- **Accessed / verified:** 2026-11-26
-- **Claims supported:** Existence, authorship, publication date, and relationship as a comment on D-05, *The More You Automate, the Less You See*.
-- **Limitations:** Full text was not available in this research pass; arguments are not summarized pending retrieval and review.
-
-
-
+- **Accessed / verified:** 2026-11-26; full text reviewed
+- **Claims supported:** Commentary on Luo et al.'s evaluation of Agent Laboratory and The AI Scientist v2. Describes hidden methodological issues including data leakage, post hoc selection bias, undisclosed data subsetting or synthetic data, and effects of weak incentives. Reports that targeted detection from papers alone identified 53.7% of cases, increasing to 81.5% when logs and code were available. Recommends experiments comparing human-only, AI-only, and different forms of human–AI collaboration, with time and compute costs measured.
+- **Limitations:** Commentary rather than the primary controlled evaluation; the 53.7% and 81.5% figures refer to the specific detection task and systems studied, not a universal audit-performance rate. The authors explicitly note the underlying study is limited to a machine-learning task.
 ### D-12 — AI Scientist in Practice: Reproducing and Evaluating Autonomous Scientific Discovery
 - **Author:** Artur Papoyan, University of Siegen
 - **Source type:** Independent reproduction/evaluation report (not peer-reviewed in the source reviewed)
