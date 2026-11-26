@@ -1185,3 +1185,78 @@ No sources entered yet. Add new sections and stable IDs as workstreams begin.
 - **Accessed / verified:** 2026-11-26
 - **Claims supported:** Review of 110 sources identifying barriers around confidentiality, consent, data misuse, context, external approvals, researcher distress, and time/financial constraints.
 - **Limitations:** Maps suggested strategies rather than evaluating their effectiveness; focuses on interview and focus-group transcripts; the authors caution against one-size-fits-all expectations.
+
+
+## Workstream B — Distributed and Federated Infrastructure
+
+### B-01 — BOINC Overview
+- **Publisher:** BOINC Project
+- **Source type:** Primary architecture documentation
+- **URL:** https://github.com/BOINC/boinc/wiki/BOINC-overview
+- **Publication / update date:** Updated 2026-03-06
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** BOINC client/server architecture, high-throughput volunteer computing, heterogeneous and intermittent worker nodes, and untrusted worker assumptions.
+- **Limitations:** Project documentation; actual security and performance vary by BOINC project, workload, and deployment.
+
+### B-02 — BOINC Job Processing
+- **Publisher:** BOINC Project
+- **Source type:** Primary technical documentation
+- **URL:** https://github.com/BOINC/boinc/wiki/JobIntro
+- **Publication / update date:** Updated 2026-03-19
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Job submission, remote execution, replication, validation, and assimilation pipeline.
+- **Limitations:** Describes a general processing model; validators and assimilators are often application-specific and must be implemented and operated.
+
+### B-03 — Security in Volunteer Computing
+- **Publisher:** BOINC Project
+- **Source type:** Primary security documentation
+- **URL:** https://github.com/BOINC/boinc/wiki/Security-in-volunteer-computing
+- **Publication / update date:** Updated 2026-03-20
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Threats including result falsification, malicious executable distribution, server compromise, data theft, denial of service, and abuse of volunteer hosts; documented mitigations and residual risks.
+- **Limitations:** BOINC-specific overview; not a complete threat model or independent security audit.
+
+### B-04 — Volunteer Computing
+- **Publisher:** BOINC Project
+- **Source type:** Primary conceptual documentation
+- **URL:** https://github.com/BOINC/boinc/wiki/VolunteerComputing
+- **Publication / update date:** Updated 2023-04-03
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Volunteer/project relationship, participant anonymity, trust assumptions, and responsibilities between volunteers and projects.
+- **Limitations:** General description; participant experience and project-specific policies vary.
+
+### B-05 — HTCondor Manual
+- **Publisher:** Center for High Throughput Computing, University of Wisconsin–Madison
+- **Source type:** Primary technical documentation
+- **URL:** https://htcondor.readthedocs.io/en/latest/
+- **Publication / update date:** Version 26.1.0 manual accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** High-throughput computing environments spanning clusters, campus resources, cloud resources, and national or international federations.
+- **Limitations:** Software documentation; actual federation deployments, security policies, and performance need case-specific review.
+
+### B-06 — Kubernetes SIG Multicluster
+- **Publisher:** Kubernetes Special Interest Group
+- **Source type:** Primary project documentation
+- **URL:** https://multicluster.sigs.k8s.io/
+- **Publication / update date:** Current project page accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Scope of multi-cluster coordination, workload exposure, metadata sharing, and cluster federation within Kubernetes environments.
+- **Limitations:** Multi-cluster management does not necessarily imply independent governance or open volunteer participation.
+
+### B-07 — libp2p Specifications
+- **Publisher:** libp2p community
+- **Source type:** Open technical specification repository
+- **URL:** https://github.com/libp2p/specs
+- **Publication / update date:** Current specification index accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Protocol suite for peer-to-peer applications, including addressing, secure connections, discovery, relaying, and pub/sub.
+- **Limitations:** Repository states that specifications remain incomplete and are under active revision; implementation interoperability and security require further testing.
+
+### B-08 — IPFS Persistence, Permanence, and Pinning
+- **Publisher:** IPFS project
+- **Source type:** Primary technical documentation
+- **URL:** https://docs.ipfs.tech/concepts/persistence/
+- **Publication / update date:** Current documentation accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Distinction between content addressing, caching, garbage collection, pinning, pinning services, and long-term retention dependencies.
+- **Limitations:** Documentation explains protocol and operational concepts; does not independently assess pinning-provider continuity or storage economics.
