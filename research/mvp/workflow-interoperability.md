@@ -92,6 +92,37 @@ The unresolved question is whether these outputs work together in a real user's 
 
 This is not yet proven to be a product opportunity. It may be sufficiently handled by existing tools, community profiles, and maintainers' work.
 
+## 4.1 Maintainer issue trackers show concrete friction
+
+A review of public issue trackers on 26 November 2026 found several specific problems. These are individual reports, not evidence of prevalence across all users.
+
+### Current RO-Crate validator issues
+
+- [rocrate-validator #173 — Additional metadata can break profile validation](https://github.com/crs4/rocrate-validator/issues/173), opened 11 May 2026 and still open at review time: some SHACL checks target a broad JSON-LD type such as CreateAction, so unrelated additional objects of that type can be validated against the profile and cause false failures. This is a concrete extensibility/interoperability issue.
+- [rocrate-validator #227 — Maximum number of issues before failure](https://github.com/crs4/rocrate-validator/issues/227), opened 8 October 2026 and still open at review time: a contributor asks for a CI mode that permits known, manually reviewed false positives while failing on new issues. This is a concrete need for auditable exceptions rather than disabling validation wholesale.
+
+### Current RO-Crate Python library issue
+
+- [ro-crate-py #266 — Root @id without trailing slash breaks after load + write](https://github.com/ResearchObject/ro-crate-py/issues/266), opened 19 November 2026 and assigned to a maintainer: RO-Crate 1.2/1.3 permit an absolute root identifier without a trailing slash, but the library adds a slash on load without updating the descriptor's about reference. Writing the crate can then make it impossible to reload. This is a specific version-compatibility/round-trip defect and a useful test fixture.
+
+### Older workflow-tool issues — treat as historical signals
+
+- [LifeMonitor #291 — User-facing CLI to run checks on local private repositories](https://github.com/crs4/life_monitor/issues/291) requests access to checks for local/private repositories, but it was last updated in July 2023. It shows a possible local-first need, not current demand.
+- [LifeMonitor #316 — Logs of actions taken by the GitHub app](https://github.com/crs4/life_monitor/issues/316) requests more debuggability for automation, opened May 2023.
+- [runcrate #77 — CWL ExpressionTool support](https://github.com/ResearchObject/runcrate/issues/77) documents a conversion limitation, opened April 2024.
+- [runcrate #51 — Optional download of remote inputs](https://github.com/ResearchObject/runcrate/issues/51) describes a remote-input limitation, opened June 2023.
+- [FAIRSCAPE #1 — Deployment documentation](https://github.com/fairscape/fairscape/issues/1) records a user's difficulty deploying FAIRSCAPE, opened in 2020; it should not be treated as evidence of a current deployment gap.
+
+### Implication
+
+These reports point to a possible contribution strategy:
+1. reproduce current bugs using small fixtures;
+2. create regression tests and minimal fixes;
+3. offer fixes upstream where maintainers welcome them;
+4. use the experience to discover whether a broader, standalone product is justified.
+
+This may be more valuable and credible than creating a competing validator. It also gives Common Knowledge a route to demonstrate engineering capability through a real ecosystem contribution. No issue has been filed or contacted by Common Knowledge.
+
 ## 5. Proposed hands-on interoperability experiment
 
 Use a small, openly licensed synthetic computational project with a known result and a report containing explicit numerical claims.
