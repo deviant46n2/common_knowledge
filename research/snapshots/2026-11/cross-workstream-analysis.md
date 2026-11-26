@@ -24,7 +24,7 @@ This is a living synthesis. Findings are provisional where underlying workstream
 
 ## Emerging cross-cutting themes
 
-### 7. Distributed infrastructure creates reciprocal trust obligations
+### 1. Distributed infrastructure creates reciprocal trust obligations
 
 **Supporting workstreams:** B, C, E.
 
@@ -34,7 +34,7 @@ This is a living synthesis. Findings are provisional where underlying workstream
 
 **Assessment:** A distributed commons must protect contributors' machines and data while also protecting research outputs from malicious or unreliable workers. Signatures, sandboxing, replication, and storage proofs each establish different properties; none proves overall trustworthiness.
 
-### 9. Human–AI research needs auditability, not just autonomy
+### 2. Human–AI research needs auditability, not just autonomy
 
 **Supporting workstreams:** C, D.
 
@@ -43,7 +43,7 @@ This is a living synthesis. Findings are provisional where underlying workstream
 
 **Assessment:** Agent task completion and polished manuscripts are not sufficient evidence of scientific validity. The research record should preserve material workflow artifacts, human decisions, data lineage, and verification scope.
 
-### 11. Legal form does not determine whether power is distributed
+### 3. Legal form does not determine whether power is distributed
 
 **Supporting workstreams:** F, A, E.
 
@@ -52,7 +52,7 @@ This is a living synthesis. Findings are provisional where underlying workstream
 
 **Assessment:** Common Knowledge should specify decision rights, representation, asset control, and accountability before selecting a legal form. “Nonprofit,” “foundation,” or “cooperative” is not a substitute for a governance design.
 
-### 12. Funding independence is a structural requirement
+### 4. Funding independence is a structural requirement
 
 **Supporting workstreams:** F, A, E.
 
@@ -61,7 +61,7 @@ This is a living synthesis. Findings are provisional where underlying workstream
 
 **Assessment:** Financial transparency is necessary but insufficient. Donor concentration, restricted funding, commercial dependencies, and host control can shape research priorities and continuity. These dependencies should be disclosed and governed.
 
-### 13. Infrastructure needs must be grounded in the people who use and steward it
+### 5. Infrastructure needs must be grounded in the people who use and steward it
 
 **Supporting workstreams:** A, B, C, E, F, G.
 
@@ -71,7 +71,7 @@ This is a living synthesis. Findings are provisional where underlying workstream
 
 **Assessment:** Common Knowledge should not infer needs from technical possibility. It must learn from researchers, research support staff, communities, contributors, and people affected by research, including those outside well-resourced institutions.
 
-### 14. Data locality can be more important than compute distribution
+### 6. Data locality can be more important than compute distribution
 
 **Supporting workstreams:** B, C, E.
 
@@ -81,7 +81,7 @@ This is a living synthesis. Findings are provisional where underlying workstream
 
 **Assessment:** Common Knowledge should consider moving computation to governed data, not assume data should be copied to volunteer machines. This needs workload-specific security and performance testing.
 
-### 1. Federation and interoperability may be more valuable than a new monolithic platform
+### 7. Federation and interoperability may be more valuable than a new monolithic platform
 
 **Supporting workstreams:** A, C, E.
 
@@ -91,7 +91,7 @@ This is a living synthesis. Findings are provisional where underlying workstream
 
 **Assessment:** A shared layer that helps existing systems interoperate may address a real gap without requiring Common Knowledge to replace them. This remains a hypothesis until tested with actual workflows and users.
 
-### 2. Openness is not the same as unrestricted access
+### 8. Openness is not the same as unrestricted access
 
 **Supporting workstreams:** A, C, E.
 
@@ -101,7 +101,7 @@ This is a living synthesis. Findings are provisional where underlying workstream
 
 **Assessment:** Any shared record model must represent rights and access conditions explicitly. Preservation, discovery, access, and reuse should not be collapsed into a single public/private switch.
 
-### 3. Trust depends on the record around a claim, not only the publication
+### 9. Trust depends on the record around a claim, not only the publication
 
 **Supporting workstreams:** A, C, E.
 
@@ -111,7 +111,7 @@ This is a living synthesis. Findings are provisional where underlying workstream
 
 **Assessment:** Common Knowledge should investigate a research/knowledge record that links claims to sources, methods, inputs, outputs, contributors, versions, and later corrections. It should not imply that the existence of a record proves the claim is true.
 
-### 4. Preservation is an organizational responsibility
+### 10. Preservation is an organizational responsibility
 
 **Supporting workstreams:** A, C, E.
 
@@ -121,7 +121,7 @@ This is a living synthesis. Findings are provisional where underlying workstream
 
 **Assessment:** Backups and mirrors are necessary but insufficient. A credible preservation promise needs named responsibility, resources, rights to preserve and migrate, transparent scope, and a continuity plan.
 
-### 5. Participation quality and knowledge quality are connected
+### 11. Participation quality and knowledge quality are connected
 
 **Supporting workstreams:** A, C, E.
 
@@ -131,7 +131,7 @@ This is a living synthesis. Findings are provisional where underlying workstream
 
 **Assessment:** Participation should not be measured only by contributor counts or data volume. A commons must ask who participates, whose knowledge is missing, how contributions are validated, and how limitations are represented.
 
-### 6. Correction and disagreement must be first-class features
+### 12. Correction and disagreement must be first-class features
 
 **Supporting workstreams:** A, C, E.
 
