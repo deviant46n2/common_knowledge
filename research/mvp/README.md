@@ -25,6 +25,7 @@
 - [Technical opportunities and integration hypotheses](technical-opportunities.md)
 - [Direct competitor source review](direct-competitors.md)
 - [Claim verification and research-agent ecosystem](claim-verification-ecosystem.md)
+- [Workflow provenance and interoperability ecosystem](workflow-interoperability.md)
 - [Hands-on experiments and user discovery plan](discovery-experiments.md)
 - [Development documentation and source-of-truth policy](../../docs/development/README.md)
 
