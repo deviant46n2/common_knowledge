@@ -18,6 +18,8 @@ This changes the near-term priority from completing a broad ecosystem survey to 
 
 Research should continue alongside development. It should not become an indefinite gate that delays a useful prototype.
 
+The detailed evidence base is maintained in the [MVP research index](mvp/README.md). The current [opportunity assessment](mvp/opportunity-assessment.md) identifies a local-first research preflight and handoff workflow as the leading shape to test: a tool that orchestrates existing validators and explains actionable gaps, rather than inventing another research platform or checker. This remains a hypothesis, not a product decision. The [direct competitor review](mvp/direct-competitors.md), [claim-verification ecosystem](mvp/claim-verification-ecosystem.md), and [workflow provenance/interoperability review](mvp/workflow-interoperability.md) document the existing landscape and concrete integration issues. The [hands-on test plan](mvp/discovery-experiments.md) defines what must be verified next.
+
 ## 2. What the MVP must prove
 
 The MVP is not a miniature version of the eventual global commons. It is a working product that demonstrates one useful capability and provides a credible foundation for further work.
