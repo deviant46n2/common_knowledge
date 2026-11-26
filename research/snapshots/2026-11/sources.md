@@ -535,6 +535,118 @@ For each source, record:
 - **Claims supported:** eBird as a platform for submitting and exploring bird observations; relevance to biodiversity citizen science.
 - **Limitations:** Full data quality, licensing, sampling-bias, governance, and data-access review remains outstanding.
 
+
+### A-53 — Dataverse Software
+- **Publisher:** Dataverse Project
+- **Source type:** Primary technical documentation
+- **URL:** https://dataverse.org/software/
+- **Publication / update date:** Current software documentation
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Apache-2.0 license, architecture, APIs, metadata standards, exports, versioning, storage options, and integrations.
+- **Limitations:** Project documentation; actual feature availability depends on software version and local installation configuration.
+
+### A-54 — Dataverse FY2027 Roadmap
+- **Publisher:** Dataverse Project
+- **Source type:** Primary roadmap
+- **URL:** https://dataverse.org/roadmap/
+- **Publication / update date:** FY2027, July 2026–June 2027
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Current priorities concerning biomedical and Indigenous data support, metadata, repository services, community, and performance.
+- **Limitations:** Roadmap intentions are not completed capabilities; target dates may change.
+
+### A-55 — Dataverse Preservation Plan
+- **Publisher:** Dataverse Project
+- **Source type:** Primary preservation documentation
+- **URL:** https://dataverse.org/book/preservation-plan
+- **Publication / update date:** Current documentation page
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Export formats, storage redundancy options, fixity checks, BagIt, OAI-ORE, and Archivematica integration.
+- **Limitations:** Describes technical capabilities and options; preservation outcomes depend on each repository's policies, staffing, funding, and implementation.
+
+### A-56 — Figshare Policies
+- **Publisher:** Figshare / Digital Science
+- **Source type:** Primary service policy
+- **URL:** https://info.figshare.com/user-guide/figshare-policies/
+- **Publication / update date:** Current policy page
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Public access, API availability, backups, default metadata license, dataset licensing options, and versioning.
+- **Limitations:** Vendor policy; service terms can change and institutional products may have different contractual arrangements.
+
+### A-57 — Figshare Security, Stability, and ISO27001 Certification
+- **Publisher:** Figshare / Digital Science
+- **Source type:** Primary service policy
+- **URL:** https://info.figshare.com/user-guide/security-stability/
+- **Publication / update date:** Current policy page
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Security controls, hosting, API permissions, and the distinction between public service preservation and institutional preservation arrangements.
+- **Limitations:** Vendor description; independent audit reports and institutional contract terms were not reviewed.
+
+### A-58 — Galaxy for accessible, reproducible, and collaborative data analyses: 2026 update
+- **Authors:** Galaxy Community
+- **Publisher:** Nucleic Acids Research / Oxford University Press
+- **Source type:** Peer-reviewed community update
+- **URL:** https://doi.org/10.1093/nar/gkag469
+- **Publication date:** 2026-06-09
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Galaxy's scale, community contributions, governance structures, sustainability report, and software license transition.
+- **Limitations:** Community-authored overview; usage counts are reported by the project and do not independently measure equitable participation or scientific outcomes.
+
+### A-59 — Galaxy Governance
+- **Publisher:** Galaxy Project
+- **Source type:** Primary governance documentation
+- **URL:** https://galaxyproject.org/community/governance/
+- **Publication / update date:** Current governance page
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Galaxy's stated mission and its Executive, Technical, and Community Board model.
+- **Limitations:** Describes formal structures; practical influence, representation, and accountability need independent evaluation.
+
+### A-60 — Digital research repository arXiv to start new chapter as nonprofit
+- **Author:** Tom Fleischman
+- **Publisher:** Cornell Chronicle
+- **Source type:** Institutional reporting
+- **URL:** https://news.cornell.edu/stories/2026/06/digital-research-repository-arxiv-start-new-chapter-nonprofit
+- **Publication date:** 2026-06 (exact day not displayed in retrieved record)
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Cornell's announcement of arXiv's transition to an independent nonprofit, the stated financial context, and Simons Foundation International backing.
+- **Limitations:** Cornell institutional news report; formal new-entity governance and audited financial records should be consulted directly when available.
+
+### A-61 — A framework for contextualizing social-ecological biases in contributory science data
+- **Authors:** Elizabeth J. Carlen and Cesar O. Estien
+- **Publisher:** People and Nature
+- **Source type:** Peer-reviewed perspective
+- **URL:** https://doi.org/10.1002/pan3.10592
+- **Publication date:** 2024-03-03
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Four filters shaping contributory biodiversity data: participation, detectability, sampling, and preference; implications for inclusion and interpretation.
+- **Limitations:** Conceptual framework illustrated with a St. Louis case; recommendations require adaptation to other domains and locations.
+
+### A-62 — Estimating sampling biases in citizen science datasets
+- **Publisher:** Ibis
+- **Source type:** Peer-reviewed research article
+- **URL:** https://doi.org/10.1111/ibi.13343
+- **Publication date:** 2024-06-28
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Spatial and temporal sampling bias in citizen-science data and consequences for inference using an eBird example.
+- **Limitations:** Empirical case study; magnitude and correction methods vary across datasets and research questions.
+
+### A-63 — Data coverage, biases, and trends in a global citizen-science resource for monitoring avian diversity
+- **Publisher:** Diversity and Distributions
+- **Source type:** Peer-reviewed research article
+- **URL:** https://doi.org/10.1111/ddi.13863
+- **Publication date:** 2024-06-03
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Data coverage and bias considerations for using eBird hotspots in biodiversity monitoring.
+- **Limitations:** Focused on a specific eBird dataset and monitoring context.
+
+### A-64 — Evaluating the use of semi-structured crowdsourced data to quantify inequitable access to urban biodiversity
+- **Publisher:** Peer-reviewed article indexed in PubMed Central
+- **Source type:** Peer-reviewed empirical study
+- **URL:** https://pmc.ncbi.nlm.nih.gov/articles/PMC9645630/
+- **Publication date:** 2022
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Uneven eBird checklist coverage associated with neighborhood income and racial composition in Boston and Phoenix, and risks for social-ecological inference.
+- **Limitations:** Two-city case study; findings should not be generalized without further evidence.
+
 ## Other workstreams
 
 No sources entered yet. Add new sections and stable IDs as workstreams begin.
