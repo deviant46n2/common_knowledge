@@ -32,6 +32,7 @@ Map platforms, institutions, communities, and practices across academic, indepen
 ## Working record
 
 - [Initial field overview](field-overview.md) — preliminary map of research-lifecycle infrastructure, with current observations and questions.
+- [Landscape directory](landscape-directory.md) — categorized inventory of mapped projects and discovery leads.
 - [OSF profile](../../projects/osf.md) — includes the November 2026 transition.
 - [Zooniverse profile](../../projects/zooniverse.md) — people-powered research and volunteer task workflows.
 - [SciStarter profile](../../projects/scistarter.md) — citizen-science discovery and recruitment.
