@@ -1387,3 +1387,14 @@ No sources entered yet. Add new sections and stable IDs as workstreams begin.
 - **Accessed / verified:** 2026-11-26
 - **Claims supported:** Task-specific disclosure examples for literature search, translation, code, analysis, visualization, writing, and figures; preservation of prompts or outputs where relevant.
 - **Limitations:** APA-specific guidance; authors must follow the target journal's current requirements.
+
+
+### D-11 — The AI Scientist in the Mirror: Shared Flaws, Joint Remedies
+- **Authors:** Quentin E. A. Loisel, Steven N. Goodman
+- **Publisher:** Proceedings of the National Academy of Sciences (PNAS)
+- **Source type:** Scholarly comment on a research article
+- **URL:** https://doi.org/10.1073/pnas.2633303123
+- **Publication date:** 2026-11-16 (online); 2026-11-24 (issue publication)
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Existence, authorship, publication date, and relationship as a comment on D-05, *The More You Automate, the Less You See*.
+- **Limitations:** Full text was not available in this research pass; arguments are not summarized pending retrieval and review.
