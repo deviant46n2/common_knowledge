@@ -1350,3 +1350,40 @@ No sources entered yet. Add new sections and stable IDs as workstreams begin.
 - **Accessed / verified:** 2026-11-26
 - **Claims supported:** Open-source prototype AI collaborator for science-of-science workflows, database repository, multi-agent specialist architecture, and conversational human–AI research interface.
 - **Limitations:** Domain-specific prototype and case studies; reported capabilities do not establish general scientific reliability or transfer to other disciplines.
+
+
+### D-07 — CRediT Contributor Role Taxonomy
+- **Publisher:** National Information Standards Organization (NISO) / CRediT community
+- **Source type:** ANSI/NISO contributor-role taxonomy
+- **URL:** https://credit.niso.org/
+- **Publication date:** Approved as ANSI/NISO standard in 2022
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Fourteen contributor roles, purpose of transparent contribution attribution, CC BY 4.0 licensing, and distinction between contributorship description and authorship determination.
+- **Limitations:** Does not define authorship eligibility or fully represent AI-system, community-governance, or ongoing maintenance roles.
+
+### D-08 — Springer Nature / Nature Portfolio Artificial Intelligence Policy
+- **Publisher:** Springer Nature
+- **Source type:** Publisher editorial policy
+- **URL:** https://www.nature.com/nature-portfolio/editorial-policies/ai
+- **Publication / update date:** Current policy accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Risk-based approach to AI use by authors, reviewers, and editors; human accountability, disclosure, confidentiality, and boundaries on delegation of scholarly judgment.
+- **Limitations:** Publisher-specific policy; not a universal research-integrity standard and subject to revision.
+
+### D-09 — JAMA Network Instructions for Authors: Use of AI in Publication and Research
+- **Publisher:** JAMA Network
+- **Source type:** Journal author instructions
+- **URL:** https://jamanetwork.com/journals/jama/pages/instructions-for-authors
+- **Publication / update date:** Current instructions accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Author responsibility for AI-generated content, disclosure of AI-assisted content creation/revision/formatting, and caution against AI-generated references.
+- **Limitations:** Journal-specific author requirements; not applicable to every discipline or venue.
+
+### D-10 — APA Journals Policy on Generative AI: Additional Guidance
+- **Publisher:** American Psychological Association
+- **Source type:** Publisher disclosure guidance
+- **URL:** https://www.apa.org/pubs/journals/resources/publishing-tips/policy-generative-ai
+- **Publication / update date:** Last updated 2025-08
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Task-specific disclosure examples for literature search, translation, code, analysis, visualization, writing, and figures; preservation of prompts or outputs where relevant.
+- **Limitations:** APA-specific guidance; authors must follow the target journal's current requirements.
