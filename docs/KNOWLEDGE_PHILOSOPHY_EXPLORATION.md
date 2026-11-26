@@ -78,3 +78,29 @@ These questions should be explored through concrete examples and product use cas
 ---
 
 *This document is a living exploration, not a promise that every proposed capability is already designed or implemented.*
+
+## 5. Initial scope and long-term breadth
+
+The founder's current direction is for Common Knowledge to begin with a focused set of domains and expand as the software, community, and institutional capacity mature.
+
+### Initial focus
+
+The initial knowledge scope should concentrate on:
+- Software projects and the practices, structures, and ecosystems around them.
+- Governance: how groups make decisions, distribute authority, resolve disagreement, and remain accountable.
+- Institutional design: how institutions are formed, funded, governed, sustained, and protected from capture.
+
+These areas provide a coherent starting point for exploring claims, evidence, competing interpretations, institutional histories, and subject-level synthesis without requiring the project to cover every field immediately.
+
+The project can also use its own development and governance as an early case study, documenting decisions, rationales, changes, and outcomes through the knowledge practices it is developing.
+
+### Long-term ambition
+
+The long-term ambition remains open-ended: support knowledge across all fields of human inquiry, subject to legitimate safety, rights, and practical constraints. The initial scope is a starting boundary for focus, not a permanent limit on what Common Knowledge may contain.
+
+### Design implication
+
+A narrow initial domain should not result in a knowledge model that is fundamentally limited to software, governance, or institutional design. The underlying concepts and infrastructure should be as general as reasonably possible, while the initial interfaces, examples, workflows, and community activity can be tailored to the starting domains.
+
+**Status:** Initial domains and the ambition to expand broadly are founder-stated direction. The exact first collection of topics, admission criteria, sequencing, and expansion process remain open.
+
