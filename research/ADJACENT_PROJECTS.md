@@ -297,22 +297,22 @@ ORKG is a mature reference for structured scholarly contribution authoring, temp
 
 **Assessment:** A useful integration and UX reference for science, but not a complete foundation for general public knowledge.
 
-## 6. Comparison: what is already covered?
+## 7. Comparison: what is already covered?
 
 | Capability | Knowledge Pixels / Nanoarguments | MIRA / Discourse Graphs | SciOS RRGI / MVR | The Consilience | Project Delphi | ORKG |
-|---|---|---|---|---|---|
-| Human and AI contributions | Agent identity and AI skill exist; broader claim workflow proposed | Human research collaboration; AI-assisted tools in ecosystem | AI extraction plus human review/endorsement in RRGI | AI extraction; deterministic code judges | AI-assisted structured contribution workflows |
-| Atomic claims | Core nanopublication model supports it | First-class Claim | First-class Claim | Typed claims | Structured research contributions |
-| Evidence relations | Nanoarguments aims at support/rebuttal/qualification | supports/opposes; evidence/claim links | supports/opposes/grounds and related edges | Evidence and claim structures | Research contribution properties/comparisons |
-| Provenance and signatures | Strong: signed nanopubs, Trusty URIs, provenance | Signed records reported by MIRA ecosystem | Signed records in RRGI; provenance in graph models | Deterministic input/output hashes and source sentences | Contributor/provenance metadata; DOI publication |
-| Exact source passages | Not yet a complete universal locator | No general selector in current schema | MVR reports source passages; live RRGI details need testing | Exact source sentence is part of extraction | Source papers linked; not a general passage-anchoring layer |
-| Disagreement and correction | Nanoarguments and unfunded broader proposal target this | supports/opposes relations | counterclaims/opposes, endorsements, version relations | Structural mismatch/rejection and claim comparison | Comparisons/reviews, not a general objection network |
-| General public knowledge | Broader proposal includes scientific and other claims | Primarily research | Primarily research | Scientific cross-domain comparison | Scholarly research |
-| Public-facing product | Nanodash and related tools; broader knowledge-sharing UI proposed | Multiple research tools | Live public graph and workshop | Specialized verifier and demos | Mature public scholarly portal |
-| Decentralized infrastructure | Strong, federated nanopublication network | Schema only; does not host | AT Protocol and IPFS in live RRGI | Not the main focus | Hosted institutional platform |
-| Institutional/public-interest stewardship | Open network, but ecosystem stewardship is separate from Common Knowledge's mission | User/toolmaker stewardship | Project-specific | Solo project | Institutional research infrastructure |
+|---|---|---|---|---|---|---|
+| Human and AI contributions | Agent identity and AI skill exist; broader human/AI claim workflow proposed | Human research collaboration; AI-assisted tools in ecosystem | AI extraction plus human review/endorsement in RRGI | Model extraction; deterministic code judges | AI assessments with model/prompt provenance; human review in publishing process | AI-assisted structured research contributions |
+| Atomic claims | Core nanopublication model supports atomic records | First-class Claim | First-class Claim | Typed theory/measured claims | Claim is a source-stated Hypothesis | Research contributions, not generic atomic claims |
+| Evidence relations | Nanoarguments aims at support/rebuttal/qualification | supports/opposes; evidence/claim links | supports/opposes/grounds and related edges | Evidence, disagreement, correspondence, data-quality findings | hasEvidence and hasAssessment; assessments evaluate claims/hypotheses | Comparisons across paper contributions; not a general argument network |
+| Provenance and signatures | Strong: signed nanopubs, Trusty URIs, provenance | Signed records reported by MIRA ecosystem | Signed records in RRGI; provenance in graph models | Source sentence/document and nanopub provenance | Nanopub signatures, source links, model and prompt provenance | Contributor metadata and DOI publication |
+| Exact source passages | No complete universal selector yet | No general selector in current schema | MVR reports source passages; inspected Git sample mainly cites bibliographic Source nodes | Exact source sentence; theory claims include document and page | Public app advertises source excerpts; full general selector model needs inspection | Paper links and structured contributions; not a general passage-anchor system |
+| Disagreement and correction | Nanoarguments and unfunded broader proposal target this | supports/opposes relations | Counterclaims/opposes, endorsements, version relations | Structured disagreement, testability, graded correspondence, supersession | Separate evidence assessments and hypotheses; explicit corrections via nanopub history | Comparisons/reviews, not a general objection network |
+| General public knowledge | Broader proposal includes scientific and other claims | Primarily research | Primarily research | Scientific cross-domain comparison | Scientific research and frontier domains | Scholarly research |
+| Public-facing product | Nanodash and related tools; broader knowledge-sharing UI proposed | Multiple research tools | Live public graph and workshop | Specialized verifier and demos | Live Science Oracle Q&A, graph, paper/hypothesis browsers, public PKG Viewer | Mature public scholarly portal |
+| Decentralized infrastructure | Strong, federated nanopublication network | Schema only; does not host | AT Protocol and IPFS in live RRGI | Uses nanopublications | Uses nanopublications | Hosted institutional platform |
+| Institutional/public-interest stewardship | Open network; ecosystem stewardship is separate from Common Knowledge's mission | User/toolmaker stewardship | Project-specific | Solo project | Project-specific; public/private corpus boundary needs review | Institutional research infrastructure |
 
-## 7. What might still be distinct about Common Knowledge?
+## 8. What might still be distinct about Common Knowledge?
 
 The overlap is substantial. We should not claim that Common Knowledge is the first project to propose a shared, evidence-linked record of claims by humans and AI.
 
@@ -326,7 +326,7 @@ Potentially distinctive work remains, but it needs validation:
 
 These are hypotheses, not established gaps. Knowledge Pixels' broader proposal already overlaps with some of them, so we need direct conversations and real user research before claiming differentiation.
 
-## 8. Strategic recommendation
+## 9. Strategic recommendation
 
 Before building another data model or publication backend:
 
