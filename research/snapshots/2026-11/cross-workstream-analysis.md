@@ -19,7 +19,7 @@ This is a living synthesis. Findings are provisional where underlying workstream
 | [C — Reproducibility and research integrity](workstreams/C-reproducibility/README.md) | In progress | Initial frameworks and tools map, research-record proposal, and integrity/correction analysis |
 | [D — Human–AI research collaboration](workstreams/D-human-ai-collaboration/README.md) | In progress | Initial evidence on AI research agents, human–AI reproducibility, workflow auditability, and contribution/accountability policies |
 | [E — Shared knowledge and preservation](workstreams/E-knowledge-preservation/README.md) | In progress | Initial standards map, identifiers, preservation, community rights, and federated discovery synthesis |
-| [F — Governance, economics, and institutional design](workstreams/F-governance-economics/README.md) | Not started | Pending investigation |
+| [F — Governance, economics, and institutional design](workstreams/F-governance-economics/README.md) | In progress | Initial comparison of nonprofit, subsidiary, fiscal-host, and cooperative structures; compensation and funding independence |
 | [G — People and research ecosystem needs](workstreams/G-people-and-needs/README.md) | Not started | Pending investigation; conversations should begin throughout the program |
 
 ## Emerging cross-cutting themes
@@ -43,7 +43,25 @@ This is a living synthesis. Findings are provisional where underlying workstream
 
 **Assessment:** Agent task completion and polished manuscripts are not sufficient evidence of scientific validity. The research record should preserve material workflow artifacts, human decisions, data lineage, and verification scope.
 
-### 10. Data locality can be more important than compute distribution
+### 11. Legal form does not determine whether power is distributed
+
+**Supporting workstreams:** F, A, E.
+
+- Workstream F's initial comparison shows that nonmember nonprofits can include community-represented trustees while retaining board authority, and that worker cooperatives may democratize workplace control without representing all public beneficiaries.
+- Workstream A and E show that community governance, contributor agency, and local stewardship exist in many forms outside a single institution.
+
+**Assessment:** Common Knowledge should specify decision rights, representation, asset control, and accountability before selecting a legal form. “Nonprofit,” “foundation,” or “cooperative” is not a substitute for a governance design.
+
+### 12. Funding independence is a structural requirement
+
+**Supporting workstreams:** F, A, E.
+
+- Workstream F's review of Wikimedia, Mozilla, and fiscal-host models shows different mixes of donations, commercial revenue, investment income, and external legal/financial services.
+- Workstreams A and E show that infrastructure and preservation depend on durable funding and custodianship.
+
+**Assessment:** Financial transparency is necessary but insufficient. Donor concentration, restricted funding, commercial dependencies, and host control can shape research priorities and continuity. These dependencies should be disclosed and governed.
+
+### 13. Data locality can be more important than compute distribution
 
 **Supporting workstreams:** B, C, E.
 
@@ -172,3 +190,4 @@ Do not promote a candidate opportunity to a recommendation until the underlying 
 - **2026-11-26:** Added preliminary themes based on Workstreams A, C, and E. All three remain in progress; these themes are hypotheses to test, not final conclusions.
 - **2026-11-26:** Added Workstream B and two cross-cutting themes on reciprocal trust obligations and data locality. Workstream B remains in progress.
 - **2026-11-26:** Added Workstream D and a cross-cutting theme on human–AI research auditability. Workstream D remains in progress.
+- **2026-11-26:** Added Workstream F and themes on legal form versus power distribution and funding independence. Workstream F remains in progress.
