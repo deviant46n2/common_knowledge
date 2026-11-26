@@ -1,7 +1,7 @@
 # Cross-Workstream Analysis — November 2026
 
 - **Snapshot cutoff:** 26 November 2026
-- **Status:** Preliminary synthesis; three workstreams have substantive early findings, none is baseline complete
+- **Status:** Preliminary synthesis; all seven workstreams have initial or partial findings, none is baseline complete
 - **Program:** [Common Knowledge Research Program](../../../PROGRAM.md)
 
 ## Purpose
