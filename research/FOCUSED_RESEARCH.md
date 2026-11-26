@@ -887,3 +887,25 @@ The public test instance is useful for inspection, but it is not a dedicated sci
 
 Source:
 - Test Wikidata sandbox item: https://test.wikidata.org/wiki/Q213542
+
+
+### Current Wikibase REST API smoke test
+
+The same test entity was fetched through the newer Wikibase REST API at:
+https://test.wikidata.org/w/rest.php/wikibase/v1/entities/items/Q213542
+
+The REST response groups statements by property and gives each statement a consistent object with:
+- a statement ID and rank;
+- a property ID and data type;
+- a typed value;
+- a list of qualifiers, each with its property and typed value;
+- a list of references, each with a hash and its structured parts.
+
+The version property response preserved all six values, including the preferred and normal-ranked 1.0.5 statements, each publication-date qualifier, and the reference parts (URL, title, retrieval date). This is much easier to consume than the nested Action API shape while retaining the details needed for a faithful adapter.
+
+The separate /statements endpoint returned the same grouped statement structure. This confirms the REST API is reachable on the current test instance and is a promising interface for a Wikibase integration. This was a read-only GET test; no authentication, writes, or API editing were attempted.
+
+Sources:
+- Wikibase REST API entity: https://test.wikidata.org/w/rest.php/wikibase/v1/entities/items/Q213542
+- Wikibase REST API statements: https://test.wikidata.org/w/rest.php/wikibase/v1/entities/items/Q213542/statements
+- Official REST API documentation: https://www.wikidata.org/wiki/Wikidata:REST_API
