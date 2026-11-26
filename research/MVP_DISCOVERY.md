@@ -46,11 +46,14 @@ These are candidates for investigation, not decisions.
 | Research workflow / provenance audit | A team wants to understand whether another person can inspect or re-run a computational result | Could expose missing dependencies, undocumented steps, inaccessible inputs, and unverifiable claims | Execution environments are complex; a successful run does not establish scientific validity |
 | Federated research discovery | A researcher wants to find related projects and evidence across repositories and disciplines | Strong long-term commons fit | Requires data integration, ranking, rights-aware metadata, and enough indexed content; hard to make compelling as a first product |
 | Human–AI research audit trail | A researcher wants transparent records of AI-assisted research | Timely and relevant to Common Knowledge's human–AI goals | Rapidly changing field; Paper2Agent, ReCRATE, OpenTelemetry, and research-trace projects already cover important parts |
-| Claim-to-evidence verifier | A researcher or reviewer wants to know whether numerical claims in a report are supported by the correct run, metric, and output | Narrow, measurable integrity problem with emerging empirical evidence | A benchmark-specific MIT-licensed checker already exists; interoperability and user demand remain unproven |
+| Claim-to-evidence verifier | A researcher or reviewer wants to know whether numerical claims in a report are supported by the correct run, metric, and output | Narrow, measurable integrity problem with emerging empirical evidence | Multiple mature tools already cover much of this; a new checker is not justified |
+| Local-first research preflight and handoff | A researcher wants to prepare an existing project for another person to inspect, reuse, or preserve without learning every specialist tool | Could orchestrate existing validators and explain actionable gaps in one workflow | Must prove it is more than a checklist or wrapper; user demand is unvalidated |
 
 ### Candidate product shapes worth testing
 
-One candidate is a small, local-first tool that examines a computational research project and produces:
+The leading shape to investigate is a small, local-first research preflight tool that examines a computational project, orchestrates appropriate existing checks, and produces an actionable handoff report. It must demonstrate value beyond aggregating checklists or wrapping commands.
+
+A related candidate is a tool that examines a computational research project and produces:
 
 1. a human-readable report describing what is present, missing, unclear, or not verifiable;
 2. a portable, standards-based package of project metadata and selected artifacts;
