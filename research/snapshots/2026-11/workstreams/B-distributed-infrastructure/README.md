@@ -44,6 +44,7 @@ This page is the workstream's durable entry point. Add dated notes below as rese
 
 - **2026-11-26:** Workstream scope and initial questions recorded. No comprehensive investigation had yet been completed.
 - **2026-11-26:** Added initial comparison of BOINC, HTCondor, Kubernetes multi-cluster coordination, libp2p, and IPFS. Registered sources B-01 through B-08.
+- **2026-11-26:** Investigated BOINC Central and BUDA as a hosted volunteer-compute route, including eligibility, public-data requirements, workload constraints, and batch submission; registered sources B-12 through B-15.
 - **2026-11-26:** Added an initial trust and validation analysis covering application-specific result checks, replicated execution, adaptive replication, volunteer security, and Filecoin storage proofs; registered sources B-09 through B-11.
 - **2026-11-26:** Added a workload-fit and resource-economics framework to guide pilot selection and compare distributed execution against local or institutional alternatives.
 
