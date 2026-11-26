@@ -58,6 +58,8 @@ A particularly promising *shape* is a small, local-first tool that examines a co
 
 This could complement existing repositories and workflow systems rather than replace them. It must be tested against existing tools before being selected. In particular, RO-Crate is an established packaging standard, and `ro-crate-py` already provides libraries and CLI functions to create and consume crates. Common Knowledge should reuse standards and mature libraries rather than invent another metadata format.
 
+The deeper first-pass comparison is now maintained in the [MVP research index](mvp/README.md), including the [candidate landscape](mvp/candidate-landscape.md) and [technical opportunity hypotheses](mvp/technical-opportunities.md). The initial comparison weakens the case for a generic research packager or metadata generator and elevates two narrower candidates: research handoff/readiness diagnostics and research-specific auditability for AI-assisted work. Neither is selected or user-validated.
+
 ## 4. What the current evidence says
 
 ### Existing infrastructure is substantial
