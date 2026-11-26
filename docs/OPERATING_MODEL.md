@@ -4,7 +4,8 @@
 **Version:** 0.1  
 **Proposed:** 26 November 2026  
 **Owner:** Founding project steward, pending development of shared governance  
-**Review trigger:** Before the first external contribution, public software release, funding acceptance, collection of sensitive data, or other material change in project responsibilities
+**Review trigger:** Before the first external contribution, public software release, funding acceptance, collection of sensitive data, or other material change in project responsibilities  
+**Provenance:** AI-assisted draft; founder review pending
 
 ## 1. Purpose
 
