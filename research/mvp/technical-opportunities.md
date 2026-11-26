@@ -141,7 +141,7 @@ The product question is not “can we create an evidence graph?” The question 
 
 ## 5. Standards and specifications to verify
 
-- **RO-Crate:** research object packaging and profiles.
+- **RO-Crate 1.3:** current released research-object packaging specification (released June 2026); current compatibility must be checked against the actual tools selected.
 - **W3C PROV:** provenance model for entities, activities, and agents.
 - **OpenTelemetry GenAI semantic conventions:** trace attributes and events for model and agent operations.
 - **OpenInference:** complementary trace conventions and instrumentation ecosystem.
@@ -149,9 +149,9 @@ The product question is not “can we create an evidence graph?” The question 
 - **CITATION.cff:** software citation metadata.
 - **BagIt:** packaging and payload manifest conventions for transfer and fixity.
 - **FAIR4RS:** findability, accessibility, interoperability, and reuse principles for research software.
-- **Workflow RO-Crate / Provenance Run Crate:** structured descriptions of workflows and executions.
+- **Workflow Run RO-Crate 0.6:** current profile collection aligned with RO-Crate 1.3 (released September 2026); the current version has compatibility changes relative to older 0.5 / RO-Crate 1.1 implementations.
 
-The product must select profiles and combinations based on the actual use case. Listing standards is not an architecture.
+The product must select profiles and combinations based on the actual use case. Listing standards is not an architecture. Existing projects may lag current versions: for example, ReCRATE's inspected crate specification documents Workflow Run Crate 0.5 and Workflow RO-Crate 1.0, while the current profile collection is 0.6 / RO-Crate 1.3. Version compatibility and migration need to be tested explicitly rather than assumed.
 
 ## 5. Comparative technical experiments to run
 
