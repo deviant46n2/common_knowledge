@@ -39,7 +39,7 @@ This is a living synthesis. Findings are provisional where underlying workstream
 **Supporting workstreams:** C, D.
 
 - Workstream C shows that computational reproducibility depends on methods, data, code, environments, and correction history.
-- Workstream D's 2026 evidence finds that human–AI teams can perform comparably to human-only teams in one reproduction task, while AI-led teams performed substantially worse; other work identifies hidden methodological flaws in autonomous AI scientist workflows. A PNAS commentary reports that targeted detection of these flaws rose from 53.7% using papers alone to 81.5% with logs and code in the specific study.
+- Workstream D's 2024 meta-analysis found that human–AI combinations were, on average, better than humans alone but worse than the best standalone human or AI system, with task-dependent differences. Its 2026 evidence finds that AI-assisted teams performed comparably to human-only teams in one reproduction task, while AI-led teams performed substantially worse; other work identifies hidden methodological flaws in autonomous AI scientist workflows. A PNAS commentary reports that targeted detection of these flaws rose from 53.7% using papers alone to 81.5% with logs and code in the specific study.
 
 **Assessment:** Agent task completion and polished manuscripts are not sufficient evidence of scientific validity. The research record should preserve material workflow artifacts, human decisions, data lineage, and verification scope.
 
