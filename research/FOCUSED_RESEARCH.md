@@ -605,3 +605,73 @@ Before integrating it, make a small, bounded API sample:
 5. Save the query, retrieval timestamp, API response, and relevant identifiers as a dated test fixture.
 
 Do not download the full snapshot or build a continuous sync pipeline unless a real product workflow demonstrates that it is needed.
+
+
+## Source-code and package metadata spot-check
+
+**Research date:** 26 November 2026  
+**Method:** Read selected current repository manifests and READMEs through GitHub: Wikibase extension composer/extension metadata, nanopub-py project metadata and README, and nanopub-js package metadata. This is a targeted spot-check, not a full code audit or security review.
+
+### Wikibase
+
+The current Wikibase extension manifest identifies the package as a MediaWiki extension and declares GPL-2.0-or-later. Its repository extension metadata currently requires MediaWiki 1.48.0 or later. The Composer manifest shows a substantial PHP dependency set, and the extension manifest exposes many Action API modules for entity retrieval and editing.
+
+This confirms that Wikibase is not a standalone library or database that can simply be embedded in a small Python application. It is an extension integrated into a specific MediaWiki version and runtime, with its own dependency and upgrade compatibility requirements.
+
+Files inspected:
+- https://github.com/wikimedia/mediawiki-extensions-Wikibase/blob/master/composer.json
+- https://github.com/wikimedia/mediawiki-extensions-Wikibase/blob/master/extension-repo.json
+
+### Nanopublication Python and JavaScript libraries
+
+The current nanopub-py project metadata inspected identifies version 2.2.2, Python 3.12 or later, Apache-2.0, and dependencies including RDFLib, requests, Typer, PySHACL, and SPARQLWrapper. Its README documents a high-level API for constructing, publishing, searching, fetching, and inspecting nanopublications. It also demonstrates an explicit test-server configuration flag in its quick-start example. The project includes test markers for network-dependent tests and a test-suite connector dependency.
+
+The current nanopub-js package metadata inspected identifies version 0.7.0, MIT, browser and Node entry points, and package scripts for building and running tests. This supports the claim that the ecosystem can be integrated into either a Python-oriented or JavaScript-oriented prototype, though version compatibility and runtime behaviour still need hands-on testing.
+
+Files inspected:
+- https://github.com/Nanopublication/nanopub-py/blob/main/pyproject.toml
+- https://github.com/Nanopublication/nanopub-py/blob/main/README.md
+- https://github.com/Nanopublication/nanopub-js/blob/main/package.json
+
+### Limits of this inspection
+
+No source files beyond these manifests/READMEs were audited, no package was installed, and no automated tests were run. The package metadata is a snapshot of the repositories at the time of inspection; it should be rechecked before selecting versions or depending on specific APIs.
+
+## Same-example comparison across the candidate approaches
+
+To avoid comparing each technology against a different imagined use case, use one synthetic example:
+
+> **Synthetic observation:** A fictional monitoring station R-1 recorded dissolved oxygen of 4.2 mg/L at 09:00 UTC on 1 May 2026. The cited CSV row is the observation source. A separate calibration log says the sensor was overdue for calibration. The observation may be authentic as a recorded measurement while its accuracy remains uncertain.
+
+This example deliberately separates (a) what a source recorded from (b) whether that record is a reliable measurement and (c) what conclusion, if any, follows from it.
+
+| Need in the example | Wikibase | Nanopublications | RDF / PROV-O / SHACL / Web Annotation | OpenAlex |
+|---|---|---|---|---|
+| Represent station, property, value, unit, time | Native structured entity and statement model; qualifiers can carry context | RDF assertion graph can express it; vocabulary must be chosen | Directly representable in RDF with an application vocabulary | Not its purpose; may index a cited dataset as a scholarly work |
+| Identify source and exact CSV row | Reference records can store source metadata, but a robust row/cell anchor needs a convention or extension | Provenance graph can link the source; exact row selector must be modeled | Web Annotation provides selectors; CSV row/cell semantics may still need an application-specific convention | Can help discover dataset metadata/DOI, not identify the exact row as evidence |
+| Preserve calibration concern | Could model as another entity/statement and link it to the observation | Could publish a separate assertion and link/derive from the first | Separate evidence and assessment nodes/graphs with explicit relations | Not a review or measurement-validity model |
+| Record who extracted/reviewed it and how | Revision history records edits; a distinct review activity/method needs extra modeling | Provenance and publication metadata, signed by a key; detailed review method needs a vocabulary | PROV-O can model activities, entities, agents, and derivations | Records some contributor/curation activity, not the review of the observation |
+| Preserve uncertainty and competing assessments | Possible with custom entities/properties; no complete assessment workflow by default | Possible as separate nanopublications; query/view conventions determine presentation | Flexible, but all assessment semantics must be designed | Not a core capability |
+| Correct the record while preserving history | MediaWiki revisions and diffs | Immutable publication plus supersession/retraction/derivation | Depends on the application and storage/version model | Curations update index records; not a general claim revision model |
+| Validate required fields | Some constraints/extensions exist; exact behaviour needs a trial | Can use SHACL tooling in the ecosystem; template validation also applies | SHACL directly validates graph shape | API schema and record pipeline, not a user-defined knowledge-record validator |
+| Ordinary contributor experience | Mature wiki editing patterns, but entity modeling is specialized | Nanodash templates turn RDF into forms; usability still needs user testing | Not a user interface by itself | Strong discovery/API experience for scholarly records |
+
+### What this comparison teaches us
+
+1. The source object, evidence anchor, observation/assertion, and assessment should be distinct concepts. One source can contain many evidence locations; one evidence location can be relevant to multiple assertions; and one assertion can receive multiple assessments.
+2. A source citation is not the same thing as evidence. A durable record needs to identify what part of the source is being relied on and what it is said to show.
+3. The observation itself may be well-established even when its interpretation or measurement reliability is uncertain. The system should preserve those separate judgments rather than flatten them into one truth score.
+4. No candidate supplies the complete workflow. Wikibase and nanopublications are the most relevant candidates for the contribution/publishing layer; RDF standards provide interoperability components; OpenAlex is an upstream scholarly index.
+5. We should test a complete contributor-to-reader workflow before selecting a storage architecture. A standards-compliant data model that ordinary people cannot author or inspect is not a successful product.
+
+## Current comparative position (not a technology decision)
+
+The research so far supports the following provisional roles:
+- **Wikibase:** strongest existing candidate for a collaborative structured-data repository with familiar revision history and permissions.
+- **Nanopublications:** strongest existing candidate for immutable, independently citable publication and community-maintained semantic resources.
+- **RDF + PROV-O + SHACL + Web Annotation:** strongest standards toolkit for interoperable records, provenance, structural checks, and precise evidence anchors; requires a product implementation.
+- **OpenAlex:** upstream scholarly discovery and metadata enrichment only.
+
+These roles can be combined. For example, a product could use a contributor-friendly relational/JSON model internally, publish selected assertions as nanopublications, map provenance to PROV-O, expose JSON-LD/RDF exports, validate exports with SHACL, use Web Annotation for source anchors, and query OpenAlex for scholarly metadata. That is an architectural possibility, not a recommendation to implement all these pieces now.
+
+**Next decision should be driven by a hands-on prototype and a real user workflow**, not by the theoretical completeness of any standard or platform.
