@@ -719,3 +719,104 @@ No sources entered yet. Add new sections and stable IDs as workstreams begin.
 - Record exact publication dates when verified; do not infer dates from search-result recency in final claims.
 - Note when a source is a platform's own description rather than independent evidence.
 - Link claims to sources close to where they appear in research documents.
+
+
+### C-07 — RO-Crate Specification
+- **Publisher:** Research Object Crate community
+- **Source type:** Community-maintained technical specification
+- **URL:** https://www.researchobject.org/ro-crate/specification
+- **Publication / update date:** Version 1.3 identified as current long-term release on page accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** RO-Crate's research-object metadata model, version status, community development, and interoperability direction.
+- **Limitations:** Specification documentation; adoption, implementation quality, and long-term maintenance need independent evaluation.
+
+### C-08 — RO-Crate Provenance
+- **Publisher:** Research Object Crate community
+- **Source type:** Technical specification
+- **URL:** https://www.researchobject.org/ro-crate/specification/1.2/provenance.html
+- **Publication / update date:** RO-Crate 1.2 provenance guidance
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Representation of creation and update actions, agents, instruments, times, status, errors, and version relationships.
+- **Limitations:** Guidance for representing provenance; it does not guarantee completeness or truthfulness of recorded provenance.
+
+### C-09 — PROV-O: The PROV Ontology
+- **Publisher:** World Wide Web Consortium (W3C)
+- **Source type:** W3C Recommendation
+- **URL:** https://www.w3.org/TR/prov-o/
+- **Publication date:** 2013-04-30
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Interchangeable provenance model using Entity, Activity, Agent, and relationships such as used, generated, derived, and attributed.
+- **Limitations:** General ontology; practical interoperability depends on implementation profiles and consistent adoption.
+
+### C-10 — The BagIt File Packaging Format (V1.0), RFC 8493
+- **Authors:** John Kunze, John Littman, and others
+- **Publisher:** RFC Editor
+- **Source type:** Informational RFC
+- **URL:** https://www.rfc-editor.org/rfc/rfc8493
+- **Publication date:** 2018-10
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Hierarchical package structure, metadata tags, payload manifests, and checksum-based integrity checking for transfer and storage.
+- **Limitations:** Informational RFC, not an Internet Standards Track specification; fixity checks do not establish scientific validity or preservation sustainability.
+
+### C-11 — Project Jupyter: The Binder Project
+- **Publisher:** Project Jupyter
+- **Source type:** Primary technical project documentation
+- **URL:** https://jupyter.org/binder
+- **Publication / update date:** Current project documentation
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** BinderHub and repo2docker architecture, repository-to-container environment construction, and public mybinder.org service.
+- **Limitations:** Project documentation; public service availability, resource limits, and long-term environment preservation require separate assessment.
+
+### C-12 — Whole Tale Documentation
+- **Publisher:** Whole Tale project
+- **Source type:** Primary project and technical documentation
+- **URL:** https://wholetale.readthedocs.io/en/stable/
+- **Publication / update date:** Documentation version 1.2.0.0
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Research objects combining data, code, environment, provenance, execution, and repository publication.
+- **Limitations:** Project documentation; current operational status, adoption, sustainability, and independent user experience need further review.
+
+### C-13 — Code Ocean User Guide and Reproducibility Documentation
+- **Publisher:** Code Ocean
+- **Source type:** Primary vendor documentation
+- **URL:** https://docs.codeocean.com/user-guide
+- **Publication / update date:** Current documentation accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Capsules, computational environments, Git history, reproducibility runs, release capsules, and platform verification process.
+- **Limitations:** Vendor-authored description; commercial terms, independent verification scope, data portability, and service continuity require further investigation.
+
+### C-14 — EQUATOR Network: Reporting Guidelines
+- **Publisher:** EQUATOR Network
+- **Source type:** Research reporting guideline catalogue
+- **URL:** https://equator-network.org/reporting-guidelines/
+- **Publication / update date:** Current searchable catalogue accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Discipline- and design-specific reporting guidelines including CONSORT 2025, PRISMA 2020, and STROBE.
+- **Limitations:** Catalogue inclusion does not establish that every guideline is current, suitable, or sufficient for every study; authors must select the appropriate guideline and extension.
+
+### C-15 — Registered Reports
+- **Publisher:** Center for Open Science
+- **Source type:** Primary publishing-format documentation
+- **URL:** https://www.cos.io/initiatives/registered-reports
+- **Publication / update date:** Current initiative page accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Stage 1 and Stage 2 workflow, in-principle acceptance, outcome-neutral editorial decisions, exploratory-analysis reporting, and participating journal list.
+- **Limitations:** Organization-authored guidance; journal implementation varies and reported adoption is not an independent measure of effectiveness.
+
+### C-16 — Retraction Watch
+- **Publisher:** Crossref
+- **Source type:** Primary metadata and data-access documentation
+- **URL:** https://www.crossref.org/documentation/retrieve-metadata/retraction-watch/
+- **Publication / update date:** Current documentation accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Database acquisition, public CSV availability, REST API integration, data collection approach, and differences in coverage for retractions versus other update types.
+- **Limitations:** Corrections and expressions of concern are less comprehensive than retractions; metadata depends on discovery and publisher reporting and should not be treated as exhaustive.
+
+### C-17 — Crossref Status: Retraction Watch API update incident
+- **Publisher:** Crossref
+- **Source type:** Operational status notice
+- **URL:** https://status.crossref.org/
+- **Publication date:** 2026-11-25
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Crossref's report that approximately 1,300 Retraction Watch updates had not reached the REST API from 2026-09-24 until a fix was implemented and monitored on 2026-11-25; CSV availability during the incident.
+- **Limitations:** Incident notice describes one operational failure and its reported remediation; it does not establish long-term API reliability or completeness.
