@@ -27,6 +27,7 @@
 - [Claim verification and research-agent ecosystem](claim-verification-ecosystem.md)
 - [Workflow provenance and interoperability ecosystem](workflow-interoperability.md)
 - [Hands-on experiments and user discovery plan](discovery-experiments.md)
+- [Preliminary MVP opportunity assessment](opportunity-assessment.md)
 - [Development documentation and source-of-truth policy](../../docs/development/README.md)
 
 ## Current preliminary conclusion
