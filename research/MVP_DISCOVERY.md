@@ -45,11 +45,12 @@ These are candidates for investigation, not decisions.
 | Portable research-project record | A small research team wants a durable record of question, methods, inputs, outputs, contributors, rights, and changes | Could bridge fragmented tools without replacing them | Risk of becoming another project-management template or metadata burden |
 | Research workflow / provenance audit | A team wants to understand whether another person can inspect or re-run a computational result | Could expose missing dependencies, undocumented steps, inaccessible inputs, and unverifiable claims | Execution environments are complex; a successful run does not establish scientific validity |
 | Federated research discovery | A researcher wants to find related projects and evidence across repositories and disciplines | Strong long-term commons fit | Requires data integration, ranking, rights-aware metadata, and enough indexed content; hard to make compelling as a first product |
-| Human–AI research audit trail | A researcher wants transparent records of AI-assisted research | Timely and relevant to Common Knowledge's human–AI goals | Rapidly changing field, substantial privacy and security questions, and risk of overclaiming what logs prove |
+| Human–AI research audit trail | A researcher wants transparent records of AI-assisted research | Timely and relevant to Common Knowledge's human–AI goals | Rapidly changing field; Paper2Agent, ReCRATE, OpenTelemetry, and research-trace projects already cover important parts |
+| Claim-to-evidence verifier | A researcher or reviewer wants to know whether numerical claims in a report are supported by the correct run, metric, and output | Narrow, measurable integrity problem with emerging empirical evidence | A benchmark-specific MIT-licensed checker already exists; interoperability and user demand remain unproven |
 
-### Early hypothesis worth testing
+### Candidate product shapes worth testing
 
-A particularly promising *shape* is a small, local-first tool that examines a computational research project and produces:
+One candidate is a small, local-first tool that examines a computational research project and produces:
 
 1. a human-readable report describing what is present, missing, unclear, or not verifiable;
 2. a portable, standards-based package of project metadata and selected artifacts;
@@ -58,7 +59,9 @@ A particularly promising *shape* is a small, local-first tool that examines a co
 
 This could complement existing repositories and workflow systems rather than replace them. It must be tested against existing tools before being selected. In particular, RO-Crate is an established packaging standard, and `ro-crate-py` already provides libraries and CLI functions to create and consume crates. Common Knowledge should reuse standards and mature libraries rather than invent another metadata format.
 
-The deeper first-pass comparison is now maintained in the [MVP research index](mvp/README.md), including the [candidate landscape](mvp/candidate-landscape.md) and [technical opportunity hypotheses](mvp/technical-opportunities.md). The initial comparison weakens the case for a generic research packager or metadata generator and elevates two narrower candidates: research handoff/readiness diagnostics and research-specific auditability for AI-assisted work. Neither is selected or user-validated.
+A second, narrower candidate is a claim-to-evidence verifier for numerical statements in reports. It would connect each claim to the correct metric, experiment, run, and output artifact, with conservative human-reviewed results. A benchmark-specific checker already exists, so the possible contribution would need to be interoperability and workflow integration, not a duplicate algorithm.
+
+A major competitor review has identified [ReCRATE](https://github.com/biaperotto/recrate) and [Paper2Agent](https://www.nature.com/articles/s41586-026-11044-y) as substantial adjacent projects. The [MVP research index](mvp/README.md) links the [candidate landscape](mvp/candidate-landscape.md), [direct competitor review](mvp/direct-competitors.md), [technical opportunity hypotheses](mvp/technical-opportunities.md), and [hands-on experiments and user discovery plan](mvp/discovery-experiments.md). No candidate is selected or user-validated.
 
 ## 4. What the current evidence says
 
