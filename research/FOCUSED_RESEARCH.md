@@ -1155,3 +1155,23 @@ Sources:
 - [CSVW tools](https://csvw.org/tools.html)
 
 We have not run the `csvwvalidate` CLI because the package is not installed in the current runtime. The experiment report records this limitation and a pinned-version next step.
+
+
+### Wikibase Cloud: a lower-friction evaluation route is now available
+
+The current Wikibase Cloud homepage advertises an Open Beta and a free hosted Wikibase service, with European data centers and no hardware requirement. This changes the practical evaluation picture: we do not need to deploy the full self-hosted Wikibase Suite merely to try the editing workflow. The service itself warns that beta availability may not be 100%.
+
+The hosted service has important constraints:
+- A user account and a newly created wiki are required; this is not a disposable local demo.
+- Official first-steps guidance says each instance should publish terms of use and an imprint, and notes that the service is hosted in Germany.
+- The Cloud FAQ says the default site language cannot be changed.
+- The Cloud FAQ says data is backed up daily with seven days of backups, while the current homepage advertises 30 days of guaranteed backups. These official pages conflict, so backup retention must be confirmed with the provider rather than assumed.
+- The self-hosted Wikibase FAQ says Wikibase does not currently support hiding individual items or properties in an instance. Treat any hosted test instance as public-facing unless current Cloud documentation confirms otherwise; only synthetic, non-sensitive test data should be used.
+
+Sources:
+- Wikibase Cloud, [current homepage / Open Beta](https://www.wikibase.cloud/)
+- MediaWiki, [Wikibase Cloud first steps](https://www.mediawiki.org/wiki/Wikibase/Wikibase.cloud/First_steps/en)
+- MediaWiki, [Wikibase Cloud FAQ](https://www.mediawiki.org/wiki/Wikibase/Wikibase.cloud/FAQ)
+- MediaWiki, [Wikibase FAQ](https://www.mediawiki.org/wiki/Wikibase/FAQ)
+
+**Practical implication:** Wikibase is now feasible to evaluate without self-hosting, but the test should be done in a dedicated instance using fictional public data. Creating that instance requires a user account, email verification, and the instance's own setup steps. No account or wiki has been created by this project.
