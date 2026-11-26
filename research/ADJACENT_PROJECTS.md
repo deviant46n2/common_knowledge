@@ -169,7 +169,7 @@ SciOS demonstrates several useful approaches:
 - lightweight Git-based review as an alternative to building a bespoke collaboration platform;
 - an AT Protocol/IPFS architecture for personal data ownership and preservation.
 
-The current graph schemas are science-oriented. The Git-based schema has no universal source-version/selector model, and its claim/evidence vocabulary is not yet a general epistemic assessment standard. The live RRGI app's API and source availability remain open questions.
+The current graph schemas are science-oriented. A read-only inspection of selected Git-based graph nodes found that evidence is summarized and linked to a bibliographic Source node, but the sample did not include a DOI/URL or exact passage/table/row selector. Its `status` field is a contribution lifecycle state, not an epistemic verdict. The Git-based schema has no universal source-version/selector model, and its claim/evidence vocabulary is not yet a general epistemic assessment standard. The live RRGI app's API and source availability remain open questions. See the [read-only graph review](experiments/2026-11-scios-git-graph-review.md).
 
 **Assessment:** One of the closest practical examples to the product workflow Common Knowledge is exploring. It should be tested as a product and potential collaborator, not treated as a complete general knowledge authority.
 
