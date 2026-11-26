@@ -30,6 +30,14 @@ BOINC documentation identifies threats to both volunteers and project operators,
 
 Result validation is workload-specific. Replication can detect some incorrect results, but floating-point differences, collusion, malicious reverse engineering, and correlated errors complicate simple majority agreement. Adaptive replication reduces overhead by using host/application-version history, but this is not a cryptographic proof of scientific correctness.
 
+## BOINC Central and BUDA
+
+BOINC Central is a hosted service operated by the UC Berkeley BOINC project. It allows researchers to use volunteer computing without creating and operating their own BOINC project. Its BUDA framework packages Docker-based applications and supports batch job submission, monitoring, and output retrieval through a web interface.
+
+BOINC Central's current scientist guidelines require a scientific or nonprofit goal, open-source software, public conclusions, and publicly available, unencrypted input and output data that do not contain personal or sensitive information. Workloads should consist of many independent jobs, typically running from a few minutes to a day, and should fit within the resource limits of typical home computers. The service is designed for high throughput, not fast turnaround.
+
+This is potentially useful for an early Common Knowledge pilot if a suitable public-data workload exists. It is not a general-purpose cloud replacement: eligibility, queue times, capacity, Docker/Podman compatibility, GPU support, and current service terms should be confirmed directly.
+
 ## Relevance to Common Knowledge
 
 BOINC is a strong reference point for a possible volunteer-compute layer, especially for bounded, independent, compute-intensive jobs. It provides concrete lessons about participant trust, result validation, workload packaging, and operational responsibilities.
@@ -44,7 +52,8 @@ It should be evaluated as an existing platform before any custom volunteer-compu
 - Volunteers must trust project operators not to misuse their devices or data.
 - Project servers, identity, and security remain operational responsibilities.
 - Sensitive data generally should not be distributed to arbitrary volunteer hosts without a carefully justified security model.
-- Current BOINC Central capacity, limits, governance, and long-term operations need further investigation.
+- Current BOINC Central capacity, queue times, service commitments, governance, and long-term operations need further investigation.
+- BUDA's Docker-based model may exclude some volunteer machines or require additional installation and compatibility work.
 
 ## Assessment
 
@@ -56,7 +65,7 @@ It should be evaluated as an existing platform before any custom volunteer-compu
 
 ## Sources
 
-See source register entries B-01 through B-04 and B-09 through B-10.
+See source register entries B-01 through B-04, B-09 through B-10, and B-12 through B-15.
 
 ## Change log
 
