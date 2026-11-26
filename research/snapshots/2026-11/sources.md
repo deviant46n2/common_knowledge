@@ -651,6 +651,67 @@ For each source, record:
 
 No sources entered yet. Add new sections and stable IDs as workstreams begin.
 
+
+## Workstream C — Scientific Reproducibility and Research Integrity
+
+### C-01 — The FAIR Guiding Principles for scientific data management and stewardship
+- **Authors:** Mark D. Wilkinson et al.
+- **Publisher:** Scientific Data
+- **Source type:** Peer-reviewed principles paper
+- **URL:** https://doi.org/10.1038/sdata.2016.18
+- **Publication date:** 2016-03-15
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** FAIR principles, identifiers, metadata, standard protocols, machine-actionability, licensing, provenance, and applicability to data, algorithms, tools, and workflows.
+- **Limitations:** High-level principles rather than an implementation standard; FAIR does not itself establish scientific validity or require unrestricted public access.
+
+### C-02 — FAIR for Research Software (FAIR4RS) Principles
+- **Publisher:** Scientific Data
+- **Source type:** Peer-reviewed principles paper
+- **URL:** https://www.nature.com/articles/s41597-022-01710-x
+- **Publication date:** 2022
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** FAIR principles adapted to research software, including versioned identifiers, metadata, accessibility, interoperability, licensing, provenance, and reusability.
+- **Limitations:** Principles require discipline- and software-specific implementation; compliance does not guarantee software correctness.
+
+### C-03 — TOP 2025: An update to the Transparency and Openness Promotion Guidelines
+- **Authors:** Sean Grant et al., TOP Advisory Board
+- **Publisher:** Research Integrity and Peer Review
+- **Source type:** Peer-reviewed framework update
+- **URL:** https://doi.org/10.1186/s41073-026-00223-0
+- **Publication date:** 2026-08-05
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Updated TOP framework, research practices, verification practices, verification studies, and revisions to preregistration and protocol standards.
+- **Limitations:** Framework and policy recommendations; adoption and effectiveness vary across journals and disciplines.
+
+### C-04 — TOP Guidelines
+- **Publisher:** Center for Open Science
+- **Source type:** Primary framework documentation
+- **URL:** https://www.cos.io/initiatives/top-guidelines
+- **Publication / update date:** Current guidance referencing TOP 2025
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Current TOP framework components and implementation guidance for researchers, journals, funders, and institutions.
+- **Limitations:** Organization-authored implementation guidance; should be read alongside the peer-reviewed framework update and independent evaluations.
+
+### C-05 — Estimating the reproducibility of psychological science
+- **Authors:** Open Science Collaboration
+- **Publisher:** Science
+- **Source type:** Large-scale replication study
+- **URL:** https://doi.org/10.1126/science.aac4716
+- **Publication date:** 2015-08-28
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Results of attempted replications of 100 psychology studies, including effect-size and statistical-significance comparisons.
+- **Limitations:** Sample drawn from three psychology journals; replication outcomes depend on study design, power, context, and definitions. Not a direct estimate for all science.
+
+### C-06 — Incentives and the replication crisis in social sciences: A critical review of open science practices
+- **Authors:** Loukas Balafoutas, Jeremy Celse, Alexandros Karakostas, and Nicolas Umashev
+- **Publisher:** Journal of Behavioral and Experimental Economics
+- **Source type:** Peer-reviewed critical review
+- **URL:** https://doi.org/10.1016/j.socec.2024.102327
+- **Publication date:** 2025-02 (journal record)
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Discussion of academic incentives, limitations of preregistration and replication alone, and proposals including Registered Reports and megastudies.
+- **Limitations:** Review focused on social sciences; conclusions and proposed reforms should be evaluated against broader disciplinary evidence.
+
 ## Register maintenance
 
 - Keep IDs stable once cited in profiles or reports.
