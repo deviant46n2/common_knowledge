@@ -39,6 +39,7 @@ This page is the workstream's durable entry point. Add dated notes below as rese
 - [Metadata, interoperability, and preservation standards](standards-and-preservation.md)
 - [Persistent identifiers and authority records](identifiers-and-authority.md)
 - [Community rights and preservation responsibilities](community-rights-and-preservation.md)
+- [Federated discovery and metadata aggregation](federated-discovery.md)
 
 ### Progress notes
 
@@ -46,6 +47,7 @@ This page is the workstream's durable entry point. Add dated notes below as rese
 - **2026-11-26:** Began the first standards map: Dublin Core, SKOS, OAI-PMH, IIIF, PREMIS, LOCKSS/CLOCKSS, and Wikidata/Wikibase. Registered sources E-01 through E-10.
 - **2026-11-26:** Added an initial identifier and authority-record comparison for Crossref, DataCite, ORCID, ROR, and BIBFRAME; registered sources E-11 through E-16.
 - **2026-11-26:** Added a community-rights and preservation analysis covering CARE, Local Contexts, OAIS 2025, and CoreTrustSeal 2026–2028; registered sources E-17 through E-22.
+- **2026-11-26:** Compared Europeana, DPLA, and Wikidata as federation and sourced-knowledge models; registered sources E-23 through E-25.
 
 ### Next steps
 
