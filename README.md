@@ -8,7 +8,7 @@ We believe humanity's knowledge should not be confined to institutions, companie
 
 Our aim is to help create the conditions for that to happen: open and trustworthy ways for people to collaborate on research, share evidence, reproduce results, and preserve what we learn.
 
-This is a long-term project. We are at the beginning, and the work ahead includes listening, learning from existing efforts, finding collaborators, and testing ideas in practice.
+This is a long-term project. At present it is a founder-led early-stage effort, not yet a staffed institution or established community. The work ahead includes listening, learning from existing efforts, finding collaborators, and testing ideas in practice. Our current capabilities and evidence are limited, and we aim to state those limits plainly.
 
 ## Why this matters
 
@@ -103,6 +103,7 @@ We are building a dated, source-based research library to understand the existin
 - [MVP discovery brief](research/MVP_DISCOVERY.md)
 - [MVP research index](research/mvp/README.md)
 - [MVP opportunity assessment](research/mvp/opportunity-assessment.md)
+- [Project operating model](docs/OPERATING_MODEL.md)
 - [AI collaboration protocol](docs/AI_COLLABORATION.md)
 - [Institutional design questions](docs/INSTITUTIONAL_DESIGN.md)
 - [Development documentation system](docs/development/README.md)
@@ -131,7 +132,7 @@ Please be patient as the project develops. We would rather build something trust
 
 The ambition is not simply to publish more information or build another website. It is to help create lasting, shared infrastructure through which humanity can understand the world, investigate questions together, preserve discoveries, and pass knowledge forward.
 
-**Help build the intelligence of tomorrow.**
+**Help make shared knowledge easier to build, inspect, and preserve.**
 
 ---
 
