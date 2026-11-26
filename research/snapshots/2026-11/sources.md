@@ -407,6 +407,88 @@ For each source, record:
 - **Claims supported:** Version 2.0 principles concerning governance, stakeholder representation, participation, and open scholarly infrastructure.
 - **Limitations:** Voluntary framework, not a certification or technical standard; interpretation and adoption need context.
 
+
+### A-39 — WorkflowHub
+- **Publisher / operator:** WorkflowHub community
+- **Source type:** Primary
+- **URL:** https://www.workflowhub.eu/
+- **Publication / update date:** Current registry page
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Workflow registry purpose; support for CWL, RO-Crate, Bioschemas, GA4GH TRS API, FAIR workflow discovery, and community participation.
+- **Limitations:** Operator description; does not independently establish workflow execution reliability, adoption, or long-term funding.
+
+### A-40 — protocols.io
+- **Publisher / operator:** protocols.io
+- **Source type:** Primary
+- **URL:** https://www.protocols.io/
+- **Publication / update date:** Current service page
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Collaborative protocol authoring, version history, runnable methods, and sharing.
+- **Limitations:** Operator description; feature availability, pricing, export, and preservation require further review.
+
+### A-41 — Move from OSF Projects to protocols.io
+- **Publisher / operator:** protocols.io
+- **Source type:** Primary migration and commercial information
+- **URL:** https://www.protocols.io/osf
+- **Publication / update date:** Current as accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** protocols.io's stated migration offer and OSF transition dates of 2026-11-16 and 2027-02-19.
+- **Limitations:** Vendor-authored migration messaging; dates should be rechecked before action and alternatives independently compared.
+
+### A-42 — About Open Humans
+- **Publisher:** Open Humans Foundation
+- **Source type:** Primary
+- **URL:** https://www.openhumans.org/about/
+- **Publication / update date:** Current organization page
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Organization structure, nonprofit relationship, community participation, personal-data exploration and sharing, open-source components, and governance description.
+- **Limitations:** Operator description; independent security, governance, and sustainability audits not reviewed.
+
+### A-43 — Open Humans Community Guidelines
+- **Publisher:** Open Humans community
+- **Source type:** Primary community policy
+- **URL:** https://www.openhumans.net/community-guidelines/
+- **Publication / update date:** Current guidelines
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Guidance on identifiability, data minimization, participant exit, sharing, and research use of participant data.
+- **Limitations:** Guidelines do not by themselves establish enforcement or downstream compliance.
+
+### A-44 — Public Lab: Community Science Initiative
+- **Publisher:** Association of Science and Technology Centers
+- **Source type:** Independent sector description
+- **URL:** https://communityscience.astc.org/resources/public-lab/
+- **Publication / update date:** Current resource page
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Public Lab's community-science role, environmental focus, open platform history, and participatory project practices.
+- **Limitations:** Third-party description; current organizational and platform activity requires direct confirmation. Public Lab's own website currently identifies itself as a static archive.
+
+### A-45 — iNaturalist Research-grade Observations
+- **Publisher:** Global Biodiversity Information Facility (GBIF), dataset published by iNaturalist
+- **Source type:** Primary data catalogue record
+- **URL:** https://www.gbif.org/dataset/50c9509d-22c7-4a22-a47d-8c48425ef4a7
+- **Publication date:** 2026-11-09 (dataset release shown in record)
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Research-grade observation dataset, export conditions, dataset license, and GBIF publication record.
+- **Limitations:** Applies to the exported dataset and eligible observations, not every iNaturalist observation or attached media.
+
+### A-46 — iNaturalist Data Quality Assessment
+- **Publisher:** iNaturalist
+- **Source type:** Primary policy and help documentation
+- **URL:** https://help.inaturalist.org/en/support/solutions/articles/151000169936
+- **Publication / update date:** Current help page
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Criteria used to classify observations as Research Grade and the role of community agreement.
+- **Limitations:** Platform-specific quality label; not an independent validation of every observation.
+
+### A-47 — iNaturalist export to GBIF
+- **Publisher:** iNaturalist
+- **Source type:** Primary technical/help documentation
+- **URL:** https://help.inaturalist.org/en/support/solutions/articles/151000170346-which-inaturalist-observations-are-exported-for-gbif-and-how-often-does-this-export-happen-
+- **Publication / update date:** Updated 2025-10-13
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Eligibility rules for observations exported to GBIF and stated export frequency.
+- **Limitations:** Export operations and criteria can change; verify current behavior before relying on it.
+
 ## Other workstreams
 
 No sources entered yet. Add new sections and stable IDs as workstreams begin.
