@@ -50,8 +50,8 @@ This page is the workstream's durable entry point. Add dated notes below as rese
 
 ### Next steps
 
-1. Define key terms and boundaries for the first bounded investigation.
-2. Identify foundational standards, projects, organizations, and communities.
-3. Select representative cases and investigate primary sources.
-4. Seek independent evidence and user experience.
-5. Produce a first-pass synthesis that states coverage and limitations.
+1. Retrieve and assess the full text of the 24 November 2026 PNAS comment on autonomous AI scientist pitfalls.
+2. Expand system profiles beyond AI Scientist and SciSciGPT, including domain-specific scientific agents.
+3. Test the proposed audit record on a small AI-assisted literature review and a code/experiment workflow.
+4. Compare agent benchmarks for task completion, scientific validity, and workflow auditability.
+5. Consult researchers, editors, and research-integrity specialists about disclosure and accountability.
