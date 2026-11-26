@@ -141,7 +141,16 @@ This is a living synthesis. Findings are provisional where underlying workstream
 
 **Assessment:** Continuity plans must separately describe what remains preserved, what remains editable, what access is retained, how APIs change, how users migrate, and what happens to private content. A permanent DOI does not guarantee an ongoing service.
 
-### 13. Correction and disagreement must be first-class features
+### 13. Multilingual access and representation are structural requirements
+
+**Supporting workstreams:** E, G.
+
+- Workstream E's initial review finds uneven language coverage in knowledge graphs and multilingual repositories, as well as resource and standards constraints in inclusive metadata practice.
+- Workstream G's survey review highlights broader access and infrastructure inequalities, while noting that existing samples do not represent all regions or communities.
+
+**Assessment:** A translated interface is not enough. Metadata, search, concepts, names, scripts, dialects, and community-approved descriptions must be considered throughout the knowledge lifecycle. The project should not treat English as the default and other languages as optional enrichment.
+
+### 14. Correction and disagreement must be first-class features
 
 **Supporting workstreams:** A, C, E.
 
