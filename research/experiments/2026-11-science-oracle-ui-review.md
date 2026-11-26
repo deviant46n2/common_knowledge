@@ -112,3 +112,21 @@ A separate run selected the first available starter question from the public dro
 This also failed. The app displayed the same "Could not complete this question" / "No answer has been generated from unverified sources" message three times. No citations, excerpts, support, counterevidence, uncertainty, or gaps were returned.
 
 **Updated interpretation:** Two distinct public queries failed, including one supplied by the application's own starter-question list. This suggests the public answer path was unavailable or malfunctioning during the test window. It does not establish that public mode is inherently unsupported, and it does not tell us whether the underlying graph contains relevant evidence. The system correctly avoided fabricating an answer, but the generic error did not distinguish service failure from an evidence gap.
+
+
+## Published assessment record inspected
+
+A separate read-only inspection of one signed Project Delphi nanopublication found a concrete example of a **resolvability assessment**, not a truth verdict. The record assessed whether a claim from a 2007 review could be tested with available datasets. It recorded:
+- verdict `partially-resolvable`;
+- resolvability score 0.56;
+- assessor self-confidence 0.77;
+- five rubric sub-scores;
+- two candidate datasets (RCSB Protein Data Bank and Materials Project);
+- evidence-against points and a proposed quantitative test;
+- a version-pinned assessment plan;
+- a SoftwareAgent identified separately from its Gemini 4 Argon LanguageModel;
+- a human ORCID publisher and RSA signature.
+
+This illustrates why score types must remain distinct: the 0.56 score measures resolvability, not probability of truth; 0.77 is the assessor's self-confidence. The candidate datasets are possible inputs to a future test, not direct evidence that the claim is true.
+
+The linked raw assessment JSON could not be retrieved from the cited GitHub path through the public API in this review, so the exact prompt/input batch could not be independently checked. See [the full record review](2026-11-project-delphi-record-review.md).
