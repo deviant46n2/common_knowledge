@@ -2,8 +2,8 @@
 
 - **Snapshot:** [November 2026](../../README.md)
 - **Program:** [Common Knowledge Research Program](../../../../PROGRAM.md)
-- **Status:** Not started
-- **Last worked:** Not yet started
+- **Status:** In progress
+- **Last worked:** 2026-11-26
 
 ## Central question
 
@@ -33,14 +33,20 @@ Map repositories, libraries, archives, knowledge bases, scholarly indexes, datas
 
 This page is the workstream's durable entry point. Add dated notes below as research proceeds. Put substantive findings in focused reports and profiles, with sources attached to the claims they support. Keep documented facts, independent findings, assessments, and open questions distinct.
 
+### Current reports
+
+- [Initial field overview](field-overview.md)
+- [Metadata, interoperability, and preservation standards](standards-and-preservation.md)
+
 ### Progress notes
 
-- **2026-11-26:** Workstream scope and initial questions recorded. No comprehensive investigation has yet been completed.
+- **2026-11-26:** Workstream scope and initial questions recorded. No comprehensive investigation had yet been completed.
+- **2026-11-26:** Began the first standards map: Dublin Core, SKOS, OAI-PMH, IIIF, PREMIS, LOCKSS/CLOCKSS, and Wikidata/Wikibase. Registered sources E-01 through E-10.
 
 ### Next steps
 
-1. Define key terms and boundaries for the first bounded investigation.
-2. Identify foundational standards, projects, organizations, and communities.
-3. Select representative cases and investigate primary sources.
-4. Seek independent evidence and user experience.
+1. Map persistent identifiers, authority records, and scholarly metadata providers.
+2. Profile representative preservation networks, libraries, archives, and community knowledge projects.
+3. Examine multilingual discovery, rights, community-controlled knowledge, and contested classifications.
+4. Test practical interoperability and export paths across representative standards and platforms.
 5. Produce a first-pass synthesis that states coverage and limitations.
