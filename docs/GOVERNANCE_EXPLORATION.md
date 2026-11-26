@@ -223,3 +223,25 @@ A useful distinction for future design is:
 - **Foundational protections:** Preserve the institution's public purpose and core commitments through mechanisms that do not depend on one person's permanent control.
 
 **Status:** The rejection of permanent contributor privilege and founder privilege is a founder-stated principle. Early-stage consultation of experienced contributors on product and roadmap matters is a working approach. The exact protections for founding ideals—and how they can be amended by a future community—remain unresolved.
+
+
+## 13. Founding values: durable, visible, and amendable
+
+The founder rejects the idea that their personal judgment should carry greater authority in perpetuity. Future generations should be able to change Common Knowledge's core values through a sufficiently rigorous and legitimate process.
+
+The emerging principle is:
+
+**Core values should be clearly and transparently visible. Changing them should be difficult, but never impossible.**
+
+Implications to explore:
+
+- Publish the core values prominently, with explanations of their meaning and the reasons they were adopted.
+- Make the distinction between core values and ordinary policies clear. Values should not be silently reinterpreted or effectively changed through routine policy decisions.
+- Require a demanding, transparent process for amending core values, with substantial deliberation and broad democratic agreement.
+- Do not give the founder a permanent veto or special interpretive authority over future generations.
+- Preserve the history of the original principles and every subsequent amendment, including the proposal, arguments, decision process, outcome, and rationale. Amendment should create an inspectable institutional history, not erase the past.
+- Allow future communities to revise even fundamental principles when they reach a legitimate and considered decision to do so.
+
+The goal is continuity without permanent founder control: the institution should remember its origins and take them seriously, while remaining capable of learning and changing.
+
+**Status:** This is a founder-stated principle about the durability and amendability of core values. The values themselves, their exact constitutional status, and the amendment procedure remain to be developed with the community. This is not a finalized constitution or list of entrenched rights.
