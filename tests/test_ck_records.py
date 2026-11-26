@@ -55,3 +55,26 @@ def test_unknown_format_version_is_rejected():
     record = load(FIXTURE)
     record["format_version"] = "99"
     assert any("format_version" in e for e in validate(record, FIXTURE.parent))
+
+
+def test_cli_round_trips_record_and_source_files(tmp_path):
+    import subprocess
+    import sys
+
+    package = tmp_path / "package"
+    imported = tmp_path / "imported"
+    env = {"PYTHONPATH": str(FIXTURE.parents[3] / "src")}
+    export_result = subprocess.run(
+        [sys.executable, "-m", "ck_records", "export", str(FIXTURE), str(package)],
+        capture_output=True, text=True, env=env,
+    )
+    assert export_result.returncode == 0, export_result.stderr
+    assert (package / "record.json").is_file()
+    assert (package / "sources" / "station-r1.csv").is_file()
+    import_result = subprocess.run(
+        [sys.executable, "-m", "ck_records", "import", str(package / "record.json"), str(imported)],
+        capture_output=True, text=True, env=env,
+    )
+    assert import_result.returncode == 0, import_result.stderr
+    imported_record = load(imported / "record.json")
+    assert validate(imported_record, imported) == []
