@@ -127,6 +127,18 @@ A minimum test should read a Markdown or LaTeX report and a small set of structu
 
 The first supported claim type should be numerical statements tied to tabular outputs. Do not claim to verify causal interpretation, qualitative conclusions, theory, or general scientific validity. This candidate should be tested against the published agent-integrity-analysis checker and human-in-the-loop verification tools.
 
+## 4.1 Evidence graph standards and existing implementation
+
+Do not invent a new claim/evidence ontology. The relevant existing models include:
+- **W3C PROV-O:** general provenance of entities, activities, and agents.
+- **EVI (Evidence Graph Ontology):** a PROV-O extension for evidence supporting or challenging biomedical findings; implemented in the FAIRSCAPE ecosystem.
+- **Nanopublications:** small citable assertions with separate assertion, provenance, and publication-information graphs.
+- **RO-Crate / Workflow Run RO-Crate:** portable packaging for research objects and workflow execution records.
+
+**FAIRSCAPE** already builds evidence graphs from datasets, software, computations, and outputs; renders HTML visualizations; and assesses AI-readiness. Its current emphasis is biomedical research and Bridge2AI. This makes it a direct comparator for an evidence-ledger concept.
+
+The product question is not “can we create an evidence graph?” The question is whether a particular user needs a simpler, cross-tool workflow that existing tools do not provide. Any prototype should test interoperability with EVI and existing crate formats rather than introduce a proprietary graph model.
+
 ## 5. Standards and specifications to verify
 
 - **RO-Crate:** research object packaging and profiles.
