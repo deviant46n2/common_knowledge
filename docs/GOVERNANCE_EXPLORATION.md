@@ -201,3 +201,25 @@ This conviction sharpens several unresolved governance questions:
 5. What safeguards prevent an active contributor group from becoming a permanent insider class or claiming to represent the whole public without legitimate authorization?
 
 **Status:** The public-benefit orientation and the conviction that Common Knowledge belongs to everyone are founder-stated principles. The three-constituency distinction is a working conceptual model, not a settled membership or governance design. Legal ownership, public representation, and accountability mechanisms remain open questions.
+
+
+## 12. No permanent governance privilege for contributors or founders
+
+A further founder-stated principle clarifies the relationship between contribution and authority:
+
+- Contributors should not receive special political or institutional powers merely because they contribute code, research, money, time, or other work.
+- Early contributors may be consulted more closely during the formative stage, particularly on software direction, technical architecture, and the roadmap. This is consultative influence based on relevant experience, not a special vote or governing entitlement.
+- Once Common Knowledge is an established platform, even this early-contributor consultation should not become a permanent privileged class. Relevant experience remains worth hearing, but early arrival alone should not confer enduring authority.
+- Practical responsibilities may require delegated powers—for example, maintainers need authority to maintain systems within their remit. Such powers are role-specific and accountable, not general political privilege.
+- The founder likewise does not seek permanent personal control. The founding ideals should be protected through durable institutional principles and safeguards, not through an eternal founder veto.
+
+This expresses a deliberate tension rather than resolving it: the founder wants the original purpose and ideals protected as strongly as reasonably possible, while recognizing that a genuinely community-governed institution must ultimately trust its community and cannot remain under the founder's control forever.
+
+A useful distinction for future design is:
+
+- **Equal standing:** No special political status based on contribution history, donor status, technical prestige, or founder status.
+- **Consultation:** Seek informed advice from people with relevant knowledge and experience, without granting them extra authority.
+- **Delegated responsibility:** Give people the limited powers necessary to perform assigned operational roles, with transparent boundaries and accountability.
+- **Foundational protections:** Preserve the institution's public purpose and core commitments through mechanisms that do not depend on one person's permanent control.
+
+**Status:** The rejection of permanent contributor privilege and founder privilege is a founder-stated principle. Early-stage consultation of experienced contributors on product and roadmap matters is a working approach. The exact protections for founding ideals—and how they can be amended by a future community—remain unresolved.
