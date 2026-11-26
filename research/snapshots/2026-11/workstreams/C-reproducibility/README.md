@@ -34,6 +34,7 @@ Investigate research software and computational environments, data/code availabi
 - [Standards and tools landscape](standards-and-tools.md)
 - [Practical research-record proposal](research-record.md)
 - [Research integrity and correction](research-integrity.md)
+- [Empirical evidence on reproducibility and data sharing](empirical-evidence.md)
 
 ## Working record
 
@@ -46,6 +47,7 @@ This page is the workstream's durable entry point. Add dated notes below as rese
 - **2026-11-26:** Added a standards-and-tools landscape covering RO-Crate, PROV-O, BagIt, Binder, Whole Tale, Code Ocean, reporting guidelines, Registered Reports, and correction metadata (C-07 through C-17).
 - **2026-11-26:** Drafted a proportional minimum-common-core research record with optional modules for different research types; it is a proposal for pilot testing, not a universal standard.
 - **2026-11-26:** Added a preliminary research-integrity analysis covering the Singapore Statement, ALLEA 2023 Code, National Academies guidance, COPE retraction guidance, and procedural safeguards. Registered sources C-18 through C-22.
+- **2026-11-26:** Added empirical evidence on code execution and availability and on ethical barriers to qualitative data sharing; registered sources C-23 through C-27.
 
 ### Next steps
 
