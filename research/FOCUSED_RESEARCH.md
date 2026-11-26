@@ -785,3 +785,21 @@ For the test-network round trip, verify:
 - a supersession/retraction behaves as documented, with the original signer key retained securely.
 
 Do not rely on the test query-template API until its availability is independently confirmed.
+
+
+### Unsigned nanopublication mapping experiment
+
+A local TriG draft was built for the same synthetic R-1 example. It contains three separate nanopublications:
+1. an observation publication with the statement, scope, two Web Annotation evidence anchors, and distinct support/qualification relationships;
+2. a first assessment publication derived from the observation publication;
+3. a second independent assessment publication, also derived from the observation publication.
+
+Each draft has four distinct named graphs (head, assertion, provenance, publication information). The provenance graph refers to its assertion graph; the publication-information graph refers to the nanopublication. The assessment publications are separate contributions rather than updates to the observation publication.
+
+**Observed test result:** Seven local RDFLib tests passed for the nanopublication drafts. Together with the eight record-model/reader tests, the experiment now has 15 passing local checks. Tests cover the minimum four-graph structure from the official guidelines, graph/identifier separation, required graph references, creator/creation metadata, distinct assessment publications, derivation from the observation, separate evidence relationships, and evidence quote matching against the fixture files.
+
+**Architectural insight:** Nanopublications encourage an append-only contribution model: the observation can remain immutable while multiple assessment publications are added. That fits independent review and durable citation. However, the application must assemble a useful current view from multiple publications and decide how to display competing or superseding assessments. The JSON-LD spike instead represented a later record version that references both assessments. Neither experiment has yet tested how an ordinary reader understands these models in a real interface.
+
+**Limits:** The drafts use example.org placeholder identifiers and are unsigned. They have not been validated by the official nanopub-py or nanopub-java implementation, signed, or published to the test registry. No key/profile was created. These tests establish only a basic structural mapping, not full compliance, content validity, or publication-network behaviour.
+
+Code and tests are in [PR #3](https://github.com/deviant46n2/common_knowledge/pull/3), under experiments/record-model-spike/nanopub/.
