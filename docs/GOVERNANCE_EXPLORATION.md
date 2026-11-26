@@ -284,3 +284,18 @@ This is a commitment to historical continuity and accountable change, not an unc
 
 **Status:** The preference to preserve meaningful knowledge history as far as reasonably possible is a founder-stated direction. Exact retention periods, deletion procedures, archival tiers, and legal/privacy safeguards require further design and expertise.
 
+## 15. Current understanding and knowledge history
+
+The founder agrees that Common Knowledge should distinguish between the current state of knowledge and the historical record of how that understanding developed. These should be complementary views, not competing versions of the truth.
+
+- **Current understanding:** A clear, maintained presentation of what the available evidence supports now, what remains uncertain, and where credible disagreement persists.
+- **Knowledge history:** A traceable account of how claims and assessments developed, including earlier conclusions, evidence available at the time, corrections, retractions, disagreements, and the reasons for significant changes.
+
+The current view should help people understand the best-supported picture available now without requiring them to reconstruct years of discussion. The historical view should make it possible to understand how that picture emerged, inspect past reasoning, and see why conclusions changed.
+
+The two views must remain connected. A current assessment should be traceable to its evidence and relevant history; historical records should clearly indicate when an assessment is no longer current, has been superseded, or has been discredited. Historical preservation does not mean presenting outdated conclusions as equally credible current alternatives.
+
+This distinction also supports the practical preservation principle in Section 14: the system can prioritize meaningful changes, decisions, and provenance rather than retaining every transient interaction or every submitted byte.
+
+**Status:** The distinction between current understanding and knowledge history is an emerging product and knowledge-philosophy direction. The interface, record model, retention policy, and criteria for what deserves historical preservation remain open.
+
