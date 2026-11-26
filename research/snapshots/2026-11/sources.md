@@ -1288,3 +1288,65 @@ No sources entered yet. Add new sections and stable IDs as workstreams begin.
 - **Accessed / verified:** 2026-11-26
 - **Claims supported:** Proof of Replication and Proof of Spacetime mechanisms for verifying initial and continuing storage commitments.
 - **Limitations:** Storage proofs do not by themselves establish user-facing retrieval performance, access rights, content quality, or long-term preservation governance.
+
+
+## Workstream D — Human–AI Research Collaboration
+
+### D-01 — The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery
+- **Authors:** Chris Lu, Cong Lu, Robert Tjarko Lange, Jakob Foerster, Jeff Clune, David Ha
+- **Publisher:** arXiv
+- **Source type:** Research preprint and open-source system description
+- **URL:** https://arxiv.org/abs/2408.06292
+- **Publication date:** 2024-08-12
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** End-to-end machine-learning research pipeline for idea generation, code writing, experiment execution, visualization, paper drafting, and automated review.
+- **Limitations:** Initial system and evaluations are limited to machine-learning research templates and benchmarks; preprint claims and automated review results require independent assessment. Repository has a distinct license and mandatory disclosure terms.
+
+### D-02 — Towards End-to-End Automation of AI Research
+- **Authors:** Chris Lu et al.
+- **Publisher:** Nature
+- **Source type:** Peer-reviewed research article and system evaluation
+- **URL:** https://doi.org/10.1038/s41586-026-10265-5
+- **Publication date:** 2026-03-25
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** AI Scientist end-to-end workflow, template-based and template-free execution, automated manuscript/review pipeline, workshop paper result, and documented limitations.
+- **Limitations:** Focused on machine-learning research; only one of three submitted papers was accepted at a workshop, with significant reported methodological and implementation failure modes.
+
+### D-03 — AI-Assisted Teams Outperform AI-Led Teams but Not Human-Only Teams in Assessing Research Reproducibility in Quantitative Social Science
+- **Authors:** Abel Brodeur et al.
+- **Publisher:** Proceedings of the National Academy of Sciences (PNAS)
+- **Source type:** Peer-reviewed randomized team experiment
+- **URL:** https://doi.org/10.1073/pnas.2524747123
+- **Publication date:** 2026-05-28 (online); issue 2026-06-02
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Comparison of 103 teams / 288 researchers across human-only, AI-assisted, and AI-led reproduction of quantitative social-science findings; reported reproduction rates of 94%, 91%, and 37% respectively, and differences in major coding-error detection.
+- **Limitations:** Specific to quantitative social-science computational reproducibility tasks and study design; does not establish performance across all disciplines, models, or tasks. Article received an affiliation-only correction on 2026-07-06; results were not changed.
+
+### D-04 — Correction for Brodeur et al., AI-Assisted Teams...
+- **Publisher:** Proceedings of the National Academy of Sciences (PNAS)
+- **Source type:** Published corrigendum
+- **URL:** https://doi.org/10.1073/pnas.2621051123
+- **Publication date:** 2026-07-06 (online)
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Correction of affiliations for three authors in the D-03 article.
+- **Limitations:** The correction concerns author affiliations, not the reported results; retained here to preserve the publication history.
+
+### D-05 — The More You Automate, the Less You See: Hidden Pitfalls of Autonomous AI Scientists
+- **Authors:** Ziming Luo, Atoosa Kasirzadeh, Nihar B. Shah
+- **Publisher:** Proceedings of the National Academy of Sciences (PNAS)
+- **Source type:** Peer-reviewed controlled analysis of autonomous AI scientist systems
+- **URL:** https://doi.org/10.1073/pnas.2610214123
+- **Publication date:** 2026-10-05 (online); issue 2026-10-13
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Systematic pitfalls in benchmark selection, data manipulation/disclosure, metric use, and post hoc selection across two representative open-source AI scientist systems; workflow artifacts improve auditability.
+- **Limitations:** Two systems and selected experimental settings; not a complete evaluation of all AI research agents. One author disclosed employment at Google DeepMind.
+
+### D-06 — SciSciGPT: Advancing Human–AI Collaboration in the Science of Science
+- **Authors:** Erzhuo Shao, Yifang Wang, Yifan Qian, Zhenyu Pan, Han Liu, Dashun Wang
+- **Publisher:** Nature Computational Science
+- **Source type:** Peer-reviewed system and case-study paper
+- **URL:** https://doi.org/10.1038/s43588-025-00906-6
+- **Publication date:** 2025-12-09 (online)
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Open-source prototype AI collaborator for science-of-science workflows, database repository, multi-agent specialist architecture, and conversational human–AI research interface.
+- **Limitations:** Domain-specific prototype and case studies; reported capabilities do not establish general scientific reliability or transfer to other disciplines.
