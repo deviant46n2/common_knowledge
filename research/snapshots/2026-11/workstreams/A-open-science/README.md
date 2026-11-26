@@ -66,4 +66,4 @@ This page is the workstream's durable entry point. Add dated notes below as rese
 2. Compare participatory research models across iNaturalist, eBird, Zooniverse, and community-led projects, including contributor influence, quality assurance, licensing, and bias.
 3. Investigate service continuity and migration through OSF, protocols.io, repositories, and publishing infrastructure.
 4. Gather independent researcher, librarian, and community experiences; platform documentation alone is insufficient evidence of user needs.
-5. Produce a bounded comparative synthesis with explicit coverage, confidence, and limitations before moving to Workstream C.
+5. Produce a bounded baseline synthesis with explicit coverage, confidence, and limitations, then revisit it alongside the other workstreams.
