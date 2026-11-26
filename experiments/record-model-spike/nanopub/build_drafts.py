@@ -97,6 +97,12 @@ def build():
     assertion_obs.add((relation_cal, EX.evidenceItem, CAL_EVIDENCE))
     prov_obs.add((graph_obs, PROV.wasDerivedFrom, CSV_SOURCE))
     prov_obs.add((graph_obs, PROV.wasDerivedFrom, CAL_SOURCE))
+    extraction_activity = URIRef("https://example.org/ck/activity/extraction")
+    prov_obs.add((graph_obs, PROV.wasGeneratedBy, extraction_activity))
+    prov_obs.add((extraction_activity, RDF.type, PROV.Activity))
+    prov_obs.add((extraction_activity, PROV.used, CSV_SOURCE))
+    prov_obs.add((extraction_activity, PROV.used, CAL_SOURCE))
+    prov_obs.add((extraction_activity, PROV.wasAssociatedWith, AGENT_DATA))
 
     np_a1, graph_a1, prov_a1, assertion_a1 = add_nanopub(
         dataset, "assessment-r1-review-1", AGENT_1, "2026-11-26T12:05:00Z",
@@ -114,7 +120,12 @@ def build():
     assertion_a1.add((assessment_1, EX.usedEvidence, CSV_EVIDENCE))
     assertion_a1.add((assessment_1, EX.usedEvidence, CAL_EVIDENCE))
     prov_a1.add((graph_a1, PROV.wasDerivedFrom, np_obs))
-    prov_a1.add((assessment_1, PROV.wasGeneratedBy, URIRef("https://example.org/ck/activity/review-1")))
+    activity_1 = URIRef("https://example.org/ck/activity/review-1")
+    prov_a1.add((assessment_1, PROV.wasGeneratedBy, activity_1))
+    prov_a1.add((activity_1, RDF.type, PROV.Activity))
+    prov_a1.add((activity_1, PROV.used, CSV_EVIDENCE))
+    prov_a1.add((activity_1, PROV.used, CAL_EVIDENCE))
+    prov_a1.add((activity_1, PROV.wasAssociatedWith, AGENT_1))
 
     np_a2, graph_a2, prov_a2, assertion_a2 = add_nanopub(
         dataset, "assessment-r1-review-2", AGENT_2, "2026-11-26T12:10:00Z",
@@ -132,7 +143,12 @@ def build():
     assertion_a2.add((assessment_2, EX.usedEvidence, CSV_EVIDENCE))
     assertion_a2.add((assessment_2, EX.usedEvidence, CAL_EVIDENCE))
     prov_a2.add((graph_a2, PROV.wasDerivedFrom, np_obs))
-    prov_a2.add((assessment_2, PROV.wasGeneratedBy, URIRef("https://example.org/ck/activity/review-2")))
+    activity_2 = URIRef("https://example.org/ck/activity/review-2")
+    prov_a2.add((assessment_2, PROV.wasGeneratedBy, activity_2))
+    prov_a2.add((activity_2, RDF.type, PROV.Activity))
+    prov_a2.add((activity_2, PROV.used, CSV_EVIDENCE))
+    prov_a2.add((activity_2, PROV.used, CAL_EVIDENCE))
+    prov_a2.add((activity_2, PROV.wasAssociatedWith, AGENT_2))
 
     return dataset, [np_obs, np_a1, np_a2]
 
