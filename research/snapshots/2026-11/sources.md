@@ -2,7 +2,7 @@
 
 Use this register to make the evidence behind the snapshot discoverable. Each source should be linked from the entry or claim it supports; this register is an index, not a substitute for claim-level citations.
 
-Access dates below reflect the initial Workstream A review on **2026-11-26**. A source's current content may change; where a transition or historical state matters, preserve dated copies or archived versions where practical.
+Access dates are recorded individually for each source. Most entries in this initial snapshot were checked on **2026-11-26**. A source's current content may change; where a transition or historical state matters, preserve dated copies or archived versions where practical.
 
 ## Source record
 
