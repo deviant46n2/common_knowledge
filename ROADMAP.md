@@ -4,7 +4,7 @@ This roadmap describes how Common Knowledge will move from its founding idea to 
 
 The near-term priority has changed: **Common Knowledge should demonstrate practical value before asking people to commit substantial time to the project.** We will continue researching, but research should now be focused on selecting and building a useful MVP rather than completing an exhaustive survey of the field.
 
-The product-discovery work is recorded in [MVP Discovery](research/MVP_DISCOVERY.md). The wider evidence base remains in the [seven-workstream research program](research/PROGRAM.md) and [November 2026 field snapshot](research/snapshots/2026-11/README.md).
+The product direction and active build work are now recorded in [Product Development](product/README.md). The current working prototype direction is a local-first research project preflight and handoff tool; its scope and design remain testable hypotheses. The supporting evidence base remains in [MVP Discovery](research/MVP_DISCOVERY.md), the [seven-workstream research program](research/PROGRAM.md), and the [November 2026 field snapshot](research/snapshots/2026-11/README.md).
 
 ## How to read this roadmap
 
@@ -16,11 +16,11 @@ The product-discovery work is recorded in [MVP Discovery](research/MVP_DISCOVERY
 - **People before scale:** learn from users and maintainers before expanding infrastructure.
 - **Revisit openly:** update the roadmap when evidence, collaborators, or practical constraints warrant it.
 
-## Phase 1 — Discover a real problem and select the MVP
+## Phase 1 — Validate the working product direction and establish the first demonstrator
 
 **Current priority**
 
-Identify a specific problem experienced by a reachable group of people, determine why existing tools do not adequately solve it, and define a small product that Common Knowledge can credibly build.
+Test the working research-project preflight and handoff direction against real tools and a ground-truth synthetic project. Establish whether there is a meaningful user problem and a defensible gap before committing to a full MVP.
 
 Work includes:
 
@@ -29,14 +29,17 @@ Work includes:
 - Investigate B or D only where distributed infrastructure or AI materially affects the chosen problem.
 - Speak with independent researchers, research software engineers, students, librarians, data stewards, and maintainers.
 - Seek concrete examples, workarounds, failures, and criticisms; do not treat enthusiasm for the mission as evidence of product demand.
+- Build a synthetic research fixture with deliberate, documented conditions.
+- Compare relevant existing tools against the same fixture in a safe environment.
 - Define a target user, job, scope, non-goals, success measures, risks, and existing components to reuse.
+- Implement a narrow, static-inspection demonstrator only after the baseline tests identify a useful gap.
 
 **Outputs**
 
-- A documented comparison of leading product candidates and existing alternatives.
-- Evidence from real user workflows and problem-discovery conversations.
-- A one-page MVP product brief.
-- A documented selection decision and explicit reasons for rejecting alternatives.
+- A documented comparison of relevant existing tools and the same synthetic fixture.
+- A working, evidence-linked prototype report for a tightly scoped example.
+- Initial external workflow feedback when a credible demonstration is ready.
+- A product brief and a documented decision to continue, narrow, integrate upstream, or stop.
 
 **Move forward when:** one bounded problem is sufficiently validated, the proposed solution offers a meaningful gap over existing tools, and a small team can build and test it.
 
@@ -135,15 +138,9 @@ These practices should be developed with qualified contributors and, where neces
 
 ## Candidate first product directions
 
-Three connected hypotheses are currently under investigation:
+Three connected hypotheses informed the initial research. We have now chosen the first as the **working direction for prototype development**: a local-first research preflight and handoff tool that helps people prepare computational projects for inspection, reuse, and preservation. This is a reversible prototype direction, not yet a validated product-market decision. Research-specific AI auditability and claim-to-evidence workflows remain possible future capabilities or integration points, not current scope. Existing projects already cover substantial parts of this space, including Renku, Galaxy, Code Ocean, Whole Tale, RO-Crate tooling, Paper2Agent, ReCRATE, and a benchmark-specific numerical claim checker. Common Knowledge should investigate integration and contribution opportunities before considering a competing implementation.
 
-1. A local-first research preflight and handoff tool that orchestrates appropriate existing checks and helps people prepare computational projects for inspection, reuse, and preservation.
-2. A research-specific audit layer that connects AI/agent traces to inputs, methods, code, outputs, and human decisions.
-3. A claim-to-evidence workflow that checks whether numerical statements in a report correspond to the correct result, metric, experiment, and run.
-
-These are **not selected MVPs**. Existing projects already cover substantial parts of this space, including Renku, Galaxy, Code Ocean, Whole Tale, RO-Crate tooling, Paper2Agent, ReCRATE, and a benchmark-specific numerical claim checker. Common Knowledge should investigate integration and contribution opportunities before considering a competing implementation.
-
-The [MVP Discovery brief](research/MVP_DISCOVERY.md), [MVP research index](research/mvp/README.md), and [preliminary opportunity assessment](research/mvp/opportunity-assessment.md) record the current comparison, direct competitor review, technical hypotheses, and test plan.
+The [Product Development workspace](product/README.md) contains the current product direction, experience principles, and prototype plan. The [MVP Discovery brief](research/MVP_DISCOVERY.md), [MVP research index](research/mvp/README.md), and [preliminary opportunity assessment](research/mvp/opportunity-assessment.md) retain the supporting comparison and evidence.
 
 ## What is deliberately not a first priority
 
