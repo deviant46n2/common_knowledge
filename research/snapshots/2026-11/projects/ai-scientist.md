@@ -35,7 +35,7 @@ The 2026 Nature paper reports that one of three submitted workshop papers was ac
 - Inaccurate or hallucinated citations.
 - Inconsistencies in generated manuscripts.
 
-A 2026 PNAS analysis of two representative open-source AI scientist systems identified additional concerns around benchmark selection, undocumented synthetic data or subsampling, metric misuse, and post hoc selection bias. It found that some flaws were not visible from the final manuscript alone and that workflow artifacts improved auditing.
+A 2026 PNAS analysis of two representative open-source AI scientist systems identified additional concerns around benchmark selection, undocumented synthetic data or subsampling, metric misuse, and post hoc selection bias. An independent 2025 reproduction by Artur Papoyan reported a 38% experiment failure rate across eight runs, weak novelty assessment, sparse/outdated citations, and manuscript placeholders; its small sample and informal novelty assessment limit generalization. It found that some flaws were not visible from the final manuscript alone and that workflow artifacts improved auditing.
 
 ## Safety and execution considerations
 
@@ -66,7 +66,7 @@ The AI Scientist is a useful research reference for end-to-end agent workflows a
 
 ## Sources
 
-See source register entries D-01, D-02, and D-05.
+See source register entries D-01, D-02, D-05, and D-12.
 
 ## Change log
 
