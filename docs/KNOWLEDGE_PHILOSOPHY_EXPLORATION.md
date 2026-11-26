@@ -75,6 +75,34 @@ These questions should be explored through concrete examples and product use cas
 - [Focused research](../research/FOCUSED_RESEARCH.md) surveys existing knowledge and evidence infrastructure that may inform future design.
 - [Product gap analysis](../research/PRODUCT_GAP_ANALYSIS.md) records the current exploratory view of adjacent projects and possible product opportunities.
 
+
+## 9. A public reference for checking claims
+
+The founder has clarified that Common Knowledge should aspire to become a widely trusted public source of reference: a place people can turn when they hear a claim and want to understand what is supported by the available evidence.
+
+A motivating example is a public official making a factual claim. A person should be able to find the relevant information and inspect the underlying record rather than having to rely on the official's authority, a commentator's interpretation, or Common Knowledge's reputation alone. The same capability should apply beyond politics—to claims by institutions, companies, media organizations, researchers, and other sources.
+
+A useful claim-centered experience may bring together:
+- The original statement, speaker or source, date, context, and precise scope.
+- Relevant primary sources, datasets, research, records, and other evidence.
+- A clear assessment of what the evidence supports, contradicts, or leaves unresolved.
+- The methods, assumptions, and limitations behind that assessment.
+- The history of changes, corrections, and reassessments.
+- Credible challenges and competing interpretations, represented in proportion to their evidential support.
+
+The ambition is not limited to fact-checking isolated statements. Individual claims should connect to broader subjects and bodies of knowledge, so people can understand both the specific question and its wider context.
+
+### Aspiration and humility
+
+The founder describes the ambition as making Common Knowledge a source of truth. This should be understood as a commitment to pursue the most trustworthy understanding possible—not a claim that the institution is infallible or has final authority over truth.
+
+Its credibility should be earned through evidence quality, transparent methods, provenance, independent scrutiny, correction, and openness to challenge. The institution's name or reputation must never substitute for those things. When evidence is incomplete or a question remains unresolved, the system should say so plainly.
+
+**Emerging principle:** Be a public reference people can rely on to investigate what is true, while remaining transparent, corrigible, and humble about the limits of what can be known.
+
+**Status:** The public-reference ambition and politician-claim example are founder-stated direction. The exact claim intake, context capture, assessment, prioritization, and presentation workflows remain open design questions.
+
+
 ---
 
 *This document is a living exploration, not a promise that every proposed capability is already designed or implemented.*
