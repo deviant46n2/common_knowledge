@@ -110,7 +110,7 @@ However, the current schema is research-specific:
 
 The schema repository is marked as a working version. **No license file or repository license metadata was visible in the review.** Clarify licensing with maintainers before copying or embedding its schema or generated artifacts.
 
-**Assessment:** MIRA is a serious candidate for a science-domain mapping or extension point, not yet a complete general-purpose knowledge model. It is worth discussing with its maintainers before designing an alternative.
+**Assessment:** MIRA is a serious candidate for a science-domain mapping or extension point, not yet a complete general-purpose knowledge model. A mapping of the same synthetic observation used in our other tests is recorded in [the MIRA mapping probe](experiments/2026-11-mira-mapping.md). It is worth discussing with its maintainers before designing an alternative.
 
 ## 3. SciOS: RRGI, the Minimum Viable Scientific Record, and a Git-based discourse graph
 
