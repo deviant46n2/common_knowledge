@@ -14,7 +14,7 @@ Each draft has the four named graphs required by the nanopublication guidelines:
 From this directory, run: python build_drafts.py
 Then run: python -m pytest -q
 
-The builder requires Python 3.11+ and rdflib. Seven tests pass.
+The builder requires Python 3.11+ and rdflib. Eight tests pass.
 
 ## What this demonstrates
 
