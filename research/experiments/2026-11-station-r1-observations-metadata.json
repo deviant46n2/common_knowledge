@@ -3,6 +3,9 @@
     "http://www.w3.org/ns/csvw",
     {
       "@language": "en"
+    },
+    {
+      "pav": "http://purl.org/pav/"
     }
   ],
   "@id": "https://example.org/datasets/station-r1-observations/2026-11-26/metadata.json",
