@@ -24,6 +24,7 @@
 - [Candidate landscape and initial comparison](candidate-landscape.md)
 - [Technical opportunities and integration hypotheses](technical-opportunities.md)
 - [Direct competitor source review](direct-competitors.md)
+- [Claim verification and research-agent ecosystem](claim-verification-ecosystem.md)
 - [Hands-on experiments and user discovery plan](discovery-experiments.md)
 - [Development documentation and source-of-truth policy](../../docs/development/README.md)
 
@@ -41,7 +42,7 @@ A major new finding is that **ReCRATE** is an active MIT-licensed proof of conce
 
 The OSF Projects transition creates a real but time-bounded migration need for some active projects. It is not currently a strong core-product candidate: OSF provides export guidance, says completed public projects generally need no action, and is developing additional API-based export tools.
 
-No MVP has been selected. The next cycle should compare the three opportunity areas in more depth, inspect implementations, and seek direct evidence from people doing the work.
+No MVP has been selected. The first comparison has now identified substantial existing products in all three areas, including several stable claim-verification and research-agent tools. The next cycle should focus less on adding more names to the landscape and more on hands-on interoperability tests, user workflow evidence, and whether a genuinely unmet integration problem exists.
 
 ## Change log
 
