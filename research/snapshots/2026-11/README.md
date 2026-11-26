@@ -31,7 +31,7 @@ People-facing research should begin immediately and continue throughout all stag
 ## Snapshot contents
 
 - **workstreams/** — scope, questions, progress, and reports for the seven research areas. Workstream A has an [initial field overview](workstreams/A-open-science/field-overview.md).
-- **projects/** — profiles of relevant projects and platforms, including [OSF](projects/osf.md), [Zooniverse](projects/zooniverse.md), and [SciStarter](projects/scistarter.md).
+- **projects/** — profiles of relevant projects and platforms, including [OSF](projects/osf.md), [Zooniverse](projects/zooniverse.md), [SciStarter](projects/scistarter.md), [Zenodo](projects/zenodo.md), [Dryad](projects/dryad.md), [OpenAlex](projects/openalex.md), [PubPub](projects/pubpub.md), [eLife](projects/elife.md), [bioRxiv](projects/biorxiv.md), and [medRxiv](projects/medrxiv.md).
 - **organizations/** — institutions, networks, and communities.
 - **technologies/** — technical approaches and infrastructure where a separate profile is useful.
 - **standards/** — standards, frameworks, and foundational recommendations.
