@@ -158,8 +158,8 @@ Risk: existing benchmarks and validators already cover adjacent tasks. A new sui
 
 Prioritize the following investigation order:
 
-1. **Cross-tool handoff and interoperability:** this is the only opportunity that naturally connects the current tool landscape without requiring a new platform or duplicating a major product.
-2. **User-facing handoff friction:** observe whether researchers actually struggle to assemble and interpret existing tools.
+1. **Local-first research preflight and handoff:** test whether a guided tool that orchestrates existing validators and explains the results solves a real, frequent user problem.
+2. **Cross-tool evidence interoperability:** test whether claims, runs, files, identifiers, and rights survive real export and handoff workflows.
 3. **Upstream contribution opportunities:** if a concrete gap belongs inside an existing project, prefer a contribution or adapter over a competing product.
 4. **Integrity conformance tests:** pursue only if the first tests reveal semantic failures not caught by current validators and benchmarks.
 
