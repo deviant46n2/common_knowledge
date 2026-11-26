@@ -960,3 +960,58 @@ No sources entered yet. Add new sections and stable IDs as workstreams begin.
 - **Accessed / verified:** 2026-11-26
 - **Claims supported:** Wikibase data model, references and qualifiers, export/query options, flexible local schemas, and interoperability challenges when vocabularies diverge.
 - **Limitations:** Documentation is not an independent evaluation of data quality, community governance, security, or sustainability of individual installations.
+
+
+### E-11 — Crossref Content Registration
+- **Publisher:** Crossref
+- **Source type:** Primary DOI registration and metadata documentation
+- **URL:** https://www.crossref.org/services/content-registration
+- **Publication / update date:** Current service documentation accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Member DOI prefix allocation, DOI registration, and member-deposited metadata updates.
+- **Limitations:** Applies to Crossref members and Crossref-registered content; DOI registration does not certify quality or guarantee availability of the resource itself.
+
+### E-12 — Crossref REST API
+- **Publisher:** Crossref
+- **Source type:** Primary API documentation
+- **URL:** https://www.crossref.org/documentation/retrieve-metadata/rest-api/
+- **Publication / update date:** Current API documentation accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Public API access to member-deposited scholarly metadata, trusted-source enrichment, search and filter functions, and availability of identifiers and post-publication updates.
+- **Limitations:** Metadata quality and completeness depend on deposits and enrichment; rate limits apply; API coverage is limited to Crossref's records.
+
+### E-13 — DataCite Metadata Schema 4.7
+- **Publisher:** DataCite
+- **Source type:** Research-output metadata schema
+- **URL:** https://schema.datacite.org/
+- **Publication date:** 2026-03-03 (version 4.7)
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Core metadata for identifying and citing datasets and other research outputs; current schema version and additions for posters, presentations, RAiD, SWHID, and relation types.
+- **Limitations:** Schema specification does not guarantee completeness or correctness of repository deposits, resource accessibility, or preservation.
+
+### E-14 — ORCID Integration and API FAQ
+- **Publisher:** ORCID
+- **Source type:** Primary identifier and API documentation
+- **URL:** https://info.orcid.org/documentation/integration-and-api-faq/
+- **Publication / update date:** Current documentation accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** ORCID iD purpose, authenticated collection, researcher-controlled permissions, and member API update authorization.
+- **Limitations:** ORCID records may be incomplete and are not a universal identity proof or blanket consent mechanism.
+
+### E-15 — Research Organization Registry (ROR): About and FAQs
+- **Publisher:** Research Organization Registry
+- **Source type:** Primary registry and governance documentation
+- **URL:** https://ror.org/
+- **Publication / update date:** Current registry information accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Community-led open organization identifiers, CC0 data, API and bulk access, multilingual and variant names, and community curation.
+- **Limitations:** Focuses on broad research/funding organization coverage, not all internal units or community entities; curation and succession remain ongoing.
+
+### E-16 — Overview of the BIBFRAME 2.0 Model
+- **Publisher:** Library of Congress
+- **Source type:** Bibliographic linked-data model documentation
+- **URL:** https://www.loc.gov/bibframe/docs/bibframe2-model
+- **Publication date:** 2016-04-21
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Work, Instance, and Item distinctions; agents, subjects, events, and linked-data model for bibliographic description.
+- **Limitations:** Library-oriented bibliographic model, not a universal knowledge representation standard; mappings to other schemas require care.
