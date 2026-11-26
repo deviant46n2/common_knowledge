@@ -1,0 +1,3 @@
+2026-01-20 | Calibration completed | Passed
+2026-04-20 | Calibration due | Not completed
+2026-05-03 | Maintenance visit | Sensor cleaned
