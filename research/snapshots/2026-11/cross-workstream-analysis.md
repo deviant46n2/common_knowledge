@@ -17,7 +17,7 @@ This is a living synthesis. Findings are provisional where underlying workstream
 | [A — Open science and research collaboration](workstreams/A-open-science/README.md) | In progress | Initial ecosystem map and comparative synthesis across repositories, collaboration, workflows, citizen science, and community research |
 | [B — Distributed and federated infrastructure](workstreams/B-distributed-infrastructure/README.md) | In progress | Initial landscape of volunteer compute, institutional HTC, multi-cluster orchestration, P2P networking, storage proofs, workload fit, and trust boundaries |
 | [C — Reproducibility and research integrity](workstreams/C-reproducibility/README.md) | In progress | Initial frameworks and tools map, research-record proposal, and integrity/correction analysis |
-| [D — Human–AI research collaboration](workstreams/D-human-ai-collaboration/README.md) | Not started | Pending investigation |
+| [D — Human–AI research collaboration](workstreams/D-human-ai-collaboration/README.md) | In progress | Initial evidence on AI research agents, human–AI reproducibility, workflow auditability, and contribution/accountability policies |
 | [E — Shared knowledge and preservation](workstreams/E-knowledge-preservation/README.md) | In progress | Initial standards map, identifiers, preservation, community rights, and federated discovery synthesis |
 | [F — Governance, economics, and institutional design](workstreams/F-governance-economics/README.md) | Not started | Pending investigation |
 | [G — People and research ecosystem needs](workstreams/G-people-and-needs/README.md) | Not started | Pending investigation; conversations should begin throughout the program |
@@ -34,7 +34,16 @@ This is a living synthesis. Findings are provisional where underlying workstream
 
 **Assessment:** A distributed commons must protect contributors' machines and data while also protecting research outputs from malicious or unreliable workers. Signatures, sandboxing, replication, and storage proofs each establish different properties; none proves overall trustworthiness.
 
-### 8. Data locality can be more important than compute distribution
+### 9. Human–AI research needs auditability, not just autonomy
+
+**Supporting workstreams:** C, D.
+
+- Workstream C shows that computational reproducibility depends on methods, data, code, environments, and correction history.
+- Workstream D's 2026 evidence finds that human–AI teams can perform comparably to human-only teams in one reproduction task, while AI-led teams performed substantially worse; other work identifies hidden methodological flaws in autonomous AI scientist workflows.
+
+**Assessment:** Agent task completion and polished manuscripts are not sufficient evidence of scientific validity. The research record should preserve material workflow artifacts, human decisions, data lineage, and verification scope.
+
+### 10. Data locality can be more important than compute distribution
 
 **Supporting workstreams:** B, C, E.
 
@@ -162,3 +171,4 @@ Do not promote a candidate opportunity to a recommendation until the underlying 
 - **2026-11-26:** Created the cross-workstream synthesis framework. No comparative findings had yet been recorded.
 - **2026-11-26:** Added preliminary themes based on Workstreams A, C, and E. All three remain in progress; these themes are hypotheses to test, not final conclusions.
 - **2026-11-26:** Added Workstream B and two cross-cutting themes on reciprocal trust obligations and data locality. Workstream B remains in progress.
+- **2026-11-26:** Added Workstream D and a cross-cutting theme on human–AI research auditability. Workstream D remains in progress.
