@@ -1,0 +1,4 @@
+run_id,metric,value,unit
+run-001,control_mean,10.0,mm
+run-001,treatment_mean,13.0,mm
+run-001,mean_difference,3.0,mm
