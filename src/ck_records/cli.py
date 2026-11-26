@@ -104,9 +104,9 @@ def validate(record, root):
                     errors.append(f"{where}.exact must occur exactly once in source (found {count})")
                 else:
                     start = content.index(exact)
-                    if prefix and content[max(0, start-len(prefix)):start] != prefix:
+                    if isinstance(prefix, str) and prefix and content[max(0, start-len(prefix)):start] != prefix:
                         errors.append(f"{where}.prefix does not match source context")
-                    if suffix and content[start+len(exact):start+len(exact)+len(suffix)] != suffix:
+                    if isinstance(suffix, str) and suffix and content[start+len(exact):start+len(exact)+len(suffix)] != suffix:
                         errors.append(f"{where}.suffix does not match source context")
             except (OSError, UnicodeError) as exc:
                 errors.append(f"{where} source cannot be read: {exc}")
