@@ -1,22 +1,38 @@
-# Synthetic observation — nanopublication shape probe
+# Synthetic observation — evidence-location and nanopublication probe
 
 - **Date:** 26 November 2026
 - **Status:** Exploratory local data-model test; not a production schema
-- **Source file:** [Two nanopublication-shaped records](2026-11-synthetic-observation-nanopubs.trig)
+- **Files:** [CSV source](2026-11-station-r1-observations.csv), [CSVW metadata](2026-11-station-r1-observations-metadata.json), [nanopublication-shaped TriG](2026-11-synthetic-observation-nanopubs.trig)
 
 ## Purpose
 
-Test whether a small observation and a separate qualification can be represented as two linked nanopublications without conflating what a source recorded with an assessment of the measurement's reliability.
+Test whether a source can be identified at both the dataset-version level and the individual-row/column level, while keeping a source observation distinct from a later assessment of its reliability.
 
 ## Synthetic scenario
 
-- Station R-1's CSV row 42 records dissolved oxygen of 4.2 mg/L at 09:00 UTC on 1 May 2026.
+- Station R-1's CSV row with measurement ID `R1-20260501T0900Z` records dissolved oxygen of 4.2 mg/L at 09:00 UTC on 1 May 2026.
 - A separate calibration log says the sensor was overdue for calibration on that date.
-- The record therefore distinguishes the statement about what the CSV contains from the assessment that confidence in the physical measurement is limited.
+- The record distinguishes what the CSV records from an assessment of the physical measurement's reliability.
 
-All sources, identifiers, people, and measurements in this fixture are fictional placeholders. No external data or real people are represented.
+All sources, identifiers, people, and measurements are fictional placeholders.
 
-## Representation tested
+## Source version and tabular locator
+
+The CSV is assigned a version-specific URI, with a separate series URI in the CSVW metadata. The metadata declares:
+- the column names and datatypes;
+- `measurement_id` as a primary key;
+- an `aboutUrl` template that creates a row URI from that key;
+- a version string and series relationship.
+
+The source file's SHA-256 is:
+
+`e9e7a483252cfd45c57ee0fe9ecd9f1f261e33d24ef1c69d53c0bcb892a0021d`
+
+The TriG observation points to the versioned CSV, the measurement key, the evidence column, and the digest.
+
+This is stronger than a row number alone: row order can change while the primary key remains stable, and the digest detects changes to the exact byte representation. It still depends on the publisher preserving the versioned source URI and not reusing the same key for a different measurement.
+
+## Representation
 
 The TriG file contains two nanopublication-shaped datasets:
 
@@ -25,58 +41,25 @@ The TriG file contains two nanopublication-shaped datasets:
 
 Each has the nanopublication head, assertion, provenance, and publication-information graphs. The fixture uses PROV-O for activity/source/agent relationships.
 
-## Test performed
+## Tests performed
 
-- Parsed the serialized TriG using RDFLib 7.5.0.
-- Parsed it back into a new RDF Dataset.
-- Confirmed that two nanopublication heads were present.
-- Confirmed each head links to assertion, provenance, and publication-information graphs.
-- Counted 37 quads across the dataset.
+- Parsed the CSV with Python's CSV parser: **PASS** (2 rows).
+- Parsed the CSVW metadata as JSON: **PASS**.
+- Checked the declared primary key is unique in the sample: **PASS**.
+- Calculated SHA-256 over the exact UTF-8 CSV bytes: **PASS**.
+- Parsed an official nanopublication test-suite `valid/plain` TriG example with RDFLib 7.5.0: **PASS** (four named graphs, nine quads).
+- Parsed the initial synthetic TriG shape with RDFLib 7.5.0 and round-tripped it through a fresh RDF Dataset: **PASS** (two nanopublication heads, 37 quads).
+- Generated two in-memory CSV variants to test locator behavior:
+  - **Rows reordered:** primary-key values remained the same, while the file digest changed to `f797ea05818013a41eecd59bfa7302657e95bc8fb353911e4486ea055b36a7fb`.
+  - **Measurement value edited from 4.2 to 4.3:** the primary key remained the same, while the file digest changed to `89ef195feb45520c7e9d8a85be722cb4737ce8f63d8f301d72b3997f94a78808`.
 
-**Result:** TriG syntax and this basic graph structure passed the local round-trip parse.
-
-## What this test does not prove
-
-- It does not prove full nanopublication conformance.
-- It does not verify Trusty URI generation or cryptographic signatures.
-- It does not publish to or retrieve from the nanopublication test network.
-- It does not validate the semantics of the custom `ck:` vocabulary.
-- It does not show that a human contributor can author or understand the record.
-- It does not yet provide durable source versioning or a robust CSV row locator.
-- It does not validate the evidence itself; the scenario is fictional.
-
-## Findings
-
-1. **The separation is useful:** a statement about what a source recorded can remain distinct from an assessment about the reliability of the underlying observation.
-2. **The relationship is expressible:** the second nanopublication can refer to the first and preserve its own provenance.
-3. **The vocabulary remains ours to define:** nanopublications and PROV-O provide structure and lineage, but they do not define the meaning of "qualification", "measurement accuracy uncertain", or the precise source-row locator.
-4. **The reader experience is still unknown:** a graph can encode this distinction while still being difficult to inspect. A human-readable interface is essential.
-5. **The source anchor needs work:** a CSV row number is not durable if rows are reordered or the file changes. A future experiment should include a source version/content hash and a stable row key, not just row position.
-
-## Next checks
-
-- Run the fixture through an actual nanopublication implementation and the canonical conformance suite.
-- Try authoring the same structure through a Nanodash template.
-- Test whether a separate reviewer can publish a conflicting or alternative assessment without replacing the observation.
-- Test source versioning and row-level anchors against a changed CSV file.
-
-
-### Additional locator stability check
-
-Two in-memory variants were generated from the fixture:
-- **Rows reordered:** the primary-key values remained the same, so the record key still identifies the same measurement even though its row position changed. The file SHA-256 changed to `f797ea05818013a41eecd59bfa7302657e95bc8fb353911e4486ea055b36a7fb`.
-- **Measurement value edited from 4.2 to 4.3:** the primary key remained the same but the file SHA-256 changed to `89ef195feb45520c7e9d8a85be722cb4737ce8f63d8f301d72b3997f94a78808`.
-
-This confirms the intended distinction: the primary key tracks the logical row across reordering, while the content digest detects changes to the exact file representation. A changed dataset should receive a new version identity; the digest alone should not be used to silently treat a changed file as the same source version.
-
+**Result:** The local checks demonstrate that the key can continue identifying a logical row across reordering, while the file digest detects a changed byte representation. The initial TriG structure also parsed and round-tripped. These are limited checks, not full standards-conformance tests.
 
 ## CSVW implementation candidate
 
-A current Python implementation is available in the `cldf/csvw` project. As of this research pass, PyPI reports version **4.2.0**, released 6 November 2026, under Apache-2.0, requiring Python 3.10 or later. It provides `csvwvalidate`, `csvw2json`, and `csvwdescribe` command-line tools.
+A current Python implementation is maintained in the `cldf/csvw` project. PyPI reports version **4.2.0**, released 6 November 2026, under Apache-2.0, requiring Python 3.10 or later. It provides `csvwvalidate`, `csvw2json`, and `csvwdescribe` command-line tools.
 
-This is a practical candidate for validating the fixture, but its own README is explicit that it does not implement the full CSVW specification. It reports 269/270 JSON tests, 280/282 validation tests, and 10/18 non-normative tests passing. Its documented limitations should be treated as real; a pass from this implementation is useful validation, not proof of full W3C conformance.
-
-The older `csvwlib` project is explicitly unmaintained and should not be the default choice.
+Its own README is explicit that it does not implement the full CSVW specification. It reports 269/270 JSON tests, 280/282 validation tests, and 10/18 non-normative tests passing. It is a useful validation tool, not a perfect standards oracle. The older `csvwlib` project is explicitly unmaintained.
 
 Sources:
 - [cldf/csvw README](https://github.com/cldf/csvw)
@@ -84,4 +67,31 @@ Sources:
 - [csvw 4.2.0 on PyPI](https://pypi.org/project/csvw/4.2.0/)
 - [CSVW tools overview](https://csvw.org/tools.html)
 
-**Execution status:** The `csvwvalidate` CLI was not run in this environment because the package is not installed and package installation is not available in the current runtime. The next local validation should pin `csvw==4.2.0` in a disposable environment and run `csvwvalidate` against the metadata fixture.
+**Execution status:** The `csvwvalidate` CLI was not run because the package is not installed in the current runtime. The revised TriG was not re-run through a nanopublication validator. No Trusty URI, cryptographic signature, or network publication was tested.
+
+## Findings
+
+1. **The separation is useful:** a statement about what a source recorded can remain distinct from an assessment about the reliability of the underlying observation.
+2. **The relationship is expressible:** a second nanopublication can refer to the first and preserve its own provenance.
+3. **CSVW supplies an existing tabular locator model:** a primary key and URI template are preferable to relying only on row position.
+4. **A version URI and digest do different jobs:** the URI names the intended dataset edition; the digest detects byte-level changes. Neither should silently substitute for the other.
+5. **The vocabulary remains ours to define:** nanopublications and PROV-O provide structure and lineage, but do not define the meaning of "qualification", "measurement accuracy uncertain", or all evidence relations.
+6. **The reader experience is still unknown:** a graph can encode the distinction while still being difficult to inspect. A human-facing interface remains essential.
+7. **Locator strength varies:** many real sources lack primary keys or stable versioned URIs. The system will need fallback locators and should expose their limitations.
+
+## What this test does not prove
+
+- Full CSVW or nanopublication conformance.
+- Trusty URI generation or cryptographic signature validity.
+- Successful publication to or retrieval from the nanopublication test network.
+- Correctness of the custom `ck:` vocabulary or any underlying scientific claim.
+- That a human contributor can author or understand the record.
+- That a CSVW validator or source-preservation strategy works in production.
+
+## Next checks
+
+- Pin `csvw==4.2.0` in a disposable environment and run `csvwvalidate` on the metadata fixture.
+- Run the revised TriG through the canonical nanopublication conformance suite and an actual nanopublication implementation.
+- Test a conflicting assessment from a second contributor without replacing the original observation.
+- Try authoring the same structure through a Nanodash template.
+- Test a source with no primary key and a textual source using Web Annotation selectors.
