@@ -98,7 +98,15 @@ The first distributed-compute pilot should:
 9. Publish the actual resource and energy assumptions, not only peak throughput.
 10. Stop if distribution adds complexity without meaningful benefit.
 
-## 7. Open questions
+## 7. BOINC Central as a potential hosted pilot route
+
+BOINC Central's current guidelines are unusually concrete. It supports scientific or nonprofit work using open-source software, publicly available non-sensitive input/output data, and large numbers of independent jobs. Typical jobs should run from minutes to about a day and fit the resource profile of home computers. The hosted service uses BUDA and Docker-based application packaging, with a web interface for batch submission and output retrieval.
+
+This lowers the barrier compared with operating a new BOINC project, but it does not remove the need for a suitable workload, application-specific validation, security review, and reproducible baseline. It also introduces a dependency on the Berkeley-operated service and its capacity.
+
+**Assessment:** Before considering a custom Common Knowledge volunteer network, test whether a bounded research workload could run through BOINC Central or an existing institutional HTC service. Confirm current eligibility, queue time, GPU requirements, data rules, and support directly.
+
+## 8. Open questions
 
 1. What candidate Common Knowledge research tasks are sufficiently parallel and independently verifiable?
 2. How much time and bandwidth would data staging require?
