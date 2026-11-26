@@ -122,6 +122,29 @@ The first-pass review suggests three possible gaps, none yet validated:
 
 These are only promising questions. There may already be tools we have not found. The next phase should investigate the exact handoffs between projects and test them on a controlled fixture.
 
+## 9. A concrete interoperability detail: reproducible-science already exports claim checks as RO-Crate
+
+The [reproducible-science documentation](https://reproducible.science/tools/repro/) describes an experimental export to RO-Crate 1.3:
+- each file named by a record is represented as a File with its SHA-256;
+- each claim is represented as a schema.org Claim;
+- each checked assertion is represented as a CheckAction;
+- each recorded regeneration command is represented as a CreateAction following Process Run Crate 0.6;
+- the tool defines its own experimental profile, currently version 0.1-experimental.
+
+The documentation explicitly notes a gap in the base RO-Crate model: it does not define terms for an address inside a file, a printed value compared with a stored value, or the outcome of that comparison. The project therefore uses its own profile for those concepts. It also notes that the profile may change before 1.0, that an unreferenced file is not included, and that records do not currently contain licenses; its exporter writes that no license is stated unless the user adds one.
+
+This is a highly relevant finding. It means a claim-check-to-RO-Crate bridge is already being implemented, including a reversible import/export path. The remaining question is not whether to create a bridge, but whether this experimental profile interoperates with other tools, whether it has user demand, and whether a neutral conformance test or adapter would help.
+
+### Related standards and version compatibility
+
+- RO-Crate 1.3 was released on 22 June 2026.
+- Workflow Run RO-Crate 0.6 was released on 7 September 2026 and aligns with RO-Crate 1.3 / Workflow RO-Crate 1.1.
+- The 0.6 profile collection changes several IRI mappings and is not backward compatible with older RO-Crate 1.1 / Workflow RO-Crate 1.0 mappings.
+- Workflow Run RO-Crate is implemented or planned across multiple workflow systems, including Galaxy, COMPSs, StreamFlow, WfExS, Autosubmit, Nextflow, Snakemake, and the FAIR Data Registry.
+- The official tool list includes validators, runcrate, converters, workflow plugins, and the experimental claim-check profile from reproducible-science.
+
+**Implication:** version compatibility, profile semantics, and preservation of claim/run links are concrete things to test. We should not invent another profile until we have tested the current one and discussed any gaps with its maintainers and the RO-Crate community.
+
 ## Sources
 
 - [ReproCert repository](https://github.com/AETHERXGLOBAL/reprocert)
