@@ -1657,6 +1657,71 @@ No sources entered yet. Add new sections and stable IDs as workstreams begin.
 - **Claims supported:** Independent compensation review, comparable salary data, board documentation, and conflict-of-interest safeguards.
 - **Limitations:** US nonprofit-sector guidance; not legal advice and not a substitute for IRS regulations or state law.
 
+
+
+### F-14 — Creative Commons FAQ: Can I Apply a CC License to Software?
+- **Publisher:** Creative Commons
+- **Source type:** Primary licensing guidance
+- **URL:** https://creativecommons.org/faq/
+- **Publication / update date:** Current FAQ accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Creative Commons recommends against using CC licenses for software and explains the role of software-specific source-code and patent provisions; CC licenses may be suitable for documentation and separate creative assets.
+- **Limitations:** General guidance; license selection depends on the actual work and applicable law.
+
+### F-15 — The Open Source Definition
+- **Publisher:** Open Source Initiative
+- **Source type:** Open-source licensing definition
+- **URL:** https://opensource.org/osd
+- **Publication / update date:** Last modified 2024-02-16
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Requirements for OSI open-source licensing, including source access, derived works, free redistribution, and prohibitions on discrimination by person/group or field of endeavor.
+- **Limitations:** Defines open-source software licensing; does not determine whether an organization or hosted service is ethical or mission-aligned.
+
+### F-16 — Open Data Commons Licenses and FAQ
+- **Publisher:** Open Data Commons / Open Knowledge Foundation
+- **Source type:** Primary database licensing guidance
+- **URL:** https://opendatacommons.org/licenses/
+- **Publication / update date:** Current license guidance accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** ODbL, ODC-By, and PDDL tools; distinction between database rights and rights in database contents; jurisdictional variability.
+- **Limitations:** Legal applicability depends on database rights, copyright, contract, and jurisdiction; not a substitute for legal advice.
+
+### F-17 — Developer Certificate of Origin 1.1
+- **Publisher:** Linux Foundation / Eclipse Foundation-hosted copy
+- **Source type:** Contributor provenance certification
+- **URL:** https://www.eclipse.org/legal/dco/dco.html
+- **Publication / update date:** DCO version 1.1
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Contributor certification that work is original or appropriately licensed and may be submitted under the project's license; public sign-off record.
+- **Limitations:** Does not transfer copyright and does not resolve every employer, patent, or third-party rights issue.
+
+### F-18 — Apache Software Foundation Contributor Agreements
+- **Publisher:** Apache Software Foundation
+- **Source type:** Primary contributor agreement policy
+- **URL:** https://www.apache.org/licenses/contributor-agreements.html
+- **Publication / update date:** Current policy accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Individual and Corporate CLAs, contributor retention of original rights, project license grants, and requirements for committers/large contributions.
+- **Limitations:** Apache-specific agreement model; not a default template for Common Knowledge without legal review.
+
+### F-19 — SPDX License List
+- **Publisher:** SPDX Project / Linux Foundation
+- **Source type:** Standardized license identifier registry
+- **URL:** https://spdx.org/licenses/
+- **Publication / update date:** Version 3.29.0, 2026-09-16
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Standard identifiers, license texts, canonical URLs, and machine-readable license metadata.
+- **Limitations:** Identifier registry does not determine whether a license is appropriate for a particular project or whether the licensor has rights to apply it.
+
+### F-20 — GitHub Docs: Licensing a Repository
+- **Publisher:** GitHub
+- **Source type:** Platform documentation
+- **URL:** https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository
+- **Publication / update date:** Current documentation accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Public GitHub repositories without an explicit license remain under default copyright rules; GitHub platform terms allow viewing and forking within GitHub; general reuse and redistribution require additional permission.
+- **Limitations:** Platform guidance, not legal advice; rights depend on applicable law and the actual repository content.
+
 ## Workstream G — People, Needs, and the Research Ecosystem
 
 ### G-01 — Scoping the Needs of Open Science Monitoring
