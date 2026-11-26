@@ -213,6 +213,39 @@ It focuses on a consequential, measurable question: **does the reported claim ac
 - User willingness to adopt a new reporting step is unknown.
 - Sensitive data, unpublished manuscripts, and raw AI traces require strong local-first and disclosure controls.
 
+## 8. FAIRSCAPE and the Evidence Graph Ontology (EVI)
+
+**Project:** [FAIRSCAPE](https://fairscape.github.io/)  
+**CLI:** [fairscape-cli](https://fairscape.github.io/fairscape-cli/)  
+**Ontology:** [EVI](https://fairscape.github.io/EVI/)  
+**Code:** [fairscape/fairscape](https://github.com/fairscape/fairscape) and [fairscape/EVI](https://github.com/fairscape/EVI)  
+**License:** FAIRSCAPE is described by its project and papers as open source under MIT; EVI is published under CC BY 4.0.
+
+### What it does
+
+FAIRSCAPE packages research data, software, and computations as RO-Crates, records provenance, generates human- and machine-readable datasheets and evidence graphs, assesses AI-readiness, and supports publishing to repositories such as Dataverse and Zenodo.
+
+Its CLI can create and manage RO-Crates, register datasets/software/computations, define or infer schemas, import selected data sources, generate HTML datasheets and evidence graphs, organize release packages, and publish packages.
+
+FAIRSCAPE supports integrations or conversions involving Snakemake, Cromwell, Galaxy, MLflow, REDCap, Frictionless, Croissant, and Python. Its emphasis is biomedical research and AI-readiness, particularly work connected to NIH Bridge2AI.
+
+### EVI's role
+
+The Evidence Graph Ontology is an OWL 2 vocabulary extending W3C PROV-O to describe how a biomedical result was produced and what evidence bears on its correctness. It represents claims/findings, datasets, schemas, software, computations, and the relations between them. It can represent support and challenges to claims, not only a linear chain of execution.
+
+This is a significant adjacent model for a claim/evidence layer. The current EVI release is 1.6 (August 2026); the ontology's own documentation describes it as a biomedical domain extension.
+
+### Product implication
+
+FAIRSCAPE and EVI substantially weaken any claim that Common Knowledge has discovered evidence graphs or research claim provenance. We should:
+- inspect the FAIRSCAPE CLI and example crates;
+- understand which parts are domain-specific versus reusable;
+- evaluate EVI alongside W3C PROV, RO-Crate, Workflow Run RO-Crate, and nanopublications;
+- determine whether a general cross-domain user problem remains;
+- prefer adapters and interoperability rather than inventing another ontology.
+
+A possible gap could remain in a lightweight local-first review workflow that consumes existing EVI/RO-Crate/Workflow Run RO-Crate records and helps authors/reviewers inspect claim-to-run traceability. But FAIRSCAPE already creates evidence graphs and visualizations, so that proposition requires direct comparison and user validation.
+
 ## Sources
 
 - [Paper2Agent — Nature (2026)](https://www.nature.com/articles/s41586-026-11044-y)
