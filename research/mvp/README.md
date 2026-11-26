@@ -29,6 +29,8 @@
 - [Hands-on experiments and user discovery plan](discovery-experiments.md)
 - [Preliminary MVP opportunity assessment](opportunity-assessment.md)
 - [Development documentation and source-of-truth policy](../../docs/development/README.md)
+- [Working product direction and prototype plan](../../product/README.md)
+- [Synthetic research project fixture](../../examples/synthetic-research-project/README.md)
 
 ## Current preliminary conclusion
 
@@ -44,8 +46,9 @@ A major new finding is that **ReCRATE** is an active MIT-licensed proof of conce
 
 The OSF Projects transition creates a real but time-bounded migration need for some active projects. It is not currently a strong core-product candidate: OSF provides export guidance, says completed public projects generally need no action, and is developing additional API-based export tools.
 
-No MVP has been selected. The first comparison has now identified substantial existing products in all three areas, including stable claim-verification tools, workflow provenance standards, validators, run comparators, and research-agent systems. The next cycle should focus less on adding more names to the landscape and more on hands-on interoperability tests, user workflow evidence, and whether a genuinely unmet integration or usability problem exists.
+A working prototype direction has now been set: a local-first research project preflight and handoff tool, initially scoped to computational Python projects and static inspection. This is not yet a validated MVP decision. The first comparison identified substantial existing products in adjacent areas, so the immediate cycle is to create a ground-truth fixture, test relevant tools against it, and establish whether a genuinely unmet integration or usability problem exists before expanding implementation.
 
 ## Change log
 
 - **2026-11-26:** Established MVP-specific research area and recorded first-pass competitor and opportunity findings. Conclusions remain provisional.
+- **2026-11-26:** Set a reversible working direction for prototype development and linked the product workspace and synthetic fixture.
