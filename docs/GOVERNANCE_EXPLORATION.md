@@ -245,3 +245,23 @@ Implications to explore:
 The goal is continuity without permanent founder control: the institution should remember its origins and take them seriously, while remaining capable of learning and changing.
 
 **Status:** This is a founder-stated principle about the durability and amendability of core values. The values themselves, their exact constitutional status, and the amendment procedure remain to be developed with the community. This is not a finalized constitution or list of entrenched rights.
+
+## 14. Persistent disagreement and pluralism
+
+The founder's current view is that **competing ideas must be able to coexist**, because evidence will not resolve every disagreement with complete certainty. Common Knowledge should not manufacture consensus merely to present a single, tidy answer.
+
+The working direction is to represent disagreement clearly and durably:
+
+- Preserve materially different claims, interpretations, hypotheses, and conclusions rather than forcing them into one institutional position.
+- Make the evidence for and against each position inspectable, including its sources, methods, assumptions, limitations, and uncertainty.
+- Distinguish disagreements about observations and facts from disagreements about definitions, methods, interpretation, values, and priorities.
+- Show when one position is much better supported than another. Coexistence does not mean that all positions are equally credible or deserve equal prominence.
+- Allow assessments to change as evidence develops, while preserving the history of earlier assessments and why they changed.
+- Make unresolved questions visibly unresolved rather than filling gaps with confident-sounding conclusions.
+
+This suggests a useful distinction: **pluralism in the representation of ideas, not relativism about the quality of evidence.** The system should be open to competing perspectives while remaining rigorous about how well each is supported.
+
+Important design questions remain open. How should the system handle claims that are unsupported, demonstrably false, harmful, or presented in bad faith? When should a position be retained as part of the historical record but no longer shown alongside well-supported current assessments? How should prominence communicate evidential strength without suppressing legitimate minority interpretations?
+
+**Status:** The need to allow evidence-backed competing ideas to coexist is a founder-stated direction. The representation, assessment, moderation, and prominence rules are unresolved design questions. This is not a claim that every disagreement is equally valid or permanently undecidable.
+
