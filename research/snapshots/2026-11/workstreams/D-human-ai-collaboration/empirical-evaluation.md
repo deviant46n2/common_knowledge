@@ -111,7 +111,7 @@ These are candidate requirements for pilot testing, not a final AI policy.
 
 ## Sources
 
-See the [November 2026 source register](../../sources.md), entries D-01 through D-11.
+See the [November 2026 source register](../../sources.md), entries D-01 through D-12.
 
 ## Change log
 
