@@ -8,7 +8,7 @@
 
 What is the smallest useful, interoperable way to represent a knowledge statement together with its scope, evidence, sources, provenance, uncertainty, disagreement, and revision history—and what existing systems already do this well?
 
-This document records a first pass through selected primary documentation. It is not a comprehensive survey and does not establish that a product gap exists.
+This document records a first pass through selected primary documentation and limited hands-on probes. It is not a comprehensive survey and does not establish that a product gap exists. Read it alongside [Adjacent Projects — Claims, Evidence, and Shared Knowledge](ADJACENT_PROJECTS.md), which identifies several existing initiatives with substantial overlap.
 
 ## Initial findings
 
