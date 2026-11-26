@@ -173,6 +173,158 @@ For each source, record:
 - **Claims supported:** Framework and examples for open and inclusive collaboration in science, including a lifecycle view of tools and practices.
 - **Limitations:** Older landscape; tool examples should be rechecked for current status.
 
+
+### A-16 — Zenodo
+
+- **Publisher / operator:** CERN and OpenAIRE
+- **Source type:** Primary
+- **URL:** https://zenodo.org/
+- **Publication / update date:** Current service page
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** General-purpose research repository; DOI assignment; open and restricted access; versioning; GitHub integration; CERN and OpenAIRE involvement.
+- **Limitations:** Operator description; does not independently verify preservation outcomes or scientific quality of deposited material.
+
+### A-17 — DOI versioning
+
+- **Publisher:** Zenodo Help
+- **Source type:** Primary technical documentation
+- **URL:** https://zenodo.org/help/versioning
+- **Publication / update date:** Current documentation
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Zenodo registers a DOI for a specific record version and a concept DOI for the record across versions; explains version citation.
+- **Limitations:** Applies to Zenodo's implementation; DOI behavior and policies at other repositories may differ.
+
+### A-18 — Dryad
+
+- **Publisher:** Dryad
+- **Source type:** Primary
+- **URL:** https://datadryad.org/
+- **Publication / update date:** Current service page
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Data publishing workflow, DOI assignment, curator review, dataset submissions across disciplines and formats.
+- **Limitations:** Operator description; independent service evaluation not provided.
+
+### A-19 — Who we are
+
+- **Publisher:** Dryad
+- **Source type:** Primary
+- **URL:** https://datadryad.org/about
+- **Publication / update date:** Current organization page
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Dryad's stated mission, nonprofit membership model, community composition, and commitments.
+- **Limitations:** Self-description; governance documents and financial statements require separate review.
+
+### A-20 — Publication policies, obligations & warranties
+
+- **Publisher:** Dryad
+- **Source type:** Primary policy documentation
+- **URL:** https://datadryad.org/publication_policy
+- **Publication / update date:** Current policy page; last updated date not confirmed in this pass
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Stated curation obligations, DOI registration, checksums, replication, preservation, and succession planning.
+- **Limitations:** Policy statements describe commitments and procedures; they are not an independent audit of implementation or effectiveness.
+
+### A-21 — OpenAlex transparency
+
+- **Publisher:** OpenAlex / OurResearch
+- **Source type:** Primary
+- **URL:** https://openalex.org/transparency
+- **Publication / update date:** Current transparency page
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** OpenAlex's stated purpose, data and code openness, nonprofit status, funding sources, and upstream data sources.
+- **Limitations:** Operator transparency statement; financial and governance claims should be checked against underlying filings and policies.
+
+### A-22 — Works overview
+
+- **Publisher:** OpenAlex Help Center
+- **Source type:** Primary technical documentation
+- **URL:** https://help.openalex.org/data/works/
+- **Publication / update date:** Current documentation
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** OpenAlex work entity model, metadata relationships, source aggregation, and treatment of multiple locations for the same scholarly work.
+- **Limitations:** Describes the platform's current data model; does not independently assess matching accuracy.
+
+### A-23 — Getting indexed
+
+- **Publisher:** OpenAlex Help Center
+- **Source type:** Primary technical documentation
+- **URL:** https://help.openalex.org/how-to/getting-indexed/
+- **Publication / update date:** Current documentation
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** OpenAlex's harvesting approach and examples of repositories and metadata sources it indexes.
+- **Limitations:** Indexing coverage and update delays can change; verify operational details before relying on them.
+
+### A-24 — PubPub
+
+- **Publisher:** Knowledge Futures
+- **Source type:** Primary
+- **URL:** https://www.pubpub.org/
+- **Publication / update date:** Current product page
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Community publishing features, collaborative editing, submissions and review, DOI support, content relationships, exports, and operator's stated sustainability model.
+- **Limitations:** Product and sustainability claims are operator statements; source license, governance, and long-term continuity were not independently verified.
+
+### A-25 — Submit your research
+
+- **Publisher:** eLife
+- **Source type:** Primary
+- **URL:** https://elifesciences.org/about/submit-your-research
+- **Publication / update date:** Current submission guidance
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Current submission process, Reviewed Preprint model, author revision options, and stated publication fee and waiver policy.
+- **Limitations:** Publisher's description; fee and workflow details can change.
+
+### A-26 — Peer review and publishing at eLife
+
+- **Publisher:** eLife
+- **Source type:** Primary
+- **URL:** https://elifesciences.org/about/peer-review
+- **Publication / update date:** Current policy page
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** No accept/reject decision after peer review for Reviewed Preprints; public reviews, eLife Assessment, author response, revisions, and Version of Record workflow.
+- **Limitations:** Describes eLife's model, not a general evaluation of its effectiveness or sector-wide adoption.
+
+### A-27 — Scientific Publishing: Rethinking how research is reviewed and published
+
+- **Authors:** Timothy E. Behrens, Yamini Dalal, Diane M. Harper
+- **Publisher:** eLife
+- **Source type:** Scholarly article / publisher perspective
+- **URL:** https://elifesciences.org/articles/110392
+- **Publication date:** 2026-03-17
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Discussion of the eLife publishing model and its implications for scholarly publishing.
+- **Limitations:** Authors are affiliated with the publisher; treat as an informed perspective rather than independent evaluation.
+
+### A-28 — About bioRxiv
+
+- **Publisher:** bioRxiv / openRxiv
+- **Source type:** Primary
+- **URL:** https://www.biorxiv.org/about-biorxiv
+- **Publication / update date:** Current service page
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** bioRxiv's life-sciences preprint scope, free distribution, screening, and explicit statement that posting does not imply endorsement or peer review.
+- **Limitations:** Operator description; screening effectiveness and downstream impact not independently evaluated.
+
+### A-29 — About medRxiv
+
+- **Publisher:** medRxiv / openRxiv
+- **Source type:** Primary
+- **URL:** https://www.medrxiv.org/about-biorxiv
+- **Publication / update date:** Current service page
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Medical and clinical preprint scope, non-peer-reviewed status, warning against clinical reliance, and operator information.
+- **Limitations:** Operator description; does not independently evaluate screening or public-health effects.
+
+### A-30 — medRxiv Frequently Asked Questions
+
+- **Publisher:** medRxiv / openRxiv
+- **Source type:** Primary policy documentation
+- **URL:** https://www.medrxiv.org/about/FAQ
+- **Publication / update date:** Current FAQ
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Submission screening categories, ethics and privacy checks, no-fee submission, typical screening time, and journal transfer pathways.
+- **Limitations:** Screening procedures and timelines may change; screening is not peer review or a guarantee of correctness.
+
 ## Other workstreams
 
 No sources entered yet. Add new sections and stable IDs as workstreams begin.
