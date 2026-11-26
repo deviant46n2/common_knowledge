@@ -42,4 +42,6 @@ Run tests:
 PYTHONPATH=src python -m unittest discover -s tests -v
 ```
 
+The automated test suite has been authored but has not yet been executed from a clean checkout. The fixture analysis calculation was independently checked to produce 10.0 mm, 13.0 mm, and a 3.0 mm difference; the narrow claim-matching expression was separately checked against the fixture's report sentence. Full package/runtime testing remains outstanding.
+
 The prototype is not ready to be described as a validated MVP or public alpha.
