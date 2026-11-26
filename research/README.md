@@ -11,7 +11,8 @@ Its purpose is to help Common Knowledge understand the existing ecosystem before
 - [Field snapshot: November 2026](snapshots/2026-11/README.md) — the first dated baseline.
 - [Ongoing developments](ongoing/developments.md) — notable changes identified after a snapshot's research cutoff.
 - [Research templates](templates/) — consistent formats for project, organization, and workstream reports.
-- [Adjacent project landscape](ADJACENT_PROJECTS.md) — newly identified claim/evidence and shared-knowledge initiatives that overlap with Common Knowledge.
+- [Adjacent project landscape](ADJACENT_PROJECTS.md) — claim/evidence and shared-knowledge initiatives that overlap with Common Knowledge.
+- [Civic fact-checking landscape](CIVIC_FACT_CHECKING_LANDSCAPE.md) — Factiz, AsOf, Full Fact, Cofacts, ClaimReview, and claim-detection infrastructure.
 
 ## Scope
 
