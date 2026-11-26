@@ -262,7 +262,7 @@ Before building another data model or publication backend:
 2. **Talk with MIRA/Discourse Graphs maintainers** about the schema's scope, licensing, extension model, and whether general knowledge domains are within their intended remit.
 3. **Inspect SciOS RRGI hands-on** and ask about source availability, API, licensing, roadmap, and the intended relationship between MIRA and RRGI.
 4. **Map ORKG's strengths and limitations** as an upstream scholarly contribution source.
-5. **Choose one civic/public-knowledge use case** and test whether any of these systems can already support it with acceptable contributor and reader experiences.
+5. **Choose one civic/public-knowledge use case** and test whether any of these systems can already support it with acceptable contributor and reader experiences. A fictional budget-comparison case is recorded in [the civic claim stress test](experiments/2026-11-civic-budget-claim-stress-test.md); it distinguishes nominal from real-terms claims and tests ambiguity, comparability, and assessment.
 
 Do not create a competing protocol, trust network, universal ontology, or large graph store until this work is done.
 
