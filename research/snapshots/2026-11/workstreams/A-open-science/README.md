@@ -33,6 +33,7 @@ Map platforms, institutions, communities, and practices across academic, indepen
 
 - [Initial field overview](field-overview.md) — preliminary map of research-lifecycle infrastructure, with current observations and questions.
 - [Landscape directory](landscape-directory.md) — categorized inventory of mapped projects and discovery leads.
+- [Comparative synthesis](comparative-synthesis.md) — preliminary comparison of repository, publishing, workflow, and community-science infrastructure.
 - [OSF profile](../../projects/osf.md) — includes the November 2026 transition.
 - [Zooniverse profile](../../projects/zooniverse.md) — people-powered research and volunteer task workflows.
 - [SciStarter profile](../../projects/scistarter.md) — citizen-science discovery and recruitment.
@@ -57,6 +58,7 @@ This page is the workstream's durable entry point. Add dated notes below as rese
 - **2026-11-26:** Expanded the first pass to repositories, scholarly discovery, community publishing, reviewed preprints, and life-sciences/medical preprint servers. Added seven profiles and registered sources A-16 through A-30. The field overview remains preliminary and is not a systematic review.
 - **2026-11-26:** Added an initial standards and interoperability map covering FAIR, DOI and metadata relationships, Crossref, ORCID, ROR, OAI-PMH, and POSI. Registered sources A-31 through A-38.
 - **2026-11-26:** Added profiles of WorkflowHub, protocols.io, Open Humans, Public Lab, and iNaturalist, covering workflow discovery, research methods, participant agency, community-led science, and biodiversity data. Registered sources A-39 through A-47.
+- **2026-11-26:** Added profiles for Dataverse, Figshare, Galaxy, and arXiv; registered sources A-53 through A-60. Added peer-reviewed evidence on sampling and participation bias in citizen-science datasets (A-61 through A-64) and a preliminary comparative synthesis.
 
 ### Next steps
 
