@@ -40,7 +40,8 @@ This page is the workstream's durable entry point. Add dated notes below as rese
 
 ### Progress notes
 
-- **2026-11-26:** Workstream scope and initial questions recorded. No comprehensive investigation has yet been completed.
+- **2026-11-26:** Workstream scope and initial questions recorded.
+- **2026-11-26:** Began the landscape review; added an initial field overview and profiles of OSF, Zooniverse, and SciStarter. Registered sources A-01 through A-15. This is a preliminary sample, not a complete directory or systematic review.
 
 ### Next steps
 
