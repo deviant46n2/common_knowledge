@@ -27,7 +27,7 @@ python render_record.py
 cd nanopub && python build_drafts.py && python -m pytest -q
 ```
 
-Eight record-model tests and seven nanopublication-structure tests pass (15 total). The nanopublication spike represents the observation and each independent assessment as separate four-graph drafts. The assessment publications derive from the observation publication, so neither assessment overwrites the other. The fixture now includes two independent assessments of the same statement and a version 2 record that retains both assessments while linking back to version 1 with PROV-O wasRevisionOf. An earlier test run exposed a missing JSON-LD mapping for `oa:hasTarget`; the compact-IRI version in this experiment avoids that aliasing mistake. This demonstrates why semantic round-trip tests matter in addition to JSON syntax validation.
+Eight record-model tests and eight nanopublication-structure tests pass (16 total). The nanopublication spike represents the observation and each independent assessment as separate four-graph drafts. The assessment publications derive from the observation publication, so neither assessment overwrites the other. The fixture now includes two independent assessments of the same statement and a version 2 record that retains both assessments while linking back to version 1 with PROV-O wasRevisionOf. An earlier test run exposed a missing JSON-LD mapping for `oa:hasTarget`; the compact-IRI version in this experiment avoids that aliasing mistake. This demonstrates why semantic round-trip tests matter in addition to JSON syntax validation.
 
 ## Limitations
 
