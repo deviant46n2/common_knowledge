@@ -1537,3 +1537,80 @@ No sources entered yet. Add new sections and stable IDs as workstreams begin.
 - **Accessed / verified:** 2026-11-26
 - **Claims supported:** Independent compensation review, comparable salary data, board documentation, and conflict-of-interest safeguards.
 - **Limitations:** US nonprofit-sector guidance; not legal advice and not a substitute for IRS regulations or state law.
+
+
+## Workstream G — People, Needs, and the Research Ecosystem
+
+### G-01 — Scoping the Needs of Open Science Monitoring
+- **Publisher:** Open Science Monitoring Initiative (OSMI), Working Group 1
+- **Source type:** Stakeholder scoping report and survey summary
+- **URL:** https://open-science-monitoring.org/new-report-on-scoping-the-needs-of-open-science-monitoring/
+- **Publication date:** 2026-10-01
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** 35-respondent global open-science community scoping survey; barriers around incentives, governance, cost/licensing, and metadata quality; support for mixed quantitative/qualitative monitoring; equity concerns.
+- **Limitations:** Small expert-community sample, not a representative survey of all researchers; results are reported by the initiative.
+
+### G-02 — Gaps between Open Science Activities and Actual Recognition Systems: Insights from an International Survey
+- **Authors:** Florencia Grattarola, Hanna Shmagun, Christopher Erdmann, Anne Cambon-Thomsen, Mogens Thomsen, Jaesoo Kim, Laurence Mabile
+- **Publisher:** PLOS ONE
+- **Source type:** Peer-reviewed international survey
+- **URL:** https://doi.org/10.1371/journal.pone.0315632
+- **Publication date:** 2024-12-16
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** 230 respondents from five continents and 37 countries; perceived gaps between open-science policies and formal credit/reward systems; data management and sharing identified as deserving recognition.
+- **Limitations:** Snowball sampling through professional networks and RDA; respondent mix and self-selection limit representativeness.
+
+### G-03 — Researchers' Attitudes, Intention, and Practices Towards Open Science: Survey from China and Nigeria
+- **Authors:** Zhilin Ren et al.
+- **Publisher:** Preprint (January 2026)
+- **Source type:** Cross-national researcher survey preprint
+- **URL:** https://huchuanpeng.com/publication/2026_preprint_ren_zl/
+- **Publication date:** 2026-01
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Survey of 371 researchers in China and Nigeria; reported support for open science alongside lower practice and barriers involving time, incentives, training, guidance, and infrastructure.
+- **Limitations:** Preprint, not peer reviewed at time of access; sample design and representativeness require examination.
+
+### G-04 — Open Research Programme Survey 2025 Report
+- **Publisher:** UK Reproducibility Network (UKRN)
+- **Source type:** Researcher survey report
+- **URL:** https://ukrn.github.io/ORP-survey-2025/UKRN-ORP-2025.html
+- **Publication / update date:** 2025 report accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** UK open-research practices, barriers, facilitators, institutional support, career-stage and disciplinary differences.
+- **Limitations:** UK context and survey sampling; not a global representative sample.
+
+### G-05 — Oxford Research Practice Survey 2024: Executive Summary
+- **Publisher:** University of Oxford Research Support
+- **Source type:** Institutional researcher survey summary
+- **URL:** https://researchsupport.admin.ox.ac.uk/sitefiles/rp-survey-2024-executive-summary.pdf
+- **Publication date:** 2024
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Awareness and use gaps for FAIR, preregistration, and trusted research; training, dissemination of guidance, workload, and resource needs.
+- **Limitations:** Single-university context; not representative of other institutions or research systems.
+
+### G-06 — Exploratory Insights into Barriers and Open Practices for Computational Reproducibility in Scientific Research
+- **Publisher:** Peer-reviewed journal article; PubMed record
+- **Source type:** Multidisciplinary researcher survey
+- **URL:** https://pubmed.ncbi.nlm.nih.gov/42728931/
+- **Publication / update date:** 2026 (current article record accessed 2026-11-26)
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Survey of 254 initiated / 133 completed responses; time and funding barriers to data/code sharing; role of journal requirements and institutional incentives.
+- **Limitations:** Volunteer sampling via open-science channels, mostly European respondents, self-selection; authors caution against generalization.
+
+### G-07 — Barriers and Pathways for Advancing Open Science and Open Scholarship in Academic Institutions: A Canadian Perspective
+- **Publisher:** FACETS
+- **Source type:** Peer-reviewed research and institutional analysis
+- **URL:** https://www.facetsjournal.com/doi/10.1139/facets-2025-0435
+- **Publication / update date:** 2025
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Institutional support, training, research data management, metadata, software, and infrastructure barriers; uneven access to professional support.
+- **Limitations:** Canadian institutional context; does not represent all research environments.
+
+### G-08 — State of Open Data 2025
+- **Publisher:** Springer Nature
+- **Source type:** Annual researcher survey report
+- **URL:** https://www.springernature.com/gp/researchers/campaigns/state-of-open-data
+- **Publication / update date:** 2025 report accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Researcher attitudes toward open access, open data, open peer review, FAIR awareness, recognition for data sharing, and regional/disciplinary differences.
+- **Limitations:** Publisher-sponsored survey; sampling and question design should be assessed from the full report; not a universal measure of research practice.
