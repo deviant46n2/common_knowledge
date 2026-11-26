@@ -108,3 +108,61 @@ This is a working synthesis, not a chosen architecture. Wikibase, nanopublicatio
 ## Scope and limitations
 
 This first pass used selected official documentation and did not run software, interview users, inspect all relevant projects, or independently validate every implementation claim. The descriptions above are summaries of what the cited sources document, not claims that the systems were tested. Research cutoff: 26 November 2026.
+
+
+## Deeper comparison: practical strengths and cautions
+
+### Wikibase is a mature collaborative editing system, but its RDF export has important semantics
+
+The Wikibase REST API supports retrieving and editing Items, Properties, and Statements. Its data model is JSON-based and includes references, qualifiers, and ranks. MediaWiki provides page revision histories with timestamps, contributors, diffs, and the ability to view or compare earlier revisions.
+
+However, the RDF export distinguishes a simplified "truthy" view from full statements. The truthy view selects the best non-deprecated rank and ignores qualifiers. Consumers who need the complete context must use the full statement representation.
+
+**Implication:** Wikibase is a serious candidate for a working prototype or integration, especially if collaborative editing and revision history matter. But Common Knowledge must not mistake its simplified RDF projection for the complete semantics of a scoped statement. Test the actual export and API data before designing around it.
+
+Sources:
+- Wikidata, [REST API](https://www.wikidata.org/wiki/Wikidata:REST_API)
+- MediaWiki, [Help:History](https://www.mediawiki.org/wiki/Help:History)
+- MediaWiki, [Wikibase RDF dump format](https://www.mediawiki.org/wiki/Wikibase/Indexing/RDF_Dump_Format)
+- MediaWiki, [Wikibase FAQ](https://www.mediawiki.org/wiki/Wikibase/FAQ/en)
+
+### Nanopublications already provide a substantial end-to-end ecosystem
+
+The current Nanopublications documentation describes more than a data format. It includes:
+- Nanodash, a browser interface for reading, searching, and publishing with templates;
+- command-line tooling for checking, signing, publishing, retracting, and querying;
+- Java, Python, JavaScript/TypeScript, and Rust libraries;
+- a decentralized registry and query architecture;
+- a separate test network for experimentation.
+
+Nanopublications are immutable and use content-derived Trusty URIs; revised or withdrawn content is handled through new publications and explicit superseding or retraction relationships. The current ecosystem also supports signatures.
+
+**Implication:** This is not merely an academic format to cite. It is an existing, functioning candidate ecosystem that Common Knowledge should test hands-on before writing a competing publishing layer. Its immutability and small assertion units may be valuable for preserving evidence-linked contributions, while its human authoring workflow, discoverability, and suitability for broader non-scientific knowledge need evaluation.
+
+Sources:
+- Nanopublications, [Tools](https://nanopub.net/docs/tools/)
+- Nanopublications, [Technical Architecture](https://nanopub.net/docs/architecture/)
+- Nanopublications, [Nanopublication structure and identifiers](https://nanopub.net/docs/guidelines/)
+- Nanopublications, [Handbook: Nanopublication](https://nanopub.net/docs/handbook/nanopublication/)
+
+### Identity trust and content assessment are separate problems
+
+The Nanopublications trust documentation explicitly separates identity verification from content evaluation. A signature establishes that content was signed with a particular key; a trust network's approvals establish whether that key is accepted as belonging to the named person or agent. Neither mechanism determines whether the published assertion is correct.
+
+**Implication:** This distinction is foundational for Common Knowledge. Authentication, authorization, contributor reputation, source credibility, and evidential support must not be collapsed into one trust score. A verified identity does not make a claim true, and an unknown contributor's evidence should not be discarded solely because their identity is not yet trusted.
+
+Source:
+- Nanopublications, [Trust and approval](https://nanopub.net/docs/handbook/trust-and-approval/)
+
+## Updated preliminary comparison
+
+| Candidate | Strong fit | Important limitation or question |
+|---|---|---|
+| Wikibase | Structured statements, qualifiers, references, collaborative editing, revision history, APIs | How well does its item/property model support evidence assessments and competing interpretations? Beware simplified RDF exports that omit qualifiers |
+| Nanopublications | Small citable assertions, immutable identifiers, signatures, provenance, decentralized publication and query tools | Is the authoring/review experience approachable for ordinary contributors and non-specialist domains? |
+| RDF + PROV-O | Interoperable graph representation and general provenance vocabulary | Requires an application-specific model and user experience; standards do not supply product workflows |
+| SKOS | Concepts, multilingual labels, definitions, and mappings between vocabularies | Not a claim/evidence assessment model |
+| OpenAlex | Large-scale scholarly entity graph and open API/data | Research-indexing and entity-linking focus, not general public knowledge assessment |
+| ClaimReview | Interchange metadata for a fact-check review | Narrow review type; not a general-purpose knowledge model |
+
+This comparison is qualitative and based on documentation, not a benchmark or hands-on evaluation.
