@@ -99,6 +99,8 @@ We do not need to build everything from scratch. Interoperability, collaboration
 We are building a dated, source-based research library to understand the existing ecosystem before making major technical or organizational decisions.
 
 - [MVP discovery brief](research/MVP_DISCOVERY.md)
+- [MVP research index](research/mvp/README.md)
+- [Development documentation system](docs/development/README.md)
 - [Roadmap](ROADMAP.md)
 - [Research program](research/PROGRAM.md)
 - [November 2026 field snapshot](research/snapshots/2026-11/README.md)
