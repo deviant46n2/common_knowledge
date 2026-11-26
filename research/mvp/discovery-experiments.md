@@ -51,7 +51,8 @@ Representative toolchain to test:
 - Whole Tale;
 - Binder;
 - RO-Crate creation and validation;
-- ReCRATE where the project has a published method or workflow.
+- FAIRSCAPE/EVI where appropriate;
+- ReCRATE and FlowProof where the project has a supported workflow.
 
 Record:
 - installation and setup time;
@@ -72,7 +73,8 @@ Representative toolchain to test:
 - OpenTelemetry GenAI instrumentation or an established trace SDK;
 - one existing observability backend, such as MLflow or Langfuse;
 - RO-Crate / Workflow Run RO-Crate export;
-- ReCRATE if the workflow is represented as a supported computational method.
+- ReCRATE or FlowProof if the workflow is represented as a supported computational method;
+- FAIRSCAPE/EVI or reproducible-science export where applicable.
 
 Record:
 - which events are captured by default;
