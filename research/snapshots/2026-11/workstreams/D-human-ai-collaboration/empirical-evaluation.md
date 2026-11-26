@@ -2,7 +2,7 @@
 
 - **Snapshot:** November 2026
 - **Research cutoff:** 26 November 2026
-- **Status:** Selected evidence from three studies and one current scholarly exchange; not a systematic review
+- **Status:** Selected evidence from a preregistered meta-analysis, three empirical studies, and one current scholarly commentary; not a systematic review
 - **Workstream:** [D — Human–AI research collaboration](README.md)
 
 ## 1. Why evaluate workflows rather than demonstrations?
