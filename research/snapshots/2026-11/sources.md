@@ -867,3 +867,96 @@ No sources entered yet. Add new sections and stable IDs as workstreams begin.
 - **Accessed / verified:** 2026-11-26
 - **Claims supported:** Relationship between individual conduct and institutional research culture; recommendations concerning openness, data handling, record keeping, and responsible sharing.
 - **Limitations:** US National Academies report from 2017; some recommendations and context require updating for current tools, AI, and international settings.
+
+
+## Workstream E — Shared Knowledge and Preservation
+
+### E-01 — DCMI Metadata Terms
+- **Publisher:** Dublin Core Metadata Initiative (DCMI)
+- **Source type:** Maintained metadata vocabulary specification
+- **URL:** https://www.dublincore.org/specifications/dublin-core/dcmi-terms/
+- **Publication / update date:** Current specification page; latest version link shown on page
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** General descriptive metadata terms for creator, title, subject, date, format, identifier, rights, provenance, and relationships.
+- **Limitations:** Vocabulary, not a complete domain application profile or preservation system; implementations may differ.
+
+### E-02 — SKOS Simple Knowledge Organization System Reference
+- **Publisher:** World Wide Web Consortium (W3C)
+- **Source type:** W3C Recommendation
+- **URL:** https://www.w3.org/TR/skos-reference/
+- **Publication date:** 2009-08-18
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Data model for sharing and linking thesauri, taxonomies, classification schemes, subject headings, and related knowledge organization systems.
+- **Limitations:** Does not settle contested meanings, guarantee translation quality, or prescribe a universal classification.
+
+### E-03 — OAI-PMH Version 2.0 Specification
+- **Publisher:** Open Archives Initiative
+- **Source type:** Interoperability protocol specification
+- **URL:** https://www.openarchives.org/OAI/openarchivesprotocol.html
+- **Protocol date:** 2002-06-14; document version 2015-01-08
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Metadata harvesting framework, provider/harvester roles, protocol verbs, and HTTP request/response model.
+- **Limitations:** Harvests metadata rather than arbitrary full-text or file content; data quality and semantic compatibility remain separate issues.
+
+### E-04 — Open Archives Initiative: About and Specifications
+- **Publisher:** Open Archives Initiative
+- **Source type:** Primary project and maintenance statement
+- **URL:** https://www.openarchives.org/
+- **Publication / update date:** Current project page accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** OAI's continuing maintenance of existing specifications, lack of new project development, and continued use of OAI-PMH in library and academic communities.
+- **Limitations:** Project statement; current usage levels and maintenance resources have not been independently measured.
+
+### E-05 — IIIF Presentation API 3.0
+- **Publisher:** International Image Interoperability Framework Consortium
+- **Source type:** Technical API specification
+- **URL:** https://iiif.io/api/presentation/3.0/
+- **Publication / update date:** Version 3.0.0; current stable version as accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Interoperable presentation of compound digital objects, multilingual labels, structure, annotations, and links to content services.
+- **Limitations:** Specialized presentation layer; not a universal metadata, knowledge graph, preservation, or rights-governance solution.
+
+### E-06 — PREMIS Data Dictionary for Preservation Metadata, Version 3.0
+- **Publisher:** Library of Congress / PREMIS Editorial Committee
+- **Source type:** Digital preservation metadata standard
+- **URL:** https://www.loc.gov/standards/premis/v3/index.html
+- **Publication / update date:** Version 3.0 updated 2015-11; current LoC standard page accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Preservation metadata model covering Objects, Events, Rights, and Agents.
+- **Limitations:** Data dictionary and model, not an archive, operational preservation service, or sustainability guarantee.
+
+### E-07 — How LOCKSS Works
+- **Publisher:** LOCKSS Program
+- **Source type:** Primary technical documentation
+- **URL:** https://www.lockss.org/use-lockss/how-lockss-works
+- **Publication / update date:** Current documentation accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Distributed ingest, audit, comparison, repair, delivery, and access-policy mechanisms in LOCKSS networks.
+- **Limitations:** Operator documentation; network-specific implementation, coverage, funding, and governance require further investigation.
+
+### E-08 — How CLOCKSS Works
+- **Publisher:** CLOCKSS Archive
+- **Source type:** Primary preservation-system documentation
+- **URL:** https://clockss.org/about/how-clockss-works/
+- **Publication / update date:** Current documentation accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** CLOCKSS's distributed archive nodes, preservation workflow, trigger-based release, and library/publisher governance model.
+- **Limitations:** Operator description; actual holdings, financial resilience, trigger decisions, and independent audit evidence have not been reviewed.
+
+### E-09 — CLOCKSS Frequently Asked Questions
+- **Publisher:** CLOCKSS Archive
+- **Source type:** Primary policy and operational documentation
+- **URL:** https://clockss.org/faq/
+- **Publication / update date:** Current FAQ accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** CLOCKSS governance, node distribution, relationship to LOCKSS, and capture of corrections/retractions while retaining original archived versions.
+- **Limitations:** Operator description; does not independently establish complete publisher participation or universal preservation coverage.
+
+### E-10 — Wikibase FAQ
+- **Publisher:** Wikimedia Foundation / MediaWiki community
+- **Source type:** Primary software documentation
+- **URL:** https://www.mediawiki.org/wiki/Wikibase/FAQ
+- **Publication / update date:** Current documentation accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Wikibase data model, references and qualifiers, export/query options, flexible local schemas, and interoperability challenges when vocabularies diverge.
+- **Limitations:** Documentation is not an independent evaluation of data quality, community governance, security, or sustainability of individual installations.
