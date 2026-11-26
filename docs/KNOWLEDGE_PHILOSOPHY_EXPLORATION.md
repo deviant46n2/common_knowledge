@@ -1,0 +1,80 @@
+# Knowledge Philosophy Exploration
+
+**Status:** Exploratory working document. It records founder-stated principles and emerging product/knowledge-philosophy directions, not a finalized epistemology, community consensus, or technical specification.
+
+This document captures foundational ideas about how Common Knowledge should represent, organize, navigate, and preserve knowledge. It should evolve as these ideas are tested against real use cases, research, and community input.
+
+## 1. Current understanding and knowledge history
+
+Common Knowledge should distinguish between the current state of knowledge and the historical record of how that understanding developed. These are complementary views of the same evolving body of knowledge.
+
+### Current understanding
+
+A clear, maintained presentation of what the available evidence supports now, what remains uncertain, and where credible disagreement persists. It should help people understand the best-supported picture available today without requiring them to reconstruct years of discussion.
+
+### Knowledge history
+
+A traceable account of how claims and assessments developed, including earlier conclusions, evidence available at the time, corrections, retractions, disagreements, and the reasons for significant changes. It should make it possible to inspect past reasoning and understand why conclusions changed.
+
+### How the views relate
+
+- Current assessments should be traceable to their supporting evidence and relevant history.
+- Historical records should clearly indicate when an assessment is no longer current, has been superseded, or has been discredited.
+- Preserving an outdated conclusion does not mean presenting it as equally credible to the best-supported current understanding.
+- The system should prioritize meaningful changes, decisions, and provenance rather than assuming every transient interaction or submitted byte must be retained forever.
+
+This distinction supports both usability and accountability: people can see what is currently understood and inspect how that understanding came to be.
+
+## 2. Subject-centered and claim-centered organization
+
+Common Knowledge should support both broad exploration of subjects and close inspection of individual claims. These are not separate databases or competing organizing philosophies; they are complementary ways to navigate one connected knowledge system.
+
+### Subject-centered exploration
+
+A person should be able to begin with a topic—such as climate change, biology, economics, or a historical event—and explore its broader body of knowledge: major findings, important claims, evidence, unresolved questions, and competing interpretations.
+
+### Claim-centered inspection
+
+A person should also be able to begin with a specific statement and inspect its meaning and scope, sources, evidence, reasoning, assessments, uncertainty, challenges, and history.
+
+### Connection between the two
+
+- Individual claims, evidence, methods, and assessments should contribute to larger bodies of knowledge.
+- Subject pages or subject-level views should link back to the specific claims and evidence that support their summaries.
+- A claim should be discoverable in the context of the subjects it relates to.
+- People should be able to move from a broad overview to the underlying details, and from a specific piece of evidence back to the wider questions it informs.
+- Subject-level summaries should not conceal disagreement or imply stronger certainty than the underlying record supports.
+
+**Emerging principle:** Knowledge should be navigable from the broadest subject down to the smallest inspectable piece of evidence, and back again.
+
+## 3. Related principles and open questions
+
+The following ideas have emerged in the broader founding discussion and should inform future work:
+
+- Competing ideas and interpretations should be representable without forcing artificial consensus.
+- Pluralism in representing ideas does not mean treating all claims as equally supported. Evidential strength, methods, assumptions, limitations, and uncertainty should remain visible.
+- Sources, evidence anchors, claims or observations, and assessments should be distinguishable. A citation alone does not establish that a source supports a claim.
+- Corrections, retractions, and meaningful changes in assessment should be traceable.
+- Preservation should be ambitious but not absolute: privacy, consent, safety, security, rights, legal duties, and practical maintenance constraints matter.
+
+Questions still open include:
+
+- What exactly counts as a claim, observation, finding, interpretation, or subject?
+- How should subjects be defined, nested, connected, and allowed to overlap?
+- Who or what is responsible for writing and maintaining subject-level summaries?
+- How should summaries represent uncertainty and disagreement without becoming unreadable?
+- How should the system distinguish a source's own statement from evidence extracted from it and from an assessment made by a contributor?
+- What history must be retained, and what can reasonably be summarized or removed?
+- What interfaces make it easy for readers to move between overview and underlying evidence?
+
+These questions should be explored through concrete examples and product use cases before being turned into a rigid data model.
+
+## 4. Relationship to other project documents
+
+- [Governance exploration](GOVERNANCE_EXPLORATION.md) records related founding principles on pluralism, disagreement, and historical preservation.
+- [Focused research](../research/FOCUSED_RESEARCH.md) surveys existing knowledge and evidence infrastructure that may inform future design.
+- [Product gap analysis](../research/PRODUCT_GAP_ANALYSIS.md) records the current exploratory view of adjacent projects and possible product opportunities.
+
+---
+
+*This document is a living exploration, not a promise that every proposed capability is already designed or implemented.*
