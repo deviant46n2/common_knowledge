@@ -191,7 +191,24 @@ The Consilience is a specialized deterministic verification engine for comparing
 
 Its design separates model-based extraction from code-based judgment: the model reads and types; deterministic code performs the verification.
 
+A live query of the nanopublication assertion-template index on 25 November 2026 returned **six public Consilience templates**:
+1. **Theory claim card:** a theory, claim statement, dimension of commitment, position on that dimension, and source locations (document and page). Each claim has its own IRI and can be superseded by a corrected card.
+2. **Measured claim card:** exact source sentence, source document, subject, quantity/axis, QUDT value and unit, bounds and unit as written, conditions, and claim kind.
+3. **Data-quality finding:** a check run over a dataset, how many records were flagged out of how many checked, and a finding framed as an observation about records rather than the people who produced them.
+4. **Disagreement:** two claims taking different values on a dimension, with the dimension, observables, instruments, testability status, assumptions, margin/floor, unit, and reason.
+5. **Claim correspondence:** two claims compared structurally and assigned a grade on a four-rung ladder from structural identity to thematic resonance, with explicit limits on what the grade licenses and an equivocation check.
+6. **Comparison refused:** a structured record for declining a comparison rather than forcing a misleading equivalence.
+
+These are real, published templates in the public nanopublication network, not merely proposed fields. They are authored by the Consilience project, not a universal Knowledge Pixels standard. The measured-claim and disagreement templates are especially relevant to the civic-budget stress test: they already model quantities, units, conditions, dimensions, and testability. The remaining question is how well their scientific vocabulary generalizes to public-policy claims and whether exact source locations are durable enough for our use.
+
 The author reports blind testing against the COGITATE adversarial collaboration: 2 of 3 predictions recovered after a disclosed re-review, with a 1,000-key permutation test yielding p=0.075, explicitly described as suggestive only. The repository reports a solo build and has a small public footprint at the time of review. Code is Apache-2.0; documentation is CC BY 4.0.
+
+Template examples:
+- [Theory claim card](https://w3id.org/np/RAmOdphN9C0EvbBzcUBHfii2z-EYmcPsTwP2mLr9SsOLk)
+- [Measured claim card](https://w3id.org/np/RA2bWtxQfydQAEUp-qimU19xrw3XlXRmkgsvC7jTdh4LU)
+- [Data-quality finding](https://w3id.org/np/RALu1b-aXtNNYykZ7Qrz04kx_NMVIapIfzvpFVrXRhbaM)
+- [Disagreement](https://w3id.org/np/RAvlFcbPa5pxTNcz8r_uYIDAXRuieEgMgSnPlzBHibUjY)
+- [Claim correspondence](https://w3id.org/np/RAB5yq6zMD127_oapC0cGKGoS5Ey5UaNVf94DRwWW83P4)
 
 ### Fit and limitations
 
