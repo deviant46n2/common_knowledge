@@ -20,7 +20,7 @@ This is a living synthesis. Findings are provisional where underlying workstream
 | [D — Human–AI research collaboration](workstreams/D-human-ai-collaboration/README.md) | In progress | Initial evidence on AI research agents, human–AI reproducibility, workflow auditability, and contribution/accountability policies |
 | [E — Shared knowledge and preservation](workstreams/E-knowledge-preservation/README.md) | In progress | Initial standards map, identifiers, preservation, community rights, and federated discovery synthesis |
 | [F — Governance, economics, and institutional design](workstreams/F-governance-economics/README.md) | In progress | Initial comparison of nonprofit, subsidiary, fiscal-host, and cooperative structures; compensation and funding independence |
-| [G — People and research ecosystem needs](workstreams/G-people-and-needs/README.md) | In progress | Initial survey evidence on time, funding, incentives, training, infrastructure, and regional equity; conversation guide prepared, but no direct Common Knowledge interviews yet |
+| [G — People and research ecosystem needs](workstreams/G-people-and-needs/README.md) | In progress | Initial survey evidence on time, funding, incentives, training, infrastructure, and regional equity; conversation guide and sampling plan prepared, but no direct Common Knowledge interviews yet |
 
 ## Emerging cross-cutting themes
 
