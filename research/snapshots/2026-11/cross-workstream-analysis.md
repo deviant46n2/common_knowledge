@@ -20,7 +20,7 @@ This is a living synthesis. Findings are provisional where underlying workstream
 | [D — Human–AI research collaboration](workstreams/D-human-ai-collaboration/README.md) | In progress | Initial evidence on AI research agents, human–AI reproducibility, workflow auditability, and contribution/accountability policies |
 | [E — Shared knowledge and preservation](workstreams/E-knowledge-preservation/README.md) | In progress | Initial standards map, identifiers, preservation, community rights, and federated discovery synthesis |
 | [F — Governance, economics, and institutional design](workstreams/F-governance-economics/README.md) | In progress | Initial comparison of nonprofit, subsidiary, fiscal-host, and cooperative structures; compensation and funding independence |
-| [G — People and research ecosystem needs](workstreams/G-people-and-needs/README.md) | Not started | Pending investigation; conversations should begin throughout the program |
+| [G — People and research ecosystem needs](workstreams/G-people-and-needs/README.md) | In progress | Initial survey evidence on time, funding, incentives, training, infrastructure, and regional equity; conversation guide prepared, but no direct Common Knowledge interviews yet |
 
 ## Emerging cross-cutting themes
 
@@ -61,7 +61,17 @@ This is a living synthesis. Findings are provisional where underlying workstream
 
 **Assessment:** Financial transparency is necessary but insufficient. Donor concentration, restricted funding, commercial dependencies, and host control can shape research priorities and continuity. These dependencies should be disclosed and governed.
 
-### 13. Data locality can be more important than compute distribution
+### 13. Infrastructure needs must be grounded in the people who use and steward it
+
+**Supporting workstreams:** A, B, C, E, F, G.
+
+- Workstream G's initial survey review finds recurring barriers around time, funding, training, incentives, institutional support, and unequal infrastructure capacity. The surveys differ in scope and sampling, and none should be treated as a universal picture.
+- Workstreams A, C, and E show that research infrastructure spans repositories, methods, software, preservation, rights, and correction—not just a single platform.
+- Workstreams B and F show that distributed compute and institutional sustainability create operational, financial, and governance burdens.
+
+**Assessment:** Common Knowledge should not infer needs from technical possibility. It must learn from researchers, research support staff, communities, contributors, and people affected by research, including those outside well-resourced institutions.
+
+### 14. Data locality can be more important than compute distribution
 
 **Supporting workstreams:** B, C, E.
 
@@ -191,3 +201,4 @@ Do not promote a candidate opportunity to a recommendation until the underlying 
 - **2026-11-26:** Added Workstream B and two cross-cutting themes on reciprocal trust obligations and data locality. Workstream B remains in progress.
 - **2026-11-26:** Added Workstream D and a cross-cutting theme on human–AI research auditability. Workstream D remains in progress.
 - **2026-11-26:** Added Workstream F and themes on legal form versus power distribution and funding independence. Workstream F remains in progress.
+- **2026-11-26:** Added Workstream G and a cross-cutting theme on grounding infrastructure in the needs of researchers, stewards, and affected communities. Workstream G remains in progress.
