@@ -132,7 +132,7 @@ This is qualitative triage, not a numerical score.
 | Opportunity | User pain evidence | Existing competition | Standalone demo potential | Current confidence |
 |---|---|---|---|---|
 | Research handoff / readiness diagnostics | Moderate; supported by reproducibility studies and documentation barriers | High but fragmented across tools and checklists | High if a clear before/after workflow exists | Medium-low |
-| Research-specific AI workflow audit record | Emerging, with recent research identifying an evidence and traceability gap | Generic observability is high; research-specific integration appears less consolidated | High with a working AI experiment and evidence-linked report | Medium-low |
+| Research-specific AI workflow audit record | Emerging, with recent research identifying an evidence and traceability gap | ReCRATE, Paper2Agent, FAIRSCAPE/EVI, Workflow Run RO-Crate, and generic observability cover substantial parts | High with a working AI experiment and evidence-linked report | Medium-low |
 | OSF export/migration helper | Concrete for active users affected by workflow changes | OSF guidance, API, osfclient, and announced export tooling | High for a narrow import/export demonstration | Medium |
 | Generic metadata generator | Established need | Very high | High | High confidence it is not differentiated |
 | General research platform | Broad need | Very high | Low; needs network and infrastructure | High confidence it is too broad |
@@ -209,7 +209,7 @@ Until these questions have defensible answers, all candidate concepts remain pro
 - [OSFClient download guide](https://help.osf.io/article/742-using-osfclient-to-download-project-files)
 - [OSF API v2 documentation](https://developer.osf.io/)
 
-### AI research and auditability
+### AI research, evidence graphs, and auditability
 - [Accelerating scientific discovery with Co-Scientist, Nature (2026)](https://www.nature.com/articles/s41586-026-10644-y)
 - [Autonomous Research Agents: A Survey of AI Scientists and the Verification Gap (2026)](https://arxiv.org/abs/2608.05179)
 - [Into the Unknown: Benchmarking AI agents on open scientific research problems (2026)](https://arxiv.org/abs/2610.19159)
@@ -217,6 +217,10 @@ Until these questions have defensible answers, all candidate concepts remain pro
 - [The More You Automate, the Less You See: Hidden Pitfalls of AI Scientist Systems (2026)](https://pmc.ncbi.nlm.nih.gov/articles/PMC13663820/)
 - [Designing reproducible large-language-model-assisted scientific analyses (2026)](https://pmc.ncbi.nlm.nih.gov/articles/PMC13576654/)
 - [OpenTelemetry GenAI semantic conventions](https://opentelemetry.io/docs/specs/semconv/gen-ai/)
+- [FAIRSCAPE framework](https://fairscape.github.io/)
+- [FAIRSCAPE CLI](https://fairscape.github.io/fairscape-cli/)
+- [EVI Evidence Graph Ontology](https://fairscape.github.io/EVI/)
+- [Nanopublication guidelines](https://nanopub.net/docs/guidelines/)
 - [Agent observability prior-work survey, AAIF working group](https://github.com/aaif/wg-observability-and-traceability/blob/main/working-documents/PRIOR-WORK.md)
 
 ---
