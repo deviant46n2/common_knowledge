@@ -78,3 +78,33 @@ def test_cli_round_trips_record_and_source_files(tmp_path):
     assert import_result.returncode == 0, import_result.stderr
     imported_record = load(imported / "record.json")
     assert validate(imported_record, imported) == []
+
+
+
+def test_export_rejects_destination_inside_record_directory(tmp_path):
+    import subprocess
+    import sys
+
+    destination = FIXTURE.parent / "nested-export"
+    result = subprocess.run(
+        [sys.executable, "-m", "ck_records", "export", str(FIXTURE), str(destination)],
+        capture_output=True, text=True,
+        env={"PYTHONPATH": str(FIXTURE.parents[3] / "src")},
+    )
+    assert result.returncode == 1
+    assert "cannot be inside the record directory" in result.stderr
+    assert not destination.exists()
+
+
+def test_import_rejects_destination_that_would_delete_source_package(tmp_path):
+    import subprocess
+    import sys
+
+    result = subprocess.run(
+        [sys.executable, "-m", "ck_records", "import", str(FIXTURE), str(FIXTURE.parent), "--overwrite"],
+        capture_output=True, text=True,
+        env={"PYTHONPATH": str(FIXTURE.parents[3] / "src")},
+    )
+    assert result.returncode == 1
+    assert "cannot contain or be inside the source package" in result.stderr
+    assert FIXTURE.is_file()
