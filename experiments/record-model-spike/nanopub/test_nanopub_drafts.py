@@ -95,3 +95,19 @@ def test_publication_info_contains_creator_and_creation_time():
         pubinfo = dataset.graph(pubinfo_uri)
         assert list(pubinfo.objects(np_uri, DCTERMS.creator))
         assert list(pubinfo.objects(np_uri, DCTERMS.created))
+
+
+def test_assessment_provenance_records_review_activity_and_reviewer():
+    dataset, nanopubs = build()
+    for index, reviewer in [(1, "reviewer-1"), (2, "reviewer-2")]:
+        np_uri = nanopubs[index]
+        head = next(g for g in dataset.graphs() if (np_uri, RDF.type, NP.Nanopublication) in g)
+        assertion_uri = next(head.objects(np_uri, NP.hasAssertion))
+        provenance_uri = next(head.objects(np_uri, NP.hasProvenance))
+        assertion = dataset.graph(assertion_uri)
+        provenance = dataset.graph(provenance_uri)
+        assessment = next(assertion.subjects(RDF.type, EX.Assessment))
+        activity = next(provenance.objects(assessment, PROV.wasGeneratedBy))
+        assert (activity, RDF.type, PROV.Activity) in provenance
+        assert (activity, PROV.wasAssociatedWith, URIRef(f"https://example.org/ck/agent/{reviewer}")) in provenance
+        assert len(list(provenance.objects(activity, PROV.used))) == 2
