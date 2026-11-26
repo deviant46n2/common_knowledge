@@ -1493,24 +1493,6 @@ No sources entered yet. Add new sections and stable IDs as workstreams begin.
 - **Limitations:** US overview; cooperative law and tax treatment vary by state and country.
 
 
-### F-11 — IRS Technical Guidance: Inurement and Private Benefit
-- **Publisher:** Internal Revenue Service
-- **Source type:** US federal tax guidance
-- **URL:** https://www.irs.gov/charities-non-profits/charitable-organizations/inurement-private-benefit-charitable-organizations
-- **Publication / update date:** Current guidance accessed 2026-11-26
-- **Accessed / verified:** 2026-11-26
-- **Claims supported:** 501(c)(3) prohibition on private inurement and substantial private benefit; distinction between insiders and other private interests.
-- **Limitations:** US federal tax guidance for 501(c)(3) organizations; not a complete governance or compensation policy.
-
-### F-12 — IRS Intermediate Sanctions: Compensation
-- **Publisher:** Internal Revenue Service
-- **Source type:** US federal tax guidance
-- **URL:** https://www.irs.gov/charities-non-profits/charitable-organizations/intermediate-sanctions-compensation
-- **Publication / update date:** Current guidance accessed 2026-11-26
-- **Accessed / verified:** 2026-11-26
-- **Claims supported:** Reasonable compensation based on fair market value under like circumstances and inclusion of cash/noncash compensation, benefits, bonuses, severance, and other economic benefits.
-- **Limitations:** US federal tax guidance; does not establish a universal salary cap or mission-specific compensation philosophy.
-
 ### F-13 — Wikimedia Foundation and Endowment FY 2025–2026 Financial Audit Highlights
 - **Publisher:** Wikimedia Foundation / Wikimedia Endowment
 - **Source type:** Primary financial reporting summary and audited financial statement references
