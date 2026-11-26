@@ -56,6 +56,16 @@ Every entry should distinguish documented facts from independent findings, asses
 
 This first edition is a baseline, not a completed survey. At the time this structure was established, the seven workstreams were defined but comprehensive investigation had not yet been completed. Their status must be updated as evidence is gathered. Do not treat an empty category as evidence that no relevant work exists.
 
+## MVP-focused research
+
+The project has begun a dedicated MVP investigation so that ecosystem research can converge on a useful first product rather than continue as an open-ended survey:
+
+- [MVP research index](../../mvp/README.md)
+- [Candidate landscape](../../mvp/candidate-landscape.md)
+- [Technical opportunities and integration hypotheses](../../mvp/technical-opportunities.md)
+
+These documents are product-discovery research, not additional completed workstream findings. Their candidate assessments remain provisional and have not been validated through Common Knowledge user interviews or hands-on comparative testing.
+
 ## Change log
 
 - **2026-11-26:** Created the initial snapshot structure and declared its research cutoff. This is an initial baseline, not a completed field survey.
