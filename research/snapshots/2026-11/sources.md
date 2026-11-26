@@ -1015,3 +1015,58 @@ No sources entered yet. Add new sections and stable IDs as workstreams begin.
 - **Accessed / verified:** 2026-11-26
 - **Claims supported:** Work, Instance, and Item distinctions; agents, subjects, events, and linked-data model for bibliographic description.
 - **Limitations:** Library-oriented bibliographic model, not a universal knowledge representation standard; mappings to other schemas require care.
+
+
+### E-17 — CARE Principles for Indigenous Data Governance
+- **Publisher:** Global Indigenous Data Alliance (GIDA)
+- **Source type:** Indigenous-led data governance principles
+- **URL:** https://www.gida-global.org/careprinciples
+- **Publication date:** Principles developed in 2018 and publicly launched in 2019; peer-reviewed publication 2020
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** CARE's Collective Benefit, Authority to Control, Responsibility, and Ethics framework; its people- and purpose-oriented complementarity with FAIR.
+- **Limitations:** Principles require community-specific interpretation and implementation; they are not a single universal consent or licensing mechanism.
+
+### E-18 — Traditional Knowledge Labels
+- **Publisher:** Local Contexts
+- **Source type:** Community-developed cultural protocol and metadata framework
+- **URL:** https://localcontexts.org/labels/traditional-knowledge-labels/
+- **Publication / update date:** Current documentation accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** TK Labels for provenance, protocols, permissions, and community-specific expectations around access and future use of cultural materials.
+- **Limitations:** Labels communicate community protocols and expectations; they do not replace consent, legal agreements, Indigenous law, or direct community relationships.
+
+### E-19 — Local Contexts: Working with Labels
+- **Publisher:** Local Contexts
+- **Source type:** Primary implementation and community governance documentation
+- **URL:** https://localcontexts.org/support/working-with-labels/
+- **Publication / update date:** Current documentation accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Community customization, multilingual descriptions, review by another community account member, application to projects, and export of customized labels.
+- **Limitations:** Describes platform workflows; actual community authority and outcomes require engagement and independent evaluation.
+
+### E-20 — Local Contexts Frequently Asked Questions
+- **Publisher:** Local Contexts
+- **Source type:** Primary organizational and governance documentation
+- **URL:** https://localcontexts.org/support/frequently-asked-questions/
+- **Publication / update date:** Last updated 2026-09-10
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Local Contexts Hub is not a content repository; Indigenous Peoples' ownership and control over their customized label suites; organizational incorporation and stated jurisdiction.
+- **Limitations:** Organization-authored description; legal effects and application of agreements should be reviewed in context.
+
+### E-21 — ISO 14721:2025: Open Archival Information System (OAIS) Reference Model
+- **Publisher:** International Organization for Standardization (ISO) / Consultative Committee for Space Data Systems (CCSDS)
+- **Source type:** International Standard
+- **URL:** https://www.iso.org/standard/87471.html
+- **Publication date:** 2025-03 (Edition 3)
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** OAIS definition, designated community, mandatory archive responsibilities, ingest, storage, data management, access, dissemination, migration, and preservation functions.
+- **Limitations:** Reference model, not a repository implementation, certification, or guarantee of sustainable operation.
+
+### E-22 — CoreTrustSeal Trustworthy Data Repositories Requirements 2026–2028
+- **Publisher:** CoreTrustSeal Standards and Certification Board
+- **Source type:** Repository assessment requirements
+- **URL:** https://www.coretrustseal.org/why-certification/requirements/
+- **Publication date:** Requirements published 2025-11-20 for the 2026–2028 cycle
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Current requirements, extended guidance, glossary, and intended objective review of trustworthy repository characteristics.
+- **Limitations:** Certification is scoped to a repository and review period; it does not guarantee scientific validity, ethical use, or indefinite availability.
