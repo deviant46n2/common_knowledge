@@ -166,3 +166,87 @@ def test_non_string_anchor_context_is_reported_without_crashing():
     record["evidence"][1]["suffix"] = ["not", "text"]
     errors = validate(record, FIXTURE.parent)
     assert any("prefix and suffix must be strings" in error for error in errors)
+
+
+
+def test_cli_builds_record_from_source_through_assessment(tmp_path):
+    import subprocess
+    import sys
+
+    directory = tmp_path / "field-record"
+    source_file = tmp_path / "field-notes.txt"
+    source_file.write_text("Field notebook: The sample measured 12 units at noon.", encoding="utf-8")
+    env = {"PYTHONPATH": str(FIXTURE.parents[3] / "src")}
+
+    def run(*args):
+        return subprocess.run(
+            [sys.executable, "-m", "ck_records", *map(str, args)],
+            capture_output=True, text=True, env=env,
+        )
+
+    created = run(
+        "init", directory, "--id", "urn:ck:test:field",
+        "--title", "Field observation",
+        "--statement", "The field notebook records a measurement of 12 units.",
+        "--scope", "This is a statement about what the notebook records.",
+    )
+    assert created.returncode == 0, created.stderr
+
+    added_source = run(
+        "add-source", directory / "record.json", "--id", "notebook",
+        "--title", "Field notebook", "--file", source_file,
+    )
+    assert added_source.returncode == 0, added_source.stderr
+
+    added_evidence = run(
+        "add-evidence", directory / "record.json", "--id", "notebook-line",
+        "--source-id", "notebook", "--relation", "supports",
+        "--exact", "The sample measured 12 units at noon.",
+        "--prefix", "Field notebook: ",
+    )
+    assert added_evidence.returncode == 0, added_evidence.stderr
+
+    added_assessment = run(
+        "add-assessment", directory / "record.json", "--id", "review-1",
+        "--author", "Reviewer A",
+        "--conclusion", "The notebook supports that this value was recorded.",
+        "--method", "Read the cited line in the supplied notebook.",
+        "--evidence-id", "notebook-line",
+    )
+    assert added_assessment.returncode == 0, added_assessment.stderr
+
+    record = load(directory / "record.json")
+    assert validate(record, directory) == []
+    assert (directory / "sources" / "field-notes.txt").is_file()
+    assert len(record["sources"]) == 1
+    assert len(record["evidence"]) == 1
+    assert len(record["assessments"]) == 1
+
+
+def test_add_evidence_rejects_unmatched_quote_without_mutating_record(tmp_path):
+    import subprocess
+    import sys
+
+    directory = tmp_path / "field-record"
+    env = {"PYTHONPATH": str(FIXTURE.parents[3] / "src")}
+    subprocess.run(
+        [
+            sys.executable, "-m", "ck_records", "init", str(directory),
+            "--id", "urn:ck:test:field", "--title", "Field observation",
+            "--statement", "The notebook records a measurement.",
+            "--scope", "This describes the notebook only.",
+        ],
+        check=True, capture_output=True, text=True, env=env,
+    )
+    record_path = directory / "record.json"
+    before = record_path.read_bytes()
+    result = subprocess.run(
+        [
+            sys.executable, "-m", "ck_records", "add-evidence", str(record_path),
+            "--id", "e1", "--source-id", "missing", "--relation", "supports",
+            "--exact", "not present",
+        ],
+        capture_output=True, text=True, env=env,
+    )
+    assert result.returncode == 1
+    assert record_path.read_bytes() == before
