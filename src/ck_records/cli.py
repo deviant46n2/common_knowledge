@@ -160,6 +160,26 @@ def main(argv=None):
     init.add_argument("--title", required=True, help="short record title")
     init.add_argument("--statement", required=True, help="the precisely scoped statement")
     init.add_argument("--scope", required=True, help="what the statement does and does not claim")
+    add_source = commands.add_parser("add-source", help="copy a source into a record workspace")
+    add_source.add_argument("record", type=Path, help="path to record.json")
+    add_source.add_argument("--id", required=True)
+    add_source.add_argument("--title", required=True)
+    add_source.add_argument("--file", required=True, type=Path)
+    add_evidence = commands.add_parser("add-evidence", help="anchor an exact passage in a registered source")
+    add_evidence.add_argument("record", type=Path, help="path to record.json")
+    add_evidence.add_argument("--id", required=True)
+    add_evidence.add_argument("--source-id", required=True)
+    add_evidence.add_argument("--relation", required=True, choices=sorted(RELATIONS))
+    add_evidence.add_argument("--exact", required=True)
+    add_evidence.add_argument("--prefix", default="")
+    add_evidence.add_argument("--suffix", default="")
+    add_assessment = commands.add_parser("add-assessment", help="append an independently attributed assessment")
+    add_assessment.add_argument("record", type=Path, help="path to record.json")
+    add_assessment.add_argument("--id", required=True)
+    add_assessment.add_argument("--author", required=True)
+    add_assessment.add_argument("--conclusion", required=True)
+    add_assessment.add_argument("--method", required=True)
+    add_assessment.add_argument("--evidence-id", action="append", required=True, dest="evidence_ids")
     args = parser.parse_args(argv)
     if args.command == "init":
         target = args.directory.resolve()
@@ -192,6 +212,74 @@ def main(argv=None):
         for error in errors:
             print(f"ERROR: {error}", file=sys.stderr)
         return 1
+    if args.command == "add-source":
+        if any(item.get("id") == args.id for item in record["sources"] if isinstance(item, dict)):
+            print(f"ERROR: duplicate source id: {args.id}", file=sys.stderr)
+            return 1
+        source_file = args.file.resolve()
+        if not source_file.is_file():
+            print(f"ERROR: source file does not exist or is not a file: {source_file}", file=sys.stderr)
+            return 1
+        source_dir = source.parent / "sources"
+        try:
+            source_dir.mkdir(exist_ok=True)
+            destination = source_dir / source_file.name
+            resolved_destination = destination.resolve()
+            if source.parent not in resolved_destination.parents:
+                print("ERROR: sources directory resolves outside the record directory", file=sys.stderr)
+                return 1
+            if destination.exists() and destination.resolve() != source_file:
+                print(f"ERROR: source filename already exists in record: {destination.name}", file=sys.stderr)
+                return 1
+            copied = destination.resolve() != source_file
+            if copied:
+                shutil.copy2(source_file, destination)
+            record["sources"].append({"id": args.id, "title": args.title, "path": f"sources/{source_file.name}"})
+            new_errors = validate(record, source.parent)
+            if new_errors:
+                if copied:
+                    destination.unlink(missing_ok=True)
+                for error in new_errors:
+                    print(f"ERROR: {error}", file=sys.stderr)
+                return 1
+            source.write_bytes(canonical(record))
+        except OSError as exc:
+            print(f"ERROR: could not add source: {exc}", file=sys.stderr)
+            return 1
+        print(f"ADDED SOURCE: {args.id} ({source_file.name})")
+        return 0
+    if args.command == "add-evidence":
+        if any(item.get("id") == args.id for item in record["evidence"] if isinstance(item, dict)):
+            print(f"ERROR: duplicate evidence id: {args.id}", file=sys.stderr)
+            return 1
+        record["evidence"].append({
+            "id": args.id, "source_id": args.source_id, "relation": args.relation,
+            "exact": args.exact, "prefix": args.prefix, "suffix": args.suffix,
+        })
+        new_errors = validate(record, source.parent)
+        if new_errors:
+            for error in new_errors:
+                print(f"ERROR: {error}", file=sys.stderr)
+            return 1
+        source.write_bytes(canonical(record))
+        print(f"ADDED EVIDENCE: {args.id}")
+        return 0
+    if args.command == "add-assessment":
+        if any(item.get("id") == args.id for item in record["assessments"] if isinstance(item, dict)):
+            print(f"ERROR: duplicate assessment id: {args.id}", file=sys.stderr)
+            return 1
+        record["assessments"].append({
+            "id": args.id, "author": args.author, "conclusion": args.conclusion,
+            "method": args.method, "evidence_ids": args.evidence_ids,
+        })
+        new_errors = validate(record, source.parent)
+        if new_errors:
+            for error in new_errors:
+                print(f"ERROR: {error}", file=sys.stderr)
+            return 1
+        source.write_bytes(canonical(record))
+        print(f"ADDED ASSESSMENT: {args.id}")
+        return 0
     if args.command == "validate":
         print(f"VALID: {record['id']} (format {VERSION})")
         print("Structural and local text-anchor checks passed; truth and source authenticity were not assessed.")
