@@ -17,6 +17,28 @@ The next investigation should answer:
 
 ## 2. Candidate workflows to compare
 
+### Workflow 0 — Cross-tool evidence handoff and compatibility
+
+**User job:** “I have a research project that uses several tools; I need its claims, run records, metadata, and artifacts to remain understandable and verifiable when I export or hand it to another person.”
+
+Representative toolchain to test:
+- ReproCert certificate output;
+- reproducible-science claim-check records and RO-Crate export;
+- ReCRATE and FlowProof Workflow Run RO-Crates;
+- FAIRSCAPE/EVI evidence graph;
+- RO-Crate 1.3 and Workflow Run RO-Crate 0.6;
+- roc-validator, runcrate, Tonkaz, and LifeMonitor.
+
+Record:
+- which claims and provenance links each format can represent;
+- whether IDs, checksums, licenses, and artifact references survive export;
+- whether a second tool can read the result;
+- how version/profile mismatches are surfaced;
+- whether a user can inspect the bundle without the original service;
+- what manual conversion or annotation is required.
+
+This workflow is only a candidate. The existing standards and tools may already solve it adequately.
+
 ### Workflow A — Prepare a computational research project for handoff
 
 **User job:** “I need to give this project to another researcher, reviewer, collaborator, or future version of myself so they can understand what was done and run or inspect it.”
