@@ -820,3 +820,50 @@ No sources entered yet. Add new sections and stable IDs as workstreams begin.
 - **Accessed / verified:** 2026-11-26
 - **Claims supported:** Crossref's report that approximately 1,300 Retraction Watch updates had not reached the REST API from 2026-09-24 until a fix was implemented and monitored on 2026-11-25; CSV availability during the incident.
 - **Limitations:** Incident notice describes one operational failure and its reported remediation; it does not establish long-term API reliability or completeness.
+
+
+### C-18 — The Singapore Statement on Research Integrity
+- **Publisher:** World Conferences on Research Integrity Foundation
+- **Source type:** International principles statement
+- **URL:** https://www.singaporestatement.org/statement
+- **Publication date:** 2010 (Second World Conference on Research Integrity)
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Principles of honesty, accountability, fairness, stewardship, and responsibilities concerning methods, records, findings, authorship, peer review, conflicts, public communication, reporting and responding to irresponsible practices, and research environments.
+- **Limitations:** Broad international statement rather than a detailed institutional procedure or enforceable legal code.
+
+### C-19 — The European Code of Conduct for Research Integrity, Revised Edition 2023
+- **Publisher:** ALLEA — All European Academies
+- **Source type:** Cross-disciplinary research integrity framework
+- **URL:** https://allea.org/portfolio-item/european-code-of-conduct-2023/
+- **Publication date:** 2023-06-23
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Scope across disciplines and research settings; role as reference for EU-funded research; attention to research culture, open science, data management, AI, inclusion, and stakeholder responsibilities.
+- **Limitations:** Framework for self-regulation; national law, institutional policies, and disciplinary requirements remain relevant.
+
+### C-20 — COPE Retraction Guidelines
+- **Publisher:** Committee on Publication Ethics (COPE)
+- **Source type:** Publication-ethics guidance
+- **URL:** https://doi.org/10.24318/cope.2019.1.4
+- **Publication / review date:** Last reviewed 2025-08-29
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Editorial considerations for retractions, notice contents, timing, inconclusive evidence, and batch retractions; stated purpose of correcting the literature rather than punishing authors.
+- **Limitations:** Guidance primarily for editors and publishers; does not replace institutional research-misconduct procedures.
+
+### C-21 — Cooperation between research institutions and journals on research integrity and publication misconduct cases
+- **Publisher:** Committee on Publication Ethics (COPE)
+- **Source type:** Publication-ethics and institutional cooperation guidance
+- **URL:** https://doi.org/10.24318/cope.2018.1.3
+- **Publication / update date:** Version 2, 2024-03
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Distinction and cooperation between institutional investigations and journal correction/retraction decisions; treatment of unreliable findings, honest error, and expressions of concern.
+- **Limitations:** Guidance rather than binding law; actual authority and process vary by institution, publisher, and jurisdiction.
+
+### C-22 — Fostering Integrity in Research
+- **Authors:** National Academies of Sciences, Engineering, and Medicine
+- **Publisher:** National Academies Press
+- **Source type:** Consensus study report
+- **URL:** https://doi.org/10.17226/21896
+- **Publication date:** 2017-04-11
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Relationship between individual conduct and institutional research culture; recommendations concerning openness, data handling, record keeping, and responsible sharing.
+- **Limitations:** US National Academies report from 2017; some recommendations and context require updating for current tools, AI, and international settings.
