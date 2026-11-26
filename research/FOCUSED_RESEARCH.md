@@ -497,3 +497,111 @@ A practical prototype should not implement all of these merely because they exis
 ### Key caution
 
 These standards improve interoperability and auditability, but they do not provide a shared epistemology. They cannot tell us whether two sources are independent, whether a study is methodologically sound, whether a quote supports a claim, or how uncertainty should be summarized. Those are product and domain-method questions that require explicit, inspectable design and expert/user feedback.
+
+
+## OpenAlex deep dive — upstream data, curation, identity, and operational fit
+
+**Research date:** 26 November 2026  
+**Method:** Official OpenAlex data, API, snapshot, curation, and correction documentation reviewed. No API queries or snapshot downloads have been performed in this research pass.
+
+### Data gathering and source provenance
+
+OpenAlex continuously gathers records from Crossref, DataCite, ORCID, ROR, PubMed, PubMed Central, DOAJ, ISSN International Centre, repositories such as HAL/arXiv/Zenodo/OSTI/RePEc, thousands of institutional repositories, publisher feeds, and parsing of 70M+ open-access PDFs and landing pages. It records the external indexes a record can come from. Community corrections are also an input.
+
+The catalog was seeded with the final open Microsoft Academic Graph dataset in 2021. This is a useful lineage fact: OpenAlex is a large aggregation and enrichment of other indexes, not an independent primary source for every bibliographic fact.
+
+OpenAlex preserves raw author-name and affiliation strings in authorship data while also attaching resolved author and institution entities. That is valuable because the original text can be inspected alongside the system's interpretation. However, the documentation describes source/index lineage at the record level and does not establish a complete field-by-field provenance chain for every attribute.
+
+Sources:
+- OpenAlex, [How it's built](https://help.openalex.org/data/how-its-built/)
+- OpenAlex, [Authorships](https://help.openalex.org/data/authorships/)
+
+### Entity identity and matching are editorial decisions
+
+OpenAlex distinguishes native entities, for which it mints IDs after making fuzzy matching decisions, from vocabulary entities that correspond to already well-defined concepts or identifiers. Native entity IDs can be wrong and are explicitly described as curatable. External identifiers such as DOI, ORCID, ISSN-L, and ROR should be retained alongside OpenAlex IDs when long-term identity matters.
+
+Works are built from locations: a publisher page, preprint, repository copy, and PubMed record may all refer to one work. Persistent identifiers and declared links provide the strongest matching path; otherwise trained matchers compare candidates. The documentation says uncertain matches may be left separate rather than forcing a merge.
+
+Author disambiguation has changed over time. Different groups of works were assigned by different models, older works were not all globally re-matched, and a roughly four-million-work ingestion gap in late 2025 left many author entries without a profile. The current documentation reports estimated precision and recall for the overall profile corpus, but the estimates are based on model judgments, not human judgments. Known failure modes include splits, false merges, and entries with no author profile.
+
+This is a useful example of a system that exposes its matching method and known failure modes. It also reinforces why Common Knowledge should preserve raw source identifiers/strings and distinguish original data from inferred entity resolution.
+
+Sources:
+- OpenAlex, [Data reference](https://help.openalex.org/data/)
+- OpenAlex, [Works overview](https://help.openalex.org/data/works/)
+- OpenAlex, [Matching and merging works](https://help.openalex.org/data/works/matching/)
+- OpenAlex, [Author disambiguation](https://help.openalex.org/data/authors/disambiguation/)
+- OpenAlex, [Authors overview](https://help.openalex.org/data/authors/)
+
+### Community correction mechanisms
+
+OpenAlex has user-submitted curations that record what was changed, who submitted it, when, and the review/application state. Its documented public self-service curation workflow is currently centered on author-profile corrections: claiming works, removing misattributed works, and changing profile names. Site-wide curators can correct additional work fields, and some other corrections go through support tickets.
+
+Corrections are applied through a nightly data refresh and may take one to two days to appear consistently across the API, search, and website. The correction mechanism is useful but narrow: it is not an open review process for evaluating whether a research finding is supported, and the curation audit trail is not fully exposed in the public read API.
+
+Source:
+- OpenAlex, [Curations](https://help.openalex.org/data/curations/)
+- OpenAlex, [When corrections go live](https://help.openalex.org/how-to/when-corrections-go-live/)
+
+### Citations and metrics are useful, but not ground truth
+
+OpenAlex builds citation links by extracting reference lists from upstream metadata and, for open-access works, sometimes from PDFs. References with persistent IDs can be linked by ID; others are matched from text. OpenAlex's November 2026 documentation reports an estimated 82% coverage of references whose cited work is in OpenAlex and an estimated 96% correctness for citations it serves, based on its own sampled evaluation. It also explains why a work's linked references can be shorter than its printed bibliography.
+
+These are useful signals for discovery and research mapping, but they are not a substitute for reading the cited source. A citation link does not show whether the citing paper supports, disputes, or merely mentions the cited work. Citation counts and field-normalized metrics also depend on the completeness and classification decisions of the underlying corpus.
+
+Source:
+- OpenAlex, [Citations and references](https://help.openalex.org/data/works/citations/)
+
+### Identifiers, merges, and deletions
+
+OpenAlex entities can be merged when two IDs are found to represent the same real-world object. API requests for merged IDs usually resolve to the surviving entity, but OpenAlex explicitly describes redirects as best-effort rather than a permanence guarantee. Deleted IDs return 404. Snapshot releases now include merge ledgers for works, authors, sources, and institutions, plus a deletion log for works; other entity types do not yet have equivalent deletion logs.
+
+A Common Knowledge record should therefore store durable external identifiers (DOI, ORCID, ROR, etc.) where available, plus the OpenAlex ID and the retrieval date/version. It should not rely on an OpenAlex ID redirect as its only permanent reference.
+
+Sources:
+- OpenAlex, [Merged entities and deletions](https://help.openalex.org/access/sync/)
+- OpenAlex, [Get single entities](https://help.openalex.org/api/get-single-entities/)
+
+### Access, licensing, and reproducibility
+
+OpenAlex states that its data is released under CC0. The public full snapshot is free to download without an AWS account, in JSON Lines or Parquet. The September 2026 release contained about 626 million records and was approximately 745 GB compressed in JSON Lines or 770 GB in Parquet. This is not a sensible default download for an early Common Knowledge prototype.
+
+The public full snapshot is quarterly and replaces the current bucket contents in place. The documentation recommends archiving a dated snapshot/manifest if reproducibility against a point-in-time corpus matters. Daily snapshots and API sync filters are paid services. The API itself supports casual keyless access; a free API key increases the daily budget and is needed for cursor pagination beyond the first page. Rate and budget limits should be respected in any automated ingestion.
+
+CC0 applies to OpenAlex's database, not automatically to the underlying papers or full-text files it indexes. Source works may retain publisher or author licenses and access restrictions. Common Knowledge must evaluate rights at the level of each source object and content item rather than infer that a record being present in OpenAlex makes its underlying text freely reusable.
+
+Sources:
+- OpenAlex, [Snapshot](https://help.openalex.org/access/snapshot/)
+- OpenAlex, [Sync](https://help.openalex.org/access/sync/)
+- OpenAlex, [Authentication and rate limits](https://help.openalex.org/api/authentication/)
+- OpenAlex, [How it's built](https://help.openalex.org/data/how-its-built/)
+
+### Fit assessment for Common Knowledge
+
+**What OpenAlex could provide:**
+- scholarly work discovery and bibliographic metadata;
+- DOI, ORCID, ROR, ISSN-L and other identifier mappings;
+- links among works, authors, institutions, sources, funders, and topics;
+- citation-network discovery;
+- a large, openly licensed research index;
+- useful examples of raw-input preservation, matching disclosure, and correction workflows.
+
+**What it does not provide:**
+- source-specific evidence passages or claim-to-evidence relations;
+- assessment of whether a study's result is valid or whether it supports a particular claim;
+- multiple transparent interpretations of the same evidence;
+- a full provenance chain for every metadata field;
+- a general-purpose community review process for scientific conclusions.
+
+**Current conclusion:** OpenAlex is an excellent candidate upstream integration, not a candidate foundation for the Common Knowledge knowledge record itself. Use it to locate and enrich scholarly source records, but retain the original DOI/ORCID/ROR and source metadata, make retrieval dates explicit, and link to the source itself. Do not treat citation counts, author matching, or topic classifications as epistemic verdicts.
+
+### Proposed lightweight API evaluation
+
+Before integrating it, make a small, bounded API sample:
+1. Retrieve a handful of works by DOI and inspect the raw JSON fields, including locations, authorships, source IDs, references, and updated_date.
+2. Compare an OpenAlex work record with its Crossref or DataCite source record to see which attributes are inherited, enriched, or inferred.
+3. Inspect one author profile and its raw authorship strings to understand what identity-resolution information survives.
+4. Query a known merged ID and record how the API reports the surviving ID.
+5. Save the query, retrieval timestamp, API response, and relevant identifiers as a dated test fixture.
+
+Do not download the full snapshot or build a continuous sync pipeline unless a real product workflow demonstrates that it is needed.
