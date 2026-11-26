@@ -1,37 +1,52 @@
 # Product Development
 
-**Status:** Focused product direction established; first knowledge-system demonstrator not yet selected or implemented.
+**Status:** Developer-first product direction proposed; first MVP not yet selected or implemented.
 
-This directory describes the first practical software slice of Common Knowledge. The product should demonstrate a real capability of the wider knowledge system without pretending to be the whole commons.
+Common Knowledge aims to build **open infrastructure for humanity's shared knowledge**. This directory tracks the first practical software slice: something developers can run, inspect, challenge, and improve, while laying foundations for independent groups to exchange and preserve evidence-linked knowledge.
 
-## Current direction
+## First product hypothesis
 
-Build a small, inspectable, evidence-linked knowledge system.
+A small, local-first reference implementation with a developer-friendly workflow (potentially a CLI plus a human-readable inspection view). It should let a contributor create, inspect, validate, and export a knowledge record containing:
 
-The working product hypothesis is a bounded collection of structured knowledge records. A user should be able to inspect what a record says, its scope, the evidence and sources connected to it, the provenance of contributions, uncertainty or disagreement, and its revision history. The information should be exportable in a documented format.
+- A clearly scoped statement or observation.
+- Sources and precise evidence locations.
+- Explicit relationships between evidence and the statement.
+- One or more attributed assessments, with method and limitations.
+- Provenance and revision history.
+- A documented, portable export.
 
-This is a hypothesis for research and prototyping, not an approved schema or architecture.
+Independent assessments should coexist rather than silently overwrite one another. A record should remain inspectable and preservable outside the original application.
 
-## What we need to learn first
+This is a working hypothesis, not a selected architecture, schema, language, framework, or storage system. The first implementation should reuse established standards and integrate with existing projects where practical.
 
-1. Which existing systems already represent statements, evidence, provenance, identity, and history?
-2. Which standards and formats provide useful interoperability without forcing an unnecessarily complex stack?
-3. What practical workflow remains difficult for people using those systems?
-4. What is the smallest useful end-to-end demonstration of that missing capability?
+## First community
 
-See [Focused Research](../research/FOCUSED_RESEARCH.md).
+The initial community we hope to attract is open-source developers and technically curious contributors interested in knowledge representation, provenance, interoperability, digital preservation, security, data portability, and public-interest infrastructure.
+
+Developers are the first intended contributors, not the only eventual users. The product must ultimately solve a real task for people who create or examine knowledge. We should test that value rather than assume it from developer interest.
+
+## Product integrity and independence
+
+- Common Knowledge should be infrastructure for independent operators, not the sole authority or required host.
+- Reading, validating, exporting, and preserving records should not depend on permission from a central service.
+- The format and behavior should be documented well enough for independent implementations.
+- Provenance and revision history should make changes attributable.
+- Disagreement should remain inspectable; no universal truth score or popularity vote.
+- Privacy, rights, consent, and safety constrain what can be published.
+
+The first local prototype need not implement production federation. Independent-instance exchange is an early architecture test.
 
 ## Product documents
 
-- [Product direction](PRODUCT_DIRECTION.md)
+- [MVP Specification](../docs/MVP_SPECIFICATION.md) — proposed first product, scope, decision gates, and success criteria.
 - [Experience principles](EXPERIENCE_AND_VISUAL_IDENTITY.md)
 - [Prototype plan](PROTOTYPE_PLAN.md)
 - [Prototype status](PROTOTYPE_STATUS.md) — includes the earlier preflight experiment for historical context.
 
-## Product integrity
+## Related project commitments
 
-Common Knowledge does not declare a universal source of truth or automatically decide which claims are true. A record should expose its scope, evidence, provenance, uncertainty, disagreements, and history so people can inspect and challenge it.
+- [Roadmap](../ROADMAP.md)
+- [Founding Principles](../FOUNDING_PRINCIPLES.md)
+- [Transparency](../docs/TRANSPARENCY.md)
 
-Do not invent a confidence score, quality rating, or authoritative verdict before research establishes what it means and how it can be evaluated.
-
-No product architecture, data model, hosting model, or software license has been selected.
+No product architecture, data model, hosting model, or software license has been selected. Exploratory record-model and nanopublication work remains a feasibility experiment, not an approved standard or architecture.
