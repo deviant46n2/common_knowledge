@@ -325,6 +325,88 @@ For each source, record:
 - **Claims supported:** Submission screening categories, ethics and privacy checks, no-fee submission, typical screening time, and journal transfer pathways.
 - **Limitations:** Screening procedures and timelines may change; screening is not peer review or a guarantee of correctness.
 
+
+### A-31 — The FAIR Guiding Principles for scientific data management and stewardship
+
+- **Authors:** Mark D. Wilkinson et al.
+- **Publisher:** Scientific Data
+- **Source type:** Peer-reviewed principles paper
+- **URL:** https://doi.org/10.1038/sdata.2016.18
+- **Publication date:** 2016-03-15
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Definitions and rationale for Findable, Accessible, Interoperable, and Reusable principles; applicability to data, algorithms, tools, and workflows; human and machine actionability.
+- **Limitations:** Foundational framework; does not itself specify one universal implementation or guarantee openness, ethical legitimacy, or scientific validity.
+
+### A-32 — DataCite Metadata Schema 4.7
+
+- **Publisher:** DataCite
+- **Source type:** Primary standard
+- **URL:** https://schema.datacite.org/
+- **Publication date:** 2026-03-03
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Current DataCite metadata properties and release 4.7 changes.
+- **Limitations:** DataCite's schema; other metadata ecosystems may use different or additional properties.
+
+### A-33 — DataCite Versioning
+
+- **Publisher:** DataCite Support
+- **Source type:** Primary technical guidance
+- **URL:** https://support.datacite.org/docs/versioning
+- **Publication / update date:** Current guidance
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Recommendations for minor and major version changes, new DOI assignment, and related identifier relationships.
+- **Limitations:** Recommendations allow steward judgment about what constitutes a major version; repository implementations can differ.
+
+### A-34 — Crossref REST API
+
+- **Publisher:** Crossref
+- **Source type:** Primary technical documentation
+- **URL:** https://www.production.crossref.org/documentation/retrieve-metadata/rest-api
+- **Publication / update date:** Current documentation
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Public retrieval of deposited scholarly metadata, API capabilities, and metadata fields including funding, licenses, ORCID, and ROR identifiers.
+- **Limitations:** Metadata completeness and accuracy depend partly on member deposits and trusted sources; some abstracts may remain subject to copyright.
+
+### A-35 — ORCID Public API
+
+- **Publisher:** ORCID
+- **Source type:** Primary technical documentation
+- **URL:** https://info.orcid.org/what-is-orcid/services/public-api/
+- **Publication / update date:** Current documentation
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Public API capabilities for authentication, retrieving public record data, and searching the ORCID registry.
+- **Limitations:** Write and some integration capabilities require member API access; public API access is not equivalent to permission to modify records.
+
+### A-36 — Research Organization Registry
+
+- **Publisher:** ROR
+- **Source type:** Primary registry documentation
+- **URL:** https://ror.org/about
+- **Publication / update date:** Current registry page
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** ROR's purpose, community-led model, CC0 data, API and data dump, and integration with Crossref, DataCite, and ORCID.
+- **Limitations:** Registry coverage and curation decisions require ongoing review; a ROR identifier does not settle all questions about institutional identity or affiliation.
+
+### A-37 — Open Archives Initiative
+
+- **Publisher:** Open Archives Initiative
+- **Source type:** Primary standards documentation
+- **URL:** https://www.openarchives.org/
+- **Publication / update date:** Current site
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** OAI's interoperability mission, OAI-PMH specifications, and continued use of OAI-PMH in library and academic communities.
+- **Limitations:** OAI notes that it is no longer working on new projects; OAI-PMH is not a complete solution for all contemporary synchronization and interoperability needs.
+
+### A-38 — The Principles of Open Scholarly Infrastructure
+
+- **Publisher:** POSI Adopters / community initiative
+- **Source type:** Community principles framework
+- **URL:** https://openscholarlyinfrastructure.org/
+- **Publication date:** Version 2.0 released 2025-10
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Version 2.0 principles concerning governance, stakeholder representation, participation, and open scholarly infrastructure.
+- **Limitations:** Voluntary framework, not a certification or technical standard; interpretation and adoption need context.
+
 ## Other workstreams
 
 No sources entered yet. Add new sections and stable IDs as workstreams begin.
