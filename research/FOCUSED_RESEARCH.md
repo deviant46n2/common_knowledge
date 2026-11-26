@@ -675,3 +675,27 @@ The research so far supports the following provisional roles:
 These roles can be combined. For example, a product could use a contributor-friendly relational/JSON model internally, publish selected assertions as nanopublications, map provenance to PROV-O, expose JSON-LD/RDF exports, validate exports with SHACL, use Web Annotation for source anchors, and query OpenAlex for scholarly metadata. That is an architectural possibility, not a recommendation to implement all these pieces now.
 
 **Next decision should be driven by a hands-on prototype and a real user workflow**, not by the theoretical completeness of any standard or platform.
+
+
+## Hands-on record-model spike — first result
+
+**Research date:** 26 November 2026  
+**Code review:** [PR #3 — experimental evidence-linked record model spike](https://github.com/deviant46n2/common_knowledge/pull/3)
+
+A disposable JSON-LD fixture was created around a fictional water-quality monitoring record. It deliberately separates:
+- the statement that station R-1 recorded 4.2 mg/L at a specified time;
+- the exact CSV row containing that recorded value;
+- a separate calibration-log passage stating calibration was overdue;
+- the distinct relationships of the CSV row (supports what was recorded) and calibration entry (qualifies confidence in measurement accuracy);
+- an assessment with method and limitations;
+- a PROV-O review activity associated with a reviewer agent and using both evidence items.
+
+The evidence passages are represented as Web Annotation TextQuoteSelector targets with exact text, prefix, and suffix. Local fixture files are included so the selector can be checked against the source text rather than merely checking that the JSON parses.
+
+**Observed test result:** Five pytest checks passed using RDFLib. The tests cover JSON-LD parsing, preservation of separate evidence-relation types, annotation/source/selector links, PROV-O activity and agent links, and exact quote/prefix/suffix matching against the fixture sources.
+
+**Useful failure found:** The first iteration used a compact JSON-LD key for hasTarget without mapping it to oa:hasTarget. The JSON document parsed, but the expected annotation target was absent from the RDF graph. The failing test exposed this silent semantic loss. The context was corrected and the five tests then passed. This is direct evidence that valid JSON is not enough; the export needs semantic tests.
+
+**What this does not establish:** It does not establish truth, source authenticity, the quality of the assessment, SHACL conformance, a user-friendly authoring workflow, version/correction semantics, or whether JSON-LD should be canonical. It is not a selected schema or architecture. All IDs use the reserved example.org domain and all data/agents are synthetic.
+
+**Next experiment:** Add a second independent assessment and a later record version, then test whether readers can distinguish an update to the record from an additional interpretation, inspect the full history, and identify which source/evidence each assessment used. After that, compare the same workflow with a nanopublication on its test network (never the real network) and with a small Wikibase test instance if setup cost is reasonable.
