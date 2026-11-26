@@ -2,8 +2,8 @@
 
 - **Snapshot:** [November 2026](../../README.md)
 - **Program:** [Common Knowledge Research Program](../../../../PROGRAM.md)
-- **Status:** Not started
-- **Last worked:** Not yet started
+- **Status:** In progress
+- **Last worked:** 2026-11-26
 
 ## Central question
 
@@ -34,9 +34,16 @@ Learn from academic, public, private, independent, and community researchers; li
 
 This page is the workstream's durable entry point. Add dated notes below as research proceeds. Put substantive findings in focused reports and profiles, with sources attached to the claims they support. Keep documented facts, independent findings, assessments, and open questions distinct.
 
+### Current reports
+
+- [Initial field overview](field-overview.md)
+- [Stakeholder conversation guide](interview-guide.md)
+
 ### Progress notes
 
-- **2026-11-26:** Workstream scope and initial questions recorded. No comprehensive investigation has yet been completed.
+- **2026-11-26:** Workstream scope and initial questions recorded. No direct Common Knowledge stakeholder interviews have yet been conducted.
+- **2026-11-26:** Added an initial review of researcher surveys and open-science monitoring needs, with explicit sampling and representativeness caveats. Registered sources G-01 through G-08.
+- **2026-11-26:** Created a consent-aware exploratory conversation guide for future stakeholder discussions.
 
 ### Next steps
 
