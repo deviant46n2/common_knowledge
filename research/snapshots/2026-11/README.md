@@ -42,6 +42,7 @@ People-facing research should begin immediately and continue throughout all stag
 - [Adjacent project landscape](../../ADJACENT_PROJECTS.md) — Knowledge Space, Nanoarguments, MIRA, SciOS RRGI, Project Delphi, The Consilience, and ORKG.
 - [Civic fact-checking landscape](../../CIVIC_FACT_CHECKING_LANDSCAPE.md) — Factiz, AsOf, Full Fact, Cofacts, and ClaimReview.
 - [Preliminary product gap analysis](../../PRODUCT_GAP_ANALYSIS.md) — initial differentiation hypothesis and validation path.
+- [Christine Lagarde quote case study](../../experiments/2026-11-lagarde-quote-case-study.md) — a real multilingual claim with independent checks and primary-source links.
 - [Cross-workstream analysis](cross-workstream-analysis.md) — dependencies, tensions, shared needs, and synthesis across the seven areas.
 - [Gaps and opportunities](gaps-and-opportunities.md) — evidence-backed synthesis and open questions.
 - [Sources](sources.md) — source register for this snapshot.
