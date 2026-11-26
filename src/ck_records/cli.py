@@ -180,7 +180,7 @@ def main(argv=None):
             print(f"ERROR: destination already exists: {target}", file=sys.stderr)
             return 1
         target.mkdir(parents=True)
-        shutil.copytree(source.parent / "sources", target / "sources")
+        shutil.copytree(source.parent, target)
         (target / "record.json").write_bytes(canonical(record))
         print(f"EXPORTED PACKAGE: {target}")
     else:
