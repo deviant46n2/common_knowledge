@@ -1070,3 +1070,31 @@ No sources entered yet. Add new sections and stable IDs as workstreams begin.
 - **Accessed / verified:** 2026-11-26
 - **Claims supported:** Current requirements, extended guidance, glossary, and intended objective review of trustworthy repository characteristics.
 - **Limitations:** Certification is scoped to a repository and review period; it does not guarantee scientific validity, ethical use, or indefinite availability.
+
+
+### E-23 — Europeana Data Model Documentation
+- **Publisher:** Europeana Foundation
+- **Source type:** Primary metadata model and implementation documentation
+- **URL:** https://pro.europeana.eu/page/edm-documentation
+- **Publication / update date:** Current documentation index accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** EDM model, mapping guidelines, validation, profiles, and cross-domain metadata interoperability for cultural heritage providers.
+- **Limitations:** Europeana-specific aggregation model; actual mapping quality and user experience vary and require independent evaluation.
+
+### E-24 — DPLA Frequently Asked Questions
+- **Publisher:** Digital Public Library of America
+- **Source type:** Primary service and metadata documentation
+- **URL:** https://dp.la/about/frequently-asked-questions
+- **Publication / update date:** Current FAQ accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** DPLA's metadata purpose, contributor links, and service hub network for sharing metadata.
+- **Limitations:** Operator description; source-link persistence, hub coverage, metadata quality, and user experience not independently assessed.
+
+### E-25 — Wikidata Verifiability and Sourcing Guidance
+- **Publisher:** Wikidata community / Wikimedia Foundation platform
+- **Source type:** Community content policy and guidance
+- **URL:** https://www.wikidata.org/wiki/Wikidata:Verifiability
+- **Publication / update date:** Current guidance accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Requirement for verifiable sourced statements, editor responsibility for references, and source-quality guidance.
+- **Limitations:** Community policy and guidance; compliance, source quality, and community outcomes require independent study.
