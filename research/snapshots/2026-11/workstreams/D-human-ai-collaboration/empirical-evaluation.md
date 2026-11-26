@@ -11,7 +11,15 @@ A system that produces a paper-like manuscript has completed a visible output ta
 
 The recent evidence points toward a distinction between **workflow completion** and **scientific validity**. Evaluation must inspect intermediate decisions and artifacts, not just the final manuscript.
 
-## 2. AI Scientist: end-to-end capability with important limitations
+## 2. General human–AI collaboration evidence
+
+Vaccaro, Almaatouq, and Malone's preregistered 2024 systematic review and meta-analysis synthesized 106 experiments and 370 effect sizes. On average, human–AI combinations performed better than humans alone, but worse than the better of humans or AI working alone (Hedges' g = −0.23; 95% CI −0.39 to −0.07). The review also found task-dependent differences: combinations lost ground on decision tasks, while content-creation tasks were more promising. The relative strength of the human and AI alone also moderated outcomes: combinations were more promising when humans were stronger than AI on the task, and less effective when AI alone was stronger.
+
+**Interpretation:** Human augmentation and true human–AI synergy are different outcomes. An AI tool can help a person without making the combined team better than the best standalone performer. Task allocation and division of labor may matter more than simply placing AI beside a human.
+
+**Limitations:** The review covered experiments published from January 2020 through June 2023, with high heterogeneity and possible publication bias. It does not directly evaluate current scientific research agents.
+
+## 3. AI Scientist: end-to-end capability with important limitations
 
 The 2026 Nature paper *Towards End-to-End Automation of AI Research* describes a system that generates research ideas, searches literature for novelty, writes and executes code, analyzes experiments, drafts a manuscript, and uses an automated reviewer.
 
@@ -25,7 +33,7 @@ The paper reports that one of three submitted workshop papers was accepted. It a
 
 **Assessment:** The work demonstrates a real, integrated research workflow in a narrow machine-learning setting. It does not demonstrate reliable end-to-end scientific discovery at the level of leading human research, nor broad transfer across disciplines.
 
-## 3. Human–AI reproduction: assistance versus delegation
+## 4. Human–AI reproduction: assistance versus delegation
 
 The 2026 PNAS study assigned 288 researchers to 103 teams and compared three approaches to reproducing quantitative social-science findings:
 - Human-only teams: 94% reproduction rate.
