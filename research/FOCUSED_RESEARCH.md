@@ -1235,3 +1235,14 @@ Sources:
 - [Agent Skills specification](https://agentskills.io/specification)
 
 No agent identity was created, no key generated, and no publication was signed or sent by Common Knowledge.
+
+
+### Public Consilience templates found in the nanopublication network
+
+A live query of the public assertion-template index returned six Consilience templates: theory claim, measured claim, data-quality finding, disagreement/testability, comparison refused, and graded claim correspondence.
+
+The measured-claim template already models an exact source sentence, source document, subject, quantity/axis, QUDT value and unit, bounds, conditions, and a stable claim IRI that can be superseded by a corrected card. The disagreement template models the dimension of disagreement, observables, instruments, testability, assumptions, margin/floor, unit, and reason. The correspondence template uses a four-rung structural-to-thematic scale and explicitly records the ceiling on what a grade licenses.
+
+This is a concrete, existing vocabulary for a significant part of the problem Common Knowledge was beginning to model. It is domain-specific and authored by The Consilience, not a universal Knowledge Pixels standard. See [Adjacent Projects](ADJACENT_PROJECTS.md) and the [civic-budget mapping probe](experiments/2026-11-consilience-civic-budget-mapping.md).
+
+**Updated implication:** Do not design a generic claim-card or disagreement vocabulary from scratch before reviewing these templates with their authors. The opportunity may be to generalize or interoperate with them for public-policy/civic claims, not replace them.
