@@ -11,10 +11,11 @@ The first pass changes our initial hypothesis. Research packaging, research meta
 
 The opportunity is therefore unlikely to be “build a better general research workspace” or “generate an RO-Crate.” A defensible MVP needs to solve a specific job that existing tools leave difficult, fragmented, expensive, or inaccessible.
 
-Two areas currently deserve the most investigation:
+Three connected areas currently deserve the most investigation:
 
 - **A. Research handoff / readiness diagnostics:** an approachable workflow that helps a project owner prepare an existing research project for another person to inspect, understand, run where possible, cite, and preserve.
 - **B. Research-specific auditability for AI-assisted work:** a portable evidence record connecting AI/agent execution traces to scientific inputs, methods, data, code, outputs, decisions, and claims.
+- **C. Claim-to-evidence verification:** a conservative tool that checks whether numerical statements in a report are attributable to the correct output, metric, experiment, and run, rather than merely finding the same number somewhere in a project directory.
 
 These are opportunity hypotheses, not selected products. We need direct user evidence and hands-on tool testing before commitment.
 
