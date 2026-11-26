@@ -49,8 +49,8 @@ This page is the workstream's durable entry point. Add dated notes below as rese
 
 ### Next steps
 
-1. Define key terms and boundaries for the first bounded investigation.
-2. Identify foundational standards, projects, organizations, and communities.
-3. Select representative cases and investigate primary sources.
-4. Seek independent evidence and user experience.
-5. Produce a first-pass synthesis that states coverage and limitations.
+1. Compare BOINC, HTCondor, and other schedulers using representative workload profiles.
+2. Investigate federation identity, resource discovery, scheduling, and independent operator governance.
+3. Expand security research to sandboxing, data locality, and confidential computing.
+4. Compare distributed storage systems on actual retrieval, durability, cost, and governance—not only cryptographic proofs.
+5. Identify a small public-data workload for a measured pilot, with local and institutional baselines.
