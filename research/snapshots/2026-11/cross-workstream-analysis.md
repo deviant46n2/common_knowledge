@@ -131,7 +131,17 @@ This is a living synthesis. Findings are provisional where underlying workstream
 
 **Assessment:** Participation should not be measured only by contributor counts or data volume. A commons must ask who participates, whose knowledge is missing, how contributions are validated, and how limitations are represented.
 
-### 12. Correction and disagreement must be first-class features
+### 12. Preserving records is not the same as preserving active services
+
+**Supporting workstreams:** A, E, F.
+
+- Workstream A's OSF case study distinguishes preservation of public records from the retirement of active project collaboration, storage, and write APIs.
+- Workstream E's preservation review shows that durable custody requires explicit responsibility, funding, and rights.
+- Workstream F's funding analysis shows how operating costs and revenue constraints can force service changes even when an organization remains mission-aligned.
+
+**Assessment:** Continuity plans must separately describe what remains preserved, what remains editable, what access is retained, how APIs change, how users migrate, and what happens to private content. A permanent DOI does not guarantee an ongoing service.
+
+### 13. Correction and disagreement must be first-class features
 
 **Supporting workstreams:** A, C, E.
 
