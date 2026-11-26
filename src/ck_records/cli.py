@@ -183,18 +183,24 @@ def main(argv=None):
         if target.exists():
             print(f"ERROR: destination already exists: {target}", file=sys.stderr)
             return 1
-        target.mkdir(parents=True)
+        if target == source.parent or source.parent in target.parents:
+            print("ERROR: export destination cannot be inside the record directory", file=sys.stderr)
+            return 1
         shutil.copytree(source.parent, target)
         (target / "record.json").write_bytes(canonical(record))
         print(f"EXPORTED PACKAGE: {target}")
     else:
         target = args.output.resolve()
+        package_root = source.parent
+        if target == package_root or target in package_root.parents or package_root in target.parents:
+            print("ERROR: import destination cannot contain or be inside the source package", file=sys.stderr)
+            return 1
         if target.exists() and not args.overwrite:
             print(f"ERROR: destination exists (use --overwrite): {target}", file=sys.stderr)
             return 1
         if target.exists():
             shutil.rmtree(target)
-        shutil.copytree(source.parent, target)
+        shutil.copytree(package_root, target)
         print(f"IMPORTED PACKAGE: {target}")
     return 0
 
