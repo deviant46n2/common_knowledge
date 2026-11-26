@@ -144,11 +144,11 @@ def main(argv=None):
         cmd = commands.add_parser(name)
         cmd.add_argument("record", type=Path)
     export = commands.add_parser("export")
-    export.add_argument("record", type=Path)
-    export.add_argument("output", type=Path)
+    export.add_argument("record", type=Path, help="path to record.json")
+    export.add_argument("output", type=Path, help="new package directory")
     imp = commands.add_parser("import")
-    imp.add_argument("record", type=Path)
-    imp.add_argument("output", type=Path)
+    imp.add_argument("record", type=Path, help="path to record.json inside an exported package")
+    imp.add_argument("output", type=Path, help="destination package directory")
     imp.add_argument("--overwrite", action="store_true")
     args = parser.parse_args(argv)
     source = args.record.resolve()
@@ -176,17 +176,22 @@ def main(argv=None):
             print(f"- {item['id']} — {item['author']}\n  {item['conclusion']}\n  Method: {item['method']}")
     elif args.command == "export":
         target = args.output.resolve()
-        target.parent.mkdir(parents=True, exist_ok=True)
-        target.write_bytes(canonical(record))
-        print(f"EXPORTED: {target}")
+        if target.exists():
+            print(f"ERROR: destination already exists: {target}", file=sys.stderr)
+            return 1
+        target.mkdir(parents=True)
+        shutil.copytree(source.parent / "sources", target / "sources")
+        (target / "record.json").write_bytes(canonical(record))
+        print(f"EXPORTED PACKAGE: {target}")
     else:
         target = args.output.resolve()
         if target.exists() and not args.overwrite:
             print(f"ERROR: destination exists (use --overwrite): {target}", file=sys.stderr)
             return 1
-        target.parent.mkdir(parents=True, exist_ok=True)
-        shutil.copyfile(source, target)
-        print(f"IMPORTED: {target}")
+        if target.exists():
+            shutil.rmtree(target)
+        shutil.copytree(source.parent, target)
+        print(f"IMPORTED PACKAGE: {target}")
     return 0
 
 
