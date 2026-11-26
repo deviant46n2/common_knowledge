@@ -93,3 +93,33 @@ A public knowledge system should not display a single confidence number without 
 - calibrated probability (only where a method justifies it).
 
 This record is a concrete example of that separation.
+
+
+## Older published claim/evidence inventory sample
+
+The ontology repository also publishes `nanopubs/live-inventory-2026-10-14.csv`. I parsed this file and found 183 unique nanopublications in this inventory:
+- 161 Bayesian-assessment statements;
+- 11 claim-statement records;
+- 8 evidence-item records;
+- 1 testable-hypothesis record;
+- 1 hypothesis-statement record;
+- 1 agent-introduction record.
+
+This is a curated inventory dated 14 October 2026, not a count of the whole Science Oracle graph or all records in the public nanopublication network.
+
+One example, claim `B2013-C1`, concerns the effect of H,K-ATPase inhibition on planarian head regeneration. Its inventory entries include:
+- the source DOI `10.1242/dev.086900`;
+- experimental context: Schmidtea mediterranea, H,K-ATPase RNAi, head size versus blastema size, 4–14 days post-amputation;
+- an evidence item referencing **Fig. 4B–C**;
+- a reported p-value of 0.0001;
+- a two-sample comparison of head-size percentage at 14 dpa;
+- a computed Vovk–Sellke maximum p-ratio of 26.014298;
+- a weight-of-evidence value of 0.9975.
+
+A separate Bayesian assessment record uses "Vovk–Sellke p-value calibration" and a weight-of-evidence value of 0.9977.
+
+This provides more precise evidence structure than a bare paper citation: it records a figure, experimental context, statistical test, p-value, and a named calibration method. It still does not preserve the exact figure image/panel, source page excerpt, source file version/hash, or underlying raw measurements in the inspected records. The figure label is a useful locator but not a complete evidence anchor.
+
+The repository's `nanopubs/README.md` also documents an ontology migration: some signed 1.x templates remain published while new 2.0 versions are being generated but are not yet signed/published. This is a live example of schema evolution and compatibility work. The 14 October inventory is explicitly a legacy per-statement wave; it should not be treated as representative of every current 2.0 record.
+
+**Interpretation:** Project Delphi already demonstrates a rich, evidence-linked scientific graph, including statistical evidence and typed assessments. But its public records can be fragmented into multiple atomic nanopublications, and the published inventory is still evolving across ontology versions. A reader-facing application and a stable migration/export story are therefore essential.
