@@ -28,6 +28,13 @@ Investigate research software and computational environments, data/code availabi
 - practical reproducibility checklist or workflow
 - integrity risks and unresolved questions.
 
+## Current reports
+
+- [Initial field overview](field-overview.md)
+- [Standards and tools landscape](standards-and-tools.md)
+- [Practical research-record proposal](research-record.md)
+- [Research integrity and correction](research-integrity.md)
+
 ## Working record
 
 This page is the workstream's durable entry point. Add dated notes below as research proceeds. Put substantive findings in focused reports and profiles, with sources attached to the claims they support. Keep documented facts, independent findings, assessments, and open questions distinct.
