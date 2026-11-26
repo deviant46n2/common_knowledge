@@ -1135,3 +1135,53 @@ No sources entered yet. Add new sections and stable IDs as workstreams begin.
 - **Accessed / verified:** 2026-11-26
 - **Claims supported:** Community collaboration, granular cultural access protocols, cultural narrative and Traditional Knowledge fields, multiple community records, and localized labeling.
 - **Limitations:** Institutional description of the platform; not an independent evaluation or a substitute for direct community feedback.
+
+
+### C-23 — A Large-Scale Study on Research Code Quality and Execution
+- **Authors:** Ana Trisovic, Matthew K. Lau, Thomas Pasquier, Mercè Crosas
+- **Publisher:** Scientific Data
+- **Source type:** Peer-reviewed empirical computational reproducibility study
+- **URL:** https://doi.org/10.1038/s41597-022-01143-6
+- **Publication date:** 2022-02-21
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Execution outcomes for more than 2,000 Harvard Dataverse replication datasets and over 9,000 R files; common failure modes and effects of limited code cleaning.
+- **Limitations:** Specific to the sampled repository, R code, and automated execution protocol; successful execution is necessary but not sufficient for reproducibility.
+
+### C-24 — Computational Reproducibility of Jupyter Notebooks from Biomedical Publications
+- **Publisher:** Peer-reviewed biomedical informatics literature
+- **Source type:** Empirical computational reproducibility study
+- **URL:** https://pmc.ncbi.nlm.nih.gov/articles/PMC10783158/
+- **Publication date:** 2023
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Automated attempts to rerun Jupyter notebooks associated with biomedical publications, dependency installation failures, execution outcomes, and exact-output comparisons.
+- **Limitations:** Specific biomedical corpus and automated workflow; notebook state, external services, manual steps, and dependency capture affect results.
+
+### C-25 — AI-assisted scoping review of code sharing in clinical prediction model research
+- **Authors:** Thomas Sounack et al.
+- **Publisher:** Nature Medicine
+- **Source type:** Peer-reviewed scoping review
+- **URL:** https://doi.org/10.1038/s41591-026-04691-1
+- **Publication date:** 2026-10-09 (ahead of print)
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Code availability in studies citing TRIPOD or TRIPOD+AI; reported accessible code rate of 12.2%; repository assessment of documentation, dependency specification, and licensing.
+- **Limitations:** Specific to clinical prediction model studies and review inclusion criteria; AI-assisted screening/extraction methods require consideration; not a field-wide code-sharing estimate.
+
+### C-26 — The Challenges of Open Data Sharing for Qualitative Researchers
+- **Authors:** Danielle Lamb, Amy Russell, Nicola Morant, Fiona Stevenson
+- **Publisher:** Journal of Health Psychology
+- **Source type:** Peer-reviewed conceptual and ethical analysis
+- **URL:** https://doi.org/10.1177/13591053241237620
+- **Publication date:** 2024-03-14 (online first)
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Methodological and ethical limits of mandatory public sharing of full qualitative datasets; consent, contextual re-identification risks, reflexivity, and controlled access for appropriate secondary analysis.
+- **Limitations:** Focused on qualitative research in a health-psychology context; qualitative traditions differ and the argument should not be universalized.
+
+### C-27 — Barriers to Sharing Qualitative Interview Data and Suggestions to Overcome Them: A Scoping Review
+- **Authors:** Evangeline Gowie, Anna Tsakalaki, Halena Lad, Ruth Davies, Chloe Beesley, Etienne Roesch
+- **Publisher:** Royal Society Open Science
+- **Source type:** Peer-reviewed scoping review
+- **URL:** https://doi.org/10.1098/rsos.261007
+- **Publication date:** 2026-10-07 (eCollection; issue publication 2026-10-28)
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Review of 110 sources identifying barriers around confidentiality, consent, data misuse, context, external approvals, researcher distress, and time/financial constraints.
+- **Limitations:** Maps suggested strategies rather than evaluating their effectiveness; focuses on interview and focus-group transcripts; the authors caution against one-size-fits-all expectations.
