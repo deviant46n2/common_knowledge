@@ -123,3 +123,39 @@ The model should also distinguish review of knowledge quality from moderation fo
 
 **Emerging principle:** Open proposals, transparent review, and explicit acceptance before integration into maintained knowledge.
 
+
+## 7. Evidence-first purpose and the boundary between proposals and knowledge
+
+The founder's central concern is that Common Knowledge should make truth-seeking, evidence, and reasoned assessment the norm. It should not become a venue whose main activity is endless argument about identity, belief, or partisan politics.
+
+This does not require pretending that every question has a simple factual answer. It requires being disciplined about what kind of question is being asked and what evidence can establish.
+
+### Evidence should determine the standing of factual claims
+
+- Factual and empirical claims should be assessed against relevant evidence, source quality, methods, reproducibility where applicable, context, and uncertainty.
+- The system should communicate the weight of evidence clearly. It should not give unsupported or discredited claims equal standing merely because someone disputes the accepted assessment.
+- Reviewers should explain the basis and limits of an assessment, not merely attach a verdict or appeal to authority.
+- Confidence should be calibrated to the evidence; the system should not promise certainty where the evidence does not provide it.
+
+### Distinguish different kinds of disagreement
+
+A disagreement may concern empirical facts, the meaning or scope of a claim, definitions, methods, interpretation, predictions, or values and priorities. These should not be collapsed into one generic debate.
+
+Evidence can often resolve or narrow factual disputes. It can inform value-based decisions and reveal their likely consequences, but it cannot by itself settle every question about what people ought to value or prioritize. Common Knowledge should identify that boundary honestly rather than disguising value judgments as scientific conclusions or treating empirical findings as mere opinions.
+
+### Proposals are not yet maintained knowledge
+
+The pull-request-like model is intended to protect both openness and the integrity of the main knowledge collection:
+- Contributions can be visible as proposals, with discussion and review history.
+- Pending proposals should not be represented as established knowledge or mixed into ordinary search results for accepted knowledge.
+- The maintained collection and its search experience should foreground material that has passed the relevant review and assessment process, with its status and uncertainty visible.
+- A separate proposals view may allow people to discover and help review work in progress without confusing it with maintained knowledge.
+- Acceptance should not imply permanent or unquestionable truth; accepted material remains open to correction, challenge, and reassessment.
+
+### Avoid turning disagreement into the product
+
+Common Knowledge should be designed around understanding, evidence inspection, synthesis, and correction—not engagement-driven controversy. Disagreement is worth representing when it helps explain uncertainty, competing interpretations, or limitations in the evidence. It should not be amplified simply because it is contentious.
+
+**Emerging principle:** Make the best-supported understanding easy to find; make the evidence, uncertainty, and history behind it inspectable; keep unreviewed proposals distinct from maintained knowledge; and distinguish empirical questions from value judgments.
+
+**Status:** This section records the founder's stated aspiration and an emerging design direction. Exact assessment standards, review thresholds, search behavior, and treatment of normative questions remain open and require careful development.
