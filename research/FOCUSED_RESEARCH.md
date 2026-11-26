@@ -166,3 +166,112 @@ Source:
 | ClaimReview | Interchange metadata for a fact-check review | Narrow review type; not a general-purpose knowledge model |
 
 This comparison is qualitative and based on documentation, not a benchmark or hands-on evaluation.
+
+
+## Wikibase deep dive — data model, operations, and fit
+
+**Research date:** 26 November 2026  
+**Method:** Official documentation review, including the conceptual data model, RDF export documentation, REST API documentation, permissions, installation, and maintenance guides. No Wikibase instance has yet been deployed or exercised.
+
+### Data model: stronger than a simple triple store
+
+Wikibase statements have a main snak, optional qualifier snaks, zero or more reference records, and a rank. A snak can express:
+- a concrete property value;
+- an explicit no-value assertion (the property really has no value);
+- an unknown/some-value assertion (a value exists but is not known).
+
+This distinction is valuable for epistemic records: omitted data, unknown data, and an asserted absence should not be conflated. Qualifiers can encode contextual details such as a validity period. References are structured records, not limited to a single URL; they can include several source attributes such as title, author, publisher, and page/chapter.
+
+A statement has one main value, but can have multiple qualifiers and references. This is useful for cataloguing sourced facts, but it does not natively provide a rich model for a single claim being supported by one evidence passage, challenged by another, and assessed by multiple independent reviewers. Those relationships would need to be modeled through additional entities/properties or an application layer.
+
+Sources:
+- MediaWiki, [Wikibase Data Model](https://www.mediawiki.org/wiki/Wikibase/DataModel)
+- MediaWiki, [Wikibase RDF Dump Format](https://www.mediawiki.org/wiki/Wikibase/Indexing/RDF_Dump_Format/en)
+
+### RDF export: two materially different views
+
+Wikibase's RDF export has a simplified truthy view and a full statement view:
+- The truthy view selects the best non-deprecated rank for each property (preferred statements when present, otherwise normal statements) and ignores qualifiers.
+- The full view represents statements as separate nodes and includes rank, qualifiers, and references.
+- Statement identifiers in the RDF mapping are not guaranteed to have a stable semantic format.
+
+This is not a minor serialization detail. A consumer using only truthy triples can lose the time, place, or other qualifiers that make a statement accurate. Any Common Knowledge integration must explicitly choose the full representation when preserving context, and should test whether exported statement identifiers are suitable for long-lived external references rather than assuming they are.
+
+Source:
+- MediaWiki, [Wikibase RDF Dump Format](https://www.mediawiki.org/wiki/Wikibase/Indexing/RDF_Dump_Format/en)
+
+### APIs and query access
+
+The Wikibase REST API is an OpenAPI-described interface for retrieving and editing Items, Properties, and Statements. Wikidata exposes it under `/w/rest.php/wikibase/v1`. The documentation says the REST API is still being actively improved; Wikidata intends it to functionally replace the older Action API for Wikibase-specific use cases. For large result sets, bulk data dumps are preferable; search and SPARQL query services are better suited to discovery and query workloads.
+
+This suggests a clean division of responsibilities is possible: use entity APIs for editing and retrieval, a query service for graph-style exploration, and dumps for bulk export. But these are separate operational pieces, not one turnkey API/database.
+
+Sources:
+- Wikidata, [REST API](https://www.wikidata.org/wiki/Wikidata:REST_API/en)
+- Wikidata, [Data access](https://www.wikidata.org/wiki/Wikidata:Data_access/en)
+
+### Revision history and permissions
+
+Wikibase runs on MediaWiki, so it inherits MediaWiki's page revision model: edits create revisions with timestamps and actors, and prior revisions can be inspected and compared. Wikibase also has fine-grained rights for operations such as editing entities, creating properties, editing terms, merging items, and redirecting entities. Rights are assigned to user groups and can be configured by the site operator.
+
+This is a strong foundation for collaborative editing and accountable change history. It is not, however, equivalent to a dedicated scientific review workflow: revision authorship says who changed a record, not who independently reviewed its evidence or what review method they used. A product built on Wikibase would need to make those distinctions explicit.
+
+Sources:
+- MediaWiki, [Help:History](https://www.mediawiki.org/wiki/Help:History)
+- MediaWiki, [Wikibase Permissions](https://www.mediawiki.org/wiki/Wikibase/Permissions)
+- MediaWiki, [Revision table](https://www.mediawiki.org/wiki/Manual:Revision_table/en)
+
+### Deployment and operational burden
+
+Wikibase is an extension to MediaWiki, with Repository and Client components. A basic installation requires MediaWiki and the Wikibase extension; a fuller suite can add a query service, Elasticsearch, QuickStatements, and related services. The official maintenance guide lists separate containers/services for Wikibase/MediaWiki, MariaDB, Elasticsearch, QuickStatements, and the WDQS stack/proxy/frontend.
+
+A Docker suite makes evaluation approachable, but the complete stack is not a tiny application to operate. The official quick-start guide itself describes the broader suite as complex to install and manage. A hosted Wikibase option exists, but availability and terms need to be checked at the time of any actual evaluation.
+
+Sources:
+- MediaWiki, [Wikibase Quick start](https://www.mediawiki.org/wiki/Wikibase/Quick_start)
+- MediaWiki, [Wikibase Maintaining](https://www.mediawiki.org/wiki/Wikibase/Maintaining)
+- MediaWiki, [Wikibase extension overview](https://www.mediawiki.org/wiki/Extension:Wikibase)
+
+### Maintenance and licensing observations
+
+The Wikibase Repository and Client extensions are documented as GPL-2.0-or-later. The Wikibase FAQ identifies Wikimedia Deutschland as the primary maintainer of the extension, while noting that several surrounding suite components are maintained by other parties. This means the core project has an identifiable institutional maintainer, but operating the full stack still means depending on multiple components and release/compatibility practices.
+
+Sources:
+- MediaWiki, [Wikibase Repository extension](https://www.mediawiki.org/wiki/Extension:Wikibase_Repository)
+- MediaWiki, [Wikibase Client extension](https://www.mediawiki.org/wiki/Extension:Wikibase_Client)
+- MediaWiki, [Wikibase FAQ](https://www.mediawiki.org/wiki/Wikibase/FAQ)
+
+### Fit assessment for Common Knowledge
+
+**What Wikibase could plausibly provide without rebuilding it:**
+- collaborative editing of structured entities and statements;
+- a mature model for qualifiers, references, ranks, and unknown/no-value distinctions;
+- revision history, contributor attribution, diffs, and configurable permissions;
+- APIs and RDF exports for interoperability.
+
+**What it does not provide as a complete out-of-the-box solution:**
+- a first-class evidence-passage model with precise quotation/page/line/data-cell anchors;
+- explicit support/challenge/qualification relationships between evidence and a claim;
+- independent assessments with method, reasoning, uncertainty, and reviewer role;
+- a public-facing explanation of why a claim is assessed a particular way;
+- an assurance that rank or reference presence corresponds to evidential quality.
+
+**Current conclusion:** Wikibase remains a credible candidate for the structured record and collaborative editing layer, but it is not yet demonstrated to be the whole product. The main risk is that Common Knowledge would need to build a substantial evidence-assessment and user-experience layer around it, while also operating or paying for a fairly involved MediaWiki stack. We should not reject it without a small hands-on trial.
+
+### Proposed hands-on test
+
+Use one deliberately small, synthetic example with:
+1. a scoped statement (including a time qualifier);
+2. two sources with distinct bibliographic metadata;
+3. one explicit unknown or no-value case;
+4. two competing or qualifying pieces of evidence;
+5. a revision that changes the assessment without erasing the earlier version.
+
+Then inspect:
+- the authoring experience for a non-specialist;
+- the entity JSON and REST API responses;
+- the full RDF export versus truthy export;
+- how revisions and contributor identities appear;
+- how much custom modeling is required to represent evidence relations and separate assessments.
+
+Do not publish experimental material to Wikidata. Use a local or disposable test instance if proceeding.
