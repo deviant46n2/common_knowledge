@@ -15,6 +15,15 @@ PYTHONPATH=src python -m ck_records init /tmp/new-record \
   --title "A new record" \
   --statement "The statement being documented." \
   --scope "The exact limits of what this statement claims."
+PYTHONPATH=src python -m ck_records add-source /tmp/new-record/record.json \
+  --id primary-source --title "Primary source" --file ./source.txt
+PYTHONPATH=src python -m ck_records add-evidence /tmp/new-record/record.json \
+  --id evidence-1 --source-id primary-source --relation supports \
+  --exact "Exact text copied from the source"
+PYTHONPATH=src python -m ck_records add-assessment /tmp/new-record/record.json \
+  --id assessment-1 --author "Reviewer" \
+  --conclusion "What the evidence supports and does not support." \
+  --method "Describe the review method." --evidence-id evidence-1
 PYTHONPATH=src python -m ck_records validate examples/records/r1/record.json
 PYTHONPATH=src python -m ck_records inspect examples/records/r1/record.json
 PYTHONPATH=src python -m ck_records export examples/records/r1/record.json /tmp/r1-package
@@ -27,9 +36,14 @@ The example is synthetic. Local source files are included so validation can chec
 
 `init` creates a new workspace containing `record.json` and an empty `sources/` directory. It requires an identifier, title, statement, and scope. Add source files under `sources/`, then edit the record to add source entries, evidence anchors, and assessments. Initialization refuses to overwrite an existing directory.
 
+Use `add-source` to copy a source file into the workspace and register it. Use `add-evidence` to attach an exact text passage to a registered source with a typed relationship. Use `add-assessment` to add an attributed assessment that references one or more evidence anchors. Each command validates the resulting record before writing it; a rejected evidence anchor leaves the record unchanged.
+
 ## Current checks
 
 - Create a valid empty starter workspace.
+- Add source files and register them in the record.
+- Add exact evidence anchors with typed relationships.
+- Add attributed assessments linked to evidence.
 - Format name/version and required fields.
 - Unique IDs and valid references.
 - Typed evidence relationships: supports, challenges, qualifies, contextualizes.
