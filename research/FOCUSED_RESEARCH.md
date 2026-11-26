@@ -1246,3 +1246,25 @@ The measured-claim template already models an exact source sentence, source docu
 This is a concrete, existing vocabulary for a significant part of the problem Common Knowledge was beginning to model. It is domain-specific and authored by The Consilience, not a universal Knowledge Pixels standard. See [Adjacent Projects](ADJACENT_PROJECTS.md) and the [civic-budget mapping probe](experiments/2026-11-consilience-civic-budget-mapping.md).
 
 **Updated implication:** Do not design a generic claim-card or disagreement vocabulary from scratch before reviewing these templates with their authors. The opportunity may be to generalize or interoperate with them for public-policy/civic claims, not replace them.
+
+
+## Cross-project lesson: assessment numbers and statuses are not interchangeable
+
+The adjacent-project review surfaced several different things that can all look like a "confidence" or "status" field but measure different concepts:
+
+- **Factiz:** deliberately has no probability-of-truth field. It reports which newsroom checked a claim, the newsroom's own verdict, date, and link. Its resolver protocol permits percentages only for match confidence or system precision, never truth.
+- **AsOf:** its 0–1 confidence describes how well the sources support a value under its source-count/primary-source rules. It is not a calibrated probability that the value is true.
+- **Project Delphi:** distinguishes `hasProbability` (an assessment's probability that a claim is true), `hasConfidence` (assessor self-confidence), `hasScore` (rubric score), `weightOfEvidence` (method-dependent evidence weight), and resolvability (whether a claim can be tested with available data). A published sample's 0.56 score was resolvability, not truth probability.
+- **The Consilience:** uses a graded correspondence scale and testability/disagreement fields. These measure structural relation and whether claims can be tested, not truth.
+- **MIRA / Discourse Graphs:** `supports` and `opposes` are typed argument relations; they do not themselves encode a confidence or verdict.
+- **SciOS Git graph:** `draft`, `review`, and `merged` are contribution lifecycle states, not epistemic judgments.
+
+**Design implication:** Common Knowledge should not collapse all these dimensions into one universal "truth score." It should preserve the type, method, assessor, evidence set, and limitations of each assessment. It should also distinguish at least:
+1. contribution/revision workflow status;
+2. source availability and integrity status;
+3. evidence-quality assessment;
+4. claim support/contradiction/qualification;
+5. scope/comparability/testability;
+6. assessor confidence and calibrated probabilities (only when the method supports them).
+
+This is not a final ontology proposal. It is a constraint on any future prototype: every number or status shown to a reader must state what it measures and what it does not mean.
