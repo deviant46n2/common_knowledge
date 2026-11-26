@@ -56,5 +56,5 @@ This first edition is a baseline, not a completed survey. At the time this struc
 ## Change log
 
 - **2026-11-26:** Created the initial snapshot structure and declared its research cutoff. Research findings have not yet been comprehensively populated.
-- **2026-11-26:** Added the seven-workstream research program, individual workstream briefs, and reusable report templates. Workstream A is now in progress; the remaining workstreams remain not started pending substantive investigation.
+- **2026-11-26:** Added the seven-workstream research program, individual workstream briefs, and reusable report templates. Workstreams A and C are now in progress; the remaining workstreams remain not started pending substantive investigation.
 - **2026-11-26:** Expanded Workstream A with five profiles covering workflow registries, protocol management, participant-controlled personal data, community-led environmental research, and biodiversity observations.
