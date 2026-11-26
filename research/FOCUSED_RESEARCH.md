@@ -1043,3 +1043,30 @@ Sources:
 | End-to-end human contributor workflow | **Not yet performed** | — | Whether a non-specialist can create, challenge, and inspect a record |
 
 The next work should be a small reproducible prototype/test, not more broad candidate surveying. Keep the synthetic example, fixtures, commands, exact software versions, and results together so that someone else can repeat the experiment.
+
+
+## Practical probe — synthetic observation as linked nanopublications
+
+A small local data-model probe now exists in [research/experiments/2026-11-synthetic-observation.md](experiments/2026-11-synthetic-observation.md), with the corresponding [TriG fixture](experiments/2026-11-synthetic-observation-nanopubs.trig).
+
+The fictional example separates:
+- a nanopublication asserting what a CSV row records (4.2 mg/L dissolved oxygen at station R-1, at a stated time and row/column);
+- a second nanopublication qualifying confidence in the physical measurement based on a separate calibration log.
+
+**Test performed:** the TriG was parsed and round-tripped with RDFLib 7.5.0. Two nanopublication heads were found, each linking to its assertion, provenance, and publication-information graphs; the dataset contained 37 quads. This verifies only TriG syntax and the basic graph structure. It is not a full nanopublication conformance, signature, Trusty URI, or network test.
+
+The main conceptual result is useful: what a source recorded can remain distinct from an assessment of the underlying measurement's reliability. The main modeling gap is also visible: the custom vocabulary and source locator still need definition, and a CSV row number alone is not durable if the file changes or rows are reordered.
+
+### Updated hands-on status
+
+| Experiment | Status | Result |
+|---|---|---|
+| OpenAlex single-DOI API retrieval | **Performed** | One live record inspected; unresolved author identities and retained raw affiliation strings observed |
+| Crossref comparison for same DOI | **Performed** | Publisher metadata and OpenAlex enrichment differ in scope and representation |
+| Synthetic nanopublication-shaped TriG | **Performed** | RDFLib 7.5.0 parsed and round-tripped two linked four-graph records (37 quads) |
+| Canonical nanopublication conformance suite | **Reviewed, not executed** | Official valid/invalid and transform fixtures exist; actual nanopub implementation not yet run |
+| Nanopublication signature / Trusty URI / test-network round trip | **Not yet performed** | — |
+| Wikibase instance authoring and export | **Not yet performed** | — |
+| Independent human workflow evaluation | **Not yet performed** | — |
+
+This probe is a learning artifact only. It does not select nanopublications or RDF as the Common Knowledge storage architecture.
