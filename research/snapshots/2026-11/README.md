@@ -24,7 +24,7 @@ The snapshot is organized into seven connected workstreams. Each workstream page
 | [D — Human–AI research collaboration](workstreams/D-human-ai-collaboration/README.md) | AI contributions, evaluation, oversight, and accountability | In progress |
 | [E — Shared knowledge and preservation](workstreams/E-knowledge-preservation/README.md) | Knowledge representation, discovery, rights, and preservation | In progress |
 | [F — Governance, economics, and institutional design](workstreams/F-governance-economics/README.md) | Stewardship, funding, power, contributor rights, and continuity | In progress |
-| [G — People, needs, and the research ecosystem](workstreams/G-people-and-needs/README.md) | Stakeholders, lived needs, barriers, and participation | Not started |
+| [G — People, needs, and the research ecosystem](workstreams/G-people-and-needs/README.md) | Stakeholders, lived needs, barriers, and participation | In progress |
 
 People-facing research should begin immediately and continue throughout all stages; it is not postponed until Workstream G.
 
