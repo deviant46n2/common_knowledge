@@ -4,6 +4,8 @@
 - **Status:** Preliminary desk research; not a systematic review and not user-validated
 - **Purpose:** Eliminate weak product propositions early and identify candidate gaps worth testing.
 - **Related:** [MVP Discovery](../MVP_DISCOVERY.md)
+- **Direct project review:** [Direct competitors and adjacent research projects](direct-competitors.md)
+- **Test plan:** [Hands-on experiments and user discovery](discovery-experiments.md)
 
 ## Executive assessment
 
