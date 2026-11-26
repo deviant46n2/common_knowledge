@@ -12,7 +12,8 @@ All source files are fictional fixtures.
 
 - `record.jsonld`: JSON-LD using PROV-O and Web Annotation terms plus a provisional example vocabulary.
 - `sources/`: the source fixtures targeted by quote selectors.
-- `test_record.py`: smoke tests for parsing, evidence relations, provenance, and exact quote/prefix/suffix matching.
+- `test_record.py`: smoke tests for parsing, evidence relations, provenance, exact quote matching, independent assessments, version history, and reader output.
+- `render_record.py`: creates a local static HTML page for inspecting the record.
 
 ## Run
 
@@ -21,6 +22,7 @@ Requires Python 3.11+, rdflib, and pytest:
 ```bash
 python -m pip install rdflib pytest
 python -m pytest -q
+python render_record.py
 ```
 
 Seven tests pass. The fixture now includes two independent assessments of the same statement and a version 2 record that retains both assessments while linking back to version 1 with PROV-O wasRevisionOf. An earlier test run exposed a missing JSON-LD mapping for `oa:hasTarget`; the compact-IRI version in this experiment avoids that aliasing mistake. This demonstrates why semantic round-trip tests matter in addition to JSON syntax validation.
@@ -34,4 +36,4 @@ Seven tests pass. The fixture now includes two independent assessments of the sa
 - Selectors are checked against exact fixture text. Real sources need version capture, normalization, and recovery behaviour when content changes.
 - No real or external content is included or published.
 
-The next step is to compare this representation with a nanopublication on its isolated test network and determine whether an ordinary contributor can create and inspect the same structures through a usable interface.
+The static reader is intentionally basic; it is a first inspectability test, not a polished user interface. The next step is to compare this representation with a nanopublication on its isolated test network and determine whether an ordinary contributor can create and inspect the same structures through a usable interface.
