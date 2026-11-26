@@ -275,3 +275,135 @@ Then inspect:
 - how much custom modeling is required to represent evidence relations and separate assessments.
 
 Do not publish experimental material to Wikidata. Use a local or disposable test instance if proceeding.
+
+
+## Nanopublications deep dive — publication, collaboration, identity, and correction
+
+**Research date:** 26 November 2026  
+**Method:** Official guidelines and handbook, ecosystem architecture/tool documentation, and public library repository metadata reviewed. No nanopublication has been published by this project, including on the test network.
+
+### Formal structure and identifiers
+
+A nanopublication is an RDF dataset divided into four named graphs:
+1. **Assertion graph:** the content being asserted.
+2. **Provenance graph:** how the assertion came about, referring to the assertion graph.
+3. **Publication information graph:** metadata about the publication itself, such as creator and creation time.
+4. **Head graph:** connects the nanopublication to the other three graphs.
+
+The guidelines define well-formedness constraints and recommend TriG serialization. A Trusty URI includes a cryptographic hash derived from the nanopublication content, allowing a consumer with the content to verify that it matches the identifier. The current ecosystem signs nanopublications with a creator's key.
+
+This gives a useful distinction between the provenance of the assertion and metadata about the act of publishing it. However, the four-graph structure does not prescribe what a good evidence assessment looks like; the assertion vocabulary and the relations to sources still need to be designed.
+
+Sources:
+- Nanopublications, [Guidelines](https://nanopub.net/docs/guidelines/)
+- Nanopublications, [Handbook: Nanopublication](https://nanopub.net/docs/handbook/nanopublication/)
+
+### Authoring and reusable templates
+
+Nanodash is a browser interface for browsing, searching, and publishing nanopublications. Templates are themselves nanopublications that describe the expected structure and placeholders for an assertion, provenance, or publication-info graph. Nanodash turns them into forms and records which template was used.
+
+Templates can be versioned, and a space can maintain a template so that any eligible member can publish its next version. This is a meaningful response to the human-authoring problem: contributors do not necessarily need to write RDF manually, and a community can share a structured form.
+
+This could support a Common Knowledge workflow if we can express the record and evidence-assessment fields in templates. The open question is how much complexity is exposed to a contributor and whether the form system can express the richer review process we need without becoming cumbersome.
+
+Sources:
+- Nanopublications, [Tools](https://nanopub.net/docs/tools/)
+- Nanopublications, [Nanopublication template](https://nanopub.net/docs/handbook/nanopublication-template/)
+
+### Spaces: collaborative resources and roles
+
+A Space is a collaborative unit represented on the network. It can maintain resources such as vocabularies, documentation, collections, templates, and views. Membership and role grants are themselves recorded as nanopublications. The documented role tiers are admin, maintainer, member, and observer; roles determine which actions and contributions count in a space.
+
+The system's own handbook documentation is an example: its paragraphs are separate nanopublications, assembled into pages through queries, with member contributions and version history.
+
+This is a substantial feature for Common Knowledge's eventual community contribution model. It offers an existing pattern for community-maintained definitions and documentation without requiring a single shared database record to be mutable in place.
+
+There is also a governance caveat worth noting, without treating it as a reason to reject the technology: the handbook says the admins named in a space's founding definition cannot be removed, even by themselves. Later admins can be removed by another admin. This is a particular authority model embedded in the space mechanism; Common Knowledge should not assume it matches its own eventual community principles.
+
+Sources:
+- Nanopublications, [Space](https://nanopub.net/docs/handbook/space/)
+- Nanopublications, [Space member role](https://nanopub.net/docs/handbook/space-member-role/)
+- Nanopublications, [Documentation topic](https://nanopub.net/docs/handbook/documentation-topic/)
+
+### Identity, signatures, and trust
+
+A signature proves that a publication was signed by a particular private key. It does not, by itself, prove who controls that key. The network uses introductions and approvals to associate keys with identities; the documented person identity uses ORCID, while keys are separate credentials. A new key can publish while pending, but it does not count for member-restricted content or roles until an approval chain reaches it.
+
+The trust model is explicitly about identity, not the correctness, usefulness, or appropriateness of content. Content curation is left to spaces and their members.
+
+This is a strong conceptual separation for Common Knowledge: authentication and provenance can establish who submitted something and preserve what they said, while evidence evaluation remains a separate process. The network's approval of a key must never be presented as approval of its assertions.
+
+A practical key-management issue remains. Nanodash-managed keys are kept with the account/instance; command-line keys are local files. The handbook warns that losing a command-line key makes its signed publications impossible to supersede or retract through the normal same-key mechanism. Backups and key recovery/rotation procedures therefore matter.
+
+Sources:
+- Nanopublications, [Trust and approval](https://nanopub.net/docs/handbook/trust-and-approval/)
+- Nanopublications, [Person](https://nanopub.net/docs/handbook/person/)
+
+### Immutability, versions, retractions, and disagreement
+
+Published nanopublications cannot be edited or deleted. A correction is a new nanopublication that supersedes the old one; a withdrawal is a retraction nanopublication. Both preserve the original content and allow old citations to remain inspectable.
+
+The same-key rule is important: a supersession or retraction only takes effect when signed by the key that signed the original. If that key is lost, the original cannot be superseded or retracted through this mechanism. Another person can derive a new publication from it, or override shared resources where a space's conventions allow the new version to take effect.
+
+This supports durable citation and an auditable history, but it is not a complete answer to the problem of correcting someone else's false or harmful publication. Derivation preserves the original and creates a distinct work; override is governed by the community context in which a resource is displayed. A published record remains on the network, even after retraction, so sensitive personal data or material that must be removed should not be published there in the first place.
+
+Forks are another edge case: if two versions independently supersede the same earlier version, the version chain branches and tools cannot automatically know which is current. The handbook recommends checking the current version before superseding and repairing a fork with a new version that supersedes both heads.
+
+Sources:
+- Nanopublications, [Versions and retractions](https://nanopub.net/docs/handbook/nanopublication-versions-and-retractions/)
+- Nanopublications, [Handbook: Nanopublication](https://nanopub.net/docs/handbook/nanopublication/)
+
+### Network and query architecture
+
+The current ecosystem uses multiple registry services that replicate publications between peers. A publisher sends a nanopublication to one registry; peers are documented to pick it up within minutes. Nanopub Query provides query services over different subsets/aspects of the network, including SPARQL endpoints. Nanodash provides the human-facing interface and can also act as an API/intermediary. A monitor tracks service health; a vocabulary index supports autocomplete; nanopub-http exposes library functions over HTTP.
+
+A separate test network exists. Its publications do not flow to the real network and are intended for experimentation. The handbook explicitly says publication to the real network is final.
+
+This architecture is more resilient and interoperable than a single central database, but it creates dependencies on the availability, indexing, and query behaviour of external network services. Common Knowledge would need a preservation/retrieval strategy that does not assume one web interface or query endpoint will exist forever.
+
+Sources:
+- Nanopublications, [Technical Architecture](https://nanopub.net/docs/architecture/)
+- Nanopublications, [Handbook: Nanopublication](https://nanopub.net/docs/handbook/nanopublication/)
+
+### Libraries and licensing
+
+The official tools page lists Java, Python, JavaScript/TypeScript, and Rust implementations capable of signing, verifying, and publishing nanopublications. Public repository metadata currently identifies nanopub-java as MIT-licensed and nanopub-py as Apache-2.0-licensed. The ecosystem is therefore accessible from a Python-oriented prototype, though dependencies and the exact current release/API should be checked before adoption.
+
+Sources:
+- Nanopublications, [Tools](https://nanopub.net/docs/tools/)
+- GitHub, [nanopub-java](https://github.com/Nanopublication/nanopub-java)
+- GitHub, [nanopub-py](https://github.com/Nanopublication/nanopub-py)
+
+### Fit assessment for Common Knowledge
+
+**What nanopublications could plausibly provide:**
+- small independently citable assertion units;
+- explicit separation of assertion provenance and publication metadata;
+- content-derived identifiers and signed immutable publications;
+- version and retraction relationships that preserve historical citations;
+- reusable authoring templates;
+- community-maintained resources, vocabularies, and documentation through Spaces;
+- a decentralized publication and query ecosystem.
+
+**What remains unproven or incomplete for our use:**
+- whether the authoring UX is accessible to ordinary non-specialists at scale;
+- whether the model can express precise evidence passages, dataset observations, and competing assessments in a clear way;
+- how a reader navigates from an assertion to its evidence and from conflicting evidence to multiple assessments;
+- how to handle key loss, harmful or legally sensitive content, and correction of another person's publication;
+- whether the existing registry/query network meets long-term availability and preservation requirements for a public reference service;
+- whether a space's authority model can be used without importing governance assumptions Common Knowledge has not chosen.
+
+**Current conclusion:** Nanopublications are a strong candidate for the *publication/interchange layer* and possibly for community-maintained vocabularies or documentation. They are not yet proven to be the full authoring, review, and discovery product. They merit a hands-on test before Common Knowledge builds its own publication protocol.
+
+### Proposed hands-on test
+
+On the separate test network only:
+1. Create a tiny synthetic assertion with an explicit source and provenance.
+2. Generate and verify its Trusty URI and signature.
+3. Publish it and retrieve it through both Nanodash and a client library.
+4. Create a template that turns a small evidence-record structure into a contributor form.
+5. Publish a second version and a retraction; inspect how the old and new records appear.
+6. Create a derived publication signed by a different key to test how an independent challenge or alternative assessment can be represented.
+7. Check whether the query API can retrieve the complete evidence/provenance graph in a form a simple Common Knowledge interface could render.
+
+Do not publish project research, personal information, or any experimental record to the real network without an explicit separate decision.
