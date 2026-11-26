@@ -1098,3 +1098,40 @@ No sources entered yet. Add new sections and stable IDs as workstreams begin.
 - **Accessed / verified:** 2026-11-26
 - **Claims supported:** Requirement for verifiable sourced statements, editor responsibility for references, and source-quality guidance.
 - **Limitations:** Community policy and guidance; compliance, source quality, and community outcomes require independent study.
+
+
+### E-26 — UNESCO Recommendation concerning the Preservation of, and Access to, Documentary Heritage Including in Digital Form
+- **Publisher:** UNESCO
+- **Source type:** Intergovernmental recommendation
+- **Adoption date:** 2015-11-17
+- **URL:** https://www.unesco.org/en/legal-affairs/recommendation-concerning-preservation-and-access-documentary-heritage-including-digital-form
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Preservation as an ongoing process; early action for digital materials; institutional capacity; metadata and discovery; access restrictions; rights-holder interests; cooperation and standards.
+- **Limitations:** Recommendation to Member States, not directly binding law; implementation depends on national and institutional contexts.
+
+### E-27 — UNESCO Memory of the World Programme: About
+- **Publisher:** UNESCO
+- **Source type:** Intergovernmental programme documentation
+- **URL:** https://www.unesco.org/en/memory-world/about
+- **Publication / update date:** Last updated 2026-02-03
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Programme goals of documentary heritage preservation, access, and public awareness, including attention to conflict- and disaster-affected heritage.
+- **Limitations:** Programme description; not an inventory of all documentary heritage or a guarantee of preservation for every listed item.
+
+### E-28 — Mukurtu: Community-Driven Digital Archive Platform
+- **Publisher:** Mukurtu / Center for Digital Scholarship and Curation, Washington State University; institutional deployment documentation
+- **Source type:** Primary project and institutional documentation
+- **URL:** https://mukurtu.org/
+- **Publication / update date:** Current project information accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Mukurtu's purpose as an open-source platform developed with Indigenous communities and its cultural protocol, community record, and localized metadata capabilities.
+- **Limitations:** Official project page was not fully retrievable in this search pass; capabilities cross-checked against institutional deployment pages. Current release cadence, governance, security, and sustainability remain to be verified.
+
+### E-29 — Mukurtu at the California Native Hub
+- **Publisher:** UCLA California Native Hub / American Indian Studies Center
+- **Source type:** Institutional deployment description
+- **URL:** https://canativehub.ucla.edu/murkutu/
+- **Publication / update date:** Current page accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Community collaboration, granular cultural access protocols, cultural narrative and Traditional Knowledge fields, multiple community records, and localized labeling.
+- **Limitations:** Institutional description of the platform; not an independent evaluation or a substitute for direct community feedback.
