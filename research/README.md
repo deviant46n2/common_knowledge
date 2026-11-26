@@ -13,6 +13,7 @@ Its purpose is to help Common Knowledge understand the existing ecosystem before
 - [Research templates](templates/) — consistent formats for project, organization, and workstream reports.
 - [Adjacent project landscape](ADJACENT_PROJECTS.md) — claim/evidence and shared-knowledge initiatives that overlap with Common Knowledge.
 - [Civic fact-checking landscape](CIVIC_FACT_CHECKING_LANDSCAPE.md) — Factiz, AsOf, Full Fact, Cofacts, ClaimReview, and claim-detection infrastructure.
+- [Preliminary product gap analysis](PRODUCT_GAP_ANALYSIS.md) — what existing projects already cover, what may remain distinct, and the next validation steps.
 
 ## Scope
 
