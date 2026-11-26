@@ -159,3 +159,35 @@ Common Knowledge should be designed around understanding, evidence inspection, s
 **Emerging principle:** Make the best-supported understanding easy to find; make the evidence, uncertainty, and history behind it inspectable; keep unreviewed proposals distinct from maintained knowledge; and distinguish empirical questions from value judgments.
 
 **Status:** This section records the founder's stated aspiration and an emerging design direction. Exact assessment standards, review thresholds, search behavior, and treatment of normative questions remain open and require careful development.
+
+## 8. Human-led beginnings and increasing automation
+
+The founder's current direction is for knowledge assessment and curation to be strongly human-driven in the early stages, with automation increasing as the system, evidence base, and methods mature.
+
+This is a directional aspiration, not a fixed timetable or commitment to fully autonomous knowledge governance.
+
+### Early stage: human-led, AI-assisted
+
+People should lead contribution, review, interpretation, and consequential assessment. AI tools may assist with research, source discovery, extraction, organization, comparison, citation checking, and drafting, but their outputs should be identifiable and reviewable.
+
+### Growing capability: progressively automated assistance
+
+As workflows and quality controls become better understood, automation may take on more routine tasks: monitoring sources for updates, detecting possible contradictions, identifying missing references, checking structured records, suggesting links, and preparing candidate revisions or assessments for review.
+
+### Mature capability: automation with accountable oversight
+
+A more mature system may automate substantial parts of routine evidence processing and maintenance. Human attention can then focus on novel or consequential questions, contested assessments, methodological oversight, appeals, and auditing automated processes.
+
+### Safeguards that should survive increasing automation
+
+- Automation should not make its outputs appear human-reviewed when they have not been.
+- The system should preserve provenance: which people, models, tools, source versions, and methods contributed to an assessment or change, to the extent appropriate and safe.
+- Automated conclusions should carry calibrated uncertainty and expose supporting evidence and reasoning paths that can be inspected.
+- Models and workflows should be tested, monitored, and independently auditable; model confidence alone is not evidence of correctness.
+- Consequential, novel, disputed, or high-risk decisions should have appropriate human review and appeal mechanisms.
+- Automation should remain replaceable. The knowledge record must not depend on one model, vendor, or proprietary system.
+- Human oversight should be meaningful rather than ceremonial: people need the information, authority, and time to challenge automated outputs.
+
+**Emerging principle:** Human-led at the beginning, increasingly AI-assisted and automated over time, without surrendering traceability, contestability, or accountability.
+
+**Status:** The human-to-automation direction is founder-stated. The division of authority between people and automated systems, review thresholds, audit standards, and acceptable autonomous actions remain open questions.
