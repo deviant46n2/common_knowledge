@@ -45,7 +45,34 @@ The practical questions are not answered by a general claim that content is “p
 
 **Implication:** Portability and exit plans should be first-class requirements in any Common Knowledge partnership or infrastructure design. They should be tested, not merely promised.
 
-## 4. Critical scholarly infrastructure can outgrow its original host
+## 4. OSF shows why continuity must include service scope, not only data persistence
+
+The Center for Open Science's November 2026 transition illustrates a distinction between preserving existing public records and continuing to provide an active collaboration service.
+
+- New OSF Projects and child Components stopped being creatable on 16 November 2026.
+- Existing Projects are scheduled to become read-only on 19 February 2027.
+- Registrations and Preprints continue.
+- COS says public Projects will remain accessible at their existing URLs and DOIs and that it will continue to manage storage and preservation.
+- Private Projects will remain accessible after the read-only transition to people who already have access on 19 February 2027, but COS anticipates possible future removal with at least 12 months' advance notice.
+- Project-creation API endpoints have been disabled; write/update APIs are scheduled to stop with the read-only transition.
+
+The transition is attributed by COS to the cost and complexity of maintaining the broad Projects feature set, funding constraints, and the maturity of specialized repositories and services. COS describes a move toward an integrated model in which OSF focuses on study plans, registrations, preprints, and links to outputs held elsewhere.
+
+**Assessment:** The transition is not simply a platform failure. It is a strategic narrowing of scope intended to preserve selected public infrastructure under financial constraints. However, it creates migration work, changes existing workflows, and highlights the dependence users place on a central operator.
+
+An early Nature report described a different plan for existing private files than the later, more specific COS help guidance. The OSF profile records this discrepancy and follows the latest official operational guidance as of 26 November 2026.
+
+**Implication:** Continuity planning must distinguish:
+- Preservation of existing public records.
+- Continued editing and collaboration.
+- Private data retention and access.
+- API compatibility and integrations.
+- Migration and identifier redirection.
+- The operator's future funding and service commitments.
+
+A platform can preserve a public record while discontinuing the workflow that originally created or maintained it. Both are important forms of continuity.
+
+## 5. Critical scholarly infrastructure can outgrow its original host
 
 arXiv's 2026 transition toward an independent nonprofit is a particularly useful institutional case. Cornell's announcement describes the financial and logistical pressure of maintaining a large repository and the need for more stable support and organizational flexibility.
 
@@ -53,7 +80,7 @@ This is not evidence that nonprofit status alone solves sustainability. The new 
 
 **Implication:** Mission-critical knowledge infrastructure needs an explicit succession plan. A founder, university, donor, company, or single grant should not be an irreplaceable point of failure.
 
-## 5. Reproducibility is a whole-system property
+## 6. Reproducibility is a whole-system property
 
 Galaxy combines tools, execution, workflow construction, recorded analysis histories, public infrastructure, training, and community governance. WorkflowHub provides a more focused registry role. Dataverse can preserve datasets and related materials. These functions complement one another.
 
@@ -71,7 +98,7 @@ No single repository or workflow engine necessarily preserves all of these. A pa
 
 **Implication:** Common Knowledge should investigate interoperable research records and provenance rather than build a universal analysis platform. Existing tools can remain specialized if their outputs can be linked and interpreted.
 
-## 6. Community science requires attention to who participates and what the data represent
+## 7. Community science requires attention to who participates and what the data represent
 
 iNaturalist and eBird show that public contributions can become valuable research resources. They also show why volume and openness are not equivalent to representativeness.
 
