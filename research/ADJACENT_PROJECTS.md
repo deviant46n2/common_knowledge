@@ -261,7 +261,7 @@ Two read-only public Q&A tests were attempted, including one of the application'
 
 This is a single-session availability/UX observation, not evidence that the underlying claims or graph are wrong. The fail-closed behavior is good; the generic error did not distinguish an unavailable answer service from a genuine evidence gap. The homepage also notes that questions and responses are saved in the browser, including on shared devices.
 
-See [the Science Oracle UI review](experiments/2026-11-science-oracle-ui-review.md).
+See [the Science Oracle UI review](experiments/2026-11-science-oracle-ui-review.md) and [the published assessment record review](experiments/2026-11-project-delphi-record-review.md).
 
 ### Fit and limitations
 
