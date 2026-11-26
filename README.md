@@ -91,6 +91,17 @@ We are starting with the foundations:
 
 We do not need to build everything from scratch. Interoperability, collaboration, and good stewardship matter more than owning every component.
 
+## Research in progress
+
+We are building a dated, source-based research library to understand the existing ecosystem before making major technical or organizational decisions.
+
+- [Research program](research/PROGRAM.md)
+- [November 2026 field snapshot](research/snapshots/2026-11/README.md)
+- [Research methodology](research/methodology.md)
+- [Cross-workstream analysis](research/snapshots/2026-11/cross-workstream-analysis.md)
+
+The snapshot is an initial investigation, not a complete survey of the field. Its workstreams, sources, gaps, and conclusions will be updated as research continues.
+
 ## Get involved
 
 Common Knowledge is at an early, exploratory stage. At this point, thoughtful questions, constructive criticism, research, and conversations are especially valuable.
