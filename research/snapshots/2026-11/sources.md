@@ -1153,6 +1153,17 @@ No sources entered yet. Add new sections and stable IDs as workstreams begin.
 - **Claims supported:** Existence, authorship, publication date, and relationship as a comment on D-05, *The More You Automate, the Less You See*.
 - **Limitations:** Full text was not available in this research pass; arguments are not summarized pending retrieval and review.
 
+
+
+### D-12 — AI Scientist in Practice: Reproducing and Evaluating Autonomous Scientific Discovery
+- **Author:** Artur Papoyan, University of Siegen
+- **Source type:** Independent reproduction/evaluation report (not peer-reviewed in the source reviewed)
+- **URL:** https://isg.beel.org/wp-content/uploads/2025/07/AI-Scientist-in-Practice-Reproducing-and-Evaluating-Autonomous.pdf
+- **Publication / update date:** 2025 (PDF hosted in July 2025)
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Independent execution of eight AI Scientist pipelines; three failures (38%); weak novelty detection, limited code changes, outdated/sparse citations, and manuscript placeholders; workflow artifacts and experimental details.
+- **Limitations:** Small sample and single recommender-system task/dataset; novelty assessment was informal rather than systematic; no peer-review status established in the source; results should be treated as a useful reproduction report, not a definitive general evaluation.
+
 ## Workstream E — Shared Knowledge and Preservation
 
 ### E-01 — DCMI Metadata Terms
