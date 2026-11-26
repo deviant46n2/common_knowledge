@@ -2,137 +2,82 @@
 
 **A home for humanity's shared knowledge, built by everyone, for everyone.**
 
-Common Knowledge is an effort to make the creation, understanding, and preservation of knowledge a shared human endeavor.
+Common Knowledge is an early public-benefit project exploring how people and AI systems can build, inspect, connect, correct, and preserve shared knowledge.
 
-We believe humanity's knowledge should not be confined to institutions, companies, disciplines, or borders. People everywhere should be able to learn from it, contribute to it, question it, and build on it.
+The long-term ambition is open infrastructure for humanity's shared intelligence: a durable body of knowledge that remains understandable, evidence-linked, portable, and useful across institutions, platforms, generations, and future AI systems.
 
-Our aim is to help create the conditions for that to happen: open and trustworthy ways for people to collaborate on research, share evidence, reproduce results, and preserve what we learn.
+That is an ambition, not a description of what exists today. The immediate task is much smaller: build one useful, working slice and learn from it.
 
-This is a long-term project. We are at the beginning, and the work ahead includes listening, learning from existing efforts, finding collaborators, and testing ideas in practice.
+## The problem we're exploring
 
-## Why this matters
+Knowledge is cumulative, but the records that support it are scattered across papers, datasets, archives, databases, websites, software, and individual expertise. It can be difficult to trace a statement back to the evidence behind it, understand its scope and uncertainty, see how it changed, or connect it to related work.
 
-Human knowledge is cumulative. Every discovery depends on work that came before it, and every generation inherits both the achievements and the unanswered questions of those who came earlier.
+Common Knowledge aims to make those relationships easier to inspect and build upon.
 
-Yet the tools, resources, data, and institutions involved in producing knowledge are often fragmented or difficult to access. Valuable work can be duplicated, overlooked, difficult to reproduce, or lost. Opportunities to participate are unevenly distributed.
+## What we're trying to build toward
 
-We want to help change that.
+- **Evidence-linked knowledge:** important statements can be traced to sources, methods, observations, and the people or systems responsible for them.
+- **Inspectable uncertainty:** disagreement, limitations, context, and corrections remain visible rather than being flattened into a single authoritative answer.
+- **Connected knowledge:** records can link across subjects, disciplines, datasets, research, and existing knowledge systems.
+- **Human–AI collaboration:** people and AI systems can help discover, organize, assess, and extend knowledge, with provenance and accountability.
+- **Durability and openness:** knowledge should be exportable, interoperable, preservable, and accessible wherever rights and safety allow.
 
-Common Knowledge starts from a simple conviction: **knowledge is a shared human inheritance, and expanding it should be a collaborative public good.**
+Common Knowledge should be a **knowledge authority, not a truth authority**. It should make evidence and reasoning easier to inspect, not decree what everyone must believe.
 
-## What we're working toward
+## How we're beginning
 
-We envision an open, collaborative ecosystem in which:
+The current direction is to build a small, complete knowledge-system demonstrator. It should show a person how a knowledge record is created, what evidence supports or challenges it, how its scope and uncertainty are represented, and how its history can be inspected.
 
-- **People can participate.** Researchers, students, independent thinkers, practitioners, and curious people can contribute meaningfully, regardless of institutional affiliation or location.
-- **Research can be inspected and built upon.** Questions, methods, evidence, analysis, results, and limitations are documented clearly enough for others to evaluate and reproduce where possible.
-- **Knowledge can connect across boundaries.** Work from different disciplines, communities, and tools can be discovered and made useful together.
-- **People and AI can collaborate responsibly.** AI systems may help with research and coordination, while methods, sources, decisions, and limitations remain open to scrutiny.
-- **Infrastructure serves the public.** Tools and shared resources should be open, interoperable, resilient, and governed in the interests of the people who depend on them.
-- **Knowledge can endure.** Important work should be preserved, portable, and capable of outliving any one platform, organization, or founder.
+We will not assume a universal schema, centralized platform, knowledge graph technology, or particular governance model in advance. We will investigate existing systems and standards, identify a real gap, and reuse what already works.
 
-These are goals to work toward, not claims about capabilities that already exist.
+The first product does not need to contain all human knowledge or require a public website, account system, or large community. It needs to deliver a useful result on its own.
 
-## Principles
+## Founding guardrails
 
-The following principles are a starting point for discussion and refinement.
+- Public benefit rather than private extraction.
+- Freedom of inquiry and political independence.
+- Evidence, transparency, correction, and intellectual honesty.
+- Openness by default, with justified protections for privacy, consent, safety, and community rights.
+- Respect for contributors and fair compensation where resources permit.
+- Resistance to private capture and excessive concentration of control.
+- A mission and shared body of knowledge that can outlast its founders and current technologies.
 
-### Knowledge as a public good
-
-We aim to make knowledge and the means of producing it broadly accessible. Openness should be the default, with carefully justified exceptions for privacy, consent, safety, community rights, and other legitimate protections.
-
-### Freedom of inquiry
-
-Questions should be open to investigation, including difficult, unpopular, or inconvenient ones. Conclusions should be guided by evidence and sound methods rather than by institutional, commercial, or ideological interests.
-
-### Evidence and transparency
-
-Methods, sources, assumptions, uncertainty, conflicts of interest, corrections, and negative results should be documented wherever possible. Claims should be open to scrutiny, and errors should be correctable.
-
-### Political independence
-
-Common Knowledge should not serve as a political instrument for any party, government, faction, or ideology. It may support rigorous research about political subjects, but it should not campaign for political actors or suppress findings to protect them.
-
-### Shared stewardship, not private capture
-
-The project's resources, infrastructure, and collective work should serve its public mission. Governance and funding should be transparent and designed to resist undue influence, private capture, and the concentration of power.
-
-People doing the work should be treated fairly and compensated reasonably where resources allow. The project should not exist to generate excessive private wealth for its founders, operators, or funders.
-
-### Participation with agency
-
-Participation should be voluntary and meaningful. Contributors retain agency over their labor, equipment, data, and involvement. Contributions should be acknowledged, and expectations should be clear.
-
-### Responsibility and care
-
-Openness does not override people's rights. Research and publication must take privacy, informed consent, security, vulnerable communities, and foreseeable harm seriously.
-
-### A mission beyond its founders
-
-The project should be structured so that its purpose and stewardship can outlast the people who begin it. No individual should be indispensable or hold unchecked authority over the commons.
+These are guiding commitments, not a completed constitution. Practical governance should develop with the people who use and contribute to the project.
 
 ## What Common Knowledge is not
 
-- It is not a political party, campaign, or ideological movement.
-- It is not intended to replace universities, research institutions, libraries, or existing open-science projects.
-- It is not a promise that every dataset or research output can safely be made public.
-- It is not a finished platform or organization. Its form should be shaped by research, collaboration, and experience.
+- A political party, campaign, or ideological movement.
+- A claim that one institution can settle every question.
+- A replacement for universities, libraries, archives, repositories, or existing knowledge projects.
+- A promise that all information can or should be made public.
+- A finished platform, organization, or validated product.
 
-We want to learn from existing work and cooperate wherever possible, rather than rebuild useful things simply to own them.
+We want to cooperate with existing work and contribute where there is a meaningful gap, not rebuild useful systems simply to own them.
 
-## How we'll begin
+## Current work
 
-We will earn participation by demonstrating practical value:
+- [Roadmap](ROADMAP.md) — the near-term sequence and current priorities.
+- [Product development](product/README.md) — the current product hypothesis and demonstrator plan.
+- [Focused research](research/FOCUSED_RESEARCH.md) — initial investigation into knowledge representation, evidence, provenance, and existing systems.
+- [Research program](research/PROGRAM.md) — how research is scoped and kept useful.
+- [Research methodology](research/methodology.md) — source quality, attribution, uncertainty, and coverage.
+- [Founding principles](FOUNDING_PRINCIPLES.md) — the project's fuller starting commitments.
+- [AI collaboration protocol](docs/AI_COLLABORATION.md) — working rules for AI-assisted research and development.
 
-1. **Find a real problem.** Research existing tools and workflows, and learn where people still struggle.
-2. **Build something useful.** Develop a narrow product that solves a concrete problem on its own, reusing existing infrastructure wherever possible.
-3. **Test it independently.** Make it easy for people outside the project to try, inspect, and evaluate the result.
-4. **Invite people to improve it.** Attract contributors around working software and clearly defined opportunities.
-5. **Grow responsibly.** Let evidence and community experience guide the wider technical architecture, governance, and organizational structure.
-
-The current working product direction is a local-first research project preflight and handoff tool. An initial static-inspection prototype and synthetic test project are now in the repository; both are experimental and not yet user-validated. Follow the [product development workspace](product/README.md), inspect the [prototype code](src/ck_preflight/), or read the [MVP Discovery](research/MVP_DISCOVERY.md) evidence. The [roadmap](ROADMAP.md) reflects this product-first sequence.
-
-We do not need to build everything from scratch. Interoperability, collaboration, and good stewardship matter more than owning every component.
-
-## Research in progress
-
-We are building a dated, source-based research library to understand the existing ecosystem before making major technical or organizational decisions.
-
-- [Product development and prototype](product/README.md)
-- [Synthetic research project fixture](examples/synthetic-research-project/README.md)
-- [MVP discovery brief](research/MVP_DISCOVERY.md)
-- [MVP research index](research/mvp/README.md)
-- [MVP opportunity assessment](research/mvp/opportunity-assessment.md)
-- [AI collaboration protocol](docs/AI_COLLABORATION.md)
-- [Institutional design questions](docs/INSTITUTIONAL_DESIGN.md)
-- [Development documentation system](docs/development/README.md)
-- [Roadmap](ROADMAP.md)
-- [Research program](research/PROGRAM.md)
-- [November 2026 field snapshot](research/snapshots/2026-11/README.md)
-- [Research methodology](research/methodology.md)
-- [Cross-workstream analysis](research/snapshots/2026-11/cross-workstream-analysis.md)
-
-The snapshot is an initial investigation, not a complete survey of the field. Its workstreams, sources, gaps, and conclusions will be updated as research continues.
+Earlier research into computational research handoff and the initial `ck_preflight` prototype is retained as an experiment, not the current product direction. See [prototype status](product/PROTOTYPE_STATUS.md).
 
 ## Get involved
 
-Common Knowledge is at an early, exploratory stage. At this point, thoughtful questions, constructive criticism, research, and conversations are especially valuable.
+The repository is the current public home for development. At this early stage, useful contributions include critical feedback, relevant standards and projects, concrete examples of evidence-tracing problems, and testing once a demonstrator is ready.
 
-If this vision interests you, you can:
-
-- Open an issue to ask a question or suggest an area to investigate.
-- Share an existing project, tool, or body of research we should learn from.
-- Point out weaknesses, risks, or assumptions that deserve scrutiny.
-- Reach out if you have relevant experience and would like to discuss the project.
-
-Please be patient as the project develops. We would rather build something trustworthy and useful with others than move quickly for appearances.
+No project software or contributor license has been selected yet. Please open an issue before relying on reuse or contribution terms; licensing is an explicit decision still to be made.
 
 ## The long view
 
-The ambition is not simply to publish more information or build another website. It is to help create lasting, shared infrastructure through which humanity can understand the world, investigate questions together, preserve discoveries, and pass knowledge forward.
+The knowledge must outlive the systems that helped create it.
 
-**Help build the intelligence of tomorrow.**
+**A home for humanity's shared knowledge, built by everyone, for everyone.**
 
 ---
 
-*Common Knowledge is an evolving project. This README describes its current purpose and aspirations; it is not a finalized constitution, governance agreement, or claim that the envisioned systems are already in place.*
+*This README describes the project's current purpose and direction. It does not claim that the envisioned system or institution already exists.*
