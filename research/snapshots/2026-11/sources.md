@@ -1152,6 +1152,15 @@ No sources entered yet. Add new sections and stable IDs as workstreams begin.
 - **Accessed / verified:** 2026-11-26; full text reviewed
 - **Claims supported:** Commentary on Luo et al.'s evaluation of Agent Laboratory and The AI Scientist v2. Describes hidden methodological issues including data leakage, post hoc selection bias, undisclosed data subsetting or synthetic data, and effects of weak incentives. Reports that targeted detection from papers alone identified 53.7% of cases, increasing to 81.5% when logs and code were available. Recommends experiments comparing human-only, AI-only, and different forms of human–AI collaboration, with time and compute costs measured.
 - **Limitations:** Commentary rather than the primary controlled evaluation; the 53.7% and 81.5% figures refer to the specific detection task and systems studied, not a universal audit-performance rate. The authors explicitly note the underlying study is limited to a machine-learning task.
+### D-12 — AI Scientist in Practice: Reproducing and Evaluating Autonomous Scientific Discovery
+- **Author:** Artur Papoyan, University of Siegen
+- **Source type:** Independent reproduction/evaluation report (not peer-reviewed in the source reviewed)
+- **URL:** https://isg.beel.org/wp-content/uploads/2025/07/AI-Scientist-in-Practice-Reproducing-and-Evaluating-Autonomous.pdf
+- **Publication / update date:** 2025 (PDF hosted in July 2025)
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Independent execution of eight AI Scientist pipelines; three failures (38%); weak novelty detection, limited code changes, outdated/sparse citations, and manuscript placeholders; workflow artifacts and experimental details.
+- **Limitations:** Small sample and single recommender-system task/dataset; novelty assessment was informal rather than systematic; no peer-review status established in the source; results should be treated as a useful reproduction report, not a definitive general evaluation.
+
 ### D-13 — When Combinations of Humans and AI Are Useful: A Systematic Review and Meta-analysis
 - **Authors:** Michelle Vaccaro, Abdullah Almaatouq, Thomas W. Malone
 - **Publisher:** Nature Human Behaviour
@@ -1161,15 +1170,6 @@ No sources entered yet. Add new sections and stable IDs as workstreams begin.
 - **Accessed / verified:** 2026-11-26
 - **Claims supported:** Synthesis of 106 experimental studies and 370 effect sizes comparing human-only, AI-only, and human–AI combinations. On average, combinations performed better than humans alone but worse than the better of humans or AI alone; task type and relative human/AI performance moderated outcomes.
 - **Limitations:** Studies published 2020 through 2023; high heterogeneity and possible publication bias; results reflect the tasks, systems, and populations in the included experiments, not current AI research agents specifically.
-
-### D-12 — AI Scientist in Practice: Reproducing and Evaluating Autonomous Scientific Discovery
-- **Author:** Artur Papoyan, University of Siegen
-- **Source type:** Independent reproduction/evaluation report (not peer-reviewed in the source reviewed)
-- **URL:** https://isg.beel.org/wp-content/uploads/2025/07/AI-Scientist-in-Practice-Reproducing-and-Evaluating-Autonomous.pdf
-- **Publication / update date:** 2025 (PDF hosted in July 2025)
-- **Accessed / verified:** 2026-11-26
-- **Claims supported:** Independent execution of eight AI Scientist pipelines; three failures (38%); weak novelty detection, limited code changes, outdated/sparse citations, and manuscript placeholders; workflow artifacts and experimental details.
-- **Limitations:** Small sample and single recommender-system task/dataset; novelty assessment was informal rather than systematic; no peer-review status established in the source; results should be treated as a useful reproduction report, not a definitive general evaluation.
 
 ## Workstream E — Shared Knowledge and Preservation
 
