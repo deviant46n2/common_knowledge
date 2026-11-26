@@ -909,3 +909,53 @@ Sources:
 - Wikibase REST API entity: https://test.wikidata.org/w/rest.php/wikibase/v1/entities/items/Q213542
 - Wikibase REST API statements: https://test.wikidata.org/w/rest.php/wikibase/v1/entities/items/Q213542/statements
 - Official REST API documentation: https://www.wikidata.org/wiki/Wikidata:REST_API
+
+
+## OpenAlex live API smoke test and source comparison
+
+**Research date:** 26 November 2026  
+**Method:** Read-only OpenAlex Work API query for DOI 10.48550/arXiv.1706.03762, comparison with DataCite DOI metadata, and resolver checks for selected alternate locations. No API key, snapshot download, or account was used.
+
+### One record shows why raw metadata and resolved identity must coexist
+
+OpenAlex returned Work W2626778328, “Attention Is All You Need” (2017), with an updated_date of 2026-11-26T09:34:50.682384. The response includes:
+- resolved author IDs and display names, alongside raw_author_name strings;
+- resolved institution IDs and names, alongside raw_affiliation_strings and per-affiliation raw strings;
+- DOI, arXiv, and MAG identifiers;
+- several locations, including a NeurIPS proceedings location marked publishedVersion and an arXiv repository location marked submittedVersion;
+- a list of referenced-work IDs.
+
+The raw and resolved fields are not identical in every case. For example, one raw author string is “Aidan N.Gomez” while the resolved display name contains a space after the initial. Raw affiliation strings include “Google Brain” and publisher-style affiliation text, while the resolved institution is a Google entity. This is useful enrichment, but the resolved entity is an OpenAlex matching decision, not a replacement for the original source string.
+
+### DOI registration source matters
+
+A direct Crossref API request for 10.48550/arXiv.1706.03762 returned 404. The DataCite API returned a full DOI record:
+- publisher: arXiv;
+- title and creator list;
+- resource type: preprint;
+- version 7;
+- an arXiv non-exclusive distribution license;
+- submitted and updated dates for successive versions.
+
+This is an expected example of why a DOI lookup must not assume Crossref is the only registration agency. Common Knowledge should record the registration source and preserve the DOI itself, not interpret a Crossref 404 as a nonexistent DOI.
+
+### Additional locations need independent verification
+
+The OpenAlex response includes multiple locations for the work, among them the conference and arXiv locations, a historical MAG location, and several additional DOI-based locations with no source metadata attached in the response. Two sampled additional DOIs under prefix 10.65215 returned 404 from both the DOI resolver and DataCite API at inspection time.
+
+This does not prove why OpenAlex associated those locations with the work; they may be stale, misidentified, or registered through another route not checked here. It does demonstrate that the existence of a location entry in an aggregated scholarly index is not sufficient proof that the referenced location is currently resolvable or correctly matched. A source-integrity workflow should preserve the raw location and identifier, test resolution, and flag the match for review rather than silently discarding or endorsing it.
+
+### Practical integration implications
+
+1. Query OpenAlex by DOI and retain the raw API response with retrieval timestamp and OpenAlex updated_date.
+2. Store DOI, arXiv ID, ORCID, and ROR identifiers independently of OpenAlex IDs.
+3. Preserve raw author and affiliation strings beside resolved identities.
+4. Treat each location as a distinct manifestation/version with its own URL, version, access status, license, and source metadata.
+5. Verify resolver status and registration-agency metadata for important identifiers.
+6. Treat referenced_works as discovery links, not as evidence that the citing work supports or disputes the cited work.
+
+Sources:
+- OpenAlex Work API record: https://api.openalex.org/works/https://doi.org/10.48550/arXiv.1706.03762?select=id,doi,title,publication_year,authorships,locations,referenced_works,updated_date,ids,type
+- Crossref DOI lookup (404 at inspection time): https://api.crossref.org/works/10.48550/arXiv.1706.03762
+- DataCite DOI record: https://api.datacite.org/dois/10.48550/arXiv.1706.03762
+- Sample unresolved location: https://doi.org/10.65215/r5bs2d54
