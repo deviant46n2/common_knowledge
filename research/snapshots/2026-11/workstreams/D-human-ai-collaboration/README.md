@@ -35,11 +35,14 @@ This page is the workstream's durable entry point. Add dated notes below as rese
 ### Current reports
 
 - [Initial field overview](field-overview.md)
+- [Contributions, disclosure, and accountability](contributions-and-accountability.md)
+- [Proposed AI research audit record](AI-research-audit-record.md)
 
 ### Progress notes
 
 - **2026-11-26:** Workstream scope and initial questions recorded. No comprehensive investigation had yet been completed.
 - **2026-11-26:** Added initial overview of AI research agents, human–AI reproducibility experiments, workflow auditability, and science-of-science collaborators. Registered sources D-01 through D-06.
+- **2026-11-26:** Added a comparison of CRediT and publisher AI policies and drafted an AI research audit record for testing; registered sources D-07 through D-10.
 
 ### Next steps
 
