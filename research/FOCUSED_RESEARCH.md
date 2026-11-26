@@ -270,7 +270,7 @@ Use one deliberately small, synthetic example with:
 Then inspect:
 - the authoring experience for a non-specialist;
 - the entity JSON and REST API responses;
-- the full RDF export versus truthy export;
+- the RDF entity's direct truthy predicates versus its linked full statement nodes;
 - how revisions and contributor identities appear;
 - how much custom modeling is required to represent evidence relations and separate assessments.
 
@@ -838,3 +838,30 @@ This is a strong baseline for inspectability and raw-data access. It also shows 
 
 Example inspected:
 - https://nanodash.knowledgepixels.com/RA3VxrEoZyRPd8ZwOvIpPGlRf2kVmNW1-nlVU55s7t8AI
+
+
+## Live Wikibase sandbox inspection
+
+**Research date:** 26 November 2026  
+**Method:** Read-only inspection of the public test.wikidata.org API and a sandbox entity's JSON and RDF exports. No edits or account actions were performed.
+
+The test Wikidata API is reachable and reports a current MediaWiki 1.48.0 test instance. Searching its API for “sandbox” returned a dedicated Wikidata Sandbox item, Q213542. Its JSON entity response provides a concrete example of the data model in use:
+- one property has six version statements;
+- five earlier/alternate version values have normal rank and one version has preferred rank;
+- each version statement carries a publication-date qualifier;
+- each statement carries a reference record with URL, title, and retrieval date;
+- a second statement for the preferred version exists at normal rank, demonstrating that rank is per statement and not a guarantee that duplicate-looking statements disappear.
+
+The default RDF export for Q213542 includes both the direct truthy shortcut predicates and full statement nodes. For the version property, the direct wdt: predicate exposes only the preferred value 1.0.5. The p: statement links retain all six individual statement nodes; those nodes preserve their rank, pq: date qualifier, and prov:wasDerivedFrom reference links. The flavor=dump export also contains the full statement nodes. An attempted flavor=truthy request returned HTTP 400; the RDF mapping documentation describes truthy and full statements as two representations in the RDF graph, not as two interchangeable URL flavor parameters.
+
+This live example confirms two practical points:
+1. Wikibase's JSON data model and full statement representation can preserve multiple sourced, qualified statements for one property.
+2. Consumers that use only the direct truthy predicates lose the contextual statement-level detail. A Common Knowledge adapter must retain the full statement nodes and references.
+
+This is a particularly useful real-world check because it verifies the data model with an actual API response, rather than only reading the documentation. The test item is intentionally messy and synthetic; it is not evidence of Wikibase's usability for a scientific review workflow.
+
+Sources:
+- Test Wikidata API search: https://test.wikidata.org/w/api.php?action=wbsearchentities&search=sandbox&language=en&format=json
+- Test Wikidata sandbox entity JSON: https://test.wikidata.org/wiki/Special:EntityData/Q213542.json
+- Test Wikidata sandbox entity RDF: https://test.wikidata.org/wiki/Special:EntityData/Q213542.ttl
+- W3C-compatible Wikibase RDF mapping documentation: https://www.mediawiki.org/wiki/Wikibase/Indexing/RDF_Dump_Format
