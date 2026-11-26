@@ -100,6 +100,19 @@ Its credibility should be earned through evidence quality, transparent methods, 
 
 **Emerging principle:** Be a public reference people can rely on to investigate what is true, while remaining transparent, corrigible, and humble about the limits of what can be known.
 
+
+### How knowledge discovery should expand
+
+The founder's current direction is to begin with a deliberately scoped knowledge domain, then expand both the range of subjects and the ways knowledge enters the system.
+
+- **Initial stage:** Concentrate on software project governance and institutional design. Build the collection through focused research and community contributions, while developing and testing the underlying methods.
+- **Expansion:** Broaden into related subjects as the infrastructure, standards, and contributor community become capable of supporting them responsibly.
+- **Long-term ambition:** Support both community-initiated investigations and proactive research initiated by Common Knowledge—for example, monitoring relevant public information, identifying important unanswered questions, and investigating emerging evidence.
+
+This is a staged direction, not a commitment to monitor every source or investigate every subject. Priorities, capacity, safeguards, and the legitimacy of proactive research will need to be worked out as the institution develops.
+
+**Emerging principle:** Start focused; expand deliberately; ultimately combine community-driven inquiry with proactive, institutionally accountable research.
+
 **Status:** The public-reference ambition and politician-claim example are founder-stated direction. The exact claim intake, context capture, assessment, prioritization, and presentation workflows remain open design questions.
 
 
