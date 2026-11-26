@@ -123,6 +123,16 @@ These reports point to a possible contribution strategy:
 
 This may be more valuable and credible than creating a competing validator. It also gives Common Knowledge a route to demonstrate engineering capability through a real ecosystem contribution. No issue has been filed or contacted by Common Knowledge.
 
+## 4.2 Maintainer responses and contribution opportunities
+
+The issue discussions add important context:
+- On [rocrate-validator #173](https://github.com/crs4/rocrate-validator/issues/173), a contributor described an existing workaround used in a Five Safes profile and offered to upstream a more general WRROC fix. A maintainer replied that an upstream PR would be welcome. This is a concrete, publicly invited contribution opportunity.
+- On [rocrate-validator #227](https://github.com/crs4/rocrate-validator/issues/227), a maintainer pointed out the existing --skip-checks option. The contributor clarified that the real need is to suppress one known problematic entity while keeping the check enabled for other entities. This is more specific than a general threshold setting and should be investigated before proposing a solution.
+- On [LifeMonitor #291](https://github.com/crs4/life_monitor/issues/291), the maintainer noted that PR #296 provided a starting point for local/private-repository checks, although the issue remained open pending better testing. This makes it a weaker and older signal of an unaddressed need.
+- [ro-crate-py #266](https://github.com/ResearchObject/ro-crate-py/issues/266) is assigned to a maintainer and was updated on 23 November 2026. It may be resolved upstream before Common Knowledge could reasonably contribute.
+
+**Practical implication:** before writing a new validator or local workflow monitor, inspect current branches and pull requests, and ask maintainers whether a small contribution is useful. Upstream contribution is an attractive route to demonstrate capability, but no Common Knowledge contact or pull request has been made.
+
 ## 5. Proposed hands-on interoperability experiment
 
 Use a small, openly licensed synthetic computational project with a known result and a report containing explicit numerical claims.
