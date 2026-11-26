@@ -651,6 +651,144 @@ For each source, record:
 
 No sources entered yet. Add new sections and stable IDs as workstreams begin.
 
+### A-65 — OSF Changes
+- **Publisher:** Center for Open Science
+- **Source type:** Primary transition and product-direction page
+- **URL:** https://www.cos.io/osf-changes
+- **Publication / update date:** Current page accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Transition timeline, public/private project treatment, rationale, current OSF role, and shift toward an integrated model with complementary services.
+- **Limitations:** Operator statement; future plans and persistence commitments should be monitored as the transition proceeds.
+
+### A-66 — OSF Projects Transition
+- **Publisher:** Center for Open Science, OSF Support
+- **Source type:** Primary operational transition guide
+- **URL:** https://help.osf.io/article/727-osf-projects-transition
+- **Publication / update date:** Current help guide accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** No new projects/components from 2026-11-16; read-only transition on 2027-02-19; continued public project access; private project access for existing authorized users; possible future removal of private projects with advance notice.
+- **Limitations:** Operator guidance; future private storage plans may change and should be rechecked.
+
+### A-67 — OSF Projects Transition FAQs
+- **Publisher:** Center for Open Science, OSF Support
+- **Source type:** Primary FAQ and sustainability explanation
+- **URL:** https://help.osf.io/article/725-faqs
+- **Publication / update date:** Current FAQ accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** COS's estimate that maintaining current OSF Projects scope would require approximately US$4–5 million annually; explanation of funding and operational cost pressures; current treatment of public/private projects and continuing Registrations/Preprints.
+- **Limitations:** Operator-reported financial rationale; not an independent audit or full financial statement.
+
+### A-68 — OSF Projects API Impact
+- **Publisher:** Center for Open Science, OSF Support
+- **Source type:** Primary API migration guide
+- **URL:** https://help.osf.io/article/744-osf-projects-api-impact
+- **Publication / update date:** Current API guide accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Retirement dates for project creation and write/update endpoints; unaffected Registries and Preprints endpoints; integration and migration implications.
+- **Limitations:** API documentation may change during the transition; integrations should be tested against live endpoints and current documentation.
+
+
+## Workstream B — Distributed and Federated Infrastructure
+
+### B-01 — BOINC Overview
+- **Publisher:** BOINC Project
+- **Source type:** Primary architecture documentation
+- **URL:** https://github.com/BOINC/boinc/wiki/BOINC-overview
+- **Publication / update date:** Updated 2026-03-06
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** BOINC client/server architecture, high-throughput volunteer computing, heterogeneous and intermittent worker nodes, and untrusted worker assumptions.
+- **Limitations:** Project documentation; actual security and performance vary by BOINC project, workload, and deployment.
+
+### B-02 — BOINC Job Processing
+- **Publisher:** BOINC Project
+- **Source type:** Primary technical documentation
+- **URL:** https://github.com/BOINC/boinc/wiki/JobIntro
+- **Publication / update date:** Updated 2026-03-19
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Job submission, remote execution, replication, validation, and assimilation pipeline.
+- **Limitations:** Describes a general processing model; validators and assimilators are often application-specific and must be implemented and operated.
+
+### B-03 — Security in Volunteer Computing
+- **Publisher:** BOINC Project
+- **Source type:** Primary security documentation
+- **URL:** https://github.com/BOINC/boinc/wiki/Security-in-volunteer-computing
+- **Publication / update date:** Updated 2026-03-20
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Threats including result falsification, malicious executable distribution, server compromise, data theft, denial of service, and abuse of volunteer hosts; documented mitigations and residual risks.
+- **Limitations:** BOINC-specific overview; not a complete threat model or independent security audit.
+
+### B-04 — Volunteer Computing
+- **Publisher:** BOINC Project
+- **Source type:** Primary conceptual documentation
+- **URL:** https://github.com/BOINC/boinc/wiki/VolunteerComputing
+- **Publication / update date:** Updated 2023-04-03
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Volunteer/project relationship, participant anonymity, trust assumptions, and responsibilities between volunteers and projects.
+- **Limitations:** General description; participant experience and project-specific policies vary.
+
+### B-05 — HTCondor Manual
+- **Publisher:** Center for High Throughput Computing, University of Wisconsin–Madison
+- **Source type:** Primary technical documentation
+- **URL:** https://htcondor.readthedocs.io/en/latest/
+- **Publication / update date:** Version 26.1.0 manual accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** High-throughput computing environments spanning clusters, campus resources, cloud resources, and national or international federations.
+- **Limitations:** Software documentation; actual federation deployments, security policies, and performance need case-specific review.
+
+### B-06 — Kubernetes SIG Multicluster
+- **Publisher:** Kubernetes Special Interest Group
+- **Source type:** Primary project documentation
+- **URL:** https://multicluster.sigs.k8s.io/
+- **Publication / update date:** Current project page accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Scope of multi-cluster coordination, workload exposure, metadata sharing, and cluster federation within Kubernetes environments.
+- **Limitations:** Multi-cluster management does not necessarily imply independent governance or open volunteer participation.
+
+### B-07 — libp2p Specifications
+- **Publisher:** libp2p community
+- **Source type:** Open technical specification repository
+- **URL:** https://github.com/libp2p/specs
+- **Publication / update date:** Current specification index accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Protocol suite for peer-to-peer applications, including addressing, secure connections, discovery, relaying, and pub/sub.
+- **Limitations:** Repository states that specifications remain incomplete and are under active revision; implementation interoperability and security require further testing.
+
+### B-08 — IPFS Persistence, Permanence, and Pinning
+- **Publisher:** IPFS project
+- **Source type:** Primary technical documentation
+- **URL:** https://docs.ipfs.tech/concepts/persistence/
+- **Publication / update date:** Current documentation accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Distinction between content addressing, caching, garbage collection, pinning, pinning services, and long-term retention dependencies.
+- **Limitations:** Documentation explains protocol and operational concepts; does not independently assess pinning-provider continuity or storage economics.
+
+
+### B-09 — BOINC Job Replication and Result Validation
+- **Publisher:** BOINC Project
+- **Source type:** Primary technical documentation
+- **URL:** https://github.com/BOINC/boinc/wiki/Job-replication
+- **Publication / update date:** Updated 2026-03-20
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Application-specific validation, single-execution checks, replicated execution, numerical comparison challenges, homogeneous replication, and adaptive replication.
+- **Limitations:** Project documentation; validation effectiveness depends on workload, validator quality, host behavior, and threat model.
+
+### B-10 — BOINC Adaptive Replication
+- **Publisher:** BOINC Project
+- **Source type:** Primary technical documentation
+- **URL:** https://github.com/BOINC/boinc/wiki/Adaptive-Replication
+- **Publication / update date:** Updated 2026-03-19
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Host/application-version reputation, randomized selective replication, and stated overhead/confidence goals.
+- **Limitations:** Stated targets are implementation guidance, not independent performance guarantees; adaptive trust does not prove correctness.
+
+### B-11 — Filecoin Proofs
+- **Publisher:** Filecoin Project
+- **Source type:** Primary protocol documentation
+- **URL:** https://github.com/filecoin-project/filecoin-docs/blob/main/core-concepts/filecoin-virtual-machine/proofs.md
+- **Publication / update date:** Current documentation accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Proof of Replication and Proof of Spacetime mechanisms for verifying initial and continuing storage commitments.
+- **Limitations:** Storage proofs do not by themselves establish user-facing retrieval performance, access rights, content quality, or long-term preservation governance.
 
 ## Workstream C — Scientific Reproducibility and Research Integrity
 
@@ -868,6 +1006,114 @@ No sources entered yet. Add new sections and stable IDs as workstreams begin.
 - **Claims supported:** Relationship between individual conduct and institutional research culture; recommendations concerning openness, data handling, record keeping, and responsible sharing.
 - **Limitations:** US National Academies report from 2017; some recommendations and context require updating for current tools, AI, and international settings.
 
+## Workstream D — Human–AI Research Collaboration
+
+### D-01 — The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery
+- **Authors:** Chris Lu, Cong Lu, Robert Tjarko Lange, Jakob Foerster, Jeff Clune, David Ha
+- **Publisher:** arXiv
+- **Source type:** Research preprint and open-source system description
+- **URL:** https://arxiv.org/abs/2408.06292
+- **Publication date:** 2024-08-12
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** End-to-end machine-learning research pipeline for idea generation, code writing, experiment execution, visualization, paper drafting, and automated review.
+- **Limitations:** Initial system and evaluations are limited to machine-learning research templates and benchmarks; preprint claims and automated review results require independent assessment. Repository has a distinct license and mandatory disclosure terms.
+
+### D-02 — Towards End-to-End Automation of AI Research
+- **Authors:** Chris Lu et al.
+- **Publisher:** Nature
+- **Source type:** Peer-reviewed research article and system evaluation
+- **URL:** https://doi.org/10.1038/s41586-026-10265-5
+- **Publication date:** 2026-03-25
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** AI Scientist end-to-end workflow, template-based and template-free execution, automated manuscript/review pipeline, workshop paper result, and documented limitations.
+- **Limitations:** Focused on machine-learning research; only one of three submitted papers was accepted at a workshop, with significant reported methodological and implementation failure modes.
+
+### D-03 — AI-Assisted Teams Outperform AI-Led Teams but Not Human-Only Teams in Assessing Research Reproducibility in Quantitative Social Science
+- **Authors:** Abel Brodeur et al.
+- **Publisher:** Proceedings of the National Academy of Sciences (PNAS)
+- **Source type:** Peer-reviewed randomized team experiment
+- **URL:** https://doi.org/10.1073/pnas.2524747123
+- **Publication date:** 2026-05-28 (online); issue 2026-06-02
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Comparison of 103 teams / 288 researchers across human-only, AI-assisted, and AI-led reproduction of quantitative social-science findings; reported reproduction rates of 94%, 91%, and 37% respectively, and differences in major coding-error detection.
+- **Limitations:** Specific to quantitative social-science computational reproducibility tasks and study design; does not establish performance across all disciplines, models, or tasks. Article received an affiliation-only correction on 2026-07-06; results were not changed.
+
+### D-04 — Correction for Brodeur et al., AI-Assisted Teams...
+- **Publisher:** Proceedings of the National Academy of Sciences (PNAS)
+- **Source type:** Published corrigendum
+- **URL:** https://doi.org/10.1073/pnas.2621051123
+- **Publication date:** 2026-07-06 (online)
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Correction of affiliations for three authors in the D-03 article.
+- **Limitations:** The correction concerns author affiliations, not the reported results; retained here to preserve the publication history.
+
+### D-05 — The More You Automate, the Less You See: Hidden Pitfalls of Autonomous AI Scientists
+- **Authors:** Ziming Luo, Atoosa Kasirzadeh, Nihar B. Shah
+- **Publisher:** Proceedings of the National Academy of Sciences (PNAS)
+- **Source type:** Peer-reviewed controlled analysis of autonomous AI scientist systems
+- **URL:** https://doi.org/10.1073/pnas.2610214123
+- **Publication date:** 2026-10-05 (online); issue 2026-10-13
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Systematic pitfalls in benchmark selection, data manipulation/disclosure, metric use, and post hoc selection across two representative open-source AI scientist systems; workflow artifacts improve auditability.
+- **Limitations:** Two systems and selected experimental settings; not a complete evaluation of all AI research agents. One author disclosed employment at Google DeepMind.
+
+### D-06 — SciSciGPT: Advancing Human–AI Collaboration in the Science of Science
+- **Authors:** Erzhuo Shao, Yifang Wang, Yifan Qian, Zhenyu Pan, Han Liu, Dashun Wang
+- **Publisher:** Nature Computational Science
+- **Source type:** Peer-reviewed system and case-study paper
+- **URL:** https://doi.org/10.1038/s43588-025-00906-6
+- **Publication date:** 2025-12-09 (online)
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Open-source prototype AI collaborator for science-of-science workflows, database repository, multi-agent specialist architecture, and conversational human–AI research interface.
+- **Limitations:** Domain-specific prototype and case studies; reported capabilities do not establish general scientific reliability or transfer to other disciplines.
+
+
+### D-07 — CRediT Contributor Role Taxonomy
+- **Publisher:** National Information Standards Organization (NISO) / CRediT community
+- **Source type:** ANSI/NISO contributor-role taxonomy
+- **URL:** https://credit.niso.org/
+- **Publication date:** Approved as ANSI/NISO standard in 2022
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Fourteen contributor roles, purpose of transparent contribution attribution, CC BY 4.0 licensing, and distinction between contributorship description and authorship determination.
+- **Limitations:** Does not define authorship eligibility or fully represent AI-system, community-governance, or ongoing maintenance roles.
+
+### D-08 — Springer Nature / Nature Portfolio Artificial Intelligence Policy
+- **Publisher:** Springer Nature
+- **Source type:** Publisher editorial policy
+- **URL:** https://www.nature.com/nature-portfolio/editorial-policies/ai
+- **Publication / update date:** Current policy accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Risk-based approach to AI use by authors, reviewers, and editors; human accountability, disclosure, confidentiality, and boundaries on delegation of scholarly judgment.
+- **Limitations:** Publisher-specific policy; not a universal research-integrity standard and subject to revision.
+
+### D-09 — JAMA Network Instructions for Authors: Use of AI in Publication and Research
+- **Publisher:** JAMA Network
+- **Source type:** Journal author instructions
+- **URL:** https://jamanetwork.com/journals/jama/pages/instructions-for-authors
+- **Publication / update date:** Current instructions accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Author responsibility for AI-generated content, disclosure of AI-assisted content creation/revision/formatting, and caution against AI-generated references.
+- **Limitations:** Journal-specific author requirements; not applicable to every discipline or venue.
+
+### D-10 — APA Journals Policy on Generative AI: Additional Guidance
+- **Publisher:** American Psychological Association
+- **Source type:** Publisher disclosure guidance
+- **URL:** https://www.apa.org/pubs/journals/resources/publishing-tips/policy-generative-ai
+- **Publication / update date:** Last updated 2025-08
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Task-specific disclosure examples for literature search, translation, code, analysis, visualization, writing, and figures; preservation of prompts or outputs where relevant.
+- **Limitations:** APA-specific guidance; authors must follow the target journal's current requirements.
+
+
+### D-11 — The AI Scientist in the Mirror: Shared Flaws, Joint Remedies
+- **Authors:** Quentin E. A. Loisel, Steven N. Goodman
+- **Publisher:** Proceedings of the National Academy of Sciences (PNAS)
+- **Source type:** Scholarly comment on a research article
+- **URL:** https://doi.org/10.1073/pnas.2633303123
+- **Publication date:** 2026-11-16 (online); 2026-11-24 (issue publication)
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Existence, authorship, publication date, and relationship as a comment on D-05, *The More You Automate, the Less You See*.
+- **Limitations:** Full text was not available in this research pass; arguments are not summarized pending retrieval and review.
 
 ## Workstream E — Shared Knowledge and Preservation
 
@@ -1186,220 +1432,6 @@ No sources entered yet. Add new sections and stable IDs as workstreams begin.
 - **Claims supported:** Review of 110 sources identifying barriers around confidentiality, consent, data misuse, context, external approvals, researcher distress, and time/financial constraints.
 - **Limitations:** Maps suggested strategies rather than evaluating their effectiveness; focuses on interview and focus-group transcripts; the authors caution against one-size-fits-all expectations.
 
-
-## Workstream B — Distributed and Federated Infrastructure
-
-### B-01 — BOINC Overview
-- **Publisher:** BOINC Project
-- **Source type:** Primary architecture documentation
-- **URL:** https://github.com/BOINC/boinc/wiki/BOINC-overview
-- **Publication / update date:** Updated 2026-03-06
-- **Accessed / verified:** 2026-11-26
-- **Claims supported:** BOINC client/server architecture, high-throughput volunteer computing, heterogeneous and intermittent worker nodes, and untrusted worker assumptions.
-- **Limitations:** Project documentation; actual security and performance vary by BOINC project, workload, and deployment.
-
-### B-02 — BOINC Job Processing
-- **Publisher:** BOINC Project
-- **Source type:** Primary technical documentation
-- **URL:** https://github.com/BOINC/boinc/wiki/JobIntro
-- **Publication / update date:** Updated 2026-03-19
-- **Accessed / verified:** 2026-11-26
-- **Claims supported:** Job submission, remote execution, replication, validation, and assimilation pipeline.
-- **Limitations:** Describes a general processing model; validators and assimilators are often application-specific and must be implemented and operated.
-
-### B-03 — Security in Volunteer Computing
-- **Publisher:** BOINC Project
-- **Source type:** Primary security documentation
-- **URL:** https://github.com/BOINC/boinc/wiki/Security-in-volunteer-computing
-- **Publication / update date:** Updated 2026-03-20
-- **Accessed / verified:** 2026-11-26
-- **Claims supported:** Threats including result falsification, malicious executable distribution, server compromise, data theft, denial of service, and abuse of volunteer hosts; documented mitigations and residual risks.
-- **Limitations:** BOINC-specific overview; not a complete threat model or independent security audit.
-
-### B-04 — Volunteer Computing
-- **Publisher:** BOINC Project
-- **Source type:** Primary conceptual documentation
-- **URL:** https://github.com/BOINC/boinc/wiki/VolunteerComputing
-- **Publication / update date:** Updated 2023-04-03
-- **Accessed / verified:** 2026-11-26
-- **Claims supported:** Volunteer/project relationship, participant anonymity, trust assumptions, and responsibilities between volunteers and projects.
-- **Limitations:** General description; participant experience and project-specific policies vary.
-
-### B-05 — HTCondor Manual
-- **Publisher:** Center for High Throughput Computing, University of Wisconsin–Madison
-- **Source type:** Primary technical documentation
-- **URL:** https://htcondor.readthedocs.io/en/latest/
-- **Publication / update date:** Version 26.1.0 manual accessed 2026-11-26
-- **Accessed / verified:** 2026-11-26
-- **Claims supported:** High-throughput computing environments spanning clusters, campus resources, cloud resources, and national or international federations.
-- **Limitations:** Software documentation; actual federation deployments, security policies, and performance need case-specific review.
-
-### B-06 — Kubernetes SIG Multicluster
-- **Publisher:** Kubernetes Special Interest Group
-- **Source type:** Primary project documentation
-- **URL:** https://multicluster.sigs.k8s.io/
-- **Publication / update date:** Current project page accessed 2026-11-26
-- **Accessed / verified:** 2026-11-26
-- **Claims supported:** Scope of multi-cluster coordination, workload exposure, metadata sharing, and cluster federation within Kubernetes environments.
-- **Limitations:** Multi-cluster management does not necessarily imply independent governance or open volunteer participation.
-
-### B-07 — libp2p Specifications
-- **Publisher:** libp2p community
-- **Source type:** Open technical specification repository
-- **URL:** https://github.com/libp2p/specs
-- **Publication / update date:** Current specification index accessed 2026-11-26
-- **Accessed / verified:** 2026-11-26
-- **Claims supported:** Protocol suite for peer-to-peer applications, including addressing, secure connections, discovery, relaying, and pub/sub.
-- **Limitations:** Repository states that specifications remain incomplete and are under active revision; implementation interoperability and security require further testing.
-
-### B-08 — IPFS Persistence, Permanence, and Pinning
-- **Publisher:** IPFS project
-- **Source type:** Primary technical documentation
-- **URL:** https://docs.ipfs.tech/concepts/persistence/
-- **Publication / update date:** Current documentation accessed 2026-11-26
-- **Accessed / verified:** 2026-11-26
-- **Claims supported:** Distinction between content addressing, caching, garbage collection, pinning, pinning services, and long-term retention dependencies.
-- **Limitations:** Documentation explains protocol and operational concepts; does not independently assess pinning-provider continuity or storage economics.
-
-
-### B-09 — BOINC Job Replication and Result Validation
-- **Publisher:** BOINC Project
-- **Source type:** Primary technical documentation
-- **URL:** https://github.com/BOINC/boinc/wiki/Job-replication
-- **Publication / update date:** Updated 2026-03-20
-- **Accessed / verified:** 2026-11-26
-- **Claims supported:** Application-specific validation, single-execution checks, replicated execution, numerical comparison challenges, homogeneous replication, and adaptive replication.
-- **Limitations:** Project documentation; validation effectiveness depends on workload, validator quality, host behavior, and threat model.
-
-### B-10 — BOINC Adaptive Replication
-- **Publisher:** BOINC Project
-- **Source type:** Primary technical documentation
-- **URL:** https://github.com/BOINC/boinc/wiki/Adaptive-Replication
-- **Publication / update date:** Updated 2026-03-19
-- **Accessed / verified:** 2026-11-26
-- **Claims supported:** Host/application-version reputation, randomized selective replication, and stated overhead/confidence goals.
-- **Limitations:** Stated targets are implementation guidance, not independent performance guarantees; adaptive trust does not prove correctness.
-
-### B-11 — Filecoin Proofs
-- **Publisher:** Filecoin Project
-- **Source type:** Primary protocol documentation
-- **URL:** https://github.com/filecoin-project/filecoin-docs/blob/main/core-concepts/filecoin-virtual-machine/proofs.md
-- **Publication / update date:** Current documentation accessed 2026-11-26
-- **Accessed / verified:** 2026-11-26
-- **Claims supported:** Proof of Replication and Proof of Spacetime mechanisms for verifying initial and continuing storage commitments.
-- **Limitations:** Storage proofs do not by themselves establish user-facing retrieval performance, access rights, content quality, or long-term preservation governance.
-
-
-## Workstream D — Human–AI Research Collaboration
-
-### D-01 — The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery
-- **Authors:** Chris Lu, Cong Lu, Robert Tjarko Lange, Jakob Foerster, Jeff Clune, David Ha
-- **Publisher:** arXiv
-- **Source type:** Research preprint and open-source system description
-- **URL:** https://arxiv.org/abs/2408.06292
-- **Publication date:** 2024-08-12
-- **Accessed / verified:** 2026-11-26
-- **Claims supported:** End-to-end machine-learning research pipeline for idea generation, code writing, experiment execution, visualization, paper drafting, and automated review.
-- **Limitations:** Initial system and evaluations are limited to machine-learning research templates and benchmarks; preprint claims and automated review results require independent assessment. Repository has a distinct license and mandatory disclosure terms.
-
-### D-02 — Towards End-to-End Automation of AI Research
-- **Authors:** Chris Lu et al.
-- **Publisher:** Nature
-- **Source type:** Peer-reviewed research article and system evaluation
-- **URL:** https://doi.org/10.1038/s41586-026-10265-5
-- **Publication date:** 2026-03-25
-- **Accessed / verified:** 2026-11-26
-- **Claims supported:** AI Scientist end-to-end workflow, template-based and template-free execution, automated manuscript/review pipeline, workshop paper result, and documented limitations.
-- **Limitations:** Focused on machine-learning research; only one of three submitted papers was accepted at a workshop, with significant reported methodological and implementation failure modes.
-
-### D-03 — AI-Assisted Teams Outperform AI-Led Teams but Not Human-Only Teams in Assessing Research Reproducibility in Quantitative Social Science
-- **Authors:** Abel Brodeur et al.
-- **Publisher:** Proceedings of the National Academy of Sciences (PNAS)
-- **Source type:** Peer-reviewed randomized team experiment
-- **URL:** https://doi.org/10.1073/pnas.2524747123
-- **Publication date:** 2026-05-28 (online); issue 2026-06-02
-- **Accessed / verified:** 2026-11-26
-- **Claims supported:** Comparison of 103 teams / 288 researchers across human-only, AI-assisted, and AI-led reproduction of quantitative social-science findings; reported reproduction rates of 94%, 91%, and 37% respectively, and differences in major coding-error detection.
-- **Limitations:** Specific to quantitative social-science computational reproducibility tasks and study design; does not establish performance across all disciplines, models, or tasks. Article received an affiliation-only correction on 2026-07-06; results were not changed.
-
-### D-04 — Correction for Brodeur et al., AI-Assisted Teams...
-- **Publisher:** Proceedings of the National Academy of Sciences (PNAS)
-- **Source type:** Published corrigendum
-- **URL:** https://doi.org/10.1073/pnas.2621051123
-- **Publication date:** 2026-07-06 (online)
-- **Accessed / verified:** 2026-11-26
-- **Claims supported:** Correction of affiliations for three authors in the D-03 article.
-- **Limitations:** The correction concerns author affiliations, not the reported results; retained here to preserve the publication history.
-
-### D-05 — The More You Automate, the Less You See: Hidden Pitfalls of Autonomous AI Scientists
-- **Authors:** Ziming Luo, Atoosa Kasirzadeh, Nihar B. Shah
-- **Publisher:** Proceedings of the National Academy of Sciences (PNAS)
-- **Source type:** Peer-reviewed controlled analysis of autonomous AI scientist systems
-- **URL:** https://doi.org/10.1073/pnas.2610214123
-- **Publication date:** 2026-10-05 (online); issue 2026-10-13
-- **Accessed / verified:** 2026-11-26
-- **Claims supported:** Systematic pitfalls in benchmark selection, data manipulation/disclosure, metric use, and post hoc selection across two representative open-source AI scientist systems; workflow artifacts improve auditability.
-- **Limitations:** Two systems and selected experimental settings; not a complete evaluation of all AI research agents. One author disclosed employment at Google DeepMind.
-
-### D-06 — SciSciGPT: Advancing Human–AI Collaboration in the Science of Science
-- **Authors:** Erzhuo Shao, Yifang Wang, Yifan Qian, Zhenyu Pan, Han Liu, Dashun Wang
-- **Publisher:** Nature Computational Science
-- **Source type:** Peer-reviewed system and case-study paper
-- **URL:** https://doi.org/10.1038/s43588-025-00906-6
-- **Publication date:** 2025-12-09 (online)
-- **Accessed / verified:** 2026-11-26
-- **Claims supported:** Open-source prototype AI collaborator for science-of-science workflows, database repository, multi-agent specialist architecture, and conversational human–AI research interface.
-- **Limitations:** Domain-specific prototype and case studies; reported capabilities do not establish general scientific reliability or transfer to other disciplines.
-
-
-### D-07 — CRediT Contributor Role Taxonomy
-- **Publisher:** National Information Standards Organization (NISO) / CRediT community
-- **Source type:** ANSI/NISO contributor-role taxonomy
-- **URL:** https://credit.niso.org/
-- **Publication date:** Approved as ANSI/NISO standard in 2022
-- **Accessed / verified:** 2026-11-26
-- **Claims supported:** Fourteen contributor roles, purpose of transparent contribution attribution, CC BY 4.0 licensing, and distinction between contributorship description and authorship determination.
-- **Limitations:** Does not define authorship eligibility or fully represent AI-system, community-governance, or ongoing maintenance roles.
-
-### D-08 — Springer Nature / Nature Portfolio Artificial Intelligence Policy
-- **Publisher:** Springer Nature
-- **Source type:** Publisher editorial policy
-- **URL:** https://www.nature.com/nature-portfolio/editorial-policies/ai
-- **Publication / update date:** Current policy accessed 2026-11-26
-- **Accessed / verified:** 2026-11-26
-- **Claims supported:** Risk-based approach to AI use by authors, reviewers, and editors; human accountability, disclosure, confidentiality, and boundaries on delegation of scholarly judgment.
-- **Limitations:** Publisher-specific policy; not a universal research-integrity standard and subject to revision.
-
-### D-09 — JAMA Network Instructions for Authors: Use of AI in Publication and Research
-- **Publisher:** JAMA Network
-- **Source type:** Journal author instructions
-- **URL:** https://jamanetwork.com/journals/jama/pages/instructions-for-authors
-- **Publication / update date:** Current instructions accessed 2026-11-26
-- **Accessed / verified:** 2026-11-26
-- **Claims supported:** Author responsibility for AI-generated content, disclosure of AI-assisted content creation/revision/formatting, and caution against AI-generated references.
-- **Limitations:** Journal-specific author requirements; not applicable to every discipline or venue.
-
-### D-10 — APA Journals Policy on Generative AI: Additional Guidance
-- **Publisher:** American Psychological Association
-- **Source type:** Publisher disclosure guidance
-- **URL:** https://www.apa.org/pubs/journals/resources/publishing-tips/policy-generative-ai
-- **Publication / update date:** Last updated 2025-08
-- **Accessed / verified:** 2026-11-26
-- **Claims supported:** Task-specific disclosure examples for literature search, translation, code, analysis, visualization, writing, and figures; preservation of prompts or outputs where relevant.
-- **Limitations:** APA-specific guidance; authors must follow the target journal's current requirements.
-
-
-### D-11 — The AI Scientist in the Mirror: Shared Flaws, Joint Remedies
-- **Authors:** Quentin E. A. Loisel, Steven N. Goodman
-- **Publisher:** Proceedings of the National Academy of Sciences (PNAS)
-- **Source type:** Scholarly comment on a research article
-- **URL:** https://doi.org/10.1073/pnas.2633303123
-- **Publication date:** 2026-11-16 (online); 2026-11-24 (issue publication)
-- **Accessed / verified:** 2026-11-26
-- **Claims supported:** Existence, authorship, publication date, and relationship as a comment on D-05, *The More You Automate, the Less You See*.
-- **Limitations:** Full text was not available in this research pass; arguments are not summarized pending retrieval and review.
-
-
 ## Workstream F — Governance, Economics, and Institutional Design
 
 ### F-01 — Wikimedia Foundation Bylaws
@@ -1520,7 +1552,6 @@ No sources entered yet. Add new sections and stable IDs as workstreams begin.
 - **Claims supported:** Independent compensation review, comparable salary data, board documentation, and conflict-of-interest safeguards.
 - **Limitations:** US nonprofit-sector guidance; not legal advice and not a substitute for IRS regulations or state law.
 
-
 ## Workstream G — People, Needs, and the Research Ecosystem
 
 ### G-01 — Scoping the Needs of Open Science Monitoring
@@ -1596,40 +1627,3 @@ No sources entered yet. Add new sections and stable IDs as workstreams begin.
 - **Accessed / verified:** 2026-11-26
 - **Claims supported:** Researcher attitudes toward open access, open data, open peer review, FAIR awareness, recognition for data sharing, and regional/disciplinary differences.
 - **Limitations:** Publisher-sponsored survey; sampling and question design should be assessed from the full report; not a universal measure of research practice.
-
-
-### A-65 — OSF Changes
-- **Publisher:** Center for Open Science
-- **Source type:** Primary transition and product-direction page
-- **URL:** https://www.cos.io/osf-changes
-- **Publication / update date:** Current page accessed 2026-11-26
-- **Accessed / verified:** 2026-11-26
-- **Claims supported:** Transition timeline, public/private project treatment, rationale, current OSF role, and shift toward an integrated model with complementary services.
-- **Limitations:** Operator statement; future plans and persistence commitments should be monitored as the transition proceeds.
-
-### A-66 — OSF Projects Transition
-- **Publisher:** Center for Open Science, OSF Support
-- **Source type:** Primary operational transition guide
-- **URL:** https://help.osf.io/article/727-osf-projects-transition
-- **Publication / update date:** Current help guide accessed 2026-11-26
-- **Accessed / verified:** 2026-11-26
-- **Claims supported:** No new projects/components from 2026-11-16; read-only transition on 2027-02-19; continued public project access; private project access for existing authorized users; possible future removal of private projects with advance notice.
-- **Limitations:** Operator guidance; future private storage plans may change and should be rechecked.
-
-### A-67 — OSF Projects Transition FAQs
-- **Publisher:** Center for Open Science, OSF Support
-- **Source type:** Primary FAQ and sustainability explanation
-- **URL:** https://help.osf.io/article/725-faqs
-- **Publication / update date:** Current FAQ accessed 2026-11-26
-- **Accessed / verified:** 2026-11-26
-- **Claims supported:** COS's estimate that maintaining current OSF Projects scope would require approximately US$4–5 million annually; explanation of funding and operational cost pressures; current treatment of public/private projects and continuing Registrations/Preprints.
-- **Limitations:** Operator-reported financial rationale; not an independent audit or full financial statement.
-
-### A-68 — OSF Projects API Impact
-- **Publisher:** Center for Open Science, OSF Support
-- **Source type:** Primary API migration guide
-- **URL:** https://help.osf.io/article/744-osf-projects-api-impact
-- **Publication / update date:** Current API guide accessed 2026-11-26
-- **Accessed / verified:** 2026-11-26
-- **Claims supported:** Retirement dates for project creation and write/update endpoints; unaffected Registries and Preprints endpoints; integration and migration implications.
-- **Limitations:** API documentation may change during the transition; integrations should be tested against live endpoints and current documentation.
