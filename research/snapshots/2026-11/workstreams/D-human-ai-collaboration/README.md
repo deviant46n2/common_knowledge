@@ -37,12 +37,14 @@ This page is the workstream's durable entry point. Add dated notes below as rese
 - [Initial field overview](field-overview.md)
 - [Contributions, disclosure, and accountability](contributions-and-accountability.md)
 - [Proposed AI research audit record](AI-research-audit-record.md)
+- [Empirical evaluation of AI research agents](empirical-evaluation.md)
 
 ### Progress notes
 
 - **2026-11-26:** Workstream scope and initial questions recorded. No comprehensive investigation had yet been completed.
 - **2026-11-26:** Added initial overview of AI research agents, human–AI reproducibility experiments, workflow auditability, and science-of-science collaborators. Registered sources D-01 through D-06.
 - **2026-11-26:** Added a comparison of CRediT and publisher AI policies and drafted an AI research audit record for testing; registered sources D-07 through D-10.
+- **2026-11-26:** Added an empirical comparison of AI Scientist, human–AI reproducibility teams, and workflow-audit findings; registered the 24 November 2026 PNAS comment as D-11 without interpreting its unavailable full text.
 
 ### Next steps
 
