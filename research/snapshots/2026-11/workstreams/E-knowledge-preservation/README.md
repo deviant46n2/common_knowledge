@@ -37,15 +37,17 @@ This page is the workstream's durable entry point. Add dated notes below as rese
 
 - [Initial field overview](field-overview.md)
 - [Metadata, interoperability, and preservation standards](standards-and-preservation.md)
+- [Persistent identifiers and authority records](identifiers-and-authority.md)
 
 ### Progress notes
 
 - **2026-11-26:** Workstream scope and initial questions recorded. No comprehensive investigation had yet been completed.
 - **2026-11-26:** Began the first standards map: Dublin Core, SKOS, OAI-PMH, IIIF, PREMIS, LOCKSS/CLOCKSS, and Wikidata/Wikibase. Registered sources E-01 through E-10.
+- **2026-11-26:** Added an initial identifier and authority-record comparison for Crossref, DataCite, ORCID, ROR, and BIBFRAME; registered sources E-11 through E-16.
 
 ### Next steps
 
-1. Map persistent identifiers, authority records, and scholarly metadata providers.
+1. Expand identifier coverage to software, grants, projects, places, people outside academia, and versioned web resources.
 2. Profile representative preservation networks, libraries, archives, and community knowledge projects.
 3. Examine multilingual discovery, rights, community-controlled knowledge, and contested classifications.
 4. Test practical interoperability and export paths across representative standards and platforms.
