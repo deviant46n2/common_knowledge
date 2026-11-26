@@ -154,7 +154,33 @@ def main(argv=None):
     imp.add_argument("record", type=Path, help="path to record.json inside an exported package")
     imp.add_argument("output", type=Path, help="destination package directory")
     imp.add_argument("--overwrite", action="store_true")
+    init = commands.add_parser("init", help="create a new empty record workspace")
+    init.add_argument("directory", type=Path, help="new record directory")
+    init.add_argument("--id", required=True, help="stable identifier for the record")
+    init.add_argument("--title", required=True, help="short record title")
+    init.add_argument("--statement", required=True, help="the precisely scoped statement")
+    init.add_argument("--scope", required=True, help="what the statement does and does not claim")
     args = parser.parse_args(argv)
+    if args.command == "init":
+        target = args.directory.resolve()
+        if target.exists():
+            print(f"ERROR: destination already exists: {target}", file=sys.stderr)
+            return 1
+        record = {
+            "format": "common-knowledge-record",
+            "format_version": VERSION,
+            "id": args.id,
+            "title": args.title,
+            "statement": {"text": args.statement, "scope": args.scope},
+            "sources": [],
+            "evidence": [],
+            "assessments": [],
+        }
+        target.mkdir(parents=True)
+        (target / "sources").mkdir()
+        (target / "record.json").write_bytes(canonical(record))
+        print(f"CREATED RECORD: {target / 'record.json'}")
+        return 0
     source = args.record.resolve()
     try:
         record = load(source)
