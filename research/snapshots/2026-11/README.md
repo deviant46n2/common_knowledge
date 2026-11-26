@@ -63,6 +63,10 @@ The project has begun a dedicated MVP investigation so that ecosystem research c
 - [MVP research index](../../mvp/README.md)
 - [Candidate landscape](../../mvp/candidate-landscape.md)
 - [Technical opportunities and integration hypotheses](../../mvp/technical-opportunities.md)
+- [Direct competitor review](../../mvp/direct-competitors.md)
+- [Claim-verification ecosystem](../../mvp/claim-verification-ecosystem.md)
+- [Workflow interoperability ecosystem](../../mvp/workflow-interoperability.md)
+- [Preliminary MVP opportunity assessment](../../mvp/opportunity-assessment.md)
 
 These documents are product-discovery research, not additional completed workstream findings. Their candidate assessments remain provisional and have not been validated through Common Knowledge user interviews or hands-on comparative testing.
 
