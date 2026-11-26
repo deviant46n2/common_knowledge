@@ -184,8 +184,9 @@ Do not claim reproducible builds until they have been tested.
 
 ## 12. Current state
 
-No MVP has been selected and no product architecture has been approved. This policy establishes documentation discipline only. Product-specific requirements, architecture, data models, threat models, interfaces, and test plans must be written after the product direction is supported by evidence.
+No MVP has been selected and no product architecture has been approved. This policy establishes documentation discipline. A reversible working product direction and an initial static-inspection prototype now exist under `product/` and `src/ck_preflight/`. No validated MVP or accepted product architecture has been selected. Product requirements and implementation records must continue to distinguish hypotheses, accepted decisions, implemented behavior, and verified behavior. See [AI Collaboration Protocol](../AI_COLLABORATION.md) for AI-agent authority and change boundaries, and [Institutional Design](../INSTITUTIONAL_DESIGN.md) for unresolved organizational questions.
 
 ## Change log
 
 - **2026-11-26:** Established the proposed documentation system and authority rules before product implementation. No technical architecture decisions were made.
+- **2026-11-26:** Updated current-state note to reflect the provisional product direction and initial prototype; added links to AI collaboration and institutional-design guidance.
