@@ -113,6 +113,39 @@ This is a staged direction, not a commitment to monitor every source or investig
 
 **Emerging principle:** Start focused; expand deliberately; ultimately combine community-driven inquiry with proactive, institutionally accountable research.
 
+
+## 10. Evidence, expert consensus, and public representation
+
+The founder has emphasized that Common Knowledge should represent the weight of evidence and relevant expert agreement accurately, rather than reproducing the appearance of a balanced public debate when the underlying state of knowledge is not balanced.
+
+Public controversy is not a reliable measure of scientific disagreement. For example, a topic may be portrayed in public discussion as evenly disputed even when the relevant scientific literature and expert assessments indicate strong agreement on important core findings. Common Knowledge should make that distinction visible and avoid manufacturing false balance.
+
+### Evidence remains foundational
+
+- Assessments should be grounded in the available evidence, its quality, scope, consistency, and limitations.
+- Expert consensus is important contextual evidence about the state of a field, but should not replace examination of the underlying research.
+- The system should distinguish agreement about core findings from disagreement about details, mechanisms, projections, implications, or policy responses.
+- Public prominence, political attention, media repetition, or the existence of vocal dissent should not by themselves determine how much weight a position receives.
+
+### Representing expert agreement responsibly
+
+Where relevant, Common Knowledge should explain:
+- Which expert community or field is being considered, and why it is relevant to the question.
+- What proposition experts agree or disagree about, stated precisely.
+- How the level of agreement was measured or inferred, including the population, sources, time period, and method.
+- Whether agreement is broad, qualified, emerging, contested, or unknown.
+- Where substantive minority views exist and how their evidential support compares with the wider body of evidence.
+
+A numerical consensus estimate should never be presented without explaining what was measured and how. Agreement among a selected group of experts is not automatically equivalent to agreement across an entire field, and consensus on a scientific finding does not automatically settle policy or value judgments.
+
+### Consensus is informative, not infallible
+
+Expert consensus should carry weight in proportion to the relevance and quality of the underlying process. It must remain open to reassessment as evidence changes. A minority position should not be suppressed merely because it is a minority; nor should it be presented as equally supported solely to create an appearance of neutrality.
+
+**Emerging principle:** Represent the state of evidence and relevant expert agreement proportionately. Do not confuse public controversy with genuine evidential or scientific disagreement, and do not treat consensus as beyond challenge.
+
+**Status:** The founder's preference for evidence-led representation and meaningful treatment of expert consensus is established as a guiding aspiration. The methods for identifying relevant experts, measuring consensus, evaluating minority positions, and updating consensus assessments remain open research and design questions.
+
 **Status:** The public-reference ambition and politician-claim example are founder-stated direction. The exact claim intake, context capture, assessment, prioritization, and presentation workflows remain open design questions.
 
 
