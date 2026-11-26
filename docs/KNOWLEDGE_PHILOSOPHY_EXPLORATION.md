@@ -190,4 +190,18 @@ A more mature system may automate substantial parts of routine evidence processi
 
 **Emerging principle:** Human-led at the beginning, increasingly AI-assisted and automated over time, without surrendering traceability, contestability, or accountability.
 
+
+### How automation authority may evolve
+
+The founder's current position is that Common Knowledge should begin with a human-in-the-loop approach. How much authority automated systems receive later should evolve alongside model capabilities, demonstrated reliability, and the maturity of the surrounding safeguards; it should not be fixed in advance.
+
+A useful working direction is **oversight proportional to consequence**:
+- Routine, low-consequence, readily reversible maintenance may become eligible for automation earlier, provided changes are logged and can be inspected or reversed.
+- Changes that materially affect factual assessments may require stronger validation, monitoring, and clear disclosure of their automated status.
+- High-consequence, novel, contested, or difficult-to-reverse changes should retain stronger human review and meaningful avenues for challenge and appeal.
+
+These are illustrative categories for future exploration, not adopted thresholds or a finalized permission system. Greater model capability alone should not automatically confer authority. Delegation should be earned through demonstrated performance, independent evaluation, transparent rules, and the ability to correct failures.
+
+**Working principle:** Start with human oversight; expand automation as reliability is demonstrated, with oversight proportional to the consequences of being wrong.
+
 **Status:** The human-to-automation direction is founder-stated. The division of authority between people and automated systems, review thresholds, audit standards, and acceptable autonomous actions remain open questions.
