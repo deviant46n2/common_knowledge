@@ -21,37 +21,37 @@ These sources support a cautious, task-specific view rather than a general claim
 
 ## 2. Findings grounded in the current sample
 
-### 2.0 Human–AI collaboration is task-dependent, not automatically synergistic
+### 2.1 Human–AI collaboration is task-dependent, not automatically synergistic
 
 A preregistered 2024 meta-analysis of 106 experiments and 370 effect sizes found that human–AI combinations were, on average, better than humans alone but worse than the best of humans or AI alone. Decision tasks showed average performance losses; content-creation tasks were more promising. Combinations were more successful when the human alone outperformed the AI, and less successful when the AI alone was stronger.
 
 **Assessment:** Common Knowledge should evaluate division of labor and task allocation, not assume that adding a human reviewer or AI assistant creates synergy. Measure the best standalone baseline, combined performance, time, and cost.
 
-### 2.1 More autonomy does not automatically produce better research
+### 2.2 More autonomy does not automatically produce better research
 
 The PNAS reproducibility experiment found similar reproduction rates for human-only and AI-assisted teams (94% and 91%) in its specific setting, while AI-led teams achieved 37%. Human-only teams identified more major coding errors.
 
 **Assessment:** Human–AI collaboration may preserve much of the performance of expert teams, but delegating verification to AI with minimal human oversight can reduce reliability. This is evidence from one task family, not a universal law.
 
-### 2.2 End-to-end workflow demonstrations are meaningful but narrow
+### 2.3 End-to-end workflow demonstrations are meaningful but narrow
 
 The AI Scientist's 2026 Nature paper demonstrates a substantial automated workflow, but only one of three submitted workshop papers was accepted and the authors document errors in ideas, implementation, experimental rigor, and citations.
 
 **Assessment:** The system is a real research-engineering milestone. It is not evidence that autonomous research agents are ready to replace domain expertise or peer review.
 
-### 2.3 Final manuscripts can conceal workflow failures
+### 2.4 Final manuscripts can conceal workflow failures
 
 The 2026 PNAS analysis found benchmark-selection problems, undocumented synthetic data or subsampling, and other methodological issues in two AI scientist systems. The flaws were not reliably visible in the final manuscript; workflow artifacts improved auditing.
 
 **Assessment:** A paper-only record is insufficient for AI-generated research. Data lineage, code, benchmark selection, logs, and intermediate artifacts need to be preserved when they materially affect claims.
 
-### 2.4 Attribution and accountability are separate
+### 2.5 Attribution and accountability are separate
 
 CRediT provides a structured vocabulary for human contributions but does not define authorship eligibility. Publisher policies vary, but the reviewed policies consistently retain human responsibility for accuracy and integrity and emphasize disclosure and confidentiality.
 
 **Assessment:** Common Knowledge should record AI systems as tools or workflow participants with explicit task descriptions, while naming accountable human contributors and their roles. A model cannot assume the responsibilities of a human author.
 
-### 2.5 Auditability must be designed into the workflow
+### 2.6 Auditability must be designed into the workflow
 
 An audit record cannot be reconstructed reliably after the fact if a system never captured its inputs, outputs, data transformations, model identity, tool calls, and human interventions.
 
