@@ -38,12 +38,13 @@ This page is the workstream's durable entry point. Add dated notes below as rese
 
 - [Initial field overview](field-overview.md)
 - [Stakeholder conversation guide](interview-guide.md)
+- [Stakeholder sampling and listening plan](stakeholder-sampling-plan.md)
 
 ### Progress notes
 
 - **2026-11-26:** Workstream scope and initial questions recorded. No direct Common Knowledge stakeholder interviews have yet been conducted.
 - **2026-11-26:** Added an initial review of researcher surveys and open-science monitoring needs, with explicit sampling and representativeness caveats. Registered sources G-01 through G-08.
-- **2026-11-26:** Created a consent-aware exploratory conversation guide for future stakeholder discussions.
+- **2026-11-26:** Created a consent-aware exploratory conversation guide and a purposive sampling plan for future stakeholder discussions. Recruitment has not started.
 
 ### Next steps
 
