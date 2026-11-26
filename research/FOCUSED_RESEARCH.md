@@ -1143,3 +1143,15 @@ A useful evidence locator should identify at least:
 6. a fallback and an explicit locator-quality status when the source has no stable key or version.
 
 This should be a source-type-aware design. We should not force every kind of evidence into one universal offset field.
+
+
+### CSVW implementation status
+
+A current Python implementation is maintained in [cldf/csvw](https://github.com/cldf/csvw). PyPI reports version 4.2.0, released 6 November 2026, Apache-2.0, Python 3.10+. It supplies `csvwvalidate`, `csvw2json`, and `csvwdescribe` commands. The project README is candid that it does not implement the full CSVW specification and reports 269/270 JSON tests, 280/282 validation tests, and 10/18 non-normative tests passing. This is a useful validation tool, not a perfect standards oracle. The older `csvwlib` implementation is explicitly unmaintained.
+
+Sources:
+- [cldf/csvw](https://github.com/cldf/csvw)
+- [csvw 4.2.0 on PyPI](https://pypi.org/project/csvw/4.2.0/)
+- [CSVW tools](https://csvw.org/tools.html)
+
+We have not run the `csvwvalidate` CLI because the package is not installed in the current runtime. The experiment report records this limitation and a pinned-version next step.
