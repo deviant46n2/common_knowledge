@@ -62,3 +62,24 @@ def test_quote_prefix_suffix_match_local_source_fixtures():
         start = text.index(exact)
         assert text[max(0, start - len(prefix)):start] == prefix
         assert text[start + len(exact):start + len(exact) + len(suffix)] == suffix
+
+
+def test_two_assessments_coexist_on_a_new_record_version():
+    g = graph()
+    statement = URIRef("https://example.org/ck/statement/r1")
+    assessments = list(g.subjects(EX.assessmentOf, statement))
+    assert len(assessments) == 2
+    v1 = URIRef("https://example.org/ck/record/r1")
+    v2 = URIRef("https://example.org/ck/record/r1/v2")
+    assert (v2, PROV.wasRevisionOf, v1) in g
+    assert set(g.objects(v2, EX.hasAssessment)) == set(assessments)
+    assert len(set(g.objects(v1, EX.hasAssessment))) == 1
+
+
+def test_independent_assessments_have_distinct_review_agents():
+    g = graph()
+    agents = {
+        next(g.objects(URIRef("https://example.org/ck/activity/review-1"), PROV.wasAssociatedWith)),
+        next(g.objects(URIRef("https://example.org/ck/activity/review-2"), PROV.wasAssociatedWith)),
+    }
+    assert len(agents) == 2
