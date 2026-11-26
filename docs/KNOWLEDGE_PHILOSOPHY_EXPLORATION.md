@@ -104,3 +104,22 @@ A narrow initial domain should not result in a knowledge model that is fundament
 
 **Status:** Initial domains and the ambition to expand broadly are founder-stated direction. The exact first collection of topics, admission criteria, sequencing, and expansion process remain open.
 
+## 6. Open proposals and reviewed knowledge
+
+The founder proposes an approach inspired by open-source pull requests: contributions should be publicly inspectable as proposals before they are integrated into the maintained knowledge collection.
+
+The important distinction is between **public visibility** and **recognition as part of the maintained body of knowledge**.
+
+- Anyone should be able to propose a claim, source, evidence, correction, challenge, or interpretation without first obtaining institutional permission.
+- A proposal can be publicly viewed and discussed, including its supporting material, author, status, and review history.
+- While pending, a proposal should not be presented or indexed as established knowledge, nor appear in ordinary knowledge search results as though it had been accepted.
+- Review should be transparent and collaborative: reviewers can ask questions, identify problems, suggest revisions, and explain their assessments.
+- Once accepted, the contribution can be integrated into the maintained knowledge collection with its provenance and review history intact.
+- A proposal that is declined, withdrawn, or left unresolved may still have a useful public history, subject to safety, privacy, rights, and abuse policies. Its status must remain clear.
+
+This is a working direction, not a finalized workflow. It raises important design questions: how proposals are discovered and discussed; whether some pending proposals should be discoverable in a separate proposals area; how urgent corrections are handled; what happens when review stalls; how appeals work; and how to prevent review from becoming an opaque or inaccessible gatekeeping process.
+
+The model should also distinguish review of knowledge quality from moderation for spam, abuse, privacy, safety, and unlawful material. Those are different responsibilities and may require different processes.
+
+**Emerging principle:** Open proposals, transparent review, and explicit acceptance before integration into maintained knowledge.
+
