@@ -70,6 +70,8 @@ The existing Consilience measured-claim and disagreement templates already cover
 
 ## 5. A possible first product workflow
 
+A real candidate case is documented in [the Christine Lagarde longevity-quote case study](experiments/2026-11-lagarde-quote-case-study.md). It is useful because it has multiple newsroom checks, primary IMF sources, different original verdict labels, and a multilingual rumor chain. It is not yet selected as the first MVP domain.
+
 A deliberately bounded workflow could be:
 
 1. A reader enters a public claim or opens a claim already checked by a newsroom.
