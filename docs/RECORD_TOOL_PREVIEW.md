@@ -10,6 +10,11 @@ From the repository root:
 
 ```bash
 PYTHONPATH=src python -m ck_records --help
+PYTHONPATH=src python -m ck_records init /tmp/new-record \
+  --id urn:ck:example:new-record \
+  --title "A new record" \
+  --statement "The statement being documented." \
+  --scope "The exact limits of what this statement claims."
 PYTHONPATH=src python -m ck_records validate examples/records/r1/record.json
 PYTHONPATH=src python -m ck_records inspect examples/records/r1/record.json
 PYTHONPATH=src python -m ck_records export examples/records/r1/record.json /tmp/r1-package
@@ -18,8 +23,13 @@ PYTHONPATH=src python -m ck_records import /tmp/r1-package/record.json /tmp/r1-i
 
 The example is synthetic. Local source files are included so validation can check exact quotations and their prefix/suffix context. Source paths are restricted to the record directory.
 
+## Create a record
+
+`init` creates a new workspace containing `record.json` and an empty `sources/` directory. It requires an identifier, title, statement, and scope. Add source files under `sources/`, then edit the record to add source entries, evidence anchors, and assessments. Initialization refuses to overwrite an existing directory.
+
 ## Current checks
 
+- Create a valid empty starter workspace.
 - Format name/version and required fields.
 - Unique IDs and valid references.
 - Typed evidence relationships: supports, challenges, qualifies, contextualizes.
