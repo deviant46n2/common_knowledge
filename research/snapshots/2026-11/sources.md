@@ -489,6 +489,52 @@ For each source, record:
 - **Claims supported:** Eligibility rules for observations exported to GBIF and stated export frequency.
 - **Limitations:** Export operations and criteria can change; verify current behavior before relying on it.
 
+
+### A-48 — Dataverse Project: About
+- **Publisher:** Dataverse Project, Harvard Institute for Quantitative Social Science and community
+- **Source type:** Primary
+- **URL:** https://dataverse.org/about/
+- **Publication / update date:** Current project page
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Open-source repository software, institutional installations, community development, and stated project goals.
+- **Limitations:** Operator and community description; independent preservation audit and comparative user research not reviewed.
+
+### A-49 — Figshare: About us
+- **Publisher:** Figshare / Digital Science
+- **Source type:** Primary
+- **URL:** https://info.figshare.com/about/
+- **Publication / update date:** Current company page
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Figshare's repository services, commercial ownership, institutional offerings, APIs, identifiers, and stated interoperability commitments.
+- **Limitations:** Vendor description; business terms, export experience, and continuity need independent investigation.
+
+### A-50 — Galaxy Project
+- **Publisher:** Galaxy Project
+- **Source type:** Primary
+- **URL:** https://galaxyproject.org/galaxy-project/
+- **Publication / update date:** Current project page
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Galaxy's purpose as an open web-based platform for accessible, reproducible, transparent computational research.
+- **Limitations:** Project description; service availability and reproducibility outcomes vary by deployment, tool, and workflow.
+
+### A-51 — arXiv
+- **Publisher:** Cornell University / arXiv
+- **Source type:** Primary service documentation
+- **URL:** https://arxiv.org/
+- **Publication / update date:** Current service
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** arXiv as a disciplinary preprint and e-print archive.
+- **Limitations:** This initial directory entry is not yet supported by a full review of moderation, governance, funding, preservation, or disciplinary coverage.
+
+### A-52 — eBird
+- **Publisher:** Cornell Lab of Ornithology
+- **Source type:** Primary service; also listed in OECD citizen-science platform inventory
+- **URL:** https://ebird.org/
+- **Publication / update date:** Current service
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** eBird as a platform for submitting and exploring bird observations; relevance to biodiversity citizen science.
+- **Limitations:** Full data quality, licensing, sampling-bias, governance, and data-access review remains outstanding.
+
 ## Other workstreams
 
 No sources entered yet. Add new sections and stable IDs as workstreams begin.
