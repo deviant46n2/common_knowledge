@@ -1175,3 +1175,23 @@ Sources:
 - MediaWiki, [Wikibase FAQ](https://www.mediawiki.org/wiki/Wikibase/FAQ)
 
 **Practical implication:** Wikibase is now feasible to evaluate without self-hosting, but the test should be done in a dedicated instance using fictional public data. Creating that instance requires a user account, email verification, and the instance's own setup steps. No account or wiki has been created by this project.
+
+
+### Nanodash source and deployment spot-check
+
+A targeted review of the current Nanodash repository README and Docker Compose file adds several practical details:
+- There are multiple hosted instances; login is through ORCID.
+- The built-in privacy notice explicitly describes ORCID login, a signing key held server-side, and publication as public and permanent.
+- A local Docker deployment is supported and persists its Nanopub account data under a mounted `local-data` directory.
+- A site can be configured in "space mode": the space becomes the home page/context and can supply its own name, logo, and stylesheet. This is a possible way to present a community-specific knowledge collection without building every browse/publish UI component from scratch.
+- The current repository is licensed AGPL-3.0-or-later.
+- The repository had commits on 23 November 2026, so the project is actively changing at the time of this review.
+
+The hosted signing-key model is convenient but means the online Nanodash operator holds the key material used for publishing. This should be distinguished from command-line publication where the contributor keeps a local key file. Neither arrangement proves the truth of a publication; it changes the operational trust and recovery assumptions.
+
+Sources:
+- [Nanodash repository and README](https://github.com/knowledgepixels/nanodash)
+- [Nanodash Docker Compose](https://github.com/knowledgepixels/nanodash/blob/master/docker-compose.yml)
+- [Nanodash installation instructions](https://github.com/knowledgepixels/nanodash/blob/master/INSTALL-with-Docker.md)
+
+**Limitations:** This was a repository/documentation review only. No hosted account was created, no local Nanodash instance was launched, and no user experience was tested. The local Docker route is not currently available in our execution environment because Docker is not installed.
