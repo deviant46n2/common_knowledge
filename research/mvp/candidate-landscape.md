@@ -26,7 +26,7 @@ These are opportunity hypotheses, not selected products. We need direct user evi
 | Candidate | Existing landscape | Initial assessment | Disposition |
 |---|---|---|---|
 | General-purpose research collaboration workspace | OSF, Renku, Galaxy, institutional repositories, lab notebooks, project-specific systems | High build and maintenance burden; duplicates broad existing functionality | Reject as first MVP |
-| Generic research artifact / RO-Crate generator | RO-Crate ecosystem lists 100+ related tools, libraries, editors, validators, workflow integrations, and domain profiles | Standards generation alone is not differentiated | Reject as standalone MVP; reuse standards |
+| Generic research artifact / RO-Crate generator | RO-Crate ecosystem lists 100+ related tools, libraries, editors, validators, workflow integrations, domain profiles, and agent skills | Standards generation alone is not differentiated | Reject as standalone MVP; reuse standards |
 | Research software metadata generator | CodeMeta, CITATION.cff, CodeMeta tools, cffinit, SMECS, rs-metadata, Codefair, institutional FAIR software tooling | Clear need exists, but specialist tools already serve it | Do not build another generator |
 | Computational reproducibility platform | Renku, Whole Tale, ReproZip, Code Ocean, Binder, workflow engines, containers, CI systems | Important need, but comprehensive execution environments are complex and competitive | Do not build a platform; investigate narrower handoff/diagnostic workflow |
 | Research handoff / readiness diagnostic | Checklists, FAIR software guidance, metadata validators, workflow tools, and reproducibility platforms each cover parts | Potential gap in low-friction, evidence-based diagnosis plus actionable remediation across existing tools | Keep as leading candidate; investigate deeply |
@@ -132,7 +132,7 @@ This is qualitative triage, not a numerical score.
 | Opportunity | User pain evidence | Existing competition | Standalone demo potential | Current confidence |
 |---|---|---|---|---|
 | Research handoff / readiness diagnostics | Moderate; supported by reproducibility studies and documentation barriers | High but fragmented across tools and checklists | High if a clear before/after workflow exists | Medium-low |
-| Research-specific AI workflow audit record | Emerging, with recent research identifying an evidence and traceability gap | ReCRATE, Paper2Agent, FAIRSCAPE/EVI, Workflow Run RO-Crate, and generic observability cover substantial parts | High with a working AI experiment and evidence-linked report | Medium-low |
+| Research-specific AI workflow audit record | Emerging, with recent research identifying an evidence and traceability gap | ReCRATE, Paper2Agent, FlowProof, FAIRSCAPE/EVI, Workflow Run RO-Crate, and generic observability cover substantial parts | High with a working AI experiment and evidence-linked report | Medium-low |
 | OSF export/migration helper | Concrete for active users affected by workflow changes | OSF guidance, API, osfclient, and announced export tooling | High for a narrow import/export demonstration | Medium |
 | Generic metadata generator | Established need | Very high | High | High confidence it is not differentiated |
 | General research platform | Broad need | Very high | Low; needs network and infrastructure | High confidence it is too broad |
