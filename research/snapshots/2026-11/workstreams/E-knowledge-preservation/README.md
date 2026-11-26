@@ -42,6 +42,8 @@ This page is the workstream's durable entry point. Add dated notes below as rese
 - [Federated discovery and metadata aggregation](federated-discovery.md)
 - [Documentary heritage and community archives](documentary-heritage.md)
 - [Preliminary comparative synthesis](comparative-synthesis.md)
+- [Documentary heritage and community archives](documentary-heritage.md)
+- [Preliminary comparative synthesis](comparative-synthesis.md)
 
 ### Progress notes
 
@@ -56,7 +58,7 @@ This page is the workstream's durable entry point. Add dated notes below as rese
 ### Next steps
 
 1. Expand identifier coverage to software, grants, projects, places, people outside academia, and versioned web resources.
-2. Profile representative preservation networks, libraries, archives, and community knowledge projects.
-3. Examine multilingual discovery, rights, community-controlled knowledge, and contested classifications.
-4. Test practical interoperability and export paths across representative standards and platforms.
-5. Produce a first-pass synthesis that states coverage and limitations.
+2. Profile additional preservation networks and community archives, including funding, governance, and continuity arrangements.
+3. Examine multilingual discovery, accessibility, and metadata quality beyond North American and European examples.
+4. Test crosswalks among Dublin Core, DataCite, Schema.org, PROV, and RO-Crate using real sample records.
+5. Conduct direct, consent-based conversations with community archives and knowledge stewards before proposing platform features.
