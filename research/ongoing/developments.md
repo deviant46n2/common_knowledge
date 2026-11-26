@@ -33,10 +33,11 @@ These are future or unresolved developments already identified in the November 2
 - **Evidence:** [BOINC Central scientist guide](https://boinc.berkeley.edu/central/scientist.php), [BOINC Central overview](https://boinc.berkeley.edu/central/about.php), [BUDA overview](https://github.com/BOINC/boinc/wiki/BUDA-overview).
 - **Related profile:** [BOINC](../snapshots/2026-11/projects/boinc.md).
 
-### PNAS comment on autonomous AI scientists — full text review pending
+### PNAS comment on autonomous AI scientists — full text reviewed
 
-- **Expected action:** Retrieve and assess the full text of Loisel and Goodman's 24 November 2026 comment, *The AI Scientist in the Mirror: Shared Flaws, Joint Remedies*.
-- **Why monitor:** It directly responds to the PNAS analysis of hidden workflow failures in autonomous AI scientist systems.
+- **Reviewed:** 2026-11-26.
+- **Finding:** Loisel and Goodman report that targeted detection of methodological problems rose from 53.7% using manuscripts alone to 81.5% when logs and code were available in their specific study. They recommend comparing human-only, AI-only, and different human–AI arrangements and measuring time and compute.
+- **Why continue monitoring:** The comment responds to a recent PNAS analysis and may attract further methodological discussion or replication.
 - **Evidence:** [DOI](https://doi.org/10.1073/pnas.2633303123).
 - **Related workstream:** [D — Human–AI research collaboration](../snapshots/2026-11/workstreams/D-human-ai-collaboration/README.md).
 
