@@ -44,17 +44,19 @@
         ck:observedAt "2026-05-01T09:00:00Z"^^xsd:dateTime ;
         ck:observedProperty ck:DissolvedOxygen ;
         ck:sourceColumn "dissolved_oxygen_mg_l" ;
-        ck:sourceRow 42 ;
+        ck:sourceRowKey "R1-20260501T0900Z" ;
+        ck:sourceSha256 "sha256:e9e7a483252cfd45c57ee0fe9ecd9f1f261e33d24ef1c69d53c0bcb892a0021d" ;
+        ck:sourceVersion <https://example.org/datasets/station-r1-observations/2026-11-26/observations.csv> ;
         ck:station <https://example.org/ck/id/station/R-1> ;
         ck:unit "mg/L" .
 }
 
 <https://example.org/np/observation-1#provenance> {
-    <https://example.org/np/observation-1#assertion> prov:hadPrimarySource <https://example.org/ck/id/source/station-r1.csv> ;
-        prov:wasGeneratedBy <https://example.org/ck/id/activity/extract-row-42> .
+    <https://example.org/np/observation-1#assertion> prov:hadPrimarySource <https://example.org/datasets/station-r1-observations/2026-11-26/observations.csv> ;
+        prov:wasGeneratedBy <https://example.org/ck/id/activity/extract-row-R1-20260501T0900Z> .
 
-    <https://example.org/ck/id/activity/extract-row-42> a prov:Activity ;
-        prov:used <https://example.org/ck/id/source/station-r1.csv> ;
+    <https://example.org/ck/id/activity/extract-row-R1-20260501T0900Z> a prov:Activity ;
+        prov:used <https://example.org/datasets/station-r1-observations/2026-11-26/observations.csv> ;
         prov:wasAssociatedWith <https://example.org/ck/id/agent/data-extractor> .
 }
 
