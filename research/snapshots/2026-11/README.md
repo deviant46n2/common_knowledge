@@ -58,8 +58,14 @@ This first edition is a baseline, not a completed survey. At the time this struc
 
 ## Change log
 
-- **2026-11-26:** Created the initial snapshot structure and declared its research cutoff. Research findings have not yet been comprehensively populated.
-- **2026-11-26:** Added the seven-workstream research program, individual workstream briefs, and reusable report templates. All seven workstreams are now in progress at an initial or partial level. This does not mean any workstream is baseline complete.
-- **2026-11-26:** Expanded Workstream A with five profiles covering workflow registries, protocol management, participant-controlled personal data, community-led environmental research, and biodiversity observations.
-- **2026-11-26:** Expanded Workstream C with a technical landscape of provenance, packaging, execution, reporting, Registered Reports, and correction infrastructure; added sources C-07 through C-17 and a draft minimum-common-core research record for pilot testing.
-- **2026-11-26:** Began Workstream E with an initial field overview and standards map for metadata, semantic organization, harvesting, IIIF digital-object presentation, preservation metadata, distributed preservation, and collaborative knowledge graphs; registered sources E-01 through E-10 and added an identifier and authority-record comparison with sources E-11 through E-16, plus community governance and preservation analysis with sources E-17 through E-22, and a federation comparison with sources E-23 through E-25, plus documentary heritage and community archives analysis with sources E-26 through E-29.
+- **2026-11-26:** Created the initial snapshot structure and declared its research cutoff. This is an initial baseline, not a completed field survey.
+- **2026-11-26:** Added the seven-workstream research program, individual workstream briefs, and reusable report templates. All seven workstreams now have initial or partial research; none is baseline complete.
+- **2026-11-26:** Expanded Workstream A with profiles across repositories, publishing, workflow registries, participant-controlled data, community research, and biodiversity science.
+- **2026-11-26:** Updated the OSF profile and comparative synthesis with the November 2026–February 2027 transition, API changes, funding rationale, and current private-project guidance; registered sources A-65 through A-68.
+- **2026-11-26:** Expanded Workstream B with a field overview, trust and validation analysis, workload-fit framework, and BOINC project profile; registered sources B-01 through B-11.
+- **2026-11-26:** Expanded Workstream C with standards, tools, empirical reproducibility evidence, research-integrity analysis, a research-record proposal, and comparative synthesis; registered sources C-01 through C-27.
+- **2026-11-26:** Expanded Workstream D with AI research-agent profiles, human–AI reproducibility evidence, disclosure and accountability analysis, an audit-record proposal, and comparative synthesis; registered sources D-01 through D-11.
+- **2026-11-26:** Expanded Workstream E with metadata and preservation standards, identifiers, community rights, federated discovery, documentary heritage, a Mukurtu profile, and comparative synthesis; registered sources E-01 through E-29.
+- **2026-11-26:** Began Workstream F with legal-form and governance comparisons, asset-protection questions, and funding/compensation analysis; registered sources F-01 through F-15 (with duplicate IRS entries removed).
+- **2026-11-26:** Began Workstream G with survey-based needs research and a consent-aware stakeholder conversation guide; registered sources G-01 through G-08. No direct Common Knowledge interviews have yet been conducted.
+- **2026-11-26:** Updated cross-workstream analysis and the preliminary gap register to reflect findings and uncertainties across all seven areas.
