@@ -15,7 +15,7 @@ This is a living synthesis. Findings are provisional where underlying workstream
 | Workstream | Status | Current synthesis contribution |
 |---|---|---|
 | [A — Open science and research collaboration](workstreams/A-open-science/README.md) | In progress | Initial ecosystem map and comparative synthesis across repositories, collaboration, workflows, citizen science, and community research |
-| [B — Distributed and federated infrastructure](workstreams/B-distributed-infrastructure/README.md) | Not started | Pending investigation |
+| [B — Distributed and federated infrastructure](workstreams/B-distributed-infrastructure/README.md) | In progress | Initial landscape of volunteer compute, institutional HTC, multi-cluster orchestration, P2P networking, storage proofs, workload fit, and trust boundaries |
 | [C — Reproducibility and research integrity](workstreams/C-reproducibility/README.md) | In progress | Initial frameworks and tools map, research-record proposal, and integrity/correction analysis |
 | [D — Human–AI research collaboration](workstreams/D-human-ai-collaboration/README.md) | Not started | Pending investigation |
 | [E — Shared knowledge and preservation](workstreams/E-knowledge-preservation/README.md) | In progress | Initial standards map, identifiers, preservation, community rights, and federated discovery synthesis |
@@ -23,6 +23,26 @@ This is a living synthesis. Findings are provisional where underlying workstream
 | [G — People and research ecosystem needs](workstreams/G-people-and-needs/README.md) | Not started | Pending investigation; conversations should begin throughout the program |
 
 ## Emerging cross-cutting themes
+
+### 7. Distributed infrastructure creates reciprocal trust obligations
+
+**Supporting workstreams:** B, C, E.
+
+- Workstream B's BOINC review identifies risks to both volunteers and project operators: malicious or faulty results, unsafe workloads, compromised servers, and participant privacy.
+- Workstream C's reproducibility work shows that validation must state its scope and cannot be reduced to a generic verified badge.
+- Workstream E's preservation work distinguishes proof of storage, actual retrieval, and long-term stewardship.
+
+**Assessment:** A distributed commons must protect contributors' machines and data while also protecting research outputs from malicious or unreliable workers. Signatures, sandboxing, replication, and storage proofs each establish different properties; none proves overall trustworthiness.
+
+### 8. Data locality can be more important than compute distribution
+
+**Supporting workstreams:** B, C, E.
+
+- Workstream B's workload analysis shows that moving data can dominate execution cost or be prohibited by sensitivity and licensing.
+- Workstream C's research-record proposal distinguishes public, controlled-access, and non-shareable inputs.
+- Workstream E's community-rights analysis shows that data governance and cultural authority can limit copying and reuse.
+
+**Assessment:** Common Knowledge should consider moving computation to governed data, not assume data should be copied to volunteer machines. This needs workload-specific security and performance testing.
 
 ### 1. Federation and interoperability may be more valuable than a new monolithic platform
 
@@ -141,3 +161,4 @@ Do not promote a candidate opportunity to a recommendation until the underlying 
 
 - **2026-11-26:** Created the cross-workstream synthesis framework. No comparative findings had yet been recorded.
 - **2026-11-26:** Added preliminary themes based on Workstreams A, C, and E. All three remain in progress; these themes are hypotheses to test, not final conclusions.
+- **2026-11-26:** Added Workstream B and two cross-cutting themes on reciprocal trust obligations and data locality. Workstream B remains in progress.
