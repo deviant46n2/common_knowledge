@@ -199,7 +199,9 @@ Potential Common Knowledge work remains, but it must be framed carefully:
 
 ## 7. Recommended next step
 
-Use a single real public claim that has already been fact-checked by multiple newsrooms. Compare:
+A first real case study is now recorded: [the Christine Lagarde longevity-quote claim](experiments/2026-11-lagarde-quote-case-study.md). It has multiple newsroom checks, primary IMF documents, and a multilingual source chain. It is a research example, not a selected MVP domain.
+
+For the next product test, use a real public claim that has already been fact-checked by multiple newsrooms. Compare:
 - the original claim and context;
 - each newsroom's own verdict and article;
 - the exact sources and passages those articles rely on;
