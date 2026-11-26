@@ -41,6 +41,11 @@ Map platforms, institutions, communities, and practices across academic, indepen
 - [PubPub profile](../../projects/pubpub.md) — community publishing infrastructure.
 - [eLife profile](../../projects/elife.md) — Reviewed Preprint and public peer-review model.
 - [bioRxiv profile](../../projects/biorxiv.md) and [medRxiv profile](../../projects/medrxiv.md) — discipline-specific preprint dissemination and screening.
+- [WorkflowHub profile](../../projects/workflowhub.md) — workflow registry and interoperability standards.
+- [protocols.io profile](../../projects/protocols-io.md) — structured methods and OSF migration context.
+- [Open Humans profile](../../projects/open-humans.md) — participant-controlled personal data and community research.
+- [Public Lab profile](../../projects/public-lab.md) — community-led environmental science; current status needs verification.
+- [iNaturalist profile](../../projects/inaturalist.md) — community observations, quality assessment, and biodiversity data reuse.
 
 This page is the workstream's durable entry point. Add dated notes below as research proceeds. Put substantive findings in focused reports and profiles, with sources attached to the claims they support. Keep documented facts, independent findings, assessments, and open questions distinct.
 
@@ -50,6 +55,7 @@ This page is the workstream's durable entry point. Add dated notes below as rese
 - **2026-11-26:** Began the landscape review; added an initial field overview and profiles of OSF, Zooniverse, and SciStarter. Registered sources A-01 through A-15. This is a preliminary sample, not a complete directory or systematic review.
 - **2026-11-26:** Expanded the first pass to repositories, scholarly discovery, community publishing, reviewed preprints, and life-sciences/medical preprint servers. Added seven profiles and registered sources A-16 through A-30. The field overview remains preliminary and is not a systematic review.
 - **2026-11-26:** Added an initial standards and interoperability map covering FAIR, DOI and metadata relationships, Crossref, ORCID, ROR, OAI-PMH, and POSI. Registered sources A-31 through A-38.
+- **2026-11-26:** Added profiles of WorkflowHub, protocols.io, Open Humans, Public Lab, and iNaturalist, covering workflow discovery, research methods, participant agency, community-led science, and biodiversity data. Registered sources A-39 through A-47.
 
 ### Next steps
 
