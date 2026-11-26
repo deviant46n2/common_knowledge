@@ -1491,3 +1491,49 @@ No sources entered yet. Add new sections and stable IDs as workstreams begin.
 - **Accessed / verified:** 2026-11-26
 - **Claims supported:** Worker cooperatives' democratic governance, one-member/one-vote principle, and variation in management structures.
 - **Limitations:** US overview; cooperative law and tax treatment vary by state and country.
+
+
+### F-11 — IRS Technical Guidance: Inurement and Private Benefit
+- **Publisher:** Internal Revenue Service
+- **Source type:** US federal tax guidance
+- **URL:** https://www.irs.gov/charities-non-profits/charitable-organizations/inurement-private-benefit-charitable-organizations
+- **Publication / update date:** Current guidance accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** 501(c)(3) prohibition on private inurement and substantial private benefit; distinction between insiders and other private interests.
+- **Limitations:** US federal tax guidance for 501(c)(3) organizations; not a complete governance or compensation policy.
+
+### F-12 — IRS Intermediate Sanctions: Compensation
+- **Publisher:** Internal Revenue Service
+- **Source type:** US federal tax guidance
+- **URL:** https://www.irs.gov/charities-non-profits/charitable-organizations/intermediate-sanctions-compensation
+- **Publication / update date:** Current guidance accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Reasonable compensation based on fair market value under like circumstances and inclusion of cash/noncash compensation, benefits, bonuses, severance, and other economic benefits.
+- **Limitations:** US federal tax guidance; does not establish a universal salary cap or mission-specific compensation philosophy.
+
+### F-13 — Wikimedia Foundation and Endowment FY 2025–2026 Financial Audit Highlights
+- **Publisher:** Wikimedia Foundation / Wikimedia Endowment
+- **Source type:** Primary financial reporting summary and audited financial statement references
+- **URL:** https://diff.wikimedia.org/2026/11/05/highlights-from-the-wikimedia-foundation-and-wikimedia-endowment-audit-reports-for-fiscal-year-2025-2026/
+- **Publication date:** 2026-11-05
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** FY 2025–2026 revenue, expenses, donation and investment income, grantmaking, endowment net assets, and cost-sharing relationships.
+- **Limitations:** Organization-authored summary of audited reports; detailed analysis should consult the actual audit reports and Form 990s.
+
+### F-14 — Open Source Collective Fiscal Hosting Fees
+- **Publisher:** Open Source Collective / Open Collective
+- **Source type:** Primary fiscal-host application and fee information
+- **URL:** https://opencollective.com/opensource/apply/intro
+- **Publication / update date:** Current application page accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Published 10% fee on funds raised and fiscal-host service scope at the time accessed.
+- **Limitations:** Application terms may change and may differ by arrangement; actual contract governs.
+
+### F-15 — National Council of Nonprofits: Executive Compensation
+- **Publisher:** National Council of Nonprofits
+- **Source type:** Nonprofit governance guidance
+- **URL:** https://councilofnonprofits.org/running-nonprofit/governance-leadership/executive-compensation
+- **Publication / update date:** Current guidance accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Independent compensation review, comparable salary data, board documentation, and conflict-of-interest safeguards.
+- **Limitations:** US nonprofit-sector guidance; not legal advice and not a substitute for IRS regulations or state law.
