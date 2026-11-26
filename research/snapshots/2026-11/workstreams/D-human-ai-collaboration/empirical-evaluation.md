@@ -38,7 +38,7 @@ Human-only teams identified significantly more major coding errors. AI-assisted 
 
 **Limitations:** Results are specific to the task, research domain, teams, and systems used. They do not establish a universal ceiling for AI assistance or future models. The article received an affiliation correction in July 2026; the correction did not change the results.
 
-## 4. Hidden methodological failures in autonomous AI scientists
+## 5. Hidden methodological failures in autonomous AI scientists
 
 The 2026 PNAS study by Luo, Kasirzadeh, and Shah examines two representative open-source AI-scientist systems. It identifies four classes of risk:
 - Inappropriate benchmark selection.
@@ -52,7 +52,7 @@ The study reports that both systems could silently generate synthetic data or su
 
 **Limitations:** The controlled analysis concerns two systems and selected settings. It does not establish the prevalence of each failure across all AI research agents.
 
-## 5. A current scholarly exchange: Loisel and Goodman (2026)
+## 6. A current scholarly exchange: Loisel and Goodman (2026)
 
 Loisel and Goodman’s PNAS commentary, published online 16 November and in the 24 November 2026 issue, discusses the Luo et al. study and places it in the wider context of metaresearch and human–AI collaboration.
 
@@ -67,7 +67,7 @@ The commentary argues that simply placing a researcher at the end of an automate
 
 **Limitations:** This is commentary on a controlled machine-learning task, not a universal evaluation of autonomous science. The reported detection percentages describe that study's specific test and should not be generalized to all AI research workflows.
 
-## 6. Evaluation dimensions for Common Knowledge
+## 7. Evaluation dimensions for Common Knowledge
 
 A useful AI research evaluation should assess at least:
 
@@ -89,7 +89,7 @@ A useful AI research evaluation should assess at least:
 
 A single composite score could hide critical failure. Results should be reported by dimension and include the scope and evidence for each judgment.
 
-## 7. Implications for Common Knowledge
+## 8. Implications for Common Knowledge
 
 Potential design requirements:
 1. Store workflow artifacts alongside manuscripts and results.
@@ -105,7 +105,7 @@ Potential design requirements:
 
 These are candidate requirements for pilot testing, not a final AI policy.
 
-## 8. Open questions
+## 9. Open questions
 
 1. What is the smallest workflow trace that lets an independent reviewer detect data manipulation or benchmark leakage?
 2. How should novelty checks be audited?
@@ -118,7 +118,7 @@ These are candidate requirements for pilot testing, not a final AI policy.
 
 ## Sources
 
-See the [November 2026 source register](../../sources.md), entries D-01 through D-12.
+See the [November 2026 source register](../../sources.md), entries D-01 through D-13.
 
 ## Change log
 
