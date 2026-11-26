@@ -1260,3 +1260,31 @@ No sources entered yet. Add new sections and stable IDs as workstreams begin.
 - **Accessed / verified:** 2026-11-26
 - **Claims supported:** Distinction between content addressing, caching, garbage collection, pinning, pinning services, and long-term retention dependencies.
 - **Limitations:** Documentation explains protocol and operational concepts; does not independently assess pinning-provider continuity or storage economics.
+
+
+### B-09 — BOINC Job Replication and Result Validation
+- **Publisher:** BOINC Project
+- **Source type:** Primary technical documentation
+- **URL:** https://github.com/BOINC/boinc/wiki/Job-replication
+- **Publication / update date:** Updated 2026-03-20
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Application-specific validation, single-execution checks, replicated execution, numerical comparison challenges, homogeneous replication, and adaptive replication.
+- **Limitations:** Project documentation; validation effectiveness depends on workload, validator quality, host behavior, and threat model.
+
+### B-10 — BOINC Adaptive Replication
+- **Publisher:** BOINC Project
+- **Source type:** Primary technical documentation
+- **URL:** https://github.com/BOINC/boinc/wiki/Adaptive-Replication
+- **Publication / update date:** Updated 2026-03-19
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Host/application-version reputation, randomized selective replication, and stated overhead/confidence goals.
+- **Limitations:** Stated targets are implementation guidance, not independent performance guarantees; adaptive trust does not prove correctness.
+
+### B-11 — Filecoin Proofs
+- **Publisher:** Filecoin Project
+- **Source type:** Primary protocol documentation
+- **URL:** https://github.com/filecoin-project/filecoin-docs/blob/main/core-concepts/filecoin-virtual-machine/proofs.md
+- **Publication / update date:** Current documentation accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Proof of Replication and Proof of Spacetime mechanisms for verifying initial and continuing storage commitments.
+- **Limitations:** Storage proofs do not by themselves establish user-facing retrieval performance, access rights, content quality, or long-term preservation governance.
