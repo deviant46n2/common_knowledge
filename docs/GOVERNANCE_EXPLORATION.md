@@ -176,3 +176,28 @@ Until a real community exists to shape governance, the practical commitments are
 ---
 
 *This document records an evolving conversation as of 26 November 2026. It is not a constitution, governance policy, legal instrument, or claim of community consensus. Future revisions should distinguish founder-era proposals from decisions made by a broader community.*
+
+
+## 11. Public ownership and stewardship
+
+A clear founder-level conviction has now been stated: **Common Knowledge belongs to everyone.** This is stronger than saying it belongs only to the people who actively build, maintain, fund, or govern it.
+
+The institution's intended beneficiaries are the public as a whole, including people who may never create an account, submit a contribution, attend a meeting, or participate in governance. The people who do the work are stewards of a public-benefit resource, not its owners.
+
+For future design, distinguish three overlapping constituencies:
+
+- **The public:** Everyone for whose benefit the knowledge infrastructure exists. This includes non-users and people who may be affected by the institution's decisions.
+- **The community:** People who participate in, use, shape, discuss, or help sustain Common Knowledge. The boundaries and rights of this community remain to be defined.
+- **The stewards:** People entrusted with specific responsibilities for building, maintaining, funding, or operating the institution and its infrastructure. Stewardship should be accountable, limited, and transferable—not a claim of ownership.
+
+These categories should overlap, but they should not be collapsed into one another. In particular, doing more work should not automatically confer ownership of the institution or an unlimited claim to govern everyone else's interests.
+
+This conviction sharpens several unresolved governance questions:
+
+1. What does it mean in practical and legal terms for an institution to belong to everyone, rather than to its founder, contributors, members, or funders?
+2. How can people who never participate directly still be protected from institutional abuse and have meaningful routes to raise concerns?
+3. How should the community's decision-making authority relate to the interests of the wider public?
+4. How can stewards receive enough delegated authority to operate the institution effectively while remaining accountable to its public purpose?
+5. What safeguards prevent an active contributor group from becoming a permanent insider class or claiming to represent the whole public without legitimate authorization?
+
+**Status:** The public-benefit orientation and the conviction that Common Knowledge belongs to everyone are founder-stated principles. The three-constituency distinction is a working conceptual model, not a settled membership or governance design. Legal ownership, public representation, and accountability mechanisms remain open questions.
