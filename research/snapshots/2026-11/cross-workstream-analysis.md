@@ -47,7 +47,7 @@ This is a living synthesis. Findings are provisional where underlying workstream
 
 **Supporting workstreams:** F, A, E.
 
-- Workstream F's initial comparison shows that nonmember nonprofits can include community-represented trustees while retaining board authority, and that worker cooperatives may democratize workplace control without representing all public beneficiaries.
+- Workstream F's initial comparison shows that nonmember nonprofits can include community-represented trustees while retaining board authority, and that worker cooperatives may democratize workplace control without representing all public beneficiaries. Its licensing review also finds that OSI open-source licenses cannot restrict use by field of endeavor, so anti-weaponization goals cannot be enforced through an open-source license restriction alone.
 - Workstream A and E show that community governance, contributor agency, and local stewardship exist in many forms outside a single institution.
 
 **Assessment:** Common Knowledge should specify decision rights, representation, asset control, and accountability before selecting a legal form. “Nonprofit,” “foundation,” or “cooperative” is not a substitute for a governance design.
