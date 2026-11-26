@@ -133,13 +133,17 @@ These practices should be developed with qualified contributors and, where neces
 
 **Move forward when:** the commons can support multiple useful projects with credible accountability, sustainable maintenance, and distributed stewardship.
 
-## Candidate first product direction
+## Candidate first product directions
 
-A current hypothesis worth investigating is a local-first tool that helps a researcher inspect a computational project and produce an actionable report plus a portable, standards-based research package. It might help identify missing documentation, unclear rights, unavailable inputs, dependency gaps, or incomplete provenance.
+Three connected hypotheses are currently under investigation:
 
-This is **not yet the selected MVP**. Existing tools such as Renku, Galaxy, Code Ocean, Whole Tale, workflow systems, and RO-Crate tooling already cover substantial parts of this space. The product must demonstrate a specific unmet need before we commit to it.
+1. A local-first research handoff/readiness tool that helps people prepare existing computational projects for inspection, reuse, and preservation.
+2. A research-specific audit layer that connects AI/agent traces to inputs, methods, code, outputs, and human decisions.
+3. A claim-to-evidence verifier that checks whether numerical statements in a report correspond to the correct result, metric, experiment, and run.
 
-Other candidates remain possible if user evidence points elsewhere. The [MVP Discovery brief](research/MVP_DISCOVERY.md) records the current comparison and decision criteria.
+These are **not selected MVPs**. Existing projects already cover substantial parts of this space, including Renku, Galaxy, Code Ocean, Whole Tale, RO-Crate tooling, Paper2Agent, ReCRATE, and a benchmark-specific numerical claim checker. Common Knowledge should investigate integration and contribution opportunities before considering a competing implementation.
+
+The [MVP Discovery brief](research/MVP_DISCOVERY.md) and [MVP research index](research/mvp/README.md) record the current comparison, direct competitor review, technical hypotheses, and test plan.
 
 ## What is deliberately not a first priority
 
