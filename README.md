@@ -29,7 +29,7 @@ It should be a **knowledge authority, not a truth authority**: a place and set o
 
 Our first intended community is developers and open-source contributors interested in knowledge representation, provenance, interoperability, digital preservation, security, data portability, and public-interest infrastructure.
 
-The first product hypothesis is a small, local-first reference implementation with a developer-friendly workflow. It should let someone create, inspect, validate, and export a knowledge record containing a scoped statement, sources, precise evidence references, separate assessments, provenance, and revision history.
+The first product experiment is now a small, local-first Python CLI for validating, inspecting, and packaging a synthetic evidence-linked record. It separates the statement and scope, source files, exact evidence anchors, and independent assessments. It is deliberately provisional and does not yet implement signatures, full provenance, revision history, collaboration, or federation. See the [developer preview](docs/RECORD_TOOL_PREVIEW.md).
 
 The first release does not need production federation. It should, however, make independent operation and preservation possible rather than making a central Common Knowledge service the only place records can exist.
 
@@ -51,6 +51,7 @@ These are guiding commitments, not a completed constitution. Detailed governance
 
 - [Roadmap](ROADMAP.md) — the near-term sequence and priorities.
 - [MVP specification](docs/MVP_SPECIFICATION.md) — the proposed first developer-facing product.
+- [Local record tool preview](docs/RECORD_TOOL_PREVIEW.md) — how to run the first experimental CLI and synthetic record.
 - [Product development](product/README.md) — product hypothesis and current experiments.
 - [Transparency commitments](docs/TRANSPARENCY.md) — founder, development, and financial disclosure.
 - [Founding principles](FOUNDING_PRINCIPLES.md) — the project's starting commitments.

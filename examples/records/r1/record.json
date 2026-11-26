@@ -1,0 +1,62 @@
+{
+  "format": "common-knowledge-record",
+  "format_version": "0.1",
+  "id": "urn:ck:example:station-r1-observation",
+  "title": "Dissolved oxygen observation at station R-1",
+  "statement": {
+    "text": "Monitoring station R-1 recorded dissolved oxygen of 4.2 mg/L at 09:00 UTC on 1 May 2026.",
+    "scope": "This statement concerns what the station log recorded, not whether the sensor accurately measured ambient dissolved oxygen."
+  },
+  "sources": [
+    {
+      "id": "station-log",
+      "title": "Station R-1 monitoring export (synthetic fixture)",
+      "path": "sources/station-r1.csv"
+    },
+    {
+      "id": "calibration-log",
+      "title": "Station R-1 calibration log (synthetic fixture)",
+      "path": "sources/calibration.txt"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "csv-row-2",
+      "source_id": "station-log",
+      "relation": "supports",
+      "exact": "R-1,2026-05-01T09:00:00Z,dissolved_oxygen,4.2,mg/L",
+      "prefix": "station_id,timestamp,parameter,value,unit\n",
+      "suffix": "\nR-1,2026-05-01T10:00:00Z,dissolved_oxygen,4.0,mg/L"
+    },
+    {
+      "id": "calibration-entry",
+      "source_id": "calibration-log",
+      "relation": "qualifies",
+      "exact": "2026-04-20 | Calibration due | Not completed",
+      "prefix": "2026-01-20 | Calibration completed | Passed\n",
+      "suffix": "\n2026-05-03 | Maintenance visit | Sensor cleaned"
+    }
+  ],
+  "assessments": [
+    {
+      "id": "assessment-1",
+      "author": "Synthetic reviewer A",
+      "conclusion": "The CSV supports that the station recorded 4.2 mg/L. The overdue calibration entry qualifies confidence in measurement accuracy. The evidence does not establish the true ambient concentration.",
+      "method": "Compared the cited CSV row with the calibration-log entry; no independent instrument validation or statistical analysis was performed.",
+      "evidence_ids": [
+        "csv-row-2",
+        "calibration-entry"
+      ]
+    },
+    {
+      "id": "assessment-2",
+      "author": "Synthetic reviewer B",
+      "conclusion": "The CSV row is direct evidence of the value entered in the station log. The overdue calibration entry means accuracy is unverified, but it does not by itself show that the reported value is wrong.",
+      "method": "Independently reviewed the same two source excerpts, distinguishing evidence of the logged value from evidence about instrument calibration.",
+      "evidence_ids": [
+        "csv-row-2",
+        "calibration-entry"
+      ]
+    }
+  ]
+}
