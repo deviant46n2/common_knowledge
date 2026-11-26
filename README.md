@@ -90,7 +90,7 @@ We will earn participation by demonstrating practical value:
 4. **Invite people to improve it.** Attract contributors around working software and clearly defined opportunities.
 5. **Grow responsibly.** Let evidence and community experience guide the wider technical architecture, governance, and organizational structure.
 
-The current product-discovery work is documented in [MVP Discovery](research/MVP_DISCOVERY.md), and the [roadmap](ROADMAP.md) now reflects this MVP-first sequence.
+The current working product direction is a local-first research project preflight and handoff tool. An initial static-inspection prototype and synthetic test project are now in the repository; both are experimental and not yet user-validated. Follow the [product development workspace](product/README.md), inspect the [prototype code](src/ck_preflight/), or read the [MVP Discovery](research/MVP_DISCOVERY.md) evidence. The [roadmap](ROADMAP.md) reflects this product-first sequence.
 
 We do not need to build everything from scratch. Interoperability, collaboration, and good stewardship matter more than owning every component.
 
@@ -98,6 +98,8 @@ We do not need to build everything from scratch. Interoperability, collaboration
 
 We are building a dated, source-based research library to understand the existing ecosystem before making major technical or organizational decisions.
 
+- [Product development and prototype](product/README.md)
+- [Synthetic research project fixture](examples/synthetic-research-project/README.md)
 - [MVP discovery brief](research/MVP_DISCOVERY.md)
 - [MVP research index](research/mvp/README.md)
 - [MVP opportunity assessment](research/mvp/opportunity-assessment.md)
