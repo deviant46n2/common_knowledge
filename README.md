@@ -54,6 +54,7 @@ These are guiding commitments, not a completed constitution. Detailed governance
 - [Product development](product/README.md) — product hypothesis and current experiments.
 - [Transparency commitments](docs/TRANSPARENCY.md) — founder, development, and financial disclosure.
 - [Founding principles](FOUNDING_PRINCIPLES.md) — the project's starting commitments.
+- [Governance and community exploration](docs/GOVERNANCE_EXPLORATION.md) — an evolving record of democratic governance questions, principles, and risks; not a settled policy.
 - [Focused research](research/FOCUSED_RESEARCH.md) — investigation of existing knowledge systems, standards, and tools.
 - [Research program](research/PROGRAM.md) — research scope and methods.
 - [AI collaboration protocol](docs/AI_COLLABORATION.md) — working rules for AI-assisted research and development.
