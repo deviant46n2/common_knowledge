@@ -103,6 +103,8 @@ We are building a dated, source-based research library to understand the existin
 - [MVP discovery brief](research/MVP_DISCOVERY.md)
 - [MVP research index](research/mvp/README.md)
 - [MVP opportunity assessment](research/mvp/opportunity-assessment.md)
+- [AI collaboration protocol](docs/AI_COLLABORATION.md)
+- [Institutional design questions](docs/INSTITUTIONAL_DESIGN.md)
 - [Development documentation system](docs/development/README.md)
 - [Roadmap](ROADMAP.md)
 - [Research program](research/PROGRAM.md)
