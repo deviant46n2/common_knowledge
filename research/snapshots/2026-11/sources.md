@@ -1488,6 +1488,55 @@ No sources entered yet. Add new sections and stable IDs as workstreams begin.
 - **Claims supported:** Review of 110 sources identifying barriers around confidentiality, consent, data misuse, context, external approvals, researcher distress, and time/financial constraints.
 - **Limitations:** Maps suggested strategies rather than evaluating their effectiveness; focuses on interview and focus-group transcripts; the authors caution against one-size-fits-all expectations.
 
+
+
+### E-30 — Global Roadmap for Multilingualism in the Digital Era
+- **Publisher:** UNESCO
+- **Source type:** Global policy roadmap
+- **URL:** https://www.unesco.org/en/global-roadmap-multilingualism
+- **Publication date:** 2025; page last updated 2026-02-13
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Need for equitable digital representation of all languages, including low-resource and endangered languages; role of language technologies such as translation, speech recognition, and NLP.
+- **Limitations:** Policy roadmap; implementation and language-specific outcomes require further evidence and community-led work.
+
+### E-31 — Multilinguality and Linked Open Data: A Survey Across Linguistic Description Levels
+- **Publisher:** Semantic Web journal
+- **Source type:** Peer-reviewed survey
+- **URL:** https://doi.org/10.3233/SW-243591
+- **Publication / update date:** 2024
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** LLOD landscape, interoperability challenges for language resources, potential of linked data, and limitations in representing morphology and language varieties.
+- **Limitations:** Survey scope is linguistic linked data; implementation quality and community adoption vary.
+
+### E-32 — Initial Evaluation of Potential Bias in Coverage of Humans in Wikidata
+- **Author:** Clair Kronk
+- **Publisher:** arXiv
+- **Source type:** Research preprint
+- **URL:** https://arxiv.org/abs/2609.22375
+- **Publication date:** 2026-09-17
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Analysis of more than 10 million statement bindings and over 6 million human entities; reported language, geographic, and demographic coverage gaps, including non-English description coverage.
+- **Limitations:** Preprint, not peer reviewed at access; findings depend on chosen properties, baselines, missing-data assumptions, and entity population.
+
+### E-33 — The State of Inclusive Metadata Practices in Digital Libraries: Evidence from Metadata Professionals at R1 Institutions
+- **Publisher:** Journal of Library Metadata
+- **Source type:** Peer-reviewed qualitative interview study
+- **URL:** https://doi.org/10.1080/01639374.2026.2655112
+- **Publication date:** 2026-04-10 (online)
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Nine interviews with metadata professionals; inconsistent inclusive metadata implementation; legacy data, system limitations, resource constraints, and coordination gaps.
+- **Limitations:** Nine participants from US R1 institutions; data unavailable due participant consent; not representative of all libraries or regions.
+
+### E-34 — Artificial Intelligence-Driven Multilingual Corpus for Enhancing Information Retrieval in Academic Libraries
+- **Authors:** Mingwei Wu, Xiaofeng Luo, Xiulan Wang
+- **Publisher:** Information Development
+- **Source type:** Peer-reviewed research article
+- **URL:** https://doi.org/10.1177/02666669251380683
+- **Publication date:** 2025-10-28 (online)
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Multilingual corpus and retrieval system covering 13 languages and 39,725 academic records; language distribution and reported retrieval performance.
+- **Limitations:** Study-specific corpus and benchmarks; aggregate performance should not obscure uneven language representation or be generalized to all academic libraries.
+
 ## Workstream F — Governance, Economics, and Institutional Design
 
 ### F-01 — Wikimedia Foundation Bylaws
