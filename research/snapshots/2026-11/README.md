@@ -35,6 +35,7 @@ People-facing research should begin immediately and continue throughout all stag
 - **organizations/** — institutions, networks, and communities.
 - **technologies/** — technical approaches and infrastructure where a separate profile is useful.
 - **standards/** — standards, frameworks, and foundational recommendations.
+- [Cross-workstream analysis](cross-workstream-analysis.md) — dependencies, tensions, shared needs, and synthesis across the seven areas.
 - [Gaps and opportunities](gaps-and-opportunities.md) — evidence-backed synthesis and open questions.
 - [Sources](sources.md) — source register for this snapshot.
 
