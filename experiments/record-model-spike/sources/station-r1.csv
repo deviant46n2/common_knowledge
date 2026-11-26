@@ -1,0 +1,3 @@
+station_id,timestamp,parameter,value,unit
+R-1,2026-05-01T09:00:00Z,dissolved_oxygen,4.2,mg/L
+R-1,2026-05-01T10:00:00Z,dissolved_oxygen,4.0,mg/L
