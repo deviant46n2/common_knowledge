@@ -790,6 +790,44 @@ No sources entered yet. Add new sections and stable IDs as workstreams begin.
 - **Claims supported:** Proof of Replication and Proof of Spacetime mechanisms for verifying initial and continuing storage commitments.
 - **Limitations:** Storage proofs do not by themselves establish user-facing retrieval performance, access rights, content quality, or long-term preservation governance.
 
+
+
+### B-12 — BOINC Central: Computing with BOINC
+- **Publisher:** BOINC Project, University of California, Berkeley
+- **Source type:** Primary service and eligibility documentation
+- **URL:** https://boinc.berkeley.edu/central/scientist.php
+- **Publication / update date:** Current scientist guide accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Eligibility for university/research-lab and independent researchers; scientific or nonprofit purpose; open-source software; public conclusions; non-sensitive, publicly available unencrypted input/output data; independent high-throughput jobs; typical job runtime and resource guidelines.
+- **Limitations:** Operator requirements for BOINC Central; acceptance and available capacity are not guaranteed; technical and policy constraints may change.
+
+### B-13 — BOINC Central: About
+- **Publisher:** BOINC Project, University of California, Berkeley
+- **Source type:** Primary service description
+- **URL:** https://boinc.berkeley.edu/central/about.php
+- **Publication / update date:** Current service page accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** BOINC Central as a hosted service that lets researchers use volunteer computing without creating and operating their own BOINC project; use of Docker-based applications and web-based batch submission.
+- **Limitations:** Service description; current throughput, queue times, service-level commitments, and capacity limits require direct confirmation.
+
+### B-14 — BOINC Universal Docker App (BUDA) Overview
+- **Publisher:** BOINC Project
+- **Source type:** Primary technical documentation
+- **URL:** https://github.com/BOINC/boinc/wiki/BUDA-overview
+- **Publication / update date:** Updated 2026-11-03
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Docker-based application packaging, batch job submission, web-based monitoring and output retrieval, and support for volunteer Windows, Linux, and Mac hosts.
+- **Limitations:** BUDA requires a BOINC project configured for it and Docker/Podman-compatible workers; application and hardware constraints remain.
+
+### B-15 — BOINC Road Map as of November 2026
+- **Publisher:** BOINC Project
+- **Source type:** Primary technical roadmap
+- **URL:** https://github.com/BOINC/boinc/wiki/Road-map-as-of-Nov-2026
+- **Publication / update date:** Updated 2026-11-11
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** BOINC Central/BUDA design direction, web-based job submission and output handling, multiple job submitters, batch-oriented job processing, and resource controls.
+- **Limitations:** Maintainer roadmap; planned or documented design does not guarantee all features are available or suitable in every deployment.
+
 ## Workstream C — Scientific Reproducibility and Research Integrity
 
 ### C-01 — The FAIR Guiding Principles for scientific data management and stewardship
