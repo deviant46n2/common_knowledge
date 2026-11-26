@@ -246,6 +246,45 @@ FAIRSCAPE and EVI substantially weaken any claim that Common Knowledge has disco
 
 A possible gap could remain in a lightweight local-first review workflow that consumes existing EVI/RO-Crate/Workflow Run RO-Crate records and helps authors/reviewers inspect claim-to-run traceability. But FAIRSCAPE already creates evidence graphs and visualizations, so that proposition requires direct comparison and user validation.
 
+## 9. FlowProof — reproducible pipeline execution over MCP
+
+**Project:** [ajibadedapo/flowproof-mcp](https://github.com/ajibadedapo/flowproof-mcp)  
+**License:** MIT, as declared in its repository  
+**Version cited by project:** 0.1.2  
+**Last commit observed:** 22 November 2026
+
+FlowProof exposes bioinformatics pipelines to AI assistants through MCP. It provides tools to list and describe pipelines, execute them, check run status, retrieve outputs, and obtain a Workflow Run RO-Crate provenance record. Its documented backends include a deterministic mock backend and a Nextflow backend using containers. Its seed pipelines include Oxford Nanopore QC/assembly, short-read variant calling, RNA-seq, SRA/ENA/GEO data retrieval, and viral genome reconstruction.
+
+The project describes itself as working and installable, with tests for its registry, execution backends, and provenance. This is a self-reported status; no independent installation or execution test has yet been performed by Common Knowledge.
+
+Its scope is bioinformatics pipeline execution, not general research project handoff or manuscript claim auditing. It is nevertheless a direct adjacent product to the idea of an MCP-based research execution/provenance layer.
+
+**Implication:** Do not build a generic “let AI run scientific pipelines with provenance” product without comparing FlowProof, ReCRATE, Galaxy, and workflow engines. FlowProof may be a useful integration target or source of lessons about pipeline manifests, local-first execution, and MCP interfaces.
+
+## 10. RO-Crate Skills — agent-native research packaging workflows
+
+**Project:** [stain/ro-crate-skills](https://github.com/stain/ro-crate-skills)  
+**License:** Apache-2.0, as declared in its repository  
+**Status:** Alpha, as listed by the RO-Crate tools directory
+
+This project provides reusable agent skills for creating, reading, validating, retrieving, and publishing RO-Crates. It follows RO-Crate 1.3 by default and reads earlier 1.0–1.2 crates. Its skills cover consumption, creation, validation, compatibility, profiles, workflow/run crates, signposting retrieval, publishing, ro-crate-py, tabulation, and related tools.
+
+The repository states that it contains instructions, references, and small scripts, not MCP servers or hooks. It does not collect data or transmit it by itself. Publishing/deposit actions require user request and confirmation.
+
+**Implication:** Agent skills for RO-Crate authoring and inspection are already being built by the standards community. Common Knowledge should consider using or contributing to this ecosystem rather than creating another generic set of instructions.
+
+## 11. Zenodo MCP servers — repository access is already being exposed to agents
+
+Several independent projects expose Zenodo's public research records and artifacts through MCP, including:
+- [zenodo-mcp](https://zenodo.org/records/20024307), an OpenCódice Research server with record search, DOI resolution, version history, file enumeration, and community queries;
+- [cyanheads/zenodo-mcp-server](https://github.com/cyanheads/zenodo-mcp-server), a read-only TypeScript server with search, record retrieval, versions, files, ZIP inspection, and bounded text previews;
+- [eic/zenodo-mcp-server](https://github.com/eic/zenodo-mcp-server), which also supports optional write/deposit operations;
+- [MSKazemi/mcp-zenodo](https://github.com/MSKazemi/mcp-zenodo), a Python retrieval-oriented server.
+
+These systems make repository artifacts more accessible to AI agents. They do not, by themselves, validate the scientific relationship between a paper claim and the specific data, workflow, and run that produced it.
+
+**Implication:** Generic Zenodo-to-MCP integration is not a differentiated MVP. If Common Knowledge builds repository connectors, it should focus on a user job beyond searching and downloading records.
+
 ## Sources
 
 - [Paper2Agent — Nature (2026)](https://www.nature.com/articles/s41586-026-11044-y)
