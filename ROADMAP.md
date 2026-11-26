@@ -4,6 +4,8 @@ This roadmap describes the order in which Common Knowledge intends to learn, tes
 
 The project is at an early stage. Its first responsibility is to understand the landscape, listen to people already doing relevant work, and identify a useful contribution that can be demonstrated in practice.
 
+The research is being organized in a [seven-workstream research program](research/PROGRAM.md), with a dated [November 2026 field snapshot](research/snapshots/2026-11/README.md). These documents record sources, progress, uncertainties, and gaps. They are an active investigation, not a completed field survey.
+
 ## How to read this roadmap
 
 - **Direction, not deadlines.** Phases describe priorities and dependencies, not guaranteed dates.
