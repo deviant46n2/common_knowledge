@@ -49,8 +49,9 @@ This page is the workstream's durable entry point. Add dated notes below as rese
 
 ### Next steps
 
-1. Define key terms and boundaries for the first bounded investigation.
-2. Identify foundational standards, projects, organizations, and communities.
-3. Select representative cases and investigate primary sources.
-4. Seek independent evidence and user experience.
-5. Produce a first-pass synthesis that states coverage and limitations.
+1. Compare legal and nonprofit forms across relevant jurisdictions, including membership, public-benefit, charitable, cooperative, and foundation models.
+2. Investigate mission locks, asset locks, reserved powers, trustee selection, term limits, and founder transition using primary governing documents.
+3. Examine funding concentration, restricted grants, endowments, earned revenue, and fiscal-host exit terms.
+4. Develop a compensation and conflict-of-interest framework that balances fair pay with the project's anti-extraction philosophy.
+5. Map intellectual-property, data, infrastructure, and dissolution arrangements that preserve public-benefit assets.
+6. Seek qualified legal and nonprofit-governance review before proposing an entity or formal policy.
