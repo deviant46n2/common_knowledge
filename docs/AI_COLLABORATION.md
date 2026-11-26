@@ -10,17 +10,20 @@ Common Knowledge intends to use AI as a capable collaborator across research, en
 
 AI systems are tools and contributors to workflows, not institutional authorities. They do not own the mission, grant themselves decision rights, represent affected communities, or provide independent human consent.
 
+The [Common Knowledge Operating Model](OPERATING_MODEL.md) sets the wider project standards for evidence, provenance, review, safety, decisions, and change. This protocol defines the additional rules specific to AI collaboration.
+
 ## 2. Shared project context
 
 Every AI collaborator should first read, in this order:
 
 1. `README.md` — current public identity and scope.
 2. `FOUNDING_PRINCIPLES.md` — foundational values and constraints.
-3. `ROADMAP.md` — current sequence and priorities.
-4. `docs/AI_COLLABORATION.md` — this protocol.
-5. `docs/development/README.md` — documentation and engineering source-of-truth rules.
-6. `product/README.md` and linked product documents — current product hypothesis and implementation status.
-7. The relevant research documents before making claims about the existing ecosystem.
+3. `docs/OPERATING_MODEL.md` — project-wide standards and commitment levels.
+4. `ROADMAP.md` — current sequence and priorities.
+5. `docs/AI_COLLABORATION.md` — this protocol.
+6. `docs/development/README.md` — documentation and engineering source-of-truth rules.
+7. `product/README.md` and linked product documents — current product hypothesis and implementation status.
+8. The relevant research documents before making claims about the existing ecosystem.
 
 Do not assume that every document is equally current. Prefer explicit status and dates. If two documents conflict, identify the conflict and ask for or propose a documented reconciliation; do not silently choose the more convenient statement.
 
@@ -118,9 +121,11 @@ A useful proposal should state:
 7. What decision or authorization is needed.
 8. How success or failure will be evaluated.
 
-## 9. Accountability
+## 9. Accountability and provenance
 
 AI-generated work must be reviewable. Keep enough context to understand important research, code, and decisions. Do not attribute AI-generated material to a human who did not review it. Do not use AI assistance to fabricate human participation, peer review, or independent validation.
+
+For substantial public-facing research, policy, product, and technical documents, record whether the current version is AI-drafted, human-read, source-checked, independently reproduced, or community-reviewed. These labels describe specific review actions; they must not be treated as interchangeable. A human reading an AI-generated document does not verify its claims, and one AI reviewing another AI is not independent human review. See the Operating Model for definitions and proportional use.
 
 The project remains responsible for its published outputs and the way its tools are used. Human accountability must be explicit for consequential decisions.
 
