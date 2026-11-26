@@ -865,3 +865,25 @@ Sources:
 - Test Wikidata sandbox entity JSON: https://test.wikidata.org/wiki/Special:EntityData/Q213542.json
 - Test Wikidata sandbox entity RDF: https://test.wikidata.org/wiki/Special:EntityData/Q213542.ttl
 - W3C-compatible Wikibase RDF mapping documentation: https://www.mediawiki.org/wiki/Wikibase/Indexing/RDF_Dump_Format
+
+
+### Wikibase reader-interface inspection
+
+A read-only browser inspection of the same test item showed how the standard Wikibase interface presents the underlying structure:
+- statements are grouped by property, with each value displayed as a separate row;
+- preferred/normal/deprecated ranks are indicated mainly by visual icons;
+- qualifiers appear nested under the particular value they qualify;
+- references appear as collapsed, expandable citation blocks, with URL/title/retrieval metadata visible after expansion;
+- property IDs and labels are both shown, and linked item values are clickable;
+- constraint warnings can appear beside statements.
+
+This is a mature, usable structured-data interface and demonstrates that qualifiers and references can be exposed to readers without custom UI. It also has limitations for our use case:
+- reference details are collapsed by default, so readers must expand them;
+- rank is a curation signal, not an explanation of evidential strength or truth;
+- references are attached to a statement but do not inherently identify the exact passage in a source or explain what that passage supports;
+- the interface presents properties and values, not a full narrative of independent assessments and competing interpretations.
+
+The public test instance is useful for inspection, but it is not a dedicated scientific evidence-review product. No edits were made.
+
+Source:
+- Test Wikidata sandbox item: https://test.wikidata.org/wiki/Q213542
