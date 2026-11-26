@@ -3,6 +3,7 @@
 - **Snapshot period:** November 2026
 - **Research cutoff:** 26 November 2026
 - **Status:** Initial research edition in preparation
+- **Program:** [Common Knowledge Research Program](../../PROGRAM.md)
 - **Method:** [Research methodology](../../methodology.md)
 
 ## Purpose
@@ -11,38 +12,47 @@ Record the state of the ecosystem relevant to open science, collaborative resear
 
 This snapshot is intended to support informed decisions about Common Knowledge. It is not a comprehensive census, endorsement list, or claim that the field has been fully mapped.
 
-## Research areas
+## Research workstreams
 
-| Area | Questions |
-|---|---|
-| Projects and organizations | What initiatives, platforms, institutions, and communities are active? What do they actually provide? |
-| Technical infrastructure | What exists for distributed computing, federation, research software, AI collaboration, provenance, and reproducibility? |
-| Scientific collaboration | How do people discover, conduct, review, publish, and reuse research together? |
-| Governance and economics | How are ownership, decision-making, funding, contributor rights, and continuity handled? |
-| Standards and foundational work | Which standards, policies, and shared resources enable open and responsible knowledge exchange? |
-| Gaps and opportunities | Which needs remain underserved, and what role—if any—could Common Knowledge usefully play? |
+The snapshot is organized into seven connected workstreams. Each workstream page records its scope, questions, status, progress notes, and next steps.
+
+| Workstream | Focus | Status |
+|---|---|---|
+| [A — Open science and research collaboration](workstreams/A-open-science/README.md) | Research lifecycle, collaboration, participation, and access | Not started |
+| [B — Distributed and federated infrastructure](workstreams/B-distributed-infrastructure/README.md) | Shared compute, federation, storage, coordination, and resilience | Not started |
+| [C — Reproducibility and research integrity](workstreams/C-reproducibility/README.md) | Provenance, methods, verification, correction, and trust | Not started |
+| [D — Human–AI research collaboration](workstreams/D-human-ai-collaboration/README.md) | AI contributions, evaluation, oversight, and accountability | Not started |
+| [E — Shared knowledge and preservation](workstreams/E-knowledge-preservation/README.md) | Knowledge representation, discovery, rights, and preservation | Not started |
+| [F — Governance, economics, and institutional design](workstreams/F-governance-economics/README.md) | Stewardship, funding, power, contributor rights, and continuity | Not started |
+| [G — People, needs, and the research ecosystem](workstreams/G-people-and-needs/README.md) | Stakeholders, lived needs, barriers, and participation | Not started |
+
+People-facing research should begin immediately and continue throughout all stages; it is not postponed until Workstream G.
 
 ## Snapshot contents
 
-Research entries will be added as they are investigated and checked.
-
+- **workstreams/** — scope, questions, progress, and reports for the seven research areas.
 - **projects/** — profiles of relevant projects and platforms.
 - **organizations/** — institutions, networks, and communities.
-- **technologies/** — technical approaches and infrastructure.
+- **technologies/** — technical approaches and infrastructure where a separate profile is useful.
 - **standards/** — standards, frameworks, and foundational recommendations.
 - [Gaps and opportunities](gaps-and-opportunities.md) — evidence-backed synthesis and open questions.
 - [Sources](sources.md) — source register for this snapshot.
 
+## How to conduct the research
+
+Follow the [research program](../../PROGRAM.md) for the seven workstreams, recommended sequence, investigation cycle, deliverables, shared comparison dimensions, and progress tracking. Follow the [methodology](../../methodology.md) for source quality, attribution, confidence, coverage, ethics, and snapshot integrity.
+
+Use the [project profile template](../../templates/project-profile.md), [organization profile template](../../templates/organization-profile.md), and [workstream report template](../../templates/workstream-report.md) as appropriate.
+
 ## Reading the findings
 
-Every entry should distinguish documented facts from assessments and open questions. Confidence labels apply to individual claims, not entire organizations. See the [methodology](../../methodology.md).
-
-A project's inclusion does not imply endorsement, partnership, or agreement. A project's absence does not imply that it is unimportant or inactive.
+Every entry should distinguish documented facts from independent findings, assessments, and open questions. Confidence labels apply to individual claims, not entire organizations. A project's inclusion does not imply endorsement, partnership, or agreement. A project's absence does not imply that it is unimportant or inactive.
 
 ## Research coverage and limitations
 
-This first edition is a baseline, not a completed survey. Its coverage and limitations will be recorded as research proceeds. Do not treat an empty category as evidence that no relevant work exists.
+This first edition is a baseline, not a completed survey. At the time this structure was established, the seven workstreams were defined but comprehensive investigation had not yet been completed. Their status must be updated as evidence is gathered. Do not treat an empty category as evidence that no relevant work exists.
 
 ## Change log
 
 - **2026-11-26:** Created the initial snapshot structure and declared its research cutoff. Research findings have not yet been comprehensively populated.
+- **2026-11-26:** Added the seven-workstream research program, individual workstream briefs, and reusable report templates. The workstreams remain marked **Not started** pending substantive investigation.
