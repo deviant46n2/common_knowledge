@@ -157,3 +157,12 @@ def test_init_refuses_to_overwrite_existing_directory(tmp_path):
     )
     assert result.returncode == 1
     assert sentinel.read_text(encoding="utf-8") == "preserve"
+
+
+
+def test_non_string_anchor_context_is_reported_without_crashing():
+    record = load(FIXTURE)
+    record["evidence"][0]["prefix"] = 123
+    record["evidence"][1]["suffix"] = ["not", "text"]
+    errors = validate(record, FIXTURE.parent)
+    assert any("prefix and suffix must be strings" in error for error in errors)
