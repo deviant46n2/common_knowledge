@@ -701,3 +701,87 @@ The evidence passages are represented as Web Annotation TextQuoteSelector target
 **Additional result:** The second review is represented as a separate assessment with its own PROV-O activity and agent. A new record version links to the prior version with prov:wasRevisionOf and references both assessments; the earlier version still references only the initial assessment. Tests confirm that the two assessments coexist and have distinct reviewer agents. A basic static HTML reader now presents the evidence relationships, both assessments, method/reviewer details, and version history. This is a small inspectability demonstration, not a complete authoring or review workflow. See [PR #3](https://github.com/deviant46n2/common_knowledge/pull/3).
 
 **Next experiment:** Compare the same contribution workflow with a nanopublication on its isolated test network (never the real network) and with a small Wikibase test instance if setup cost is reasonable. Next, test the authoring path and compare this representation with a nanopublication on its isolated test network (never the real network) and with a small Wikibase test instance if setup cost is reasonable. The current reader is developer-generated HTML, not evidence of non-specialist usability.
+
+
+## Live nanopublication test-network inspection
+
+**Research date:** 26 November 2026  
+**Method:** Read-only live inspection of Nanodash, both generations of nanopublication test services, the current nanopub-py source/configuration, and the Nanodash Docker configuration. A read-only SPARQL ASK query was executed in the test query editor. No profile was created and no nanopublication was signed or published.
+
+### The current second-generation test services are live
+
+The current test registry is:
+- Registry: https://test.registry.knowledgepixels.com/
+- Query service: https://test.query.knowledgepixels.com/
+- Full-repository SPARQL endpoint: https://test.query.knowledgepixels.com/repo/full
+- SPARQL editor: https://test.query.knowledgepixels.com/tools/full/sparql-editor.html
+
+At inspection time, the registry homepage reported **11,841 nanopublications**, ready status, coverage of all types, and trust calculation disabled. The separate test query service exposed its repository pages and SPARQL editor. A read-only query, ASK { ?s ?p ?o }, ran successfully and returned boolean true. The table view showed a client-side JavaScript error after execution, but the response view contained the successful result.
+
+This is stronger evidence than relying on a stale setup guide: the isolated second-generation registry and SPARQL query service are reachable and contain data.
+
+Sources:
+- Nanopub Registry test instance: https://test.registry.knowledgepixels.com/
+- Nanopub Query test instance: https://test.query.knowledgepixels.com/
+- Nanopub Query full repository page: https://test.query.knowledgepixels.com/page/full
+- Nanopub Query editor: https://test.query.knowledgepixels.com/tools/full/sparql-editor.html
+
+### Two different test-server generations appear in the ecosystem
+
+The older host https://np.test.knowledgepixels.com/ is still documented by nanopub-py, but it identifies itself as a legacy Nanopub Server and, at inspection time, contained 19 nanopublications. The newer second-generation registry at https://test.registry.knowledgepixels.com/ is the more relevant target for current development and had 11,841 publications.
+
+Do not confuse these endpoints or copy a test URL from an older guide without checking which generation a tool uses.
+
+Sources:
+- nanopub-py, [test server guide](https://github.com/Nanopublication/nanopub-py/blob/main/docs/getting-started/test-server.md)
+- Nanopub Registry, [current test instance](https://test.registry.knowledgepixels.com/)
+
+### A Python client configuration mismatch to account for
+
+The current nanopub-py source (version 2.2.2, Python >=3.12) sets:
+- TEST_NANOPUB_REGISTRY_URL to https://test.registry.knowledgepixels.com/np/;
+- TEST_NANOPUB_QUERY_URL to https://query.knowledgepixels.com/api/, with a source comment saying a test query server is not yet available.
+
+The live test query service now exists and exposes a SPARQL repository endpoint, but it is not the same thing as the query-template API path used by nanopub-py's NanopubClient. Thus, the current Python client can direct publication and fetching to the new test registry, but its built-in text/pattern search path is not fully isolated: it points at the production query-template API. Direct SPARQL against the test query endpoint is available and was smoke-tested separately.
+
+This is not necessarily a bug in the client's supported API: the test query service may not expose the same query-template API as production. It is nevertheless a concrete integration limitation for our test plan. We should use direct test SPARQL or fetch by known test-registry URI when inspecting experimental publications, and never assume NanopubClient(use_test_server=True) makes every operation isolated.
+
+Sources:
+- nanopub-py, [definitions.py](https://github.com/Nanopublication/nanopub-py/blob/main/nanopub/definitions.py)
+- nanopub-py, [client.py](https://github.com/Nanopublication/nanopub-py/blob/main/nanopub/client.py)
+- Nanopub Query, [test full repository](https://test.query.knowledgepixels.com/page/full)
+
+### Nanodash: use a local instance to target the test services
+
+The public Nanodash site is connected to the production network and offers ORCID login; its homepage says users log in with ORCID to publish. We should not use that production-facing UI for experiments.
+
+The current Nanodash Docker configuration exposes NANODASH_MAIN_REGISTRY and NANODASH_MAIN_QUERY, allowing a local instance to be pointed at the test registry and test query service. It also has an NANODASH_ORCID_LOGIN_MODE setting. The source indicates ORCID login mode defaults to false; in that mode a local profile can be used rather than an ORCID OAuth flow. The Nanodash app itself is AGPL-3.0 licensed.
+
+This suggests a safer hands-on path:
+1. Run a local Nanodash instance.
+2. Configure its main registry and query URLs to the test endpoints above.
+3. Keep ORCID login mode off for the isolated local experiment.
+4. Create a local-only synthetic agent profile/key, if the profile flow permits it, and explicitly decline profile publication until the publication test is approved.
+5. Use the local UI to inspect templates, authoring, preview, signing, and publishing controls before any publication.
+
+The Nanodash installation requires Docker. Docker is not installed in the current research container, so this local UI test has not yet been run. The current container also has no outbound package-index access, so nanopub-py 2.2.2 could not be installed for a live Python-client test. These are environment limitations, not evidence that the software itself cannot run.
+
+Sources:
+- Knowledge Pixels, [Nanodash repository and license](https://github.com/knowledgepixels/nanodash)
+- Nanodash, [Docker Compose configuration](https://github.com/knowledgepixels/nanodash/blob/master/docker-compose.override.yml.template)
+- Nanodash, [Docker installation](https://github.com/knowledgepixels/nanodash/blob/master/INSTALL-with-Docker.md)
+- Nanodash, [NanodashPreferences source](https://github.com/knowledgepixels/nanodash/blob/master/src/main/java/com/knowledgepixels/nanodash/NanodashPreferences.java)
+
+### Updated test plan
+
+Before publishing anything, first prepare a local draft nanopublication for the synthetic R-1 example and validate its four graphs and signature locally. Then use a local Nanodash instance configured to the isolated test registry/query services. Publishing even to the test network is a separate explicit action because nanopublications are immutable and the test network is public, even though it is isolated from production.
+
+For the test-network round trip, verify:
+- the publication appears at the direct registry URL returned by the registry;
+- its Trusty URI validates against the content;
+- all four graphs can be fetched and parsed;
+- the test SPARQL endpoint can retrieve the assertion and provenance;
+- the second assessment can be published as a distinct contribution;
+- a supersession/retraction behaves as documented, with the original signer key retained securely.
+
+Do not rely on the test query-template API until its availability is independently confirmed.
