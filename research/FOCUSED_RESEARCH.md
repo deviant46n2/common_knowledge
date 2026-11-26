@@ -959,3 +959,87 @@ Sources:
 - Crossref DOI lookup (404 at inspection time): https://api.crossref.org/works/10.48550/arXiv.1706.03762
 - DataCite DOI record: https://api.datacite.org/dois/10.48550/arXiv.1706.03762
 - Sample unresolved location: https://doi.org/10.65215/r5bs2d54
+
+
+## Hands-on follow-up — live API sample and testability corrections
+
+**Research date:** 26 November 2026  
+**Method:** One live OpenAlex API request and one Crossref DOI metadata request were fetched and compared. Current Wikibase Suite and nanopublication test documentation were rechecked. This is a bounded API observation, not a full data-quality audit.
+
+### Live OpenAlex sample: one DOI
+
+A single work was retrieved by DOI:
+
+- DOI: `10.1038/s41586-020-2649-2`
+- Title returned: *Array programming with NumPy*
+- OpenAlex work ID: `W3035965352`
+- Publication year: 2020
+- API request: `GET /works?filter=doi:...&select=id,doi,title,publication_year,authorships,locations,referenced_works,updated_date&per_page=1`
+- API result: one matching work; reported request cost was $0.0001.
+- OpenAlex `updated_date` in the returned record: `2026-11-26T09:34:50.682384` (UTC).
+
+The record contained 18 authorship entries. In this sample:
+- Several authors had ORCID values but a null OpenAlex author ID.
+- Some authors had neither a resolved OpenAlex author ID nor an ORCID.
+- Raw author-name strings were retained.
+- Raw affiliation strings were retained alongside normalized institution links.
+- One author had multiple raw affiliation strings and multiple resolved institution links.
+- The work exposed multiple locations/repository records, with varying OA and license metadata.
+- The work included a list of linked referenced works.
+
+A Crossref record for the same DOI supplied publisher-deposited metadata, including the title, publication date, journal/issue information, author strings, links to publisher full text, and a reference list. It was not a one-to-one duplicate of OpenAlex: OpenAlex had enriched authorship/institution mappings and a location list, while Crossref supplied the deposited bibliographic/reference metadata. The two should be treated as distinct source records with distinct update histories, not merged into one unquestioned canonical object.
+
+**Observed implication:** OpenAlex does preserve useful raw strings, but it can also leave author identities unresolved even where ORCID data is present. Common Knowledge should retain source-level metadata and identifiers separately from any resolved person or institution entity. It should also store which index supplied each imported attribute when that is available, rather than silently treating the enriched value as the original source assertion.
+
+**Limitations:** One selected DOI cannot establish corpus-wide precision, completeness, bias, or coverage. We did not verify the paper's content, inspect the publisher PDF, validate every reference, or assess the correctness of any author/institution match.
+
+Sources:
+- OpenAlex API record: https://api.openalex.org/works/W3035965352
+- Crossref API record: https://api.crossref.org/works/10.1038/s41586-020-2649-2
+- OpenAlex, [API reference](https://help.openalex.org/api/)
+- Crossref, [REST API](https://api.crossref.org/)
+
+### Nanopublication test network and conformance tests
+
+The test network is not merely a suggested configuration flag. The current handbook describes a separate registry/query environment; test publications do not reach the real network. The Python client supports `use_test_server=True`, and the JavaScript library documents a test registry URL. The test network's Trusty/purl identifier does not automatically resolve through the production purl redirect; the test server's own returned URL should be used to fetch the test publication.
+
+The ecosystem also publishes a canonical nanopublication test suite with valid and invalid examples, including plain, signed, and Trusty-URI cases, plus transform fixtures for signing. A JavaScript connector can download the official suite and access these cases; Python and Java equivalents are listed by the project. This creates a practical offline conformance test path before attempting network publication.
+
+The next nanopublication experiment should therefore be staged:
+1. Validate candidate RDF against the canonical test suite locally.
+2. Construct and sign a synthetic nanopublication locally with a throwaway test key.
+3. Publish only to `https://test.registry.knowledgepixels.com/`.
+4. Retrieve it from `https://test.query.knowledgepixels.com/` or the test registry's direct URL.
+5. Verify signature, Trusty URI, graph contents, and test-network isolation.
+6. Do not reuse the test key or publish the synthetic record to production.
+
+Sources:
+- Nanopublications, [Test network and nanopublication handbook](https://nanopub.net/docs/handbook/nanopublication/)
+- Nanopub Python, [Getting started](https://nanopublication.github.io/nanopub-py/)
+- Nanopub JavaScript, [Repository and test-registry example](https://github.com/Nanopublication/nanopub-js)
+- Nanopublication, [Canonical test suite connector](https://github.com/Nanopublication/nanopub-testsuite-connector-js)
+- Nanopublications, [Query endpoints and repositories](https://nanopub.net/docs/handbook/query-endpoints-and-repositories/)
+
+### Wikibase deployment clarification
+
+The generic Wikibase Quick start page describes Docker images that can be run locally for a test drive. However, the current maintained Wikibase Suite repository describes its supported Docker Compose deployment as intended for a publicly accessible server, with a domain and TLS setup. It bundles Wikibase/MediaWiki, a job runner, MariaDB, OpenSearch, a SPARQL query service and updater, a query frontend, QuickStatements, and Traefik.
+
+These are not necessarily contradictory: a basic/dev Docker environment and the supported production-oriented Wikibase Suite are different deployment targets. The earlier note should not be read as proof that the supported full suite is a lightweight local-only setup. For a Common Knowledge evaluation, we should either use an existing hosted instance, use the basic/dev route after checking its current maintenance status, or defer deployment until a concrete test justifies it.
+
+Sources:
+- MediaWiki, [Wikibase Quick start](https://www.mediawiki.org/wiki/Wikibase/Quick_start)
+- Wikimedia Deutschland, [Wikibase Suite repository](https://github.com/wmde/wikibase-suite)
+- MediaWiki, [Wikibase Docker](https://www.mediawiki.org/wiki/Wikibase/Docker/en)
+
+## Updated experiment status
+
+| Experiment | Status | What it establishes | What it does not establish |
+|---|---|---|---|
+| OpenAlex single-DOI API retrieval | **Performed** | A live API query returns bibliographic data, raw authorship strings, unresolved identities, institution links, locations, and references | General accuracy or whether OpenAlex is a suitable core |
+| Crossref comparison for same DOI | **Performed** | Upstream bibliographic metadata differs in scope and structure from OpenAlex enrichment | That either source is fully correct or complete |
+| Wikibase data-model and deployment review | **Documentation review only** | Main statement model, export caveat, revision model, and deployment distinction | Real authoring UX, API behavior in our instance, or resource requirements |
+| Nanopublication test-suite review | **Documentation/repository review only** | An official conformance fixture suite and isolated test network exist | Our implementation passes the suite or can publish/retrieve correctly |
+| Nanopublication publish/verify round trip | **Not yet performed** | — | Signature, Trusty URI, registry, and query behavior in practice |
+| End-to-end human contributor workflow | **Not yet performed** | — | Whether a non-specialist can create, challenge, and inspect a record |
+
+The next work should be a small reproducible prototype/test, not more broad candidate surveying. Keep the synthetic example, fixtures, commands, exact software versions, and results together so that someone else can repeat the experiment.
