@@ -101,6 +101,22 @@ Potential value:
 
 Risk: this may still be a thin wrapper around tools that users already know how to use. User discovery must establish that integration and guidance are a real pain, not just a convenient feature.
 
+### Leading product shape to test: local-first research preflight and handoff
+
+The most promising *shape* to test is not a new validator or research package generator. It is a small, local-first tool that helps a researcher complete the handoff task by orchestrating existing tools and explaining their outputs.
+
+A first version might:
+- inspect one supported type of computational research project without executing its code;
+- identify existing metadata, dependencies, workflow definitions, test commands, run records, and evidence artifacts;
+- detect which established validators or checkers are relevant and available;
+- invoke safe read-only validation commands only with user approval;
+- produce one clear report with evidence locations, missing links, known limitations, and next actions;
+- optionally export a small index/manifest of the existing project without copying restricted data.
+
+This is a product hypothesis, not a selected design. The first version must do more than aggregate checklists or shell out to other tools. It must make the workflow meaningfully easier for a defined user, and the output must be more actionable than the separate tool reports.
+
+A reasonable first supported scope could be computational Python projects, but only if research software engineers and researchers confirm that this is a valuable first user group. It should not claim to cover all research types.
+
 ### Hypothesis B — Cross-tool evidence interoperability
 
 A research project may produce multiple records: a ReproCert certificate, a reproducible-science claim-check export, a Workflow Run RO-Crate, an EVI evidence graph, and manuscript artifacts. It is not yet clear whether these records preserve the same relationships when moved between tools.
