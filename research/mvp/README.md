@@ -23,6 +23,8 @@
 
 - [Candidate landscape and initial comparison](candidate-landscape.md)
 - [Technical opportunities and integration hypotheses](technical-opportunities.md)
+- [Direct competitor source review](direct-competitors.md)
+- [Hands-on experiments and user discovery plan](discovery-experiments.md)
 - [Development documentation and source-of-truth policy](../../docs/development/README.md)
 
 ## Current preliminary conclusion
