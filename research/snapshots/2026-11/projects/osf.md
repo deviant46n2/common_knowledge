@@ -29,6 +29,18 @@ According to current COS product and support documentation:
 
 **Important transition:** COS states that OSF will no longer function as a general project collaboration, data repository, or file-management space. The product is being refocused on registrations, preprints, and connections between research plans and outputs. COS's transition FAQ reports that the transition is taking place across November 2026 to February 2027; it also describes restrictions on creating new projects and components beginning 16 November 2026.
 
+### Transition details verified 26 November 2026
+
+- **16 November 2026:** OSF stopped allowing creation of new Projects and child Components through the interface or API. Existing Projects remain editable until the next transition date.
+- **19 February 2027:** Existing public and private Projects are scheduled to become read-only. No further content or metadata changes will be possible through the Project workflow.
+- **Public Projects:** COS says public Projects will remain findable, viewable, downloadable, and accessible at their existing URLs and DOIs, with COS continuing to manage storage and preservation.
+- **Private Projects:** Current COS help guidance says private Projects will remain accessible after the transition to users who already have access on 19 February 2027. COS anticipates that private Projects may be removed in the future and targets at least 12 months' advance notice. Users cannot add new contributors after the read-only transition.
+- **Registrations and Preprints:** These workflows are unaffected and continue to operate.
+- **API:** Project-creation POST endpoints were disabled on 16 November 2026; project write/update APIs are scheduled to stop on 19 February 2027. Registry and Preprint APIs continue.
+- **Product direction:** COS describes a more focused role for OSF around study plans, registrations, community-run Preprints, and links to outputs held in complementary services such as Zenodo.
+
+**Source discrepancy:** Nature's 9 September 2026 report described a plan under which existing private files would be made public unless users removed them or made them public themselves. The later current COS transition FAQ and help guide say private Projects will remain private and accessible to existing authorized users after 19 February 2027, while future removal remains possible with advance notice. This profile follows the more recent, specific official COS guidance for the current policy and preserves the earlier report as historical evidence. Users should still check the live help pages for updates.
+
 Researchers should consult current official transition guidance before relying on older tutorials or institutional guides.
 
 ## Technical design
@@ -57,7 +69,7 @@ This profile does not independently audit current uptime, security, source-code 
 ## Governance and economics
 
 - **Operator:** Center for Open Science, described in its support documentation as a nonprofit.
-- **Funding and sustainability:** Nature's 2026 reporting describes annual operating costs and funding pressures, including reliance on grants and philanthropic support. COS says the product transition is intended to reduce costs and protect the sustainability of core OSF services.
+- **Funding and sustainability:** COS states that maintaining the broad OSF Projects scope would require approximately US$4–5 million per year for the next several years. It cites a combination of grant-funding challenges, increased activity-related costs, cloud services, security, integrations, software development, and accumulated technical debt. Nature's 9 September 2026 reporting also describes funding pressures and user impact. These are operator and journalism sources, not an independent financial audit.
 - **Governance:** The organization's full governance structure and decision-making processes were not reviewed for this profile.
 - **Contributor rights:** Not assessed in detail.
 - **Continuity:** The 2026 transition demonstrates that a widely used research service can change scope when operating costs and funding become difficult to sustain.
@@ -73,6 +85,8 @@ This profile does not independently audit current uptime, security, source-code 
 
 - It is no longer appropriate to describe OSF as a stable all-in-one project-management, collaboration, and data-storage service for new work.
 - The transition creates migration and continuity questions for existing users and institutions.
+- Private-project access and possible future removal require attention; users should not assume that read-only means permanently retained.
+- API-dependent workflows need migration because project creation and write endpoints are being retired.
 - Reliance on a central operator and external funding creates service-continuity risks.
 - Linking outputs across services does not automatically guarantee that those outputs remain available, interoperable, or reproducible.
 - The long-term effects of the transition on researchers and the wider open-science ecosystem are not yet established.
@@ -102,7 +116,12 @@ It should not be treated as a simple template for Common Knowledge or as evidenc
 - A-03 — COS, [OSF Product Roadmap](https://www.cos.io/product-roadmap?hsLang=en).
 - A-04 — Nature, [Popular open-science platform to stop hosting data and code amid funding concerns](https://www.nature.com/articles/d41586-026-02598-y).
 - A-05 — KU Leuven Research Data Management, [Open Science Framework](https://www.kuleuven.be/rdm/en/tools/osf).
+- A-65 — COS, [OSF Changes](https://www.cos.io/osf-changes).
+- A-66 — COS Support, [OSF Projects Transition](https://help.osf.io/article/727-osf-projects-transition).
+- A-67 — COS Support, [OSF Projects Transition FAQs](https://help.osf.io/article/725-faqs).
+- A-68 — COS Support, [OSF Projects API Impact](https://help.osf.io/article/744-osf-projects-api-impact).
 
 ## Change log
 
 - **2026-11-26:** Created initial profile reflecting the OSF transition documented by COS in November 2026.
+- **2026-11-26:** Expanded the profile with the exact November 2026–February 2027 transition timeline, API changes, public/private content distinctions, current funding rationale, and a documented discrepancy between earlier journalism and later official guidance. Added sources A-65 through A-68.
