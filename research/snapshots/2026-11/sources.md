@@ -1398,3 +1398,96 @@ No sources entered yet. Add new sections and stable IDs as workstreams begin.
 - **Accessed / verified:** 2026-11-26
 - **Claims supported:** Existence, authorship, publication date, and relationship as a comment on D-05, *The More You Automate, the Less You See*.
 - **Limitations:** Full text was not available in this research pass; arguments are not summarized pending retrieval and review.
+
+
+## Workstream F — Governance, Economics, and Institutional Design
+
+### F-01 — Wikimedia Foundation Bylaws
+- **Publisher:** Wikimedia Foundation
+- **Source type:** Governing legal document
+- **URL:** https://foundation.wikimedia.org/wiki/Bylaws
+- **Publication / update date:** Current bylaws accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Nonmember structure, board authority, trustee terms, and stated purpose of maintaining access to Wikimedia project information.
+- **Limitations:** One US nonprofit's bylaws; not a general model for other organizations or jurisdictions.
+
+### F-02 — Wikimedia Foundation Financial Reports
+- **Publisher:** Wikimedia Foundation
+- **Source type:** Audited financial statements, annual plans, and tax filings
+- **URL:** https://wikimediafoundation.org/who-we-are/financial-reports/
+- **Publication / update date:** 2025–2026 reporting cycle available as accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Publication of annual plans, audited financial reports, and Form 990 records.
+- **Limitations:** Public disclosure does not itself establish participatory governance or mission independence; figures require review of the actual reports.
+
+### F-03 — Wikimedia Foundation 2026–2027 Annual Plan and Budget Resolution
+- **Publisher:** Wikimedia Foundation Board of Trustees
+- **Source type:** Board resolution
+- **URL:** https://foundation.wikimedia.org/wiki/Resolution:Approving_the_Wikimedia_Foundation_2026-2027_Annual_Plan_and_Budget
+- **Approval date:** 2026-06-17
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Board-approved annual plan and budget of $230.0 million revenue and $240.0 million expenses, with up to $10 million to be funded from reserves.
+- **Limitations:** Board resolution summary; actual annual plan and audited accounts are needed for detailed financial interpretation.
+
+### F-04 — About the Mozilla Corporation
+- **Publisher:** Mozilla Foundation
+- **Source type:** Primary institutional structure description
+- **URL:** https://www.mozilla.org/en-US/foundation/moco/
+- **Publication / update date:** Current page accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Mozilla Corporation's status as a wholly owned taxable subsidiary established to serve the public-benefit goals of its nonprofit parent.
+- **Limitations:** Organization-authored description; detailed governance, related-party arrangements, and financial flows require review of corporate documents and filings.
+
+### F-05 — Open Source Collective: About
+- **Publisher:** Open Source Collective
+- **Source type:** Primary organizational description
+- **URL:** https://oscollective.org/about/
+- **Publication / update date:** Current page accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** 501(c)(6) fiscal-host model, mission, services, and role supporting open-source projects.
+- **Limitations:** Organization-authored description; fees, service-level commitments, eligibility, and legal terms need detailed review.
+
+### F-06 — Open Source Collective: What Is Fiscal Hosting?
+- **Publisher:** Open Source Collective
+- **Source type:** Primary fiscal-host policy documentation
+- **URL:** https://docs.oscollective.org/welcome-and-introduction-to-osc/what-is-fiscal-hosting
+- **Publication / update date:** Current documentation accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Host oversight, legal/financial responsibilities, project autonomy under the arrangement, transparent budget practices, and limits on tax-deductibility.
+- **Limitations:** Specific to this host's model; other fiscal sponsors have different missions, fees, rights, and restrictions.
+
+### F-07 — Inurement / Private Benefit: Charitable Organizations
+- **Publisher:** Internal Revenue Service (IRS)
+- **Source type:** US federal tax guidance
+- **URL:** https://www.irs.gov/charities-non-profits/charitable-organizations/inurement-private-benefit-charitable-organizations
+- **Publication / update date:** Current guidance accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** 501(c)(3) restrictions on private inurement and private benefit.
+- **Limitations:** Applies to US federal tax-exempt organizations under the cited provisions; not a substitute for legal advice or a complete governance framework.
+
+### F-08 — Intermediate Sanctions: Compensation
+- **Publisher:** Internal Revenue Service (IRS)
+- **Source type:** US federal tax guidance
+- **URL:** https://www.irs.gov/charities-non-profits/charitable-organizations/intermediate-sanctions-compensation
+- **Publication / update date:** Current guidance accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Reasonable compensation based on fair market value for like services under like circumstances and the scope of compensation considered.
+- **Limitations:** US federal tax guidance; does not prescribe a universal salary cap or guarantee that compensation is mission-aligned.
+
+### F-09 — Attorney General's Guide for Charities
+- **Publisher:** California Department of Justice, Office of the Attorney General
+- **Source type:** State legal and regulatory guidance
+- **URL:** https://oag.ca.gov/system/files/media/Guide%20for%20Charities.pdf
+- **Publication / update date:** 2024 edition accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Distinctions among California nonprofit public benefit, mutual benefit, and religious corporations; governance, member rights, and charitable asset oversight.
+- **Limitations:** California-specific; legal and tax status are separate and vary by jurisdiction.
+
+### F-10 — U.S. Department of Labor: Worker Cooperatives
+- **Publisher:** U.S. Department of Labor
+- **Source type:** Federal informational guidance
+- **URL:** https://www.dol.gov/agencies/ebsa/about-ebsa/our-activities/programs-and-initiatives/employee-ownership-initiative/tools-and-resources/employee-ownership
+- **Publication / update date:** Current page accessed 2026-11-26
+- **Accessed / verified:** 2026-11-26
+- **Claims supported:** Worker cooperatives' democratic governance, one-member/one-vote principle, and variation in management structures.
+- **Limitations:** US overview; cooperative law and tax treatment vary by state and country.
