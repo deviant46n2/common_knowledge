@@ -2,8 +2,8 @@
 
 - **Snapshot:** [November 2026](../../README.md)
 - **Program:** [Common Knowledge Research Program](../../../../PROGRAM.md)
-- **Status:** Not started
-- **Last worked:** Not yet started
+- **Status:** In progress
+- **Last worked:** 2026-11-26
 
 ## Central question
 
@@ -32,9 +32,14 @@ Investigate AI support for discovery, synthesis, hypothesis generation, coding, 
 
 This page is the workstream's durable entry point. Add dated notes below as research proceeds. Put substantive findings in focused reports and profiles, with sources attached to the claims they support. Keep documented facts, independent findings, assessments, and open questions distinct.
 
+### Current reports
+
+- [Initial field overview](field-overview.md)
+
 ### Progress notes
 
-- **2026-11-26:** Workstream scope and initial questions recorded. No comprehensive investigation has yet been completed.
+- **2026-11-26:** Workstream scope and initial questions recorded. No comprehensive investigation had yet been completed.
+- **2026-11-26:** Added initial overview of AI research agents, human–AI reproducibility experiments, workflow auditability, and science-of-science collaborators. Registered sources D-01 through D-06.
 
 ### Next steps
 
