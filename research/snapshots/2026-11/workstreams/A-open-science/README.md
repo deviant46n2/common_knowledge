@@ -2,8 +2,8 @@
 
 - **Snapshot:** [November 2026](../../README.md)
 - **Program:** [Common Knowledge Research Program](../../../../PROGRAM.md)
-- **Status:** Not started
-- **Last worked:** Not yet started
+- **Status:** In progress
+- **Last worked:** 2026-11-26
 
 ## Central question
 
@@ -30,6 +30,11 @@ Map platforms, institutions, communities, and practices across academic, indepen
 - evidence-backed needs and opportunities.
 
 ## Working record
+
+- [Initial field overview](field-overview.md) — preliminary map of research-lifecycle infrastructure, with current observations and questions.
+- [OSF profile](../../projects/osf.md) — includes the November 2026 transition.
+- [Zooniverse profile](../../projects/zooniverse.md) — people-powered research and volunteer task workflows.
+- [SciStarter profile](../../projects/scistarter.md) — citizen-science discovery and recruitment.
 
 This page is the workstream's durable entry point. Add dated notes below as research proceeds. Put substantive findings in focused reports and profiles, with sources attached to the claims they support. Keep documented facts, independent findings, assessments, and open questions distinct.
 
