@@ -1,7 +1,7 @@
 # Development Documentation System
 
 - **Established:** 26 November 2026
-- **Status:** Documentation policy for the future MVP; implementation-specific records are intentionally not yet populated.
+- **Status:** Operating standard for product engineering documentation; apply proportionately to the current prototype and any future MVP.
 - **Purpose:** Keep development documentation precise, current, reviewable, and aligned with the actual implementation.
 
 ## 1. Core rule
@@ -52,22 +52,11 @@ The exact set may be reduced for a small local CLI. Do not create empty ceremony
 
 ## 4. Requirements discipline
 
-Every requirement receives a stable identifier:
-- REQ-F-### functional requirement;
-- REQ-NF-### non-functional requirement;
-- REQ-S-### security/privacy requirement;
-- REQ-UX-### usability/accessibility requirement.
+Use explicit, testable requirements when a product or feature has enough scope that informal acceptance criteria become ambiguous. Stable requirement IDs (for example, REQ-F-001 or REQ-S-001) are useful when multiple people, interfaces, or tests need to refer to the same requirement; they are not mandatory for every small prototype change.
 
-Each requirement must include:
-- statement using precise, testable language;
-- rationale and source of need;
-- priority (Must / Should / Could / Won't for this release);
-- acceptance criteria;
-- verification method;
-- status (Proposed / Accepted / Implemented / Verified / Deferred / Rejected);
-- linked issues, code, tests, and decision records where available.
+A substantive requirement should state its rationale and source of need, priority, acceptance criteria, verification method, and status. Link it to relevant issues, code, tests, and decision records where useful. Avoid vague terms such as “fast,” “secure,” “user-friendly,” or “reproducible” without a defined scope or measurable meaning.
 
-Avoid vague requirements such as “fast,” “secure,” “user-friendly,” or “reproducible” without measurable definitions or explicit scope.
+For the current small prototype, concise issue descriptions and tests may be sufficient. Do not create a formal requirements register until it improves coordination or traceability.
 
 ## 5. Architecture decision records
 
@@ -184,9 +173,12 @@ Do not claim reproducible builds until they have been tested.
 
 ## 12. Current state
 
-No MVP has been selected and no product architecture has been approved. This policy establishes documentation discipline. A reversible working product direction and an initial static-inspection prototype now exist under `product/` and `src/ck_preflight/`. No validated MVP or accepted product architecture has been selected. Product requirements and implementation records must continue to distinguish hypotheses, accepted decisions, implemented behavior, and verified behavior. See [AI Collaboration Protocol](../AI_COLLABORATION.md) for AI-agent authority and change boundaries, and [Institutional Design](../INSTITUTIONAL_DESIGN.md) for unresolved organizational questions.
+A reversible working product direction and an initial static-inspection prototype exist under `product/` and `src/ck_preflight/`. No validated MVP or accepted product architecture has been selected. Product requirements and implementation records must distinguish hypotheses, accepted decisions, implemented behavior, and verified behavior. Apply this documentation system proportionately: the current small prototype does not need a full enterprise-style specification set or formal requirement IDs for every change.
+
+This document is subordinate to the [Common Knowledge Operating Model](../OPERATING_MODEL.md), which defines project-wide standards for evidence, review, safety, decisions, and change. See the [AI Collaboration Protocol](../AI_COLLABORATION.md) for AI-specific authority and conduct, and [Institutional Design](../INSTITUTIONAL_DESIGN.md) for unresolved organizational questions.
 
 ## Change log
 
 - **2026-11-26:** Established the proposed documentation system and authority rules before product implementation. No technical architecture decisions were made.
 - **2026-11-26:** Updated current-state note to reflect the provisional product direction and initial prototype; added links to AI collaboration and institutional-design guidance.
+- **2026-11-26:** Added the project Operating Model as the higher-level standard and clarified that formal requirement IDs should be used only when they improve traceability at the project's current scale.
