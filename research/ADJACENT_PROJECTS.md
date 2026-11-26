@@ -255,6 +255,20 @@ The README distinguishes three different things: the changing application datase
 
 The public domain-index endpoint returned 893 domain labels in a dated snapshot referenced by the README (11 October 2026). The README warns that this is not 893 equally populated or independently validated disciplines. The PKG Viewer displayed 6,241 imported/matched records during our 26 November inspection. These are dated UI observations, not an independent data audit or a complete corpus count.
 
+### Published record sample
+
+A read-only inspection of one LLM assessment nanopublication and the repository's dated 14 October 2026 inventory found more detail than the ontology overview alone:
+- a claim about H,K-ATPase inhibition and planarian head regeneration;
+- a source DOI and experimental context;
+- an evidence item referencing Fig. 4B–C;
+- a reported p-value, statistical-test description, and Vovk–Sellke maximum p-ratio;
+- a Bayesian weight-of-evidence assessment;
+- a separate dataset-resolvability assessment with candidate datasets, a test plan, and model/agent provenance.
+
+The 14 October inventory contains 183 unique nanopublications in that curated sample (161 Bayesian-assessment statements, 11 claim-statement records, 8 evidence-item records, and a few hypothesis/agent records). It is not the full public graph. The figure label is a useful locator, but the inspected records did not include the exact figure panel/image, source excerpt, source-version hash, or raw measurement data. The repository also documents an ongoing migration from signed ontology 1.x templates to generated but not-yet-published 2.0 versions.
+
+See [the published assessment record review](experiments/2026-11-project-delphi-record-review.md) for the full sample and limitations.
+
 ### Hands-on UI result
 
 Two read-only public Q&A tests were attempted, including one of the application's own starter questions. Both failed with the message that Delphi could not complete the answer and that no answer had been generated from unverified sources. No citations or excerpts were returned.
