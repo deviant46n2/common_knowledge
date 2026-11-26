@@ -59,3 +59,12 @@ Each has the nanopublication head, assertion, provenance, and publication-inform
 - Try authoring the same structure through a Nanodash template.
 - Test whether a separate reviewer can publish a conflicting or alternative assessment without replacing the observation.
 - Test source versioning and row-level anchors against a changed CSV file.
+
+
+### Additional locator stability check
+
+Two in-memory variants were generated from the fixture:
+- **Rows reordered:** the primary-key values remained the same, so the record key still identifies the same measurement even though its row position changed. The file SHA-256 changed to `f797ea05818013a41eecd59bfa7302657e95bc8fb353911e4486ea055b36a7fb`.
+- **Measurement value edited from 4.2 to 4.3:** the primary key remained the same but the file SHA-256 changed to `89ef195feb45520c7e9d8a85be722cb4737ce8f63d8f301d72b3997f94a78808`.
+
+This confirms the intended distinction: the primary key tracks the logical row across reordering, while the content digest detects changes to the exact file representation. A changed dataset should receive a new version identity; the digest alone should not be used to silently treat a changed file as the same source version.
