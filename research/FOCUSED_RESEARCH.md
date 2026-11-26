@@ -1070,3 +1070,76 @@ The main conceptual result is useful: what a source recorded can remain distinct
 | Independent human workflow evaluation | **Not yet performed** | — |
 
 This probe is a learning artifact only. It does not select nanopublications or RDF as the Common Knowledge storage architecture.
+
+
+## Evidence locator research — CSVW, versioned datasets, and Web Annotation
+
+The first synthetic source used a row number as its locator. That is not sufficient for durable evidence: row positions can change when data is inserted, filtered, sorted, or republished.
+
+### CSVW provides a relevant tabular model
+
+The W3C CSV on the Web Recommendations define an annotated tabular data model with metadata for table groups, tables, rows, columns, and cells. The companion metadata vocabulary is JSON-based and supports column datatypes, required fields, primary keys, and URI templates.
+
+Particularly useful details:
+- Rows can have a **primary key** made from one or more cells; CSVW validators must check uniqueness of the indicated key combination.
+- An `aboutUrl` URI template can generate a stable URI for each row from its key values, rather than using a row position.
+- URI templates also expose row and source-row positions, column names and column numbers when needed.
+- Cell annotations preserve the original string value and parsed semantic value, and can carry additional application-specific annotations.
+- CSVW explicitly does not define a universal method for all possible row/cell annotations, such as evidence certainty or provenance. It supplies a tabular representation and metadata mechanism, not a claim-evaluation model.
+
+Sources:
+- W3C, [Model for Tabular Data and Metadata on the Web](https://www.w3.org/TR/2015/REC-tabular-data-model-20151217/)
+- W3C, [Metadata Vocabulary for Tabular Data](https://www.w3.org/TR/tabular-metadata/)
+
+### Dataset versioning and preservation
+
+W3C Data on the Web Best Practices recommends:
+- a version number or date for each dataset;
+- version history;
+- persistent URIs for datasets and for individual versions;
+- a stable series URI that points to the latest version, while version-specific URIs remain fixed;
+- Memento as one way to express and access temporal versions.
+
+The standard notes that version boundaries depend on the publisher's context, but even small corrections should not be made without updating the version indicator. A versioned URI provides a stable citation target. Memento can help discover which resource state was current at a given time.
+
+Memento should not be mistaken for byte-perfect preservation. RFC 7089 notes that archived representations may be transformed for preservation or archive presentation. If exact source bytes matter, the evidence record should additionally retain a cryptographic digest and, where rights permit, a preserved copy or a durable repository identifier.
+
+Sources:
+- W3C, [Data on the Web Best Practices — Data Versioning](https://www.w3.org/TR/dwbp/#dataVersioning)
+- W3C, [Data on the Web Best Practices — Dataset Version URIs](https://www.w3.org/TR/dwbp/#URIversioning)
+- IETF, [RFC 7089 — Memento](https://www.rfc-editor.org/rfc/rfc7089)
+
+### Web Annotation complements rather than replaces CSVW
+
+Web Annotation offers selectors for text quotations, character positions, byte positions, fragments, and other media-specific regions. It also has a State model, including a Time State, for identifying which representation of a changing resource is relevant to an annotation.
+
+This is useful for passages in HTML/PDF-like resources. For structured tabular data, CSVW is more specific about rows and cells. A Common Knowledge record could therefore use CSVW for table/row/cell identity and Web Annotation for textual or media passages. These are complementary tools, not competing locator schemes.
+
+Sources:
+- W3C, [Web Annotation Data Model](https://www.w3.org/TR/annotation-model/)
+- W3C, [CSVW Model](https://www.w3.org/TR/2015/REC-tabular-data-model-20151217/)
+
+### Small practical fixture added
+
+The synthetic observation experiment now includes:
+- a version-specific CSV source file;
+- a CSVW JSON metadata file declaring a unique `measurement_id` primary key and an `aboutUrl` row URI template;
+- a SHA-256 digest of the exact UTF-8 source bytes;
+- a nanopublication-shaped observation that points to the versioned source URI, stable row key, evidence column, and digest;
+- a separate qualification record based on the calibration log.
+
+See [the experiment report](experiments/2026-11-synthetic-observation.md), [CSV source](experiments/2026-11-station-r1-observations.csv), [CSVW metadata](experiments/2026-11-station-r1-observations-metadata.json), and [TriG fixture](experiments/2026-11-synthetic-observation-nanopubs.trig).
+
+**Tests performed:** Python's CSV parser read the two rows; JSON parsing succeeded; a manual uniqueness check passed for the declared primary key; SHA-256 was calculated; and the earlier TriG shape was round-tripped with RDFLib 7.5.0. The revised TriG has not yet been re-run through a nanopublication validator, and no CSVW-specific validator is installed in this environment. These are limited fixture checks, not full standards-conformance tests.
+
+### Current design implication
+
+A useful evidence locator should identify at least:
+1. the source resource;
+2. the specific version/representation of that source;
+3. the region within that version (page, passage, table, row, cell, time interval, etc.);
+4. a locator method appropriate to the source type;
+5. a digest or other integrity check when exact source bytes are available;
+6. a fallback and an explicit locator-quality status when the source has no stable key or version.
+
+This should be a source-type-aware design. We should not force every kind of evidence into one universal offset field.
