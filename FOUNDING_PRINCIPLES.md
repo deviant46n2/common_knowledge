@@ -94,6 +94,8 @@ Trust is earned through conduct, not declared in a mission statement.
 
 Common Knowledge should make its governance, funding, policies, important decisions, and use of shared resources as transparent as practicable. People affected by decisions should have meaningful ways to understand, question, and appeal them.
 
+**Transparency begins with the founder.** While the project is founder-led, its founder's role and authority should be stated plainly. Significant decisions, relevant conflicts of interest, material commitments, project funding, and project spending should be disclosed from the beginning. The project should not claim independent oversight, audits, or accountability mechanisms that do not yet exist. The initial practical commitments are described in [Transparency](docs/TRANSPARENCY.md).
+
 Errors should be acknowledged and corrected. Disagreements should be handled through fair, documented processes. Criticism made in good faith should be welcomed rather than punished.
 
 Transparency itself has limits where disclosure would violate privacy, security, consent, or other legitimate protections. Those limits should not become a pretext for hiding misconduct or avoiding accountability.

@@ -1,73 +1,91 @@
 # Roadmap
 
-This roadmap is a practical sequence, not a promise to build every part of the long-term vision. The immediate goal is a demonstrable piece of software that makes the Common Knowledge idea tangible.
+This roadmap is a practical sequence, not a promise to build every part of the long-term vision. The immediate goal is to create a useful open-source project that developers can run, inspect, challenge, and improve—and that lays credible foundations for independent knowledge infrastructure.
 
-## Current direction
+## Direction
 
-Build an **inspectable, evidence-linked knowledge system**, beginning with one small, complete, useful slice.
+**Open infrastructure for humanity's shared knowledge.**
 
-The first slice should let someone create or inspect a structured knowledge record and understand:
-- exactly what is being stated, including scope and context;
-- which sources or observations support, challenge, or qualify it;
-- who or what contributed the record and how;
-- what is known, uncertain, disputed, or not yet checked;
-- how the record and its evidence have changed over time;
-- how the information can be exported and independently inspected.
+Common Knowledge should help people and independent groups create, inspect, challenge, exchange, and preserve evidence-linked knowledge. It should not become the sole authority, host, or point of failure for the knowledge it helps steward.
 
-This is a product hypothesis, not a settled data model or architecture. Research must determine what existing systems already provide and where a new contribution would be justified.
+The first community we hope to attract is developers and open-source contributors interested in interoperability, provenance, data portability, digital preservation, security, and public-interest infrastructure. The product must give them something concrete to build and test, while remaining useful to people who produce and examine knowledge.
 
 ## Near-term sequence
 
-### 1. Focused research — current priority
+### 1. Align the project and specify the first product — current priority
 
-Investigate the smallest set of standards, tools, and real workflows needed to make a defensible first product decision.
+- Update the project description and roadmap to reflect the developer-first, open-infrastructure direction.
+- Define a narrow first product in [MVP Specification](docs/MVP_SPECIFICATION.md).
+- Make founder-led status, project decisions, and financial activity transparent from the beginning through [Transparency](docs/TRANSPARENCY.md).
+- Keep institutional governance participatory and proportionate: establish present-day commitments, but do not invent a constitution without a community.
+- Preserve existing research and prototypes as evidence; do not treat exploratory spikes as selected architecture.
 
-- Compare existing knowledge bases and structured statement systems.
-- Examine how they represent sources, evidence, provenance, disagreement, versions, and corrections.
-- Identify relevant open standards and practical implementation libraries.
-- Look for real user problems that are not already adequately served.
-- Talk to people who curate, verify, publish, or rely on knowledge records as soon as there is a concrete workflow to discuss.
+**Output:** a reviewable MVP proposal, clear transparency commitments, and a small set of open technical questions.
 
-**Output:** a short comparison, an initial record-model proposal, and a clearly stated gap—or a recommendation to build on an existing system.
+### 2. Select one bounded workflow and technical approach
 
-### 2. Build one vertical slice
+- Choose a real task that developers can understand and that produces a useful evidence-linked record.
+- Compare existing formats, standards, and projects before creating new abstractions.
+- Decide the minimum record representation, provenance model, evidence anchoring, validation, and export behavior.
+- Record the alternatives and trade-offs in a short architecture decision.
+- Keep the first implementation local-first and easy to run unless evidence points elsewhere.
 
-Implement the smallest end-to-end workflow that tests the chosen gap. A possible shape is one bounded collection of knowledge records with a human-readable view, structured evidence links, visible history, and portable machine-readable export.
+**Output:** a tested sample case, a minimal technical design, and explicit reasons for the choices.
 
-Do not build a universal knowledge graph, global search engine, social network, AI agent platform, distributed database, or governance system as a prerequisite.
+### 3. Build a developer-usable vertical slice
 
-**Output:** a working demonstrator with example records, tests, documentation, and explicit limitations.
+The first implementation should let a developer create, inspect, validate, and export a knowledge record. It should demonstrate source references, precise evidence anchors, distinct assessments, attribution, and revision history.
 
-### 3. Test with people outside the project
+Prioritize:
+- Clear setup and contribution instructions.
+- A small reference implementation and command-line or equivalent developer workflow.
+- Human-readable inspection and machine-readable export.
+- Automated tests and a synthetic fixture.
+- Honest limitations and no claims of user validation before it occurs.
 
-Ask people to use the demonstrator without coaching. Observe whether they can understand a record, trace its evidence, recognize uncertainty, identify changes, and export or reuse the information.
+**Output:** software another developer can run locally and understand without the founder walking them through it.
 
-Compare it with their current tools and workflows. Record confusion, missing features, and negative feedback. Mission enthusiasm is not evidence of product usefulness.
+### 4. Test with independent developers and prospective users
 
-**Output:** an independent evaluation and a decision to continue, narrow, integrate upstream, or stop.
+- Invite developers to inspect the code, run the example, challenge the design, and identify architectural mistakes.
+- Ask people who work with evidence to try the record workflow when a concrete use case is ready.
+- Observe actual friction and compare with existing tools.
+- Record negative feedback and revise the product hypothesis.
+- Be willing to integrate upstream, narrow the scope, or stop if an existing project already solves the problem better.
 
-### 4. Invite contributors around something real
+**Output:** external feedback and a reasoned decision about the next iteration.
 
-Once the software demonstrates practical value, invite domain experts, researchers, developers, librarians, archivists, and other interested people to inspect and improve it.
+### 5. Demonstrate independent operation and exchange
 
-Keep contribution rights and expectations clear. Develop community processes with the people who arrive rather than designing a detailed governance constitution in advance.
+- Run compatible instances under separate control.
+- Exchange, validate, export, import, and preserve records without requiring a privileged central service.
+- Test what happens when an operator disappears, disagrees, changes a record, or refuses participation.
+- Evaluate identity, signatures, replication, and federation against a documented threat model rather than adding them speculatively.
 
-### 5. Grow the commons in response to demonstrated needs
+**Output:** an independently repeatable interoperability demonstration and a clear account of its guarantees and limits.
 
-Only as real use requires it, develop broader capabilities for federation, preservation, multilingual access, AI collaboration, community stewardship, and institutional continuity.
+### 6. Grow the community and institutional safeguards together
 
-The long-term system should not depend on one company, model, database, institution, or founder. That is a design goal to test incrementally, not an excuse to overbuild the first version.
+- Invite contributors around working software and open technical questions.
+- Let people who use and maintain the system help shape contribution processes and governance.
+- Develop stronger financial review, conflict management, decision appeals, and independent stewardship as actual resources and responsibilities emerge.
+- Support other implementations and communities rather than requiring them to become subordinate to Common Knowledge.
 
-## Working rules
+**Output:** community-shaped practices and a growing ecosystem of independent operators.
 
-- Build on existing standards and infrastructure wherever practical.
-- Distinguish evidence from interpretation and source claims.
-- Never equate a confidence label or community vote with truth.
+## Working constraints
+
+- Build on existing standards and projects wherever practical.
+- Keep records portable and inspectable outside the reference application.
+- Distinguish source content, statements, evidence relations, assessments, and uncertainty.
 - Preserve disagreement and correction history.
-- Treat privacy, consent, safety, rights, and community control as design constraints.
-- Prefer reversible experiments and small working demonstrations.
-- Keep documentation proportional to what people need to build, use, review, or contribute.
+- Do not equate confidence labels, popularity, or votes with truth.
+- Do not make central hosting, central identity, or founder permission prerequisites for independent preservation.
+- Protect privacy, consent, security, rights, and community interests.
+- Keep the project and its finances transparent without exposing personal or security-sensitive information.
+- Make reversible experiments; explain consequential decisions.
+- Do not claim independence, decentralization, auditability, or user validation beyond what has actually been demonstrated.
 
 ## Not current priorities
 
-A public marketing website, formal institutional governance, a universal ontology, a global data-ingestion pipeline, distributed compute, and a large-scale AI research system are not prerequisites for the first demonstrator.
+A marketing website, global search engine, universal ontology, large-scale ingestion pipeline, token or reputation economy, production federation, AI agent platform, and detailed institutional constitution are not prerequisites for the first developer-usable product.
